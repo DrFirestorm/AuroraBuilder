@@ -1,0 +1,2457 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="homebrew-class-engineer-test.xml" url="https://www.dandwiki.com/wiki/Engineer_(5e_Class)" />
+		</update>
+	</info>
+	
+	<element name="Engineer" type="Class" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_ENGINEER">
+		
+		
+		<description>
+			<p>Masters of mechanical mayhem, engineers love to tinker with explosives, elixirs, and all manner of hazardous gadgets. They can take control of an area by placing turrets, support their allies with alchemical weaponry, or lay waste to foes with a wide array of mines, bombs, and grenades.</p>
+			<h4>CREATING AN ENGINEER</h4>
+			<p>When creating an engineer, think about how your character learned the skills needed to work with machines. Did they teach themselves? Or were they trained by a guild or society of engineers? Perhaps they come from a culture like that of dwarves and gnomes where such skills are common. Or perhaps they just figured it out for themselves through experimentation.</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make an engineer quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Constitution or Dexterity. Second, choose the engineer's background.</p>
+			<h2>CLASS FEATURES</h2>
+			<p>As an Engineer, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per engineer level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per engineer level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled">
+				<li><strong>Armor:</strong> Light armor</li>
+				<li><strong>Weapons:</strong> Simple weapons, all Firearms (DM's guide), Heavy Crossbow, Hand Crossbow, Crossbow</li>
+				<li><strong>Tools:</strong> Tinker's Tools, Alchemist's Tools - Two of the following: Carpenter's Tools, Poisoner's Kit, Smith's Tools, Leatherworker's Tools, Gunsmith's Tools</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
+				<li><strong>Skills:</strong> Choose three from Sleight of Hand, Arcana, History, Investigation, Insight, Medicine, Perception, Performance, Stealth</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) A light hammer or (b) a dagger</li>
+				<li>(a) A light crossbow and 5 crossbow bolts or (b) 10 darts</li>
+				<li>(a) Dungeoneer's Pack or (b) Explorer's Pack</li>
+				<li>(a) Leather Armor or (b) tools=Tinker's Tools, Alchemist's Tools - Two of the following: Carpenter's Tools, Poisoner's Kit, Smith's Tools, Leatherworker's Tools, Gunsmith's Tools</li>
+			</ul>
+			<h5 class="caption">THE ENGINEER</h5>
+		
+			
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-12">Proficiency Bonus</td><td class="col-30 left">Features</td><td class="col-10">Gadgets</td><td class="col-10">Energy</td></tr>
+				</thead>
+				<tr><td> 1st</td><td> +2</td><td class="left">Gadgets</td><td> 3</td><td> -</td></tr>
+				<tr><td> 2nd</td><td> +2</td><td class="left">Energy, Signature Device</td><td> 3</td><td> 2</td></tr>
+				<tr><td> 3rd</td><td> +2</td><td class="left">Specialization</td><td> 4</td><td> 3</td></tr>
+				<tr><td> 4th</td><td> +2</td><td class="left">Ability Score Improvement</td><td> 4</td><td> 4</td></tr>
+				<tr><td> 5th</td><td> +3</td><td class="left">Enhanced Signature Device</td><td> 5</td><td> 5</td></tr>
+				<tr><td> 6th</td><td> +3</td><td class="left">Specialization Feature</td><td> 5</td><td> 6</td></tr>
+				<tr><td> 7th</td><td> +3</td><td class="left">Engineer's Expertise</td><td> 6</td><td> 7</td></tr>
+				<tr><td> 8th</td><td> +3</td><td class="left">Ability Score Improvement</td><td> 6</td><td> 8</td></tr>
+				<tr><td> 9th</td><td> +4</td><td class="left">—</td><td> 7</td><td> 9</td></tr>
+				<tr><td>10th</td><td> +4</td><td class="left">—</td><td> 7</td><td> 10</td></tr>
+				<tr><td>11th</td><td> +4</td><td class="left">Specialization Feature</td><td> 8</td><td> 11</td></tr>
+				<tr><td>12th</td><td> +4</td><td class="left">Ability Score Improvement</td><td> 8</td><td> 12</td></tr>
+				<tr><td>13th</td><td> +5</td><td class="left">Advanced Signature Device</td><td> 9</td><td> 13</td></tr>
+				<tr><td>14th</td><td> +5</td><td class="left">Indomitable Mind</td><td> 9</td><td> 14</td></tr>
+				<tr><td>15th</td><td> +5</td><td class="left">Specialization Feature</td><td> 10</td><td> 15</td></tr>
+				<tr><td>16th</td><td> +5</td><td class="left">Ability Score Improvement</td><td> 10</td><td> 16</td></tr>
+				<tr><td>17th</td><td> +6</td><td class="left">Ultimate Signature Device</td><td> 11</td><td> 17</td></tr>
+				<tr><td>18th</td><td> +6</td><td class="left">Cannibalisation</td><td> 11</td><td> 18</td></tr>
+				<tr><td>19th</td><td> +6</td><td class="left">Ability Score Improvement</td><td> 12</td><td> 19</td></tr>
+				<tr><td>20th</td><td> +6</td><td class="left">Specialization Feature</td><td> 12</td><td> 20</td></tr>
+			</table>
+			
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGETS" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENERGY" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SPECIALIZATION" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENGINEERS_EXPERTISE" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_INDOMITABLE_MIND" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_CANNIBALISATION" />
+		</description>
+		
+
+
+		<setters>
+			<set name="short">Masters of mechanical mayhem, engineers love to tinker with explosives, elixirs, and all manner of hazardous gadgets.</set>
+			<set name="hd">d8</set>
+		</setters>
+
+		<sheet display="false" />
+		
+		<rules> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" requirements="ID_WOTC_DMG_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
+			<select type="Proficiency" name="Artisan Tool, Engineer" supports="ID_WOTC_PHB_ITEM_TOOL_CARPENTERS_TOOLS|ID_WOTC_PHB_ITEM_TOOL_POISONERS_KIT|ID_WOTC_PHB_ITEM_TOOL_SMITHS_TOOLS|ID_WOTC_PHB_ITEM_TOOL_LEATHERWORKERS_TOOLS" number="2" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />		
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
+			<select type="Proficiency" name="Skill Proficiency, Engineer" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" number="3" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
+			<select type="Proficiency" name="Skill Proficiency, Engineer" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" number="1" requirements="ID_HOMEBREW_MULTICLASS_ENGINEER" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGETS" level="1" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENERGY" level="2" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE" level="2" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SPECIALIZATION" level="3" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE" level="5" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENGINEERS_EXPERTISE" level="7" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE" level="13" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_INDOMITABLE_MIND" level="14" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE" level="17" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_CANNIBALISATION" level="18" />
+		
+		</rules>
+		
+
+		 <multiclass id="ID_HOMEBREW_MULTICLASS_ENGINEER">
+			<prerequisite>Intelligence 13</prerequisite>
+			<requirements>[int:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">1 skill from class list.</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Gadgets" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGETS">
+		<description>
+			<p>At level 1, you gain access to 3 gadgets from the gadget list. If your DM requires it, acquiring a gadget costs money and time to craft, depending on the gadget's tier, as seen on the table below.</p>
+			<ul>
+				<li>While on your person, gadgets are always in effect.</li>
+				<li>When you level up, you may choose to replace a gadget you possess and replace it with one gadget for which you meet the requirements. The old gadget is destroyed, and you must craft the new one.</li>
+				<li>If a gadget is somehow damaged, you must repair it with an Intelligence (Tinker's tools) check with a DC=12+Gadget Tier, spending half of the cost and time to repair it.</li>
+				<li>A gadget lost or destroyed must be replaced entirely.</li>
+				<li>Many gadgets have spell-like effects, but these are nonmagical, and therefore cannot be affected by spells such as dispel magic, counterspell, or antimagic field.</li>
+			</ul>
+			<table class="class-features">
+				<thead>
+					<tr><td>Tier</td><td>Cost</td></tr>
+				</thead>
+				<tr><td> 1</td><td>25gp / 2 hours</td></tr>
+				<tr><td> 2</td><td>40gp / 4 hours</td></tr>
+				<tr><td> 3</td><td>75gp / 6 hours</td></tr>
+				<tr><td> 4</td><td>150gp / 8 hours</td></tr>
+				<tr><td> 5</td><td>500gp / 12 hours</td></tr>
+				<tr><td> 6</td><td>1000gp / 24 hours</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>
+				<p>You have access to {{gadgets:max}} gadgets. While on your person, gadgets are always in effect.</p>
+				<p class="indent">When you level up, you may choose to replace a gadget you possess with one gadget for which you meet the requirments. The old gadget is destroyed when you craft the new one.</p>
+				<p class="indent">If a gadget is damaged, you must repair it with an Intelligence (Tinker's Tools) check with a DC = 12+Gadget Tier, spending half the initial cost and time to repair it.</p>
+				<p class="indent">Many gadgets have spell-like effects, but these are nonmagical, and therefore cannot be affected by spells such as dispel magic, counterspell, or antimagic field.</p>
+			</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Gadgets" supports="Gadgets" number="3" level="1" />
+			<select type="Class Feature" name="Gadgets" supports="Gadgets" number="1" level="3" />
+			<select type="Class Feature" name="Gadgets" supports="Gadgets" number="1" level="5" />
+			<select type="Class Feature" name="Gadgets" supports="Gadgets" number="1" level="7" />
+			<select type="Class Feature" name="Gadgets" supports="Gadgets" number="1" level="9" />
+			<select type="Class Feature" name="Gadgets" supports="Gadgets" number="1" level="11" />
+			<select type="Class Feature" name="Gadgets" supports="Gadgets" number="1" level="13" />
+			<select type="Class Feature" name="Gadgets" supports="Gadgets" number="1" level="15" />
+			<select type="Class Feature" name="Gadgets" supports="Gadgets" number="1" level="17" />
+			<select type="Class Feature" name="Gadgets" supports="Gadgets" number="1" level="19" />
+			
+			<stat name="gadgets:max" value="3" level="1" />
+			<stat name="gadgets:max" value="1" level="3" />
+			<stat name="gadgets:max" value="1" level="5" />
+			<stat name="gadgets:max" value="1" level="7" />
+			<stat name="gadgets:max" value="1" level="9" />
+			<stat name="gadgets:max" value="1" level="11" />
+			<stat name="gadgets:max" value="1" level="13" />
+			<stat name="gadgets:max" value="1" level="15" />
+			<stat name="gadgets:max" value="1" level="17" />
+			<stat name="gadgets:max" value="1" level="19" />
+		</rules>
+	</element>
+	<element name="Energy" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENERGY">
+		<description>
+			<p>At level 2, you gain energy, an expendable pool of points with an amount equal to your Engineer level. You regain 1d6 Energy during a short rest, and fully regain it during a long rest. Many engineer features utilize energy, denoting costs in such abilities' descriptions.</p>
+		</description>
+		<sheet>
+			<description>You have {{engineer-energy}} Energy. You regain 1d6 Energy during a short rest, and fully regain it during a long rest. Many engineer features utilize energy, denoting costs in such abilities' descriptions.</description>
+		</sheet>
+		<rules>
+			<stat name="engineer-energy" value="level:engineer" />
+		</rules>
+	</element>
+	<element name="Signature Device" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE">
+		<description>
+			<p>At level 2, you gain a signature device, a versatile, and later customizable invention. You choose between 7 gadgets: flamethrower, grenade kit, elixir gun, turret, drone, magitech omnigauntlet, or magitech omnistaff. Building it costs (25*Engineer Level)gp and 4 hours of time. Repairing it requires a DC15 Intelligence (Tinker's Tools) check, and half the money and time it takes to build it. At 5th, 13th, and 17th level, you choose an upgrade feature for your signature device.</p>
+		</description>
+		<sheet>
+			<description>Your signature device is a versatile and customizable invention. Building it costs {{signature-device:cost}} gp and 4 hours of time. Repairing it requires a DC15 Intelligence (Tinker's Tools) check, and half the money and time it takes to build it.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Signature Device" supports="Signature Device" level="2" number="1"/>
+			<stat name="signature-device:cost" value="50" level="2" />
+			<stat name="signature-device:cost" value="25" level="3" />
+			<stat name="signature-device:cost" value="25" level="4" />
+			<stat name="signature-device:cost" value="25" level="5" />
+			<stat name="signature-device:cost" value="25" level="6" />
+			<stat name="signature-device:cost" value="25" level="7" />
+			<stat name="signature-device:cost" value="25" level="8" />
+			<stat name="signature-device:cost" value="25" level="9" />
+			<stat name="signature-device:cost" value="25" level="10" />
+			<stat name="signature-device:cost" value="25" level="11" />
+			<stat name="signature-device:cost" value="25" level="12" />
+			<stat name="signature-device:cost" value="25" level="13" />
+			<stat name="signature-device:cost" value="25" level="14" />
+			<stat name="signature-device:cost" value="25" level="15" />
+			<stat name="signature-device:cost" value="25" level="16" />
+			<stat name="signature-device:cost" value="25" level="17" />
+			<stat name="signature-device:cost" value="25" level="18" />
+			<stat name="signature-device:cost" value="25" level="19" />
+			<stat name="signature-device:cost" value="25" level="20" />
+		</rules>
+	</element>
+	<element name="Specialization" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SPECIALIZATION">
+		<description>
+			<p>At 3rd level, you choose a specialized engineer path that defines your skills. You choose between the Battletech, Gadgeteer, Technotheurge, and Alchemist. You gain specialization features at 6th, 11th, 15th, and 20th levels.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Specialization" supports="Specialization" />
+		</rules>
+	</element>
+	<element name="Enhanced Signature Device" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE">
+		<description>
+			<p>At 5th level, you choose one upgrade to your Signature Device, turning it into an Enhanced Signature Device.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!--<select type="Class Feature" name="Enhanced Signature Device" supports="Enhanced Signature Device" level="5" number="1" requirements="ID_INTERNAL_GRANT_SIGNATURE_DEVICE_FLAMETHROWER" />-->
+			<select type="Class Feature" name="Enhanced Signature Device" supports="Enhanced Signature Device" level="5" number="1" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ABILITY_SCORE_IMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false">
+			<description>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Engineer,4" level="4" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Engineer,8" level="8" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Engineer,12" level="12" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Engineer,16" level="16" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Engineer,19" level="19" />
+		</rules>
+	</element>
+	<element name="Engineer's Expertise" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENGINEERS_EXPERTISE">
+		<description>
+			<p>At the 7th level, you choose two intelligence based skills, an intelligence based skill and tinker tools, or tinker tools and any other tool you have proficiency in. You may now add double your proficiency bonus to those skills/tools.</p>
+			<p>Additionally, you can also stow and draw a weapon or object as a bonus action. </p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can stow and draw a weapon or object as a bonus action.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Engineer's Expertise" level="7" number="2" supports="ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE"/>
+		</rules>
+	</element>
+	<element name="Advanced Signature Device" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE">
+		<description>
+			<p>At 13th level, you choose one upgrade to your Signature Device, turning it into an Advanced Signature Device.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!--<select type="Class Feature" name="Enhanced Signature Device" supports="Enhanced Signature Device" level="5" number="1" requirements="ID_INTERNAL_GRANT_SIGNATURE_DEVICE_FLAMETHROWER" />-->
+			<select type="Class Feature" name="Advanced Signature Device" supports="Advanced Signature Device" level="13" number="1" />
+		</rules>
+	</element>
+	<element name="Indomitable Mind" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_INDOMITABLE_MIND">
+		<description>
+			<p>Beginning at 14th level, once a day if your total for an Intelligence check is less than your Intelligence score, you can use that score in place of the total.</p>
+			<p>You gain an additional use of this ability at level 17 and 20. </p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>If your total for an Intelligence check is less than your Intelligence score, you can use that score in place of the total.</description>
+			<description usage="2/Long Rest" level="17">If your total for an Intelligence check is less than your Intelligence score, you can use that score in place of the total.</description>
+			<description usage="3/Long Rest" level="20">If your total for an Intelligence check is less than your Intelligence score, you can use that score in place of the total.</description>
+		</sheet>
+	</element>
+	<element name="Ultimate Signature Device" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE">
+		<description>
+			<p>At 17th level, you choose one upgrade to your Signature Device, turning it into an Ultimate Signature Device.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!--<select type="Class Feature" name="Enhanced Signature Device" supports="Enhanced Signature Device" level="5" number="1" requirements="ID_INTERNAL_GRANT_SIGNATURE_DEVICE_FLAMETHROWER" />-->
+			<select type="Class Feature" name="Ultimate Signature Device" supports="Ultimate Signature Device" level="17" number="1" />
+		</rules>
+	</element>
+	<element name="Cannibalisation" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_CANNIBALISATION">
+		<description>
+			<p>At 18th level, you can draw energy from your gadgets by rendering them temporarily inoperative. When you do so, you cannot use the chosen gadget or cannibalise it again and lose all of its benefits until the next time you take a long rest, and gain an amount of energy equal to its tier.</p>
+		</description>
+		<sheet>
+			<description>You can draw energy from your gadgets by rendering them temporarily inoperative. When you do so, you cannot use the chosen gadget or cannibalise it again and lose all of its benefits until the next time you take a long rest, and gain an amount of energy equal to its tier.</description>
+		</sheet>
+	</element>
+	
+	<!-- Gadgets -->
+	<element name="Power Boots" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_POWER_BOOTS">
+		<supports>Gadgets</supports>
+		<requirements>[level:1]</requirements>
+		<prerequisite>1st-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 1st-level engineer</em></p>
+			<ul>
+				<li>Increases your walking speed by 10 feet.</li>
+				<li>Jump distance and height are doubled and you can use your Int score and modifier instead of Str.</li>
+				<li>Whenever you take fall damage, take half damage and you don't fall prone.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Medic Kit" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_MEDIC_KIT">
+		<supports>Gadgets</supports>
+		<requirements>[level:1]</requirements>
+		<prerequisite>1st-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 1st-level engineer</em></p>
+			<ul>
+				<li>You have a pool of healing power that replenishes when you take a short or long rest. With that pool, you can restore a total number of hit points equal to your engineer level x 5. As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool. This feature has no effect on undead and constructs.</li>
+				<li><em>1 Energy-</em> Touch a dying creature as an action to stabilize it and return it to 1 HP.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Eagle Lens" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_EAGLE_LENS">
+		<supports>Gadgets</supports>
+		<requirements>[level:1]</requirements>
+		<prerequisite>1st-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 1st-level engineer</em></p>
+			<ul>
+				<li>You add your Intelligence Modifier (minimum 1) to Perception checks you make.</li>
+				<li>You gain a +1 bonus to ranged attack rolls.</li>
+				<li><em>1 Energy-</em> Gain advantage on a weapon attack roll you make.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Climbing Hooks" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_CLIMBING_HOOKS">
+		<supports>Gadgets</supports>
+		<requirements>[level:1]</requirements>
+		<prerequisite>1st-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 1st-level engineer</em></p>
+			<ul>
+				<li>You gain the benefits of constant Spider Climb.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Sustenance Blood Infuser" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_SUSTENANCE_BLOOD_INFUSER">
+		<supports>Gadgets</supports>
+		<requirements>[level:1]</requirements>
+		<prerequisite>1st-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 1st-level engineer</em></p>
+			<ul>
+				<li>You do not require food or water to survive. Your Hit Point maximum is increased by 1 for each engineer level you have.</li>
+				<li><em>2 Energy-</em> You can cure one poison or disease you are afflicted with as a bonus action.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Mage Lens" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_MAGE_LENS">
+		<supports>Gadgets</supports>
+		<requirements>[level:1]</requirements>
+		<prerequisite>1st-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 1st-level engineer</em></p>
+			<ul>
+				<li>As an action, you can nonmagically cast <em>detect magic.</em></li>
+				<li><em>1 Energy-</em> As an action use this gadget to nonmagically cast <em>Identify</em> on any object within line of sight.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Appendage Retractable Machine (A.R.M.)" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_APPENDAGE_RETRACTABLE_MACHINE_ARM">
+		<supports>Gadgets</supports>
+		<requirements>[level:1]</requirements>
+		<prerequisite>1st-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 1st-level engineer</em></p>
+			<ul>
+				<li>You have a retractable (as an action) mechanical hand that can move up to 30 feet away from you, and otherwise functions and has restrictions similar to a durationless <em>mage hand</em> spell.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Scout Lens" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_SCOUT_LENS">
+		<supports>Gadgets</supports>
+		<requirements>[level:3]</requirements>
+		<prerequisite>3rd-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 3rd-level engineer</em></p>
+			<ul>
+				<li>You can see through darkness (including magical darkness) to a distance of 60 feet and have no perception or inspect penalties. You can also see an additional 60ft as if it was in "Dim Light."</li>
+				<li>The lenses can also magnify objects viewed to twice their size.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Voice Changer and Amplifier" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_VOICE_CHANGER_AND_AMPLIFIER">
+		<supports>Gadgets</supports>
+		<requirements>[level:3]</requirements>
+		<prerequisite>3rd-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 3rd-level engineer</em></p>
+			<ul>
+				<li>If you have spent a minute or more hearing a creature speak, you can mimic their voice unerringly. A Wisdom (Insight) check is required to discern if that the voice is false. You can also change the pitch of any voice (including your own) spoken through this device.</li>
+				<li><em>1 Energy-</em> You can increase the volume of your voice to 10 times as much.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="SCUBA Equipment" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_SCUBA_EQUIPMENT">
+		<supports>Gadgets</supports>
+		<requirements>[level:3]</requirements>
+		<prerequisite>3rd-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 3rd-level engineer</em></p>
+			<ul>
+				<li>You gain a swim speed equal to your walking speed.</li>
+				<li><em>2 Energy-</em> As a bonus action, you can breathe underwater for an hour.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Mechanical Helmet" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_MECHANICAL_HELMET">
+		<supports>Gadgets</supports>
+		<requirements>[level:3]</requirements>
+		<prerequisite>3rd-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 3rd-level engineer</em></p>
+			<ul>
+				<li>You add 1 to your AC.</li>
+				<li><em>2 Energy-</em> As a bonus action, you can send a high-frequency noise from your helmet, that will deafen every other living thing within 15ft until the start of your next turn.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Tinker's Master Gloves" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_TINKERS_MASTER_GLOVES">
+		<supports>Gadgets</supports>
+		<requirements>[level:3]</requirements>
+		<prerequisite>3rd-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 3rd-level engineer</em></p>
+			<ul>
+				<li>You only use half as much time on the construction of mechanical items, including your gadgets and devices.</li>
+				<li>You gain advantage on construction and repair checks.</li>
+				<li><em>1 Energy-</em> The pointer finger of the glove pushes out a lighter, which can produce a small hot flame.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Creature Capture Device" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_CREATURE_CAPTURE_DEVICE">
+		<supports>Gadgets</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level engineer</em></p>
+			<ul>
+				<li>You can hurl the Creature Capture Device at a creature of the beast type to attempt to capture it. Make an attack roll against a target creature within 20ft. On a success the creature is sucked into the device and you must make an Animal Handling skill check. You have advantage on the throw if the Creature is poisoned, restrained, unconscious, paralyzed, or frozen.</li>
+				<li>The DC to catch it is equal to 10 + CR of the creature. On a success you the creature is captured within the gadget and can thereafter be summoned or dismissed as an action. The creature acts positively towards you as if it had the charmed condition. If you fail the skill check, or the creature dies after being captured, the gadget is destroyed. While a creature remains captured in this way, your max energy is decreased by 2.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Nanite Surge Beam" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_NANITE_SURGE_BEAM">
+		<supports>Gadgets</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level engineer</em></p>
+			<ul>
+				<li><em>2 Energy-</em>A beam heals a friendly target within 30ft for 3d4+Int modifier, gain an additional d4 for level 11, and another at level 17.</li>
+				<li><em>2 Energy-</em>As a reaction, when a creature within 30ft of you rolls a Con save, you can grant them advantage on the roll.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Overdrive Trigger" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GADGET_OVERDRIVE_TRIGGER">
+		<supports>Gadgets</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level engineer</em></p>
+			<ul>
+				<li><em>3 Energy-</em>As a bonus action, you gain the benefits of Haste for a minute. This does not require concentration.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Grid Shield" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GRID_SHIELD">
+		<supports>Gadgets</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level engineer</em></p>
+			<ul>
+				<li><em>2 Energy-</em>As an action, a 5ft by 5ft shield appears in front of you and stays in front of you acting as half cover from attacks in that direction if not destroyed the shield vanishes in one hour.</li>
+				<li><em>3 Energy-</em>As an action, a forcefield of hexagonal cells overlaps with your armour. Add your Int modifier to your AC. This effect ends after a 10 minutes or if you fall unconscious.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Thanotic Reader" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_THANOTIC_READER">
+		<supports>Gadgets</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level engineer</em></p>
+			<ul>
+				<li>You can detect the location of undead within 60ft of you.</li>
+				<li>You can identify how and when a corpse died.</li>
+				<li><em>3 Energy-</em>As an action you can nonmagically cast <em>Speak With Dead</em>.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Disguise Mask" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_DISGUISE_MASK">
+		<supports>Gadgets</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level engineer</em></p>
+			<ul>
+				<li>You are proficient in Charisma Saving Throws.</li>
+				<li><em>1 Energy-</em>As an action you can nonmagically cast <em>Disguise Self</em>.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Soul Reader" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SOUL_READER">
+		<supports>Gadgets</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level engineer</em></p>
+			<ul>
+				<li>You are proficient in Insight Checks.</li>
+				<li><em>1 Energy-</em>As an action you can nonmagically cast <em>Detect Evil and Good</em>.</li>
+				<li><em>2 Energy-</em>As an action you can nonmagically cast <em>False Life</em> (1d10 + your level) on you or an ally.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Energy Canteen" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENERGY_CANTEEN">
+		<supports>Gadgets</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level engineer</em></p>
+			<ul>
+				<li>A Storage Canteen that restores 2d6 energy as an action. It is refilled whenever you take a long rest.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Autoresurrecting Elemental Device" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_AUTORESURRECTING_ELEMENTAL_DEVICE">
+		<supports>Gadgets</supports>
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 6th-level engineer</em></p>
+			<ul>
+				<li><em>2 Energy-</em>When you would take damage that would reduce you to 0HP, but not kill you outright, you can use your reaction to instead stay at 1 HP.</li>
+				<li><em>4 Energy-</em>As an action, you try to revive an adjacent creature who died within the last minute. They must attempt a Con save against DC20. On a success, they come back to life at 1HP.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Excess Energy Storage Device" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_EXCESS_ENERGY_STORAGE_DEVICE">
+		<supports>Gadgets</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 10th-level engineer</em></p>
+			<ul>
+				<li>You add 3 + Int modifier to the maximum amount of Energy you have.</li>
+				<li>Whenever you suffer at least ten points of lightning damage, you can as a reaction regain one energy point. This can be done up to three times in total, restarting when you take a short or long rest.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Omnitranslator" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_OMNITRANSLATOR">
+		<supports>Gadgets</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 10th-level engineer</em></p>
+			<ul>
+				<li>Creatures who understand at least 1 language can understand any language you speak, and you can understand any spoken language.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Jetpack" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_JETPACK">
+		<supports>Gadgets</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 10th-level engineer</em></p>
+			<ul>
+				<li>A device on your back allows you to effectively cast a <em>Levitate</em> spell at-will.</li>
+				<li><em>4 Energy-</em>Gain a flying speed of 60 feet for ten minutes.</li>
+				<li><em>4 Energy-</em>As an action, you can move up to 120ft in a straight line. If you collide with a creature in this path, your movement ends and the creature must make a DEX save. On a failure, the target falls prone. Creatures larger than you gain advantage on this save.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Floating Shoes" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_FLOATING_SHOES">
+		<supports>Gadgets</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 10th-level engineer</em></p>
+			<ul>
+				<li>You can walk or run across any liquid as if it were solid stone. Any damaging liquids (lava, acid, ect.) cause you 2d6 damage of the appropriate type every round you spend on them.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Engitech Offense System" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENGITECH_OFFENSE_SYSTEM">
+		<supports>Gadgets</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 10th-level engineer</em></p>
+			<ul>
+				<li><em>3 Energy-</em>As a bonus action you may enhance a weapon within 30ft with energy from the system. Choose between acid, cold, fire, lightning, force, poison or thunder. The next attack from this weapon deals an additional 2d8 damage of the chosen type.</li>
+				<li><em>3 Energy-</em>As an action you may shoot an energy beam at a target within 10ft. This causes force damage equal to 2d6+your engineer level. You can spend one additional energy points to force the target to make a Str save. On a failure, it is sent flying back 5ft per engineer level, taking appropriate falling damage if it collides with an obstacle. Huge or larger creatures gain advantage in this check and are only pushed back half the distance.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Engitech Defense System" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENGITECH_DEFENSE_SYSTEM">
+		<supports>Gadgets</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 10th-level engineer</em></p>
+			<ul>
+				<li>You gain temporary HP equal to one fifth your engineer level. You regain this HP at the start of your turn.</li>
+				<li>You can use your reaction to deflect a projectile, including spells. When you are hit by a ranged attack, you can reduce the damage by 4d8+Your Engineer Level. If you reduce the damage to 0, you can spend an additional 1 Energy to reflect the projectile back at the attacker, who must make a Dexterity saving throw. On a failure, the attacker takes the initial full damage and half on a success.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Spectravision Goggles" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SPECTRAVISION_GOGGLES">
+		<supports>Gadgets</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 10th-level engineer</em></p>
+			<ul>
+				<li><em>1 Energy-</em>You can see into the ethereal plane to a distance of 30 feet, as well as invisible creatures and objects for 10 minutes.</li>
+				<li><em>2 Energy-</em>For a minute, you can see through any object or wall you spend six seconds observing.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Holographic Cloak" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_HOLOGRAPHIC_CLOAK">
+		<supports>Gadgets</supports>
+		<requirements>[level:10]</requirements>
+		<prerequisite>10th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 10th-level engineer</em></p>
+			<ul>
+				<li>You gain a bonus to Stealth equal to your Int modifier.</li>
+				<li><em>2 Energy-</em>Automatically whenever you become incapacitated or as part of a Disengage action you can become invisible for three turns and create four illusory duplicates that either run off in opposite directions or perform other actions that could distract the enemy. These duplicates last three rounds, but instantly disappear if they suffer any amount of damage.</li>
+				<li><em>5 Energy-</em>Nonmagically cast <em>Greater Invisibility</em> as an action.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Gravity Manipulator" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_GRAVITY_MANIPULATOR">
+		<supports>Gadgets</supports>
+		<requirements>[level:14]</requirements>
+		<prerequisite>14th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 14th-level engineer</em></p>
+			<ul>
+				<li><em>4 Energy-</em>Nonmagically cast <em>Reverse Gravity</em> as an action.</li>
+				<li><em>4 Energy-</em>Nonmagically cast <em>Reverse Gravity</em> as an action, but instead you create a zone of greatly intensified gravity. Within this area, the weight of all objects is doubled, movement speed is halved, jump height and distance are halved, and creatures flying must make a Str save every turn it remains in it or fall to the ground. Fall damage within this area is doubled, and Encumbered creatures suffer 2d6 Bludgeoning damage every turn as they are crushed by the pressure.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Spellshield" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SPELLSHIELD">
+		<supports>Gadgets</supports>
+		<requirements>[level:14]</requirements>
+		<prerequisite>14th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 14th-level engineer</em></p>
+			<ul>
+				<li>If you don't move during your turn, you gain advantage in saving throws against the effects of spells until your next turn.</li>
+				<li><em>3 Energy-</em>When you succeed on the save against the effects of a spell that targets only you, you can make it have no effect on you, and instead it targets the original caster using their slot level, spell save DC, attack bonus and spellcasting ability, but you count as the new caster.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Freeze Ray" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_FREEZE_RAY">
+		<supports>Gadgets</supports>
+		<requirements>[level:14]</requirements>
+		<prerequisite>14th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 14th-level engineer</em></p>
+			<ul>
+				<li><em>2 Energy-</em>Spray a large mist of ice onto a target within 30ft, the opponent must make a Constitution Saving Throw, on a fail they will take 6d4 Cold Damage and will be entombed in ice for 2 rounds, if they are suffer damage during these rounds the ice will break and free them. On a pass they will take half damage and have their running speed reduced by half.</li>
+				<li><em>2 Energy-</em>Shoot an icicle towards a target within 60ft. The opponent must make a dex save. On a fail, they suffer 4d6 Piercing Damage and 3d6 Cold Damage, and on a Critical Fail they will take an additional 6d6 of Piercing Damage. On a pass they take no damage.</li>
+				<li>Every use of this gadget increases the energy costs by 1, restarting when you rest.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Disintegrator" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_DISINTEGRATOR">
+		<supports>Gadgets</supports>
+		<requirements>[level:14]</requirements>
+		<prerequisite>14th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 14th-level engineer</em></p>
+			<ul>
+				<li><em>5 Energy-</em>A target within 120ft must make a Dexterity saving throw. If the saving throw succeeds, the gadget has no effect. If the saving throw fails, the target takes 10d12 + 40 force damage. If this damage reduces the target to 0 hit points, it is disintegrated. A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. Whether a target succeeds or fails, they can only be affected by a Disintegrator once per day.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Lightweight Artillery Engine" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_LIGHTWEIGHT_ARTILLERY_ENGINE">
+		<supports>Gadgets</supports>
+		<requirements>[level:14]</requirements>
+		<prerequisite>14th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 14th-level engineer</em></p>
+			<ul>
+				<li>This mortar must be carried in separate pieces. It can be partially assembled in a round and fully in a minute. It takes the same amount of time to disassemble, and you can't move or perform any other actions with your hands while it is assembled.</li>
+				<li>While partially assembled, you can spend 2 Energy as an action to replicate the effects of <em>Fireball</em> with a range of 300ft.</li>
+				<li>While fully assembled, you can spend 5 Energy as an action to replicate the effects of a single detonation from <em>Meteor Swarm</em>. When you do so, attempt an Int check against DC18, poor visibility or weather conditions may cause disadvantage on this roll. Failure means that the detonation happens 1d20X10ft away from your target in a random direction. You can only shoot in this manner once every five rounds.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Neuroadaptable Headgear" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_NEUROADAPTABLE_HEADGEAR">
+		<supports>Gadgets</supports>
+		<requirements>[level:14]</requirements>
+		<prerequisite>14th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 14th-level engineer</em></p>
+			<ul>
+				<li>You gain proficiency in Wisdom saving throws.</li>
+				<li>You resist Psychic Damage.</li>
+				<li><em>1 Energy-</em> For the next hour, your thoughts cannot be read, and attempts to detect your presence through your consciousness fail.</li>
+				<li><em>3 Energy-</em>You nonmagically cast <em>Dominate Person</em> with a duration of up to ten minutes.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Replica Creation Paraphernalia" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_REPLICA_CREATION_PARAPHERNALIA">
+		<supports>Gadgets</supports>
+		<requirements>[level:18]</requirements>
+		<prerequisite>18th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 18th-level engineer</em></p>
+			<ul>
+				<li>This set of specialised tools allows you to create replicas of creatures as per the spell Simulacrum. The result duplicate is actually a construct built from clockwork and fake flesh. This construct is nonmagical and cannot be dispelled. You can spend one energy point to recover one hit point of the construct instead of the usual 100GP. You can also allow it to recover a spell by spending an amount of energy equal to the spell's level.</li>
+				<li>While the duplicate is active, your max energy is decreased by 7, and you can only have one duplicate active at a time.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Thought Acceleration Implant" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_THOUGHT_ACCELERATION_IMPLANT">
+		<supports>Gadgets</supports>
+		<requirements>[level:18]</requirements>
+		<prerequisite>18th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 18th-level engineer</em></p>
+			<ul>
+				<li><em>3 Energy-</em> You get to go first in initiative order, regardless of your initial roll.</li>
+				<li><em>4 Energy-</em> At anytime in the turn order, as a reaction, take the equivalent of a "Legendary Action". You can take a single action of anything of your choice with the ability to move to your movement speed.</li>
+				<li><em>5 Energy-</em> As an action, you replicate the effects of <em>Time Stop</em> lasting until the end of your next turn, with an additional 3 Energy you can continue the effect until the end of your next turn. After this effect ends, you gain one exhaustion level for every two turns you have the effect active.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Bionic Eye" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_BIONIC_EYE">
+		<supports>Gadgets</supports>
+		<requirements>[level:18]</requirements>
+		<prerequisite>18th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 18th-level engineer</em></p>
+			<ul>
+				<li><em>6 Energy-</em> As an action, your critical hit range increases by 4 for a minute. You must still beat the target's AC to hit unless you roll a natural 20. You can also see through all visual illusions during this time, and deal 6d6 extra damage on a critical hit. When this minute ends, you become blinded. This blindness cannot be negated or restored by any means, but it ends after a minute.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Portable Blink Anklets" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_PORTABLE_BLINK_ANKLETS">
+		<supports>Gadgets</supports>
+		<requirements>[level:18]</requirements>
+		<prerequisite>18th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 18th-level engineer</em></p>
+			<ul>
+				<li><em>1 Energy-</em> As a bonus action, you can teleport up to 20ft away to an unoccupied space you can see, without provoking attacks of opportunity.</li>
+				<li><em>2 Energy-</em> As an action, you may teleport an object or person within 60ft to another safe position in this area. If you try to teleport someone unwilling or an object they are carrying, they get a Dex save to avoid doing so.</li>
+				<li><em>2 Energy-</em> As a reaction to being targeted by an attacker you can see, you impose disadvantage on the attack.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Backup Energy Supply" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_BACKUP_ENERGY_SUPPLY">
+		<supports>Gadgets</supports>
+		<requirements>[level:18]</requirements>
+		<prerequisite>18th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 18th-level engineer</em></p>
+			<ul>
+				<li>Increase your max energy pool by 6.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Quantum Possibility Calculator" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_QUANTUM_POSSIBILITY_CALCULATOR">
+		<supports>Gadgets</supports>
+		<requirements>[level:18]</requirements>
+		<prerequisite>18th-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 18th-level engineer</em></p>
+			<ul>
+				<li>Once per minute, you can gain the benefits of Guidance.</li>
+				<li><em>1 Energy-</em> You nonmagically cast <em>Find Traps</em>.</li>
+				<li><em>4 Energy-</em> You nonmagically cast <em>Commune</em> to contact the Matrix of the Possibility Calculator.</li>
+				<li><em>4 Energy-</em> You nonmagically cast <em>Find The Path</em>, and you don't need to be familiar with the destination.</li>
+				<li><em>7 Energy-</em> You gain the benefits of <em>Foresight</em> for ten minutes.</li>
+			</ul>
+		</description>
+	</element>
+	
+	<!-- Gadget Items -->
+	<element name="Power Boots" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_POWER_BOOTS">
+		<description>
+			<p><em>This gadget can be created by a 1st-level engineer.</em></p>
+			<ul>
+				<li>Increases your walking speed by 10 feet.</li>
+				<li>Jump distance and height are doubled and you can use your Int score and modifier instead of Str.</li>
+				<li>Whenever you take fall damage, take half damage and you don't fall prone.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,speed,jump,fall,tier 1</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">feet</set>
+			<set name="rarity">Tier 1</set>
+		</setters>
+		<rules>
+			<stat name="speed:misc" value="10" />
+		</rules>
+	</element>
+	<element name="Medic Kit" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_MEDIC_KIT">
+		<description>
+			<p><em>This gadget can be created by a 1st-level engineer.</em></p>
+			<ul>
+				<li>You have a pool of healing power that replenishes when you take a short or long rest. With that pool, you can restore a total number of hit points equal to your engineer level x 5. As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool. This feature has no effect on undead and constructs.</li>
+				<li>1 Energy- Touch a dying creature as an action to stabilize it and return it to 1 HP.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,heal,energy,stabilize,tier 1</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 1</set>
+		</setters>
+	</element>
+	<element name="Eagle Lens" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_EAGLE_LENS">
+		<description>
+			<p><em>This gadget can be created by a 1st-level engineer.</em></p>
+			<ul>
+				<li>You add your Intelligence Modifier (minimum 1) to Perception checks you make.</li>
+				<li>You gain a +1 bonus to ranged attack rolls.</li>
+				<li>1 Energy- Gain advantage on a weapon attack roll you make.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,perception,ranged attack,weapon attack,tier 1</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">head</set>
+			<set name="rarity">Tier 1</set>
+		</setters>
+		<rules>
+			<stat name="perception:misc" value="1" bonus="base"/>
+			<stat name="perception:misc" value="intelligence:modifier" bonus="base"/>
+			<stat name="ranged:attack" value="1" />
+		</rules>
+	</element>
+	<element name="Climbing Hooks" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_CLIMBING_HOOKS">
+		<description>
+			<p><em>This gadget can be created by a 1st-level engineer.</em></p>
+			<ul>
+				<li>You gain the benefits of constant Spider Climb.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,climb,tier 1</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 1</set>
+		</setters>
+	</element>
+	<element name="Sustenance Blood Infuser" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_SUSTENANCE_BLOOD_INFUSER">
+		<description>
+			<p><em>This gadget can be created by a 1st-level engineer.</em></p>
+			<ul>
+				<li>You do not require food or water to survive. Your Hit Point maximum is increased by 1 for each engineer level you have.</li>
+				<li>2 Energy- You can cure one poison or disease you are afflicted with as a bonus action.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,hit points,survive,food,water,cure,poison,disease,tier 1</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 1</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="level:engineer" />
+		</rules>
+	</element>
+	<element name="Mage Lens" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_MAGE_LENS">
+		<description>
+			<p><em>This gadget can be created by a 1st-level engineer.</em></p>
+			<ul>
+				<li>As an action, you can nonmagically cast detect magic.</li>
+				<li>1 Energy- As an action use this gadget to nonmagically cast identify on any object within line of sight.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,magic,detect magic,identify,tier 1</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">head</set>
+			<set name="rarity">Tier 1</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" />
+		</rules>
+	</element>
+	<element name="Appendage Retractable Machine (A.R.M.)" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_APPENDAGE_RETRACTABLE_MACHINE_ARM">
+		<description>
+			<p><em>This gadget can be created by a 1st-level engineer.</em></p>
+			<ul>
+				<li>You have a retractable (as an action) mechanical hand that can move up to 30 feet away from you, and otherwise functions and has restrictions similar to a durationless mage hand spell.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,mage hand,tier 1</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 1</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" />
+		</rules>
+	</element>
+	<element name="Scout Lens" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_SCOUT_LENS">
+		<description>
+			<p><em>This gadget can be created by a 3rd-level engineer.</em></p>
+			<ul>
+				<li>You can see through darkness (including magical darkness) to a distance of 60 feet and have no perception or inspect penalties. You can also see an additional 60ft as if it was in "Dim Light."</li>
+				<li>The lenses can also magnify objects viewed to twice their size.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,darkness,dark vision,magnify,tier 2</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">head</set>
+			<set name="rarity">Tier 2</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+	<element name="Voice Changer and Amplifier" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_VOICE_CHANGER_AND_AMPLIFIER">
+		<description>
+			<p><em>This gadget can be created by a 3rd-level engineer.</em></p>
+			<ul>
+				<li>If you have spent a minute or more hearing a creature speak, you can mimic their voice unerringly. A Wisdom (Insight) check is required to discern if that the voice is false. You can also change the pitch of any voice (including your own) spoken through this device.</li>
+				<li>1 Energy- You can increase the volume of your voice to 10 times as much.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,speak,mimic,volume,tier 2</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 2</set>
+		</setters>
+	</element>
+	<element name="SCUBA Equipment" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_SCUBA_EQUIPMENT">
+		<description>
+			<p><em>This gadget can be created by a 3rd-level engineer.</em></p>
+			<ul>
+				<li>You gain a swim speed equal to your walking speed.</li>
+				<li>2 Energy- As a bonus action, you can breathe underwater for an hour.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,swim, swim speed,underwater,breathe,tier 2</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 2</set>
+		</setters>
+		<rules>
+			<stat name="speed:swim" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Mechanical Helmet" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_MECHANICAL_HELMET">
+		<description>
+			<p><em>This gadget can be created by a 3rd-level engineer.</em></p>
+			<ul>
+				<li>You add 1 to your AC.</li>
+				<li>2 Energy- As a bonus action, you can send a high-frequency noise from your helmet, that will deafen every other living thing within 15ft until the start of your next turn.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,AC,deafen,tier 2</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 2</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Tinker's Master Gloves" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_TINKERS_MASTER_GLOVES">
+		<description>
+			<p><em>This gadget can be created by a 3rd-level engineer.</em></p>
+			<ul>
+				<li>You only use half as much time on the construction of mechanical items, including your gadgets and devices.</li>
+				<li>You gain advantage on construction and repair checks.</li>
+				<li>1 Energy- The pointer finger of the glove pushes out a lighter, which can produce a small hot flame.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,tier 2</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">hands</set>
+			<set name="rarity">Tier 2</set>
+		</setters>
+	</element>
+	<element name="Creature Capture Device" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_CREATURE_CAPTURE_DEVICE">
+		<description>
+			<p><em>This gadget can be created by a 6th-level engineer.</em></p>
+			<ul>
+				<li>You can hurl the Creature Capture Device at a creature of the beast type to attempt to capture it. Make an attack roll against a target creature within 20ft. On a success the creature is sucked into the device and you must make an Animal Handling skill check. You have advantage on the throw if the Creature is poisoned, restrained, unconscious, paralyzed, or frozen.</li>
+				<li>The DC to catch it is equal to 10 + CR of the creature. On a success you the creature is captured within the gadget and can thereafter be summoned or dismissed as an action. The creature acts positively towards you as if it had the charmed condition. If you fail the skill check, or the creature dies after being captured, the gadget is destroyed. While a creature remains captured in this way, your max energy is decreased by 2.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,creature,beast,animal handlilng,summon,tier 3</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">miscc</set>
+			<set name="rarity">Tier 3</set>
+		</setters>
+	</element>
+	<element name="Nanite Surge Beam" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_NANITE_SURGE_BEAM">
+		<description>
+			<p><em>This gadget can be created by a 6th-level engineer.</em></p>
+			<ul>
+				<li>2 Energy- A beam heals a friendly target within 30ft for 3d4+Int modifier, gain an additional d4 for level 11, and another at level 17.</li>
+				<li>2 Energy- As a reaction, when a creature within 30ft of you rolls a Con save, you can grant them advantage on the roll.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,heal,advantage,tier 3</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 3</set>
+		</setters>
+	</element>
+	<element name="Overdrive Trigger" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_OVERDRIVE_TRIGGER">
+		<description>
+			<p><em>This gadget can be created by a 6th-level engineer.</em></p>
+			<ul>
+				<li>3 Energy- As a bonus action, you gain the benefits of Haste for a minute. This does not require concentration.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,bonus action,haste,tier 3</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 3</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" />
+		</rules>
+	</element>
+	<element name="Grid Shield" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_GRID_SHIELD">
+		<description>
+			<p><em>This gadget can be created by a 6th-level engineer.</em></p>
+			<ul>
+				<li>2 Energy- As an action, a 5ft by 5ft shield appears in front of you and stays in front of you acting as half cover from attacks in that direction if not destroyed the shield vanishes in one hour.</li>
+				<li>3 Energy- As an action, a forcefield of hexagonal cells overlaps with your armour. Add your Int modifier to your AC. This effect ends after a 10 minutes or if you fall unconscious.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,shield,half cover,AC,tier 3</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 3</set>
+		</setters>
+	</element>
+	<element name="Thanotic Reader" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_THANOTIC_READER">
+		<description>
+			<p><em>This gadget can be created by a 6th-level engineer.</em></p>
+			<ul>
+				<li>You can detect the location of undead within 60ft of you.</li>
+				<li>You can identify how and when a corpse died.</li>
+				<li>3 Energy- As an action you can nonmagically cast speak with dead.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,undead,speak with dead,tier 3</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 3</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+		</rules>
+	</element>
+	<element name="Disguise Mask" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_DISGUISE_MASK">
+		<description>
+			<p><em>This gadget can be created by a 6th-level engineer.</em></p>
+			<ul>
+				<li>You are proficient in Charisma Saving Throws.</li>
+				<li>1 Energy- Non-Magically cast Disguise Self.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,proficient,charisma,saving throw,disguise self,tier 3</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">head</set>
+			<set name="rarity">Tier 3</set>
+		</setters>
+		<rules>
+			<stat name="charisma:save:proficiency" value="proficiency" bonus="proficiency" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+	<element name="Soul Reader" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_SOUL_READER">
+		<description>
+			<p><em>This gadget can be created by a 6th-level engineer.</em></p>
+			<ul>
+				<li>You are proficient in Insight Checks</li>
+				<li>1 Energy- As an action you can nonmagically cast detect evil and good.</li>
+				<li>2 Energy- Nonmagically cast False Life (1d10+Your Level) on you or an ally.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,insight check,detect evil and good,false life,temporary hp,tier 3</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 3</set>
+		</setters>
+		<rules>
+			<stat name="insight:proficiency" value="proficiency" bonus="proficiency" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" />
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" />
+		</rules>
+	</element>
+	<element name="Energy Canteen" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_ENERGY_CANTEEN">
+		<description>
+			<p><em>This gadget can be created by a 6th-level engineer.</em></p>
+			<ul>
+				<li>A Storage Canteen that restores 2d6 energy as an action. It is refilled whenever you take a long rest.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,energy,long rest,tier 3</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 3</set>
+		</setters>
+	</element>
+	<element name="Autoresurrecting Elemental Device" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_AUTORESURRECTING_ELEMENTAL_DEVICE">
+		<description>
+			<p><em>This gadget can be created by a 6th-level engineer.</em></p>
+			<ul>
+				<li>2 Energy- When you would take damage that would reduce you to 0HP, but not kill you outright, you can use your reaction to instead stay at 1 HP.</li>
+				<li>4 Energy- As an action, you try to revive an adjacent creature who died within the last minute. They must attempt a Con save against DC20. On a success, they come back to life at 1HP.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,reaction,resurrect,HP,tier 3</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 3</set>
+		</setters>
+	</element>
+	<element name="Excess Energy Storage Device" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_EXCESS_ENERGY_STORAGE_DEVICE">
+		<description>
+			<p><em>This gadget can be created by a 10th-level engineer.</em></p>
+			<ul>
+				<li>You add 3 + Int modifier to the maximum amount of Energy you have.</li>
+				<li>Whenever you suffer at least ten points of lightning damage, you can as a reaction regain one energy point. This can be done up to three times in total, restarting when you take a short or long rest.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,energy,reaction,lightning,tier 4</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 4</set>
+		</setters>
+		<rules>
+			<stat name="engineer-energy" value="3" />
+			<stat name="engineer-energy" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Omnitranslator" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_OMNITRANSLATOR">
+		<description>
+			<p><em>This gadget can be created by a 10th-level engineer.</em></p>
+			<ul>
+				<li>Creatures who understand at least 1 language can understand any language you speak, and you can understand any spoken language.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,language,speak,spoken,tier 4</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 4</set>
+		</setters>
+	</element>
+	<element name="Jetpack" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_JETPACK">
+		<description>
+			<p><em>This gadget can be created by a 10th-level engineer.</em></p>
+			<ul>
+				<li>A device on your back allows you to effectively cast a levitate spell at-will.</li>
+				<li>4 Energy- Gain a flying speed of 60 feet for ten minutes.</li>
+				<li>4 Energy- As an action, you can move up to 120ft in a straight line. If you collide with a creature in this path, your movement ends and the creature must make a DEX save. On a failure, the target falls prone. Creatures larger than you gain advantage on this save.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,levitate,flying speed,prone,tier 4</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">shoulders</set>
+			<set name="rarity">Tier 4</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LEVITATE" />
+		</rules>
+	</element>
+	<element name="Floating Shoes" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_FLOATING_SHOES">
+		<description>
+			<p><em>This gadget can be created by a 10th-level engineer.</em></p>
+			<ul>
+				<li>You can walk or run across any liquid as if it were solid stone. Any damaging liquids (lava, acid, ect.) cause you 2d6 damage of the appropriate type every round you spend on them.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,walk,liquid,tier 4</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">feet</set>
+			<set name="rarity">Tier 4</set>
+		</setters>
+	</element>
+	<element name="Engitech Offense System" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_ENGITECH_OFFENSE_SYSTEM">
+		<description>
+			<p><em>This gadget can be created by a 10th-level engineer.</em></p>
+			<ul>
+				<li>3 Energy- As a bonus action you may enhance a weapon within 30ft with energy from the system. Choose between acid, cold, fire, lightning, force, poison or thunder. The next attack from this weapon deals an additional 2d8 damage of the chosen type.</li>
+				<li>3 Energy- As an action you may shoot an energy beam at a target within 10ft. This causes force damage equal to 2d6+your engineer level. You can spend one additional energy points to force the target to make a Str save. On a failure, it is sent flying back 5ft per engineer level, taking appropriate falling damage if it collides with an obstacle. Huge or larger creatures gain advantage in this check and are only pushed back half the distance.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,bonus action,weapon,damage,tier 4</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 4</set>
+		</setters>
+	</element>
+	<element name="Engitech Defense System" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_ENGITECH_DEFENSE_SYSTEM">
+		<description>
+			<p><em>This gadget can be created by a 10th-level engineer.</em></p>
+			<ul>
+				<li>You gain temporary HP equal to one fifth your engineer level. You regain this HP at the start of your turn.</li>
+				<li>3 Energy- You can use your reaction to deflect a projectile, including spells. When you are hit by a ranged attack, you can reduce the damage by 4d8+Your Engineer Level. If you reduce the damage to 0, you can spend an additional 1 Energy to reflect the projectile back at the attacker, who must make a Dexterity saving throw. On a failure, the attacker takes the initial full damage and half on a success.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,temporary HP,deflect,reduce damage,tier 4</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 4</set>
+		</setters>
+	</element>
+	<element name="Spectravision Goggles" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_SPECTRAVISION_GOGGLES">
+		<description>
+			<p><em>This gadget can be created by a 10th-level engineer.</em></p>
+			<ul>
+				<li>1 Energy- You can see into the ethereal plane to a distance of 30 feet, as well as invisible creatures and objects for 10 minutes.</li>
+				<li>2 Energy- For a minute, you can see through any object or wall you spend six seconds observing.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,ethereal plane,invisible,tier 4</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">head</set>
+			<set name="rarity">Tier 4</set>
+		</setters>
+	</element>
+	<element name="Holographic Cloak" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_HOLOGRAPHIC_CLOAK">
+		<description>
+			<p><em>This gadget can be created by a 10th-level engineer.</em></p>
+			<ul>
+				<li>You gain a bonus to Stealth equal to your Int modifier.</li>
+				<li>2 Energy- Automatically whenever you become incapacitated or as part of a Disengage action you can become invisible for three turns and create four illusory duplicates that either run off in opposite directions or perform other actions that could distract the enemy. These duplicates last three rounds, but instantly disappear if they suffer any amount of damage.</li>
+				<li>5 Energy- Nonmagically cast Greater Invisibility as an action.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,ethereal plane,invisible,tier 4</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">shoulders</set>
+			<set name="rarity">Tier 4</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" />
+			<stat name="stealth:misc" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Gravity Manipulator" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_GRAVITY_MANIPULATOR">
+		<description>
+			<p><em>This gadget can be created by a 14th-level engineer.</em></p>
+			<ul>
+				<li>4 Energy- Nonmagically cast Reverse Gravity as an action.</li>
+				<li>4 Energy- Nonmagically cast Reverse Gravity as an action, but instead you create a zone of greatly intensified gravity. Within this area, the weight of all objects is doubled, movement speed is halved, jump height and distance are halved, and creatures flying must make a Str save every turn it remains in it or fall to the ground. Fall damage within this area is doubled, and Encumbered creatures suffer 2d6 Bludgeoning damage every turn as they are crushed by the pressure.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,reverse gravity,tier 5</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 5</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_REVERSE_GRAVITY" />
+		</rules>
+	</element>
+	<element name="Spellshield" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_SPELLSHIELD">
+		<description>
+			<p><em>This gadget can be created by a 14th-level engineer.</em></p>
+			<ul>
+				<li>If you don't move during your turn, you gain advantage in saving throws against the effects of spells until your next turn.</li>
+				<li>3 Energy- When you succeed on the save against the effects of a spell that targets only you, you can make it have no effect on you, and instead it targets the original caster using their slot level, spell save DC, attack bonus and spellcasting ability, but you count as the new caster.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,shield,advantage,saving throw,tier 5</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 5</set>
+		</setters>
+	</element>
+	<element name="Freeze Ray" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_FREEZE_RAY">
+		<description>
+			<p><em>This gadget can be created by a 14th-level engineer.</em></p>
+			<ul>
+				<li>2 Energy- Spray a large mist of ice onto a target within 30ft, the opponent must make a Constitution Saving Throw, on a fail they will take 6d4 Cold Damage and will be entombed in ice for 2 rounds, if they are suffer damage during these rounds the ice will break and free them. On a pass they will take half damage and have their running speed reduced by half.</li>
+				<li>2 Energy- Shoot an icicle towards a target within 60ft. The opponent must make a dex save. On a fail, they suffer 4d6 Piercing Damage and 3d6 Cold Damage, and on a Critical Fail they will take an additional 6d6 of Piercing Damage. On a pass they take no damage.</li>
+				<li>Every use of this gadget increases the energy costs by 1, restarting when you rest.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,cold damage,piercing damage,tier 5</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 5</set>
+		</setters>
+	</element>
+	<element name="Disintegrator" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_DISINTEGRATOR">
+		<description>
+			<p><em>This gadget can be created by a 14th-level engineer.</em></p>
+			<ul>
+				<li>5 Energy-A target within 120ft must make a Dexterity saving throw. If the saving throw succeeds, the gadget has no effect. If the saving throw fails, the target takes 10d12 + 40 force damage. If this damage reduces the target to 0 hit points, it is disintegrated. A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. Whether a target succeeds or fails, they can only be affected by a Disintegrator once per day.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,disintegrate,die,dead,kill,force damage,tier 5</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 5</set>
+		</setters>
+	</element>
+	<element name="Lightweight Artillery Engine" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_LIGHTWEIGHT_ARTILLERY_ENGINE">
+		<description>
+			<p><em>This gadget can be created by a 14th-level engineer.</em></p>
+			<ul>
+				<li>This mortar must be carried in separate pieces. It can be partially assembled in a round and fully in a minute. It takes the same amount of time to disassemble, and you can't move or perform any other actions with your hands while it is assembled.</li>
+				<li>While partially assembled, you can spend 2 Energy as an action to replicate the effects of a fireball with a range of 300ft.</li>
+				<li>While fully assembled, you can spend 5 Energy as an action to replicate the effects of a single detonation from a Meteor Swarm. When you do so, attempt an Int check against DC18, poor visibility or weather conditions may cause disadvantage on this roll. Failure means that the detonation happens 1d20X10ft away from your target in a random direction. You can only shoot in this manner once every five rounds.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,assemble,fireball,meteor swarm,tier 5</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 5</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
+			<grant type="Spell" id="ID_PHB_SPELL_METEOR_SWARM" />
+		</rules>
+	</element>
+	<element name="Neuroadaptable Headgear" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_NEUROADAPTABLE_HEADGEAR">
+		<description>
+			<p><em>This gadget can be created by a 14th-level engineer.</em></p>
+			<ul>
+				<li>You gain proficiency in Wisdom saving throws.</li>
+				<li>You resist Psychic Damage.</li>
+				<li>1 Energy- For the next hour, your thoughts cannot be read, and attempts to detect your presence through your consciousness fail.</li>
+				<li>3 Energy- You nonmagically cast Dominate Person with a duration of up to ten minutes.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,wisdom saving,resistance,psychic damage,read minds,dominate person,tier 5</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">head</set>
+			<set name="rarity">Tier 5</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" />
+			<stat name="wisdom:save:proficiency" value="proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+	<element name="Replica Creation Paraphernalia" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_REPLICA_CREATION_PARAPHERNALIA">
+		<description>
+			<p><em>This gadget can be created by a 18th-level engineer.</em></p>
+			<ul>
+				<li>This set of specialised tools allows you to create replicas of creatures as per the spell Simulacrum. The result duplicate is actually a construct built from clockwork and fake flesh. This construct is nonmagical and cannot be dispelled. You can spend one energy point to recover one hit point of the construct instead of the usual 100GP. You can also allow it to recover a spell by spending an amount of energy equal to the spell's level.</li>
+				<li>While the duplicate is active, your max energy is decreased by 7, and you can only have one duplicate active at a time.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,simulacrum,construct,duplicate,tier 5</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 6</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SIMULACRUM" />
+		</rules>
+	</element>
+	<element name="Thought Acceleration Implant" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_THOUGHT_ACCELERATION_IMPLANT">
+		<description>
+			<p><em>This gadget can be created by a 18th-level engineer.</em></p>
+			<ul>
+				<li>3 Energy- You get to go first in initiative order, regardless of your initial roll.</li>
+				<li>4 Energy- At anytime in the turn order, as a reaction, take the equivalent of a "Legendary Action". You can take a single action of anything of your choice with the ability to move to your movement speed.</li>
+				<li>5 Energy- As an action, you replicate the effects of Time Stop lasting until the end of your next turn, with an additional 3 Energy you can continue the effect until the end of your next turn. After this effect ends, you gain one exhaustion level for every two turns you have the effect active.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,initiative,reaction,legendary action,time stop,exhaustion,tier 5</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 6</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_TIME_STOP" />
+		</rules>
+	</element>
+	<element name="Bionic Eye" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_BIONIC_EYE">
+		<description>
+			<p><em>This gadget can be created by a 18th-level engineer.</em></p>
+			<ul>
+				<li>6 Energy- As an action, your critical hit range increases by 4 for a minute. You must still beat the target's AC to hit unless you roll a natural 20. You can also see through all visual illusions during this time, and deal 6d6 extra damage on a critical hit. When this minute ends, you become blinded. This blindness cannot be negated or restored by any means, but it ends after a minute.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,critical hit,extra damage,blinded,tier 5</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 6</set>
+		</setters>
+	</element>
+	<element name="Portable Blink Anklets" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_PORTABLE_BLINK_ANKLETS">
+		<description>
+			<p><em>This gadget can be created by a 18th-level engineer.</em></p>
+			<ul>
+				<li>1 Energy- As a bonus action, you can teleport up to 20ft away to an unoccupied space you can see, without provoking attacks of opportunity.</li>
+				<li>2 Energy- As an action, you may teleport an object or person within 60ft to another safe position in this area. If you try to teleport someone unwilling or an object they are carrying, they get a Dex save to avoid doing so.</li>
+				<li>2 Energy- As a reaction to being targeted by an attacker you can see, you impose disadvantage on the attack.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,teleport,reaction,disadvantage,tier 5</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 6</set>
+		</setters>
+	</element>
+	<element name="Backup Energy Supply" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_BACKUP_ENERGY_SUPPLY">
+		<description>
+			<p><em>This gadget can be created by a 18th-level engineer.</em></p>
+			<ul>
+				<li>Increase your max energy pool by 6.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,energy,tier 5</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 6</set>
+		</setters>
+		<rules>
+			<stat name="engineer-energy" value="6" />
+		</rules>
+	</element>
+	<element name="Quantum Possibility Calculator" type="Magic Item" source="dandwiki_Engineer" id="ID_HOMEBREW_MAGIC_ITEM_GADGET_QUANTUM_POSSIBILITY_CALCULATOR">
+		<description>
+			<p><em>This gadget can be created by a 18th-level engineer.</em></p>
+			<ul>
+				<li>Once per minute, you can gain the benefits of Guidance.</li>
+				<li>1 Energy- You nonmagically cast Find Traps.</li>
+				<li>4 Energy- You nonmagically cast Commune to contact the Matrix of the Possibility Calculator.</li>
+				<li>4 Energy- You nonmagically cast Find The Path, and you don't need to be familiar with the destination.</li>
+				<li>7 Energy- You gain the benefits of Foresight for ten minutes.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gadget,guidance,find traps,commune,find the path,foresight,tier 5</set>
+			<set name="category">Gadgets</set>
+			<set name="type">Engineer Gadget</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Tier 6</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_TRAPS" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_THE_PATH" />
+			<grant type="Spell" id="ID_PHB_SPELL_FORESIGHT" />
+		</rules>
+	</element>
+	
+	<!-- Signature Devices -->
+	<element name="Flamethrower" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER">
+		<supports>Signature Device</supports>
+		<requirements>[level:2]</requirements>
+		<prerequisite>2nd-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 2nd-level engineer</em></p>
+			<p>A two-handed weapon that can sear foes and create smokescreens, manipulating the battlefield in interesting ways.</p>
+			<ul>
+				<li><strong>Fireblast.</strong> As an action, shoot a blazing stream of fire. You project a 40ft long line of fire, making a ranged attack roll against each creature in it, dealing 1d6 + Int fire damage on a hit. This deals 2d6 at level 5, 3d6 at level 9, 4d6 at level 13 and 5d6 at level 17. The attack roll uses Dexterity.</li>
+				<li><strong>Napalm Spread.</strong> As an action, force all creatures within a 15ft cone to make a Dex save. On a failure, they take 4d6 fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d6 fire per point spent, up to 3 energy.</li>
+				<li><strong>Smokescreen.</strong> As a bonus action, and for 1 energy, exhaust smoke from your flamethrower. A 10ft-radius sphere centered around yourself is filled with smoke for 2 rounds, heavily obscuring the area for all creatures except you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				<p>A two-handed weapon that can sear foes and create smokescreens, manipulating the battlefield in interesting ways.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_SIGNATURE_DEVICE_FLAMETHROWER" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_FIREBLAST" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_NAPALM_SPREAD" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_SMOKESCREEN" />
+		</rules>
+	</element>
+	<element name="Fireblast" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_FIREBLAST">
+		<supports>Flamethrower</supports>
+		<description>
+			<p>As an action, shoot a blazing stream of fire. You project a 40ft long line of fire, making a ranged attack roll against each creature in it, dealing 1d6 + Int fire damage on a hit. This deals 2d6 at level 5, 3d6 at level 9, 4d6 at level 13 and 5d6 at level 17. The attack roll uses Dexterity.</p>
+		</description>
+		<sheet usage="Flamethrower, Action">
+			<description>You project a 40ft long line of fire, making a ranged attack roll against each creature in it, dealing {{fireblast:dice:amount}}d6 + Int fire damage on a hit. The attack roll uses Dexterity.</description>
+		</sheet>
+		<rules>
+			<stat name="fireblast:dice:amount" value="1" />
+			<stat name="fireblast:dice:amount" value="1" level="5" />
+			<stat name="fireblast:dice:amount" value="1" level="9" />
+			<stat name="fireblast:dice:amount" value="1" level="13" />
+			<stat name="fireblast:dice:amount" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Napalm Spread" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_NAPALM_SPREAD">
+		<supports>Flamethrower</supports>
+		<description>
+			<p>As an action, force all creatures within a 15ft cone to make a Dex save. On a failure, they take 4d6 fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d6 fire per point spent, up to 3 energy.</p>
+		</description>
+		<sheet usage="Flamethrower, Action">
+			<description>Force all creatures within a 15ft cone to make a Dex save. On a failure, they take 4d6 fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d6 fire per point spent, up to 3 energy.</description>
+		</sheet>
+	</element>
+	<element name="Smokescreen" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_SMOKESCREEN">
+		<supports>Flamethrower</supports>
+		<description>
+			<p>As a bonus action, and for 1 energy, exhaust smoke from your flamethrower. A 10ft-radius sphere centered around yourself is filled with smoke for 2 rounds, heavily obscuring the area for all creatures except you.</p>
+		</description>
+		<sheet usage="Flamethrower, Bonus Action">
+			<description>For 1 energy, a 10ft-radius sphere centered around yourself is filled with smoke for 2 rounds, heavily obscuring the area for all creatures except you.</description>
+		</sheet>
+	</element>
+	<element name="Light Frame" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_FLAMETHROWER_LIGHT_FRAME">
+		<supports>Flamethrower,Enhanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>You can wield the flamethrower in one hand.</p>
+		</description>
+		<sheet usage="Flamethrower">
+			<description>You can wield the flamethrower in one hand.</description>
+		</sheet>
+	</element>
+	<element name="Distant Ammunition" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_FLAMETHROWER_DISTANT_AMMUNITION">
+		<supports>Flamethrower,Enhanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Fireblast has a range of 80ft, Napalm Spread affects a 30ft cone, and Smokescreen fills a 20ft sphere.</p>
+		</description>
+		<sheet usage="Flamethrower">
+			<description>Fireblast has a range of 80ft, Napalm Spread affects a 30ft cone, and Smokescreen fills a 20ft sphere.</description>
+		</sheet>
+	</element>
+	<element name="Fine Optics" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_FLAMETHROWER_FINE_OPTICS">
+		<supports>Flamethrower,Enhanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Grant a +2 bonus to the attack rolls and Dex save DC to the actions your flamethrower.</p>
+		</description>
+		<sheet usage="Flamethrower">
+			<description>Grant a +2 bonus to the attack rolls and Dex save DC to the actions your flamethrower.</description>
+		</sheet>
+	</element>
+	<element name="Incendiary Fireblasts" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_FLAMETHROWER_INCENDIARY_FIREBLASTS">
+		<supports>Flamethrower,Advanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Fireblast deals d8s of damage instead of d6s, and leaves behind a wall of flames for a round that causes 2d8 fire damage to creatures traversing it.</p>
+		</description>
+		<sheet usage="Flamethrower">
+			<description>Fireblast deals d8s of damage instead of d6s, and leaves behind a wall of flames for a round that causes 2d8 fire damage to creatures traversing it.</description>
+		</sheet>
+	</element>
+	<element name="Toxic Smoke" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_FLAMETHROWER_TOXIC_SMOKE">
+		<supports>Flamethrower,Advanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Smokescreen poisons creatures except you for 1 minute when they fail a Con save upon starting their turn in it or entering it for the first time.</p>
+		</description>
+		<sheet usage="Flamethrower">
+			<description>Smokescreen poisons creatures except you for 1 minute when they fail a Con save upon starting their turn in it or entering it for the first time.</description>
+		</sheet>
+	</element>
+	<element name="Sticky Napalm" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_FLAMETHROWER_STICKY_NAPALM">
+		<supports>Flamethrower,Advanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Napalm Spread deals 1d6 damage to creatures who fail the initial Dex save at the end of each of their turns. This lasts until they spend an action to attempt a successful Dex save, which ends this effect.</p>
+		</description>
+		<sheet usage="Flamethrower">
+			<description>Napalm Spread deals 1d6 damage to creatures who fail the initial Dex save at the end of each of their turns. This lasts until they spend an action to attempt a successful Dex save, which ends this effect.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Converter" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_FLAMETHROWER_ELEMENTAL_CONVERTER">
+		<supports>Flamethrower,Ultimate Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Spend 1 energy as a bonus action to deal a different kind of damage (acid, cold, or lightning) with Fireblast and Napalm Spread for a minute.</p>
+		</description>
+		<sheet usage="Flamethrower">
+			<description>Spend 1 energy as a bonus action to deal a different kind of damage (acid, cold, or lightning) with Fireblast and Napalm Spread for a minute.</description>
+		</sheet>
+	</element>
+	<element name="Quickblast" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_FLAMETHROWER_QUICKBLAST">
+		<supports>Flamethrower,Ultimate Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>You can spend 1 additional energy to shoot a fireblast as a bonus action instead.</p>
+		</description>
+		<sheet usage="Flamethrower">
+			<description>You can spend 1 additional energy to shoot a fireblast as a bonus action instead.</description>
+		</sheet>
+	</element>
+	<element name="Agonizing Napalm" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_FLAMETHROWER_AGONIZING_NAPALM">
+		<supports>Flamethrower,Ultimate Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Napalm Spread deals d8s of damage, as well as a bonus amount equal to your Intelligence Modifier (min. 1).</p>
+		</description>
+		<sheet usage="Flamethrower">
+			<description>Napalm Spread deals d8s of damage, as well as a bonus amount equal to your Intelligence Modifier (min. 1).</description>
+		</sheet>
+	</element>
+	
+	<element name="Grenade Kit" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT">
+		<supports>Signature Device</supports>
+		<requirements>[level:2]</requirements>
+		<prerequisite>2nd-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 2nd-level engineer</em></p>
+			<p>A bag that contains ingredients to make grenades that can be made on the fly. Creating a grenade costs 1 bonus action, and throwing one is a standard action. These bombs explode as soon as they reach the target. Grenades can be thrown at a point of 20ft away, and have a blast radius of 10ft. Additionally, bombs can be launched by other means per DM discretion.</p>
+			<ul>
+				<li><strong>Basic Grenade.</strong> Creatures within the blast radius must succeed on a Dex save or take 2d6 bludgeoning damage on a failed save, or half as much on a success. The damage increases to 3d6 at level 5, 4d6 at level 11, or 5d6 at level 17.</li>
+				<li><strong>Elemental Grenade.</strong> For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d6 (acid, cold, fire, lightning) damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</li>
+				<li><strong>Smoke Grenade.</strong> For 1 energy, you can create a smoke grenade that fills its blast radius with a cloud of smoke that heavily obscures the area for 2 rounds for all creatures except you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				<p>A bag that contains ingredients to make grenades that can be made on the fly. Creating a grenade costs 1 bonus action, and throwing one is a standard action. These bombs explode as soon as they reach the target. Grenades can be thrown at a point of 20ft away, and have a blast radius of 10ft. Additionally, bombs can be launched by other means per DM discretion.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_SIGNATURE_DEVICE_GRENADE_KIT" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_BASIC_GRENADE" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_ELEMENTAL_GRENADE" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_SMOKE_GRENADE" />
+		</rules>
+	</element>
+	<element name="Basic Grenade" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_BASIC_GRENADE">
+		<supports>Grenade Kit</supports>
+		<description>
+			<p>Creatures within the blast radius must succeed on a Dex save or take 2d6 bludgeoning damage on a failed save, or half as much on a success. The damage increases to 3d6 at level 5, 4d6 at level 11, or 5d6 at level 17.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>Creatures within the blast radius must succeed on a Dex save or take {{basic grenade:dice:amount}}d6 bludgeoning damage on a failed save, or half as much on a success.</description>
+		</sheet>
+		<rules>
+			<stat name="basic grenade:dice:amount" value="2" />
+			<stat name="basic grenade:dice:amount" value="1" level="5" />
+			<stat name="basic grenade:dice:amount" value="1" level="11" />
+			<stat name="basic grenade:dice:amount" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Elemental Grenade" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_ELEMENTAL_GRENADE">
+		<supports>Grenade Kit</supports>
+		<description>
+			<p>For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d6 (acid, cold, fire, lightning) damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d6 (acid, cold, fire, lightning) damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</description>
+		</sheet>
+	</element>
+	<element name="Smoke Grenade" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_SMOKE_GRENADE">
+		<supports>Grenade Kit</supports>
+		<description>
+			<p>For 1 energy, you can create a smoke grenade that fills its blast radius with a cloud of smoke that heavily obscures the area for 2 rounds for all creatures except you.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>For 1 energy, you can create a smoke grenade that fills its blast radius with a cloud of smoke that heavily obscures the area for 2 rounds for all creatures except you.</description>
+		</sheet>
+	</element>
+	<element name="Flash Grenade" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_GRENADE_KIT_FLASH_GRENADE">
+		<supports>Grenade Kit,Enhanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>2 Energy. Your grenade causes the effects of a Daylight spell where it lands for a minute. Creatures within fifteen feet of your target must make a Con save or be blinded for five rounds.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>2 Energy. Your grenade causes the effects of a Daylight spell where it lands for a minute. Creatures within fifteen feet of your target must make a Con save or be blinded for five rounds.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" />
+		</rules>
+	</element>
+	<element name="Poison Grenade" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_GRENADE_KIT_POISON_GRENADE">
+		<supports>Grenade Kit,Enhanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>2 Energy. Creatures in blast make a Con save. On a failure, they take 2d10 poison damage and are poisoned for 1 minute. On a success they simply take half damage.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>2 Energy. Creatures in blast make a Con save. On a failure, they take 2d10 poison damage and are poisoned for 1 minute. On a success they simply take half damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" />
+		</rules>
+	</element>
+	
+	
+	
+	
+	
+	
+	
+	<!-- Battletech Archetypes -->
+	<element name="Battletech" type="Archetype" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_ENGINEER_BATTLETECH">
+		<supports>Specialization</supports>
+		<description>
+			<p>The Battletech is an engineer specialist whose expertise lies in combat. Their engineering augments their martial capabilities, and they are a force to be reckoned with on the battlefield.</p>
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_BONUS_PROFICIENCY" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_COMBAT_ENERGETICS" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_EXTRA_ATTACK" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_FIGHTING_STYLE" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_SECOND_WIND" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_COMBAT_ENHANCEMENTS" />
+		</description>
+		<sheet display="false">
+			<description>The Battletech is an engineer specialist whose expertise lies in combat.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_BONUS_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_COMBAT_ENERGETICS" level="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_EXTRA_ATTACK" level="6" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_FIGHTING_STYLE" level="11" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_SECOND_WIND" level="15" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_COMBAT_ENHANCEMENTS" level="20" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiency" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_BONUS_PROFICIENCY">
+		<description>
+			<p>At level 3, upon choosing this specialization, you can choose a single weapon and give it a +1 bonus to attack and damage rolls. Battletechs are also proficient in light, medium and heavy armor, shields, simple, martial and firearms.</p>
+		</description>
+		<sheet>
+			<description>You can give a single weapon a +1 bonus to attack and damage rolls. You are also proficient in light, medium and heavy armor, shields, simple, martial and firearms.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" requirements="ID_WOTC_DMG_OPTION_FIREARMS" />
+		</rules>
+	</element>
+	<element name="Combat Energetics" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_COMBAT_ENERGETICS">
+		<description>
+			<p>At level 3, whenever you reduce a creature to 0 hit points, you regain 1 energy.</p>
+		</description>
+		<sheet>
+			<description>Whenever you reduce a creature to 0 hit points, you regain 1 energy.</description>
+		</sheet>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 6th level, you may make two weapon attacks, instead of one, whenever you take the Attack action on your turn</p>
+		</description>
+		<sheet>
+			<description>You may make two weapon attacks, instead of one, whenever you take the Attack action on your turn.</description>
+		</sheet>
+	</element>
+	<element name="Fighting Style" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_FIGHTING_STYLE">
+		<description>
+			<p>At the 11th level, you may choose a fighting style from the Fighter's list of Fighting Styles.</p>
+			<h5 class="caption">ARCHERY</h5>
+			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+			<h5 class="caption">DEFENSE</h5>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<h5 class="caption">DUELING</h5>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+			<h5 class="caption">PROTECTION</h5>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+			<h5 class="caption">TWO-WEAPON FIGHTING</h5>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+			<h5 class="caption">CLOSE QUARTERS SHOOTER</h5>
+			<p>You are trained in making ranged attacks at close quarters. When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30 feet of you. Finally, you have a +1 bonus to attack rolls on ranged attacks.</p>
+			<h5 class="caption">TUNNEL FIGHTER</h5>
+			<p>You excel at defending narrow passages, doorways, and other tight spaces. As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</p>
+			<h5 class="caption">MARINER</h5>
+			<p>As long as you are not wearing heavy armor or using a shield, you have a swimming speed and a climbing speed equal to your normal speed, and you gain a +1 bonus to AC.</p>
+		</description>
+		<sheet display="false">
+			<description>You may choose a fighting style from the Fighter's list of Fighting Styles.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Fighting Style" supports="Fighting Style, Battletech" level="11"/>
+		</rules>
+	</element>
+	<element name="Second Wind" type="Class Feature" source="Player’s Handbook" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_SECOND_WIND">
+		<description>
+			<p>At the 15th level, you may, as a bonus action, regain lost HP equal to 1d10 + your Engineer Level.</p>
+			<p class="indent">You must complete a short or long rest to use this feature again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You regain 1d10+{{level:engineer}} hp.</description>
+		</sheet>
+	</element>
+	<element name="Combat Enhancements" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_COMBAT_ENHANCEMENTS">
+		<description>
+			<p>At the 20th level, your mastery of engineering enhances your physical capabilities. Your Strength and Dexterity ability scores increase by 2, to a maximum of 22.</p>
+		</description>
+		<sheet display="false">
+			<description>At the 20th level, your mastery of engineering enhances your physical capabilities. Your Strength and Dexterity ability scores increase by 2, to a maximum of 22.</description>
+		</sheet>
+		<rules>
+			<stat name="strength:max" value="2" />
+			<stat name="dexterity:max" value="2" />
+			<stat name="strength" value="2" />
+			<stat name="dexterity" value="2" />
+		</rules>
+	</element>
+	
+	
+	
+	<!-- Engineer's Expertise -->
+	<element name="Skill Expertise (Arcana)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_SKILL_ARCANA">
+		<supports>Engineer's Expertise, Skill, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_ARCANA</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Arcana check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_ARCANA" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="arcana:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (History)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_SKILL_HISTORY">
+		<supports>Engineer's Expertise, Skill, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_HISTORY</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any History check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_HISTORY" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="history:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Investigation)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_SKILL_INVESTIGATION">
+		<supports>Engineer's Expertise, Skill, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_INVESTIGATION</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Investigation check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="investigation:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Nature)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_SKILL_NATURE">
+		<supports>Engineer's Expertise, Skill, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_NATURE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Nature check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_NATURE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="nature:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Religion)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_SKILL_RELIGION">
+		<supports>Engineer's Expertise, Skill, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_RELIGION</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Religion check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_RELIGION" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="religion:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Alchemist’s Supplies)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_ALCHEMIST_SUPPLIES">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Alchemist’s Supplies check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_ALCHEMISTS_SUPPLIES" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Alchemist’s Supplies check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="alchemists supplies:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Brewer's Supplies)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_BREWERS_SUPPLIES">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Brewer’s Supplies check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_BREWERS_SUPPLIES" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Brewer’s Supplies check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="brewers supplies:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Calligrapher's Supplies)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_CALLIGRAPHERS_SUPPLIES">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Calligrapher’s Supplies check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_CALLIGRAPHERS_SUPPLIES" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Calligrapher’s Supplies check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="calligraphers supplies:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Carpenter's Supplies)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_CARPENTERS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Carpenter’s Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_CARPENTERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Carpenter’s Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="carpenters tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Cartographer's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_CARTOGRAPHERS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Cartographer’s Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_CARTOGRAPHERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Cartographer’s Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="cartographers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Cobbler's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_COBBLERS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Cobbler’s Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_COBBLERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Cobbler’s Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="cobblers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Cook's Utensils)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_COOKS_UTENSILS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Cook's Utensils check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_COOKS_UTENSILS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Cook's Utensils check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="cooks utensils:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Disguise Kit)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_DISGUISE_KIT">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Disguise Kit check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_DISGUISE_KIT" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Disguise Kit check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="disguise kit:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Forgery Kit)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_FORGERY_KIT">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Forgery Kit check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_FORGERY_KIT" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Forgery Kit check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="forgery kit:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Glassblower's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_GLASSBLOWERS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Glassblower's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_GLASSBLOWERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Glassblower's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="glassblowers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Herbalism Kit)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_HERBALISM_KIT">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Herbalism Kit check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_HERBALISM_KIT" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Herbalism Kit check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="herbalism kit:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Jeweler's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_JEWELERS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Jeweler's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_JEWELERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Jeweler's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="jewelers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Jeweler's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_LEATHERWORKERS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Leatherworker's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_LEATHERWORKERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Leatherworker's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="leatherworkers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Mason's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_MASONS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Mason's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_MASONS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Mason's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="masons tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Navigator's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_NAVIGATORS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Navigator's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_NAVIGATORS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Navigator's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="navigators tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Painter's Supplies)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_PAINTERS_SUPPLIES">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Painter's Supplies check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_PAINTERS_SUPPLIES" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Painter's Supplies check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="painters supplies:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Poisoner's Kit)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_POISONERS_KIT">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Poisoner's Kit check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_POISONERS_KIT" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Poisoner's Kit check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="poisoners kit:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Potter's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_POTTERS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Potter's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_POTTERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Potter's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="potters tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Smith's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_SMITHS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Smith's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_SMITHS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Smith's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="smiths tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Thieve's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_THIEVES_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Thieve's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_THIEVES_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Thieve's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="thieves tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Tinker's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_TINKERS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Tinker's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_TINKERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Tinker's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="tinkers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Weaver's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_WEAVERS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Weaver's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_WEAVERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Weaver's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="weavers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Tool Expertise (Woodcarver's Tools)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_TOOL_WOODCARVERS_TOOLS">
+		<supports>Engineer's Expertise, Tool, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Woodcarver's Tools check you make.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB_ITEM_TOOL_WOODCARVERS_TOOLS" />
+			</div>
+		</description>
+		<sheet>
+        	<description>Your proficiency bonus is doubled for any Woodcarver's Tools check you make.</description>
+		</sheet>
+		<rules>
+			<stat name="woodcarvers tools:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>	
+	
+	<!-- Fighting Styles -->
+	<element name="Archery" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
+		<supports>Fighting Style, Battletech</supports>
+		<description>
+			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+		</description>
+		<sheet>
+			<description>You gain a +2 bonus to attack rolls you make with ranged weapons.</description>
+		</sheet>
+		<rules>
+			<stat name="ranged:attack" value="2" />
+		</rules>
+	</element>
+	<element name="Defense" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+		<supports>Fighting Style, Battletech</supports>
+		<description>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing armor, you gain a +1 bonus to AC.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Defense (Fighting Style)" />
+		</rules>
+	</element>
+	<element name="Dueling" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+		<supports>Fighting Style, Battletech</supports>
+		<description>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+		</description>
+		<sheet>
+			<description>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</description>
+		</sheet>
+		<rules>
+			<!-- <stat name="melee:damage" value="2" equipped="[primary:any],([secondary:none]||[shield:any])" /> -->
+		</rules>
+	</element>
+	<element name="Great Weapon Fighting" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+		<supports>Fighting Style, Battletech</supports>
+		<description>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+		</description>
+		<sheet>
+			<description>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</description>
+		</sheet>
+	</element>
+	<element name="Protection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION">
+		<supports>Fighting Style, Battletech</supports>
+		<description>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</description>
+		</sheet>
+	</element>
+	<element name="Two-Weapon Fighting" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+		<supports>Fighting Style, Battletech</supports>
+		<description>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<sheet>
+			<description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
+		</sheet>
+	</element>
+	<element name="Close Quarters Shooter" type="Archetype Feature" source="dandwiki_Engineer" id="ID_WOTC_UA2015_CLASS_FEATURE_FIGHTINGSTYLE_CLOSE_QUARTERS_SHOOTER">
+		<supports>Fighting Style, Battletech</supports>
+		<description>
+			<p>You are trained in making ranged attacks at close quarters. When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30 feet of you. Finally, you have a +1 bonus to attack rolls on ranged attacks.</p>
+		</description>
+		<sheet>
+			<description>When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30 feet of you.
+			You have a +1 bonus to attack rolls on ranged attacks.</description>
+		</sheet>
+		<rules>
+			<stat name="ranged:attack" value="1" />
+		</rules>
+	</element>
+	<element name="Tunnel Fighter" type="Archetype Feature" source="dandwiki_Engineer" id="ID_WOTC_UA2015_CLASS_FEATURE_FIGHTINGSTYLE_TUNNEL_FIGHTER">
+		<supports>Fighting Style, Battletech</supports>
+		<description>
+			<p>You excel at defending narrow passages, doorways, and other tight spaces. As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</description>
+		</sheet>
+	</element>
+	<element name="Mariner" type="Archetype Feature" source="dandwiki_Engineer" id="ID_WOTC_UA_CLASS_FEATURE_FIGHTINGSTYLE_MARINER">
+		<supports>Fighting Style, Battletech</supports>
+		<description>
+			<p>As long as you are not wearing heavy armor or using a shield, you have a swimming speed and a climbing speed equal to your normal speed, and you gain a +1 bonus to AC.</p>
+		</description>
+		<sheet>
+			<description>As long as you are not wearing heavy armor or using a shield, you have a swimming speed and a climbing speed equal to your normal speed, and you gain a +1 bonus to AC.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:swim" value="speed" bonus="base" equipped="!([armor:heavy]||[shield:any])" />
+			<stat name="speed:climb" value="speed" bonus="base" equipped="!([armor:heavy]||[shield:any])" />
+			<stat name="ac:misc" value="1" bonus="fighting style" equipped="!([armor:heavy]||[shield:any])" />
+		</rules>
+	</element>
+</elements>	
