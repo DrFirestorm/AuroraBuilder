@@ -1580,7 +1580,6 @@
 			</description>
 		</sheet>
 		<rules>
-			<grant type="Grants" id="ID_INTERNAL_GRANT_SIGNATURE_DEVICE_FLAMETHROWER" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_FIREBLAST" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_NAPALM_SPREAD" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_SMOKESCREEN" />
@@ -1730,7 +1729,6 @@
 			</description>
 		</sheet>
 		<rules>
-			<grant type="Grants" id="ID_INTERNAL_GRANT_SIGNATURE_DEVICE_GRENADE_KIT" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_BASIC_GRENADE" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_ELEMENTAL_GRENADE" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_SMOKE_GRENADE" />
@@ -1791,10 +1789,228 @@
 		<sheet usage="Grenade Kit">
 			<description>2 Energy. Creatures in blast make a Con save. On a failure, they take 2d10 poison damage and are poisoned for 1 minute. On a success they simply take half damage.</description>
 		</sheet>
+	</element>
+	<element name="Concussive Grenade" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_GRENADE_KIT_CONCUSSIVE_GRENADE">
+		<supports>Grenade Kit,Enhanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>For 2 Energy, you can create this disorienting grenade. Creatures in the blast must succeed on a Con save or take 2d10 thunder damage and be deafened for 1 minute. On a success they take just half damage. They may repeat the save at the end of their turns to end the deafness.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>For 2 Energy, you can create this disorienting grenade. Creatures in the blast must succeed on a Con save or take 2d10 thunder damage and be deafened for 1 minute. On a success they take just half damage. They may repeat the save at the end of their turns to end the deafness.</description>
+		</sheet>
+	</element>
+	<element name="Lightweight Shell" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_GRENADE_KIT_LIGHTWEIGHT_SHELL">
+		<supports>Grenade Kit,Advanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>Grenades have a thrown range of 80 feet.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>Grenades have a thrown range of 80 feet.</description>
+		</sheet>
+	</element>
+	<element name="Dual Bomb" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_GRENADE_KIT_DUAL_BOMB">
+		<supports>Grenade Kit,Advanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>Two grenades can be created in a bonus action, and two can be thrown in a standard single action. Additionally, they can be thrown at different targets.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>Two grenades can be created in a bonus action, and two can be thrown in a standard single action. Additionally, they can be thrown at different targets.</description>
+		</sheet>
+	</element>
+	<element name="Black Powder" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_GRENADE_KIT_BLACK_POWDER">
+		<supports>Grenade Kit,Advanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>Grenades have a blast radius of 20 feet, and Basic Grenades do d10s of damage.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>Grenades have a blast radius of 20 feet, and Basic Grenades do d10s of damage.</description>
+		</sheet>
+	</element>
+	<element name="Dangerous Grenades" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_GRENADE_KIT_DANGEROUS_GRENADES">
+		<supports>Grenade Kit,Ultimate Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>Damage dealing grenades deal extra damage equal to twice your Intelligence Modifier (min. 2).</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>Damage dealing grenades deal extra damage equal to twice your Intelligence Modifier (min. 2).</description>
+		</sheet>
+	</element>
+	<element name="Specialized Elementalist" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_GRENADE_KIT_SPECIALIZED_ELEMENTALIST">
+		<supports>Grenade Kit,Ultimate Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>Your Elemental grenades have unique effects, and deal d8s of damage.</p>
+			<ul>
+				<li><strong>Acid.</strong>Creatures who fail the Dex save suffer an AC loss equal to your Int Mod. (min.1) until the end of your next turn.</li>
+				<li><strong>Cold.</strong>Creatures who fail the Dex save suffer halved speed until the end of your next turn, unless they resist or are immune to cold.</li>
+				<li><strong>Fire.</strong>Creatures who fail the Dex save take an additional 1d10 fire damage at the start of your next turn.</li>
+				<li><strong>Lightning.</strong>Creatures who fail the Dex save are pushed away from the bomb by 15 feet.</li>
+			</ul>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>Damage dealing grenades deal extra damage equal to twice your Intelligence Modifier (min. 2).</description>
+		</sheet>
+	</element>
+	<element name="Heavy Smoke" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_GRENADE_KIT_HEAVY_SMOKE">
+		<supports>Grenade Kit,Ultimate Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>You can create and throw up to three smoke grenades with a single action, paying the appropriate energy cost. The smoke cloud also lasts for five rounds, halves the speed of other creatures moving through it, and blinds creatures who fail a Con save upon starting their turn in it or entering it for the first time for 1 minute. They can repeat the save at the end of their turns until they succeed.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>You can create and throw up to three smoke grenades with a single action, paying the appropriate energy cost. The smoke cloud also lasts for five rounds, halves the speed of other creatures moving through it, and blinds creatures who fail a Con save upon starting their turn in it or entering it for the first time for 1 minute. They can repeat the save at the end of their turns until they succeed.</description>
+		</sheet>
+	</element>
+	
+	<element name="Elixir Gun" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN">
+		<supports>Signature Device</supports>
+		<requirements>[level:2]</requirements>
+		<prerequisite>2nd-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 2nd-level engineer</em></p>
+			<p>A two-handed weapon that can launch alchemical elixirs and poisons. It has a range of 80/320ft, the loading property, and a capacity of 1. It requires a bonus action to be reloaded.</p>
+			<ul>
+				<li><strong>Elixir T.</strong> A ranged weapon attack that uses dex, deals 1d8 + Int. Mod poison damage. On a hit, the target must succeed on a CON save or be poisoned until the start of your next turn.</li>
+				<li><strong>Elixir H.</strong> x energy. Heals the target for xd8+ Int. Mod HP. (Max 3 Energy)</li>
+				<li><strong>Elixir G.</strong> For 2 energy, as an action shoot a cloud of chemical gas. Creatures in a 20ft cone must make a Wis save or be affected as if by Calm Emotions for a number of rounds equal to half your engineer level. Whether they fail or succeed, they cannot be affected by Elixir G again for a day.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				<p>A two-handed weapon that can launch alchemical elixirs and poisons. It has a range of 80/320ft, the loading property, and a capacity of 1. It requires a bonus action to be reloaded.</p>
+			</description>
+		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_T" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_H" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_G" />
 		</rules>
 	</element>
+	<element name="Elixir T" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_T">
+		<supports>Elixir Gun</supports>
+		<description>
+			<p>A ranged weapon attack that uses dex, deals 1d8 + Int. Mod poison damage. On a hit, the target must succeed on a CON save or be poisoned until the start of your next turn.</p>
+		</description>
+		<sheet usage="Elixir Gun, Action">
+			<description>A ranged weapon attack that uses dex, deals 1d8 + Int. Mod poison damage. On a hit, the target must succeed on a CON save or be poisoned until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Elixir H" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_H">
+		<supports>Elixir Gun</supports>
+		<description>
+			<p>x energy. Heals the target for xd8+ Int. Mod HP. (Max 3 Energy)</p>
+		</description>
+		<sheet usage="Elixir Gun, Action">
+			<description>x energy. Heals the target for xd8+ Int. Mod HP. (Max 3 Energy)</description>
+		</sheet>
+	</element>
+	<element name="Elixir G" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_G">
+		<supports>Elixir Gun</supports>
+		<description>
+			<p>For 2 energy, as an action shoot a cloud of chemical gas. Creatures in a 20ft cone must make a Wis save or be affected as if by Calm Emotions for a number of rounds equal to half your engineer level. Whether they fail or succeed, they cannot be affected by Elixir G again for a day.</p>
+		</description>
+		<sheet usage="Elixir Gun, Action">
+			<description>For 2 energy, as an action shoot a cloud of chemical gas. Creatures in a 20ft cone must make a Wis save or be affected as if by Calm Emotions for a number of rounds equal to half your engineer level. Whether they fail or succeed, they cannot be affected by Elixir G again for a day.</description>
+		</sheet>
+	</element>
+	<element name="Light Frame" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_ELIXIR_GUN_LIGHT_FRAME">
+		<supports>Elixir Gun,Enhanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN</requirements>
+		<description>
+			<p>You can wield and reload the elixir gun with a single hand.</p>
+		</description>
+		<sheet usage="Elixir Gun">
+			<description>You can wield and reload the elixir gun with a single hand.</description>
+		</sheet>
+	</element>
+	<element name="Dual-Shot" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_ELIXIR_GUN_DUAL_SHOT">
+		<supports>Elixir Gun,Enhanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN</requirements>
+		<description>
+			<p> You can fire the elixir gun twice per turn, and it can be fired twice before needing to be reloaded. A creature hit twice by Elixir T only needs to save once, but suffers disadvantage on the saving throw.</p>
+		</description>
+		<sheet usage="Elixir Gun">
+			<description> You can fire the elixir gun twice per turn, and it can be fired twice before needing to be reloaded. A creature hit twice by Elixir T only needs to save once, but suffers disadvantage on the saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Advanced Rifling" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_ELIXIR_GUN_ADVANCED_RIFLING">
+		<supports>Elixir Gun,Enhanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN</requirements>
+		<description>
+			<p> Grant a +2 bonus to the elixir gun's attack rolls. Additionally, its range increases to 150/600ft and it makes no sound when shot.</p>
+		</description>
+		<sheet usage="Elixir Gun">
+			<description>Grant a +2 bonus to the elixir gun's attack rolls. Additionally, its range increases to 150/600ft and it makes no sound when shot.</description>
+		</sheet>
+	</element>
+	<element name="Super T" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_ELIXIR_GUN_SUPER_T">
+		<supports>Elixir Gun,Advanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN</requirements>
+		<description>
+			<p> Targets hit by Elixir T suffer an additional 1d8 necrotic damage that reduces the target's max HP by the same amount until their next long rest, and if they fail the CON save, they are also blinded until the start of your next turn.</p>
+		</description>
+		<sheet usage="Elixir Gun">
+			<description>Targets hit by Elixir T suffer an additional 1d8 necrotic damage that reduces the target's max HP by the same amount until their next long rest, and if they fail the CON save, they are also blinded until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Super H" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_ELIXIR_GUN_SUPER_H">
+		<supports>Elixir Gun,Advanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN</requirements>
+		<description>
+			<p>Creatures healed by Elixir H are healed for d10s and are cured of 1 disease or condition (blinded, deafened, poisoned, paralysis). The energy maximum for Elixir H is now 4, and it also multiplies the healing granted by your Int modifier.</p>
+		</description>
+		<sheet usage="Elixir Gun">
+			<description>Creatures healed by Elixir H are healed for d10s and are cured of 1 disease or condition (blinded, deafened, poisoned, paralysis). The energy maximum for Elixir H is now 4, and it also multiplies the healing granted by your Int modifier.</description>
+		</sheet>
+	</element>
+	<element name="Super G" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_ELIXIR_GUN_SUPER_G">
+		<supports>Elixir Gun,Advanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN</requirements>
+		<description>
+			<p>When a creature is affected by Elixir G, you can instead make them confused for the duration.</p>
+		</description>
+		<sheet usage="Elixir Gun">
+			<description>When a creature is affected by Elixir G, you can instead make them confused for the duration.</description>
+		</sheet>
+	</element>
+	<element name="Paralysis-Inducing T" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_ELIXIR_GUN_PARALYSIS_INDUCING_T">
+		<supports>Elixir Gun,Ultimate Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN</requirements>
+		<description>
+			<p>The poisoned status caused by Elixir T now lasts 1d4 rounds. Additionally, whenever they fail a save against Elixir T, they gain a level of Exhaustion.</p>
+		</description>
+		<sheet usage="Elixir Gun">
+			<description>The poisoned status caused by Elixir T now lasts 1d4 rounds. Additionally, whenever they fail a save against Elixir T, they gain a level of Exhaustion.</description>
+		</sheet>
+	</element>
+	<element name="S-Infused H" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_ELIXIR_GUN_S_INFUSED_H">
+		<supports>Elixir Gun,Ultimate Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN</requirements>
+		<description>
+			<p>Creatures targeted by Elixir H. Gain the benefits of Haste for a number of rounds equal to the amount of energy used and regain an amount of HP equal to the energy used every round for a minute.</p>
+		</description>
+		<sheet usage="Elixir Gun">
+			<description>Creatures targeted by Elixir H. Gain the benefits of Haste for a number of rounds equal to the amount of energy used and regain an amount of HP equal to the energy used every round for a minute.</description>
+		</sheet>
+	</element>
+	<element name="Aphrodisiac-Enhanced G" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_ELIXIR_GUN_APHRODISIAC_ENHANCED_G">
+		<supports>Elixir Gun,Ultimate Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN</requirements>
+		<description>
+			<p>When a creature fails a save against your Elixir G, you can instead make them Charmed. Additionally, the duration of Elixir G increases to one round per engineer level.</p>
+		</description>
+		<sheet usage="Elixir Gun">
+			<description>When a creature fails a save against your Elixir G, you can instead make them Charmed. Additionally, the duration of Elixir G increases to one round per engineer level.</description>
+		</sheet>
+	</element>
+	
+	
+	
 	
 	
 	
