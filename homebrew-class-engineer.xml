@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
-			<file name="homebrew-class-engineer-test.xml" url="https://www.dandwiki.com/wiki/Engineer_(5e_Class)" />
+		<author url="https://www.dandwiki.com/wiki/Engineer_(5e_Class)#Signature_Device">dandwiki</author>
+		<update version="0.0.2">
+			<file name="homebrew-class-engineer.xml" url="https://raw.githubusercontent.com/DrFirestorm/AuroraBuilder/main/homebrew-class-engineer.xml" />
 		</update>
 	</info>
 	
@@ -206,6 +207,9 @@
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Signature Device" supports="Signature Device" level="2" number="1"/>
+			<select type="Class Feature" name="Enhanced Signature Device" supports="Enhanced Signature Device" level="5" number="1" />
+			<select type="Class Feature" name="Advanced Signature Device" supports="Advanced Signature Device" level="13" number="1" />
+			<select type="Class Feature" name="Ultimate Signature Device" supports="Ultimate Signature Device" level="17" number="1" />
 			<stat name="signature-device:cost" value="50" level="2" />
 			<stat name="signature-device:cost" value="25" level="3" />
 			<stat name="signature-device:cost" value="25" level="4" />
@@ -241,10 +245,9 @@
 			<p>At 5th level, you choose one upgrade to your Signature Device, turning it into an Enhanced Signature Device.</p>
 		</description>
 		<sheet display="false" />
-		<rules>
-			<!--<select type="Class Feature" name="Enhanced Signature Device" supports="Enhanced Signature Device" level="5" number="1" requirements="ID_INTERNAL_GRANT_SIGNATURE_DEVICE_FLAMETHROWER" />-->
+		<!--<rules>
 			<select type="Class Feature" name="Enhanced Signature Device" supports="Enhanced Signature Device" level="5" number="1" />
-		</rules>
+		</rules>-->
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ABILITY_SCORE_IMPROVEMENT">
 		<compendium display="false" />
@@ -279,10 +282,9 @@
 			<p>At 13th level, you choose one upgrade to your Signature Device, turning it into an Advanced Signature Device.</p>
 		</description>
 		<sheet display="false" />
-		<rules>
-			<!--<select type="Class Feature" name="Enhanced Signature Device" supports="Enhanced Signature Device" level="5" number="1" requirements="ID_INTERNAL_GRANT_SIGNATURE_DEVICE_FLAMETHROWER" />-->
+		<!--<rules>
 			<select type="Class Feature" name="Advanced Signature Device" supports="Advanced Signature Device" level="13" number="1" />
-		</rules>
+		</rules>-->
 	</element>
 	<element name="Indomitable Mind" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_INDOMITABLE_MIND">
 		<description>
@@ -300,10 +302,9 @@
 			<p>At 17th level, you choose one upgrade to your Signature Device, turning it into an Ultimate Signature Device.</p>
 		</description>
 		<sheet display="false" />
-		<rules>
-			<!--<select type="Class Feature" name="Enhanced Signature Device" supports="Enhanced Signature Device" level="5" number="1" requirements="ID_INTERNAL_GRANT_SIGNATURE_DEVICE_FLAMETHROWER" />-->
+		<!--<rules>
 			<select type="Class Feature" name="Ultimate Signature Device" supports="Ultimate Signature Device" level="17" number="1" />
-		</rules>
+		</rules>-->
 	</element>
 	<element name="Cannibalisation" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_CANNIBALISATION">
 		<description>
@@ -1576,10 +1577,11 @@
 		</description>
 		<sheet>
 			<description>
-				<p>A two-handed weapon that can sear foes and create smokescreens, manipulating the battlefield in interesting ways.</p>
+				<p>A {{flamethrower:hands}}-handed weapon that can sear foes and create smokescreens, manipulating the battlefield in interesting ways.</p>
 			</description>
 		</sheet>
 		<rules>
+			<stat name="flamethrower:hands" value="2" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_FIREBLAST" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_NAPALM_SPREAD" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_SMOKESCREEN" />
@@ -1591,9 +1593,14 @@
 			<p>As an action, shoot a blazing stream of fire. You project a 40ft long line of fire, making a ranged attack roll against each creature in it, dealing 1d6 + Int fire damage on a hit. This deals 2d6 at level 5, 3d6 at level 9, 4d6 at level 13 and 5d6 at level 17. The attack roll uses Dexterity.</p>
 		</description>
 		<sheet usage="Flamethrower, Action">
-			<description>You project a 40ft long line of fire, making a ranged attack roll against each creature in it, dealing {{fireblast:dice:amount}}d6 + Int fire damage on a hit. The attack roll uses Dexterity.</description>
+			<description>
+				<p>You project a {{fireblast:range}}ft long line of fire, making a ranged attack{{fireblast:attack:bonus}} against each creature in it, dealing {{fireblast:dice:amount}}d{{fireblast:dice:size}} + {{intelligence:modifier}} fire damage on a hit. The attack roll uses Dexterity.</p>
+			</description>
 		</sheet>
 		<rules>
+			<stat name="fireblast:range" value="40" />
+			<stat name="fireblast:attack:bonus" value="" inline="true" />
+			<stat name="fireblast:dice:size" value="6" />
 			<stat name="fireblast:dice:amount" value="1" />
 			<stat name="fireblast:dice:amount" value="1" level="5" />
 			<stat name="fireblast:dice:amount" value="1" level="9" />
@@ -1607,8 +1614,15 @@
 			<p>As an action, force all creatures within a 15ft cone to make a Dex save. On a failure, they take 4d6 fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d6 fire per point spent, up to 3 energy.</p>
 		</description>
 		<sheet usage="Flamethrower, Action">
-			<description>Force all creatures within a 15ft cone to make a Dex save. On a failure, they take 4d6 fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d6 fire per point spent, up to 3 energy.</description>
+			<description>Force all creatures within a {{napalm spread:range}}ft cone to make a Dex save{{napalm spread:dc:bonus}}. On a failure, they take 4d{{napalm spread:dice:size}} fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d{{napalm spread:dice:size}} fire per point spent, up to 3 energy.</description>
+			<description level="17">Force all creatures within a {{napalm spread:range}}ft cone to make a Dex save{{napalm spread:dc:bonus}}. On a failure, they take 4d{{napalm spread:dice:size}} + {{napalm spread:damage:int}} fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d{{napalm spread:dice:size}} fire per point spent, up to 3 energy.</description>
 		</sheet>
+		<rules>
+			<stat name="napalm spread:range" value="15" />
+			<stat name="napalm spread:dc:bonus" value="" inline="true" />
+			<stat name="napalm spread:dice:size" value="6" />
+			<stat name="napalm spread:damage:int" value="0" />
+		</rules>
 	</element>
 	<element name="Smokescreen" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_SMOKESCREEN">
 		<supports>Flamethrower</supports>
@@ -1616,8 +1630,11 @@
 			<p>As a bonus action, and for 1 energy, exhaust smoke from your flamethrower. A 10ft-radius sphere centered around yourself is filled with smoke for 2 rounds, heavily obscuring the area for all creatures except you.</p>
 		</description>
 		<sheet usage="Flamethrower, Bonus Action">
-			<description>For 1 energy, a 10ft-radius sphere centered around yourself is filled with smoke for 2 rounds, heavily obscuring the area for all creatures except you.</description>
+			<description>For 1 energy, a {{smokescreen:range}}ft-radius sphere centered around yourself is filled with smoke for 2 rounds, heavily obscuring the area for all creatures except you.</description>
 		</sheet>
+		<rules>
+			<stat name="smokescreen:range" value="10" />
+		</rules>
 	</element>
 	<element name="Light Frame" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_FLAMETHROWER_LIGHT_FRAME">
 		<supports>Flamethrower,Enhanced Signature Device</supports>
@@ -1625,9 +1642,9 @@
 		<description>
 			<p>You can wield the flamethrower in one hand.</p>
 		</description>
-		<sheet usage="Flamethrower">
-			<description>You can wield the flamethrower in one hand.</description>
-		</sheet>
+		<rules>
+			<stat name="flamethrower:hands" value="-1" />
+		</rules>
 	</element>
 	<element name="Distant Ammunition" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_FLAMETHROWER_DISTANT_AMMUNITION">
 		<supports>Flamethrower,Enhanced Signature Device</supports>
@@ -1635,9 +1652,11 @@
 		<description>
 			<p>Fireblast has a range of 80ft, Napalm Spread affects a 30ft cone, and Smokescreen fills a 20ft sphere.</p>
 		</description>
-		<sheet usage="Flamethrower">
-			<description>Fireblast has a range of 80ft, Napalm Spread affects a 30ft cone, and Smokescreen fills a 20ft sphere.</description>
-		</sheet>
+		<rules>
+			<stat name="fireblast:range" value="40" />
+			<stat name="napalm spread:range" value="15" />
+			<stat name="smokescreen:range" value="10" />
+		</rules>
 	</element>
 	<element name="Fine Optics" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_FLAMETHROWER_FINE_OPTICS">
 		<supports>Flamethrower,Enhanced Signature Device</supports>
@@ -1645,9 +1664,10 @@
 		<description>
 			<p>Grant a +2 bonus to the attack rolls and Dex save DC to the actions your flamethrower.</p>
 		</description>
-		<sheet usage="Flamethrower">
-			<description>Grant a +2 bonus to the attack rolls and Dex save DC to the actions your flamethrower.</description>
-		</sheet>
+		<rules>
+			<stat name="fireblast:attack:bonus" value=" (+2 attack bonus)" inline="true" />
+			<stat name="napalm spread:dc:bonus" value=" (+2 saving throw DC bonus)" inline="true" />
+		</rules>
 	</element>
 	<element name="Incendiary Fireblasts" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_FLAMETHROWER_INCENDIARY_FIREBLASTS">
 		<supports>Flamethrower,Advanced Signature Device</supports>
@@ -1655,9 +1675,12 @@
 		<description>
 			<p>Fireblast deals d8s of damage instead of d6s, and leaves behind a wall of flames for a round that causes 2d8 fire damage to creatures traversing it.</p>
 		</description>
-		<sheet usage="Flamethrower">
-			<description>Fireblast deals d8s of damage instead of d6s, and leaves behind a wall of flames for a round that causes 2d8 fire damage to creatures traversing it.</description>
+		<sheet usage="Fireblast">
+			<description>Fireblast also leaves behind a wall of flames for a round that causes 2d8 fire damage to creatures traversing it.</description>
 		</sheet>
+		<rules>
+			<stat name="fireblast:dice:size" value="2" />
+		</rules>
 	</element>
 	<element name="Toxic Smoke" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_FLAMETHROWER_TOXIC_SMOKE">
 		<supports>Flamethrower,Advanced Signature Device</supports>
@@ -1665,7 +1688,7 @@
 		<description>
 			<p>Smokescreen poisons creatures except you for 1 minute when they fail a Con save upon starting their turn in it or entering it for the first time.</p>
 		</description>
-		<sheet usage="Flamethrower">
+		<sheet usage="Smokescreen">
 			<description>Smokescreen poisons creatures except you for 1 minute when they fail a Con save upon starting their turn in it or entering it for the first time.</description>
 		</sheet>
 	</element>
@@ -1675,7 +1698,7 @@
 		<description>
 			<p>Napalm Spread deals 1d6 damage to creatures who fail the initial Dex save at the end of each of their turns. This lasts until they spend an action to attempt a successful Dex save, which ends this effect.</p>
 		</description>
-		<sheet usage="Flamethrower">
+		<sheet usage="Napalm Spread">
 			<description>Napalm Spread deals 1d6 damage to creatures who fail the initial Dex save at the end of each of their turns. This lasts until they spend an action to attempt a successful Dex save, which ends this effect.</description>
 		</sheet>
 	</element>
@@ -1685,8 +1708,8 @@
 		<description>
 			<p>Spend 1 energy as a bonus action to deal a different kind of damage (acid, cold, or lightning) with Fireblast and Napalm Spread for a minute.</p>
 		</description>
-		<sheet usage="Flamethrower">
-			<description>Spend 1 energy as a bonus action to deal a different kind of damage (acid, cold, or lightning) with Fireblast and Napalm Spread for a minute.</description>
+		<sheet usage="Fireblast, Napalm Spread" action="Bonus Action">
+			<description>Spend 1 energy to deal a different kind of damage (acid, cold, or lightning) with Fireblast and Napalm Spread for a minute.</description>
 		</sheet>
 	</element>
 	<element name="Quickblast" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_FLAMETHROWER_QUICKBLAST">
@@ -1695,8 +1718,8 @@
 		<description>
 			<p>You can spend 1 additional energy to shoot a fireblast as a bonus action instead.</p>
 		</description>
-		<sheet usage="Flamethrower">
-			<description>You can spend 1 additional energy to shoot a fireblast as a bonus action instead.</description>
+		<sheet usage="Fireblast" action="Bonus Action">
+			<description>You can spend 1 additional energy to shoot a Fireblast as a bonus action instead.</description>
 		</sheet>
 	</element>
 	<element name="Agonizing Napalm" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_FLAMETHROWER_AGONIZING_NAPALM">
@@ -1705,9 +1728,11 @@
 		<description>
 			<p>Napalm Spread deals d8s of damage, as well as a bonus amount equal to your Intelligence Modifier (min. 1).</p>
 		</description>
-		<sheet usage="Flamethrower">
-			<description>Napalm Spread deals d8s of damage, as well as a bonus amount equal to your Intelligence Modifier (min. 1).</description>
-		</sheet>
+		<rules>
+			<stat name="napalm spread:dice:size" value="2" />
+			<stat name="napalm spread:damage:int" value="1" bonus="base" />
+			<stat name="napalm spread:damage:int" value="intelligence:modifier" bonus="base" />
+		</rules>
 	</element>
 	
 	<element name="Grenade Kit" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT">
@@ -1725,10 +1750,14 @@
 		</description>
 		<sheet>
 			<description>
-				<p>A bag that contains ingredients to make grenades that can be made on the fly. Creating a grenade costs 1 bonus action, and throwing one is a standard action. These bombs explode as soon as they reach the target. Grenades can be thrown at a point of 20ft away, and have a blast radius of 10ft. Additionally, bombs can be launched by other means per DM discretion.</p>
+				<p>A bag that contains ingredients to make grenades that can be made on the fly. It takes 1 Bonus Action to create {{grenade kit:grenades:count}} grenade{{grenade kit:grenades:plural}}, and an Action to throw {{grenade kit:grenades:count}}. Grenades explode as soon as they reach the target. Grenades can be thrown up to {{grenade kit:range}}ft away, and have a blast radius of {{grenade kit:blast radius}}ft. Additionally, bombs can be launched by other means per DM discretion.</p>
 			</description>
 		</sheet>
 		<rules>
+			<stat name="grenade kit:range" value="20" />
+			<stat name="grenade kit:grenades:count" value="1" />
+			<stat name="grenade kit:grenades:plural" value="" inline="true" />
+			<stat name="grenade kit:blast radius" value="10" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_BASIC_GRENADE" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_ELEMENTAL_GRENADE" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_SMOKE_GRENADE" />
@@ -1740,13 +1769,16 @@
 			<p>Creatures within the blast radius must succeed on a Dex save or take 2d6 bludgeoning damage on a failed save, or half as much on a success. The damage increases to 3d6 at level 5, 4d6 at level 11, or 5d6 at level 17.</p>
 		</description>
 		<sheet usage="Grenade Kit">
-			<description>Creatures within the blast radius must succeed on a Dex save or take {{basic grenade:dice:amount}}d6 bludgeoning damage on a failed save, or half as much on a success.</description>
+			<description>Creatures within the blast radius must succeed on a Dex save or take {{basic grenade:dice:amount}}d{{basic grenade:dice:size}} bludgeoning damage on a failed save, or half as much on a success.</description>
+			<description level="17">Creatures within the blast radius must succeed on a Dex save or take {{basic grenade:dice:amount}}d{{basic grenade:dice:size}} + {{dangerous grenade:bonus}} bludgeoning damage on a failed save, or half as much on a success.</description>
 		</sheet>
 		<rules>
 			<stat name="basic grenade:dice:amount" value="2" />
 			<stat name="basic grenade:dice:amount" value="1" level="5" />
 			<stat name="basic grenade:dice:amount" value="1" level="11" />
 			<stat name="basic grenade:dice:amount" value="1" level="17" />
+			<stat name="basic grenade:dice:size" value="6" />
+			<stat name="dangerous grenade:bonus" value="0" />
 		</rules>
 	</element>
 	<element name="Elemental Grenade" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_ELEMENTAL_GRENADE">
@@ -1755,8 +1787,12 @@
 			<p>For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d6 (acid, cold, fire, lightning) damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</p>
 		</description>
 		<sheet usage="Grenade Kit">
-			<description>For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d6 (acid, cold, fire, lightning) damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</description>
+			<description>For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d{{elemental grenade:dice:size}} (acid, cold, fire, lightning) damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</description>
+			<description level="17">For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d{{elemental grenade:dice:size}} (acid, cold, fire, lightning) + {{dangerous grenade:bonus}} damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</description>
 		</sheet>
+		<rules>
+			<stat name="elemental grenade:dice:size" value="6" />
+		</rules>
 	</element>
 	<element name="Smoke Grenade" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_SMOKE_GRENADE">
 		<supports>Grenade Kit</supports>
@@ -1764,8 +1800,11 @@
 			<p>For 1 energy, you can create a smoke grenade that fills its blast radius with a cloud of smoke that heavily obscures the area for 2 rounds for all creatures except you.</p>
 		</description>
 		<sheet usage="Grenade Kit">
-			<description>For 1 energy, you can create a smoke grenade that fills its blast radius with a cloud of smoke that heavily obscures the area for 2 rounds for all creatures except you.</description>
+			<description>For 1 energy, you can create a smoke grenade that fills its blast radius with a cloud of smoke that heavily obscures the area for {{smoke grenade:rounds}} rounds for all creatures except you.</description>
 		</sheet>
+		<rules>
+			<stat name="smoke grenade:rounds" value="2" />
+		</rules>
 	</element>
 	<element name="Flash Grenade" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_GRENADE_KIT_FLASH_GRENADE">
 		<supports>Grenade Kit,Enhanced Signature Device</supports>
@@ -1773,7 +1812,7 @@
 		<description>
 			<p>2 Energy. Your grenade causes the effects of a Daylight spell where it lands for a minute. Creatures within fifteen feet of your target must make a Con save or be blinded for five rounds.</p>
 		</description>
-		<sheet usage="Grenade Kit">
+		<sheet>
 			<description>2 Energy. Your grenade causes the effects of a Daylight spell where it lands for a minute. Creatures within fifteen feet of your target must make a Con save or be blinded for five rounds.</description>
 		</sheet>
 		<rules>
@@ -1786,8 +1825,9 @@
 		<description>
 			<p>2 Energy. Creatures in blast make a Con save. On a failure, they take 2d10 poison damage and are poisoned for 1 minute. On a success they simply take half damage.</p>
 		</description>
-		<sheet usage="Grenade Kit">
+		<sheet>
 			<description>2 Energy. Creatures in blast make a Con save. On a failure, they take 2d10 poison damage and are poisoned for 1 minute. On a success they simply take half damage.</description>
+			<description level="17">2 Energy. Creatures in blast make a Con save. On a failure, they take 2d10 + {{dangerous grenade:bonus}} poison damage and are poisoned for 1 minute. On a success they simply take half damage.</description>
 		</sheet>
 	</element>
 	<element name="Concussive Grenade" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_GRENADE_KIT_CONCUSSIVE_GRENADE">
@@ -1796,8 +1836,9 @@
 		<description>
 			<p>For 2 Energy, you can create this disorienting grenade. Creatures in the blast must succeed on a Con save or take 2d10 thunder damage and be deafened for 1 minute. On a success they take just half damage. They may repeat the save at the end of their turns to end the deafness.</p>
 		</description>
-		<sheet usage="Grenade Kit">
+		<sheet>
 			<description>For 2 Energy, you can create this disorienting grenade. Creatures in the blast must succeed on a Con save or take 2d10 thunder damage and be deafened for 1 minute. On a success they take just half damage. They may repeat the save at the end of their turns to end the deafness.</description>
+			<description level="17">For 2 Energy, you can create this disorienting grenade. Creatures in the blast must succeed on a Con save or take 2d10 + {{dangerous grenade:bonus}} thunder damage and be deafened for 1 minute. On a success they take just half damage. They may repeat the save at the end of their turns to end the deafness.</description>
 		</sheet>
 	</element>
 	<element name="Lightweight Shell" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_GRENADE_KIT_LIGHTWEIGHT_SHELL">
@@ -1806,9 +1847,9 @@
 		<description>
 			<p>Grenades have a thrown range of 80 feet.</p>
 		</description>
-		<sheet usage="Grenade Kit">
-			<description>Grenades have a thrown range of 80 feet.</description>
-		</sheet>
+		<rules>
+			<stat name="grenade kit:range" value="60" />
+		</rules>
 	</element>
 	<element name="Dual Bomb" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_GRENADE_KIT_DUAL_BOMB">
 		<supports>Grenade Kit,Advanced Signature Device</supports>
@@ -1816,9 +1857,10 @@
 		<description>
 			<p>Two grenades can be created in a bonus action, and two can be thrown in a standard single action. Additionally, they can be thrown at different targets.</p>
 		</description>
-		<sheet usage="Grenade Kit">
-			<description>Two grenades can be created in a bonus action, and two can be thrown in a standard single action. Additionally, they can be thrown at different targets.</description>
-		</sheet>
+		<rules>
+			<stat name="grenade kit:grenades:count" value="1" />
+			<stat name="grenade kit:grenades:plural" value="s" inline="true" />
+		</rules>
 	</element>
 	<element name="Black Powder" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_GRENADE_KIT_BLACK_POWDER">
 		<supports>Grenade Kit,Advanced Signature Device</supports>
@@ -1826,9 +1868,10 @@
 		<description>
 			<p>Grenades have a blast radius of 20 feet, and Basic Grenades do d10s of damage.</p>
 		</description>
-		<sheet usage="Grenade Kit">
-			<description>Grenades have a blast radius of 20 feet, and Basic Grenades do d10s of damage.</description>
-		</sheet>
+		<rules>
+			<stat name="grenade kit:blast radius" value="10" />
+			<stat name="basic grenade:dice:size" value="4" />
+		</rules>
 	</element>
 	<element name="Dangerous Grenades" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_GRENADE_KIT_DANGEROUS_GRENADES">
 		<supports>Grenade Kit,Ultimate Signature Device</supports>
@@ -1836,9 +1879,12 @@
 		<description>
 			<p>Damage dealing grenades deal extra damage equal to twice your Intelligence Modifier (min. 2).</p>
 		</description>
-		<sheet usage="Grenade Kit">
-			<description>Damage dealing grenades deal extra damage equal to twice your Intelligence Modifier (min. 2).</description>
-		</sheet>
+		<rules>
+			<stat name="dangerous grenade:int:mod" value="intelligence:modifier" />
+			<stat name="dangerous grenade:int:mod" value="intelligence:modifier" />
+			<stat name="dangerous grenade:bonus" value="2" bonus="grenade kit:dangerous grenades" />
+			<stat name="dangerous grenade:bonus" value="dangerous grenade:int:mod" bonus="grenade kit:dangerous grenades" />
+		</rules>
 	</element>
 	<element name="Specialized Elementalist" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_GRENADE_KIT_SPECIALIZED_ELEMENTALIST">
 		<supports>Grenade Kit,Ultimate Signature Device</supports>
@@ -1852,9 +1898,20 @@
 				<li><strong>Lightning.</strong>Creatures who fail the Dex save are pushed away from the bomb by 15 feet.</li>
 			</ul>
 		</description>
-		<sheet usage="Grenade Kit">
-			<description>Damage dealing grenades deal extra damage equal to twice your Intelligence Modifier (min. 2).</description>
+		<sheet>
+			<description>
+				Your Elemental grenades have unique effects.&#13;&#10;
+				Acid.Creatures who fail the Dex save suffer an AC loss equal to {{acid:modifier}} until the end of your next turn.&#13;&#10;
+				Cold.Creatures who fail the Dex save suffer halved speed until the end of your next turn, unless they resist or are immune to cold.&#13;&#10;
+				Fire.Creatures who fail the Dex save take an additional 1d10 fire damage at the start of your next turn.&#13;&#10;
+				Lightning.Creatures who fail the Dex save are pushed away from the bomb by 15 feet.
+			</description>
 		</sheet>
+		<rules>
+			<stat name="acid:modifier" value="1" bonus="base" />
+			<stat name="acid:modifier" value="intelligence:modifier" bonus="base" />
+			<stat name="elemental grenade:dice:size" value="2" />
+		</rules>
 	</element>
 	<element name="Heavy Smoke" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_GRENADE_KIT_HEAVY_SMOKE">
 		<supports>Grenade Kit,Ultimate Signature Device</supports>
@@ -1862,9 +1919,12 @@
 		<description>
 			<p>You can create and throw up to three smoke grenades with a single action, paying the appropriate energy cost. The smoke cloud also lasts for five rounds, halves the speed of other creatures moving through it, and blinds creatures who fail a Con save upon starting their turn in it or entering it for the first time for 1 minute. They can repeat the save at the end of their turns until they succeed.</p>
 		</description>
-		<sheet usage="Grenade Kit">
+		<sheet usage="Smoke Grenade">
 			<description>You can create and throw up to three smoke grenades with a single action, paying the appropriate energy cost. The smoke cloud also lasts for five rounds, halves the speed of other creatures moving through it, and blinds creatures who fail a Con save upon starting their turn in it or entering it for the first time for 1 minute. They can repeat the save at the end of their turns until they succeed.</description>
 		</sheet>
+		<rules>
+			<stat name="smoke grenade:rounds" value="3" />
+		</rules>
 	</element>
 	
 	<element name="Elixir Gun" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN">
@@ -1882,10 +1942,13 @@
 		</description>
 		<sheet>
 			<description>
-				<p>A two-handed weapon that can launch alchemical elixirs and poisons. It has a range of 80/320ft, the loading property, and a capacity of 1. It requires a bonus action to be reloaded.</p>
+				<p>A {{elixir gun:hands}}-handed weapon that can launch alchemical elixirs and poisons. It has a range of {{elixir gun:range:short}}/{{elixir gun:range:long}}ft, the loading property, and a capacity of 1. It requires a bonus action to be reloaded.</p>
 			</description>
 		</sheet>
 		<rules>
+			<stat name="elixir gun:hands" value="2" />
+			<stat name="elixir gun:range:short" value="80" />
+			<stat name="elixir gun:range:long" value="320" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_T" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_H" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_G" />
@@ -1897,17 +1960,24 @@
 			<p>A ranged weapon attack that uses dex, deals 1d8 + Int. Mod poison damage. On a hit, the target must succeed on a CON save or be poisoned until the start of your next turn.</p>
 		</description>
 		<sheet usage="Elixir Gun, Action">
-			<description>A ranged weapon attack that uses dex, deals 1d8 + Int. Mod poison damage. On a hit, the target must succeed on a CON save or be poisoned until the start of your next turn.</description>
+			<description>A ranged weapon attack that uses dex{{elixir t:attack:bonus}}, deals 1d8 + {{intelligence:modifier}} poison damage. On a hit, the target must succeed on a CON save or be poisoned until the start of your next turn.</description>
 		</sheet>
+		<rules>
+			<stat name="elixir t:attack:bonus" value="" inline="true" />
+		</rules>
 	</element>
 	<element name="Elixir H" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_H">
 		<supports>Elixir Gun</supports>
 		<description>
-			<p>x energy. Heals the target for xd8+ Int. Mod HP. (Max 3 Energy)</p>
+			<p> X energy. Heals the target for Xd8 + Int. Mod HP. (Max 3 Energy)</p>
 		</description>
 		<sheet usage="Elixir Gun, Action">
-			<description>x energy. Heals the target for xd8+ Int. Mod HP. (Max 3 Energy)</description>
+			<description> X energy. Heals the target for Xd{{elixir h:dice:size}} + {{intelligence:modifier}} HP. (Max {{elixir h:energy:max}} Energy)</description>
 		</sheet>
+		<rules>
+			<stat name="elixir h:dice:size" value="8" />
+			<stat name="elixir h:energy:max" value="3" />
+		</rules>
 	</element>
 	<element name="Elixir G" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_G">
 		<supports>Elixir Gun</supports>
@@ -1915,8 +1985,12 @@
 			<p>For 2 energy, as an action shoot a cloud of chemical gas. Creatures in a 20ft cone must make a Wis save or be affected as if by Calm Emotions for a number of rounds equal to half your engineer level. Whether they fail or succeed, they cannot be affected by Elixir G again for a day.</p>
 		</description>
 		<sheet usage="Elixir Gun, Action">
-			<description>For 2 energy, as an action shoot a cloud of chemical gas. Creatures in a 20ft cone must make a Wis save or be affected as if by Calm Emotions for a number of rounds equal to half your engineer level. Whether they fail or succeed, they cannot be affected by Elixir G again for a day.</description>
+			<description>For 2 energy, as an action shoot a cloud of chemical gas. Creatures in a 20ft cone must make a Wis save or be affected as if by Calm Emotions for {{elixir g:rounds}} rounds. Whether they fail or succeed, they cannot be affected by Elixir G again for a day.</description>
 		</sheet>
+		<rules>
+			<stat name="elixir g:rounds" value="level:engineer:half" bonus="base" />
+			<grant type="spell" id="ID_PHB_SPELL_CALM_EMOTIONS" />
+		</rules>
 	</element>
 	<element name="Light Frame" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_ELIXIR_GUN_LIGHT_FRAME">
 		<supports>Elixir Gun,Enhanced Signature Device</supports>
@@ -1924,9 +1998,9 @@
 		<description>
 			<p>You can wield and reload the elixir gun with a single hand.</p>
 		</description>
-		<sheet usage="Elixir Gun">
-			<description>You can wield and reload the elixir gun with a single hand.</description>
-		</sheet>
+		<rules>
+			<stat name="elixir gun:hands" value="-1" />
+		</rules>
 	</element>
 	<element name="Dual-Shot" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_ELIXIR_GUN_DUAL_SHOT">
 		<supports>Elixir Gun,Enhanced Signature Device</supports>
@@ -1934,8 +2008,9 @@
 		<description>
 			<p> You can fire the elixir gun twice per turn, and it can be fired twice before needing to be reloaded. A creature hit twice by Elixir T only needs to save once, but suffers disadvantage on the saving throw.</p>
 		</description>
-		<sheet usage="Elixir Gun">
-			<description> You can fire the elixir gun twice per turn, and it can be fired twice before needing to be reloaded. A creature hit twice by Elixir T only needs to save once, but suffers disadvantage on the saving throw.</description>
+		<sheet>
+			<description> You can fire the elixir gun twice per turn, and it can be fired twice before needing to be reloaded.&#13;&#10;
+			A creature hit twice by Elixir T only needs to save once, but suffers disadvantage on the saving throw.</description>
 		</sheet>
 	</element>
 	<element name="Advanced Rifling" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_ELIXIR_GUN_ADVANCED_RIFLING">
@@ -1944,9 +2019,14 @@
 		<description>
 			<p> Grant a +2 bonus to the elixir gun's attack rolls. Additionally, its range increases to 150/600ft and it makes no sound when shot.</p>
 		</description>
-		<sheet usage="Elixir Gun">
-			<description>Grant a +2 bonus to the elixir gun's attack rolls. Additionally, its range increases to 150/600ft and it makes no sound when shot.</description>
+		<sheet>
+			<description>The Elixir Gun makes no sound when shot.</description>
 		</sheet>
+		<rules>
+			<stat name="elixir t:attack:bonus" value=" (+2 attack bonus)" inline="true" />
+			<stat name="elixir gun:range:short" value="70" />
+			<stat name="elixir gun:range:long" value="280" />
+		</rules>
 	</element>
 	<element name="Super T" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_ELIXIR_GUN_SUPER_T">
 		<supports>Elixir Gun,Advanced Signature Device</supports>
@@ -1954,7 +2034,7 @@
 		<description>
 			<p> Targets hit by Elixir T suffer an additional 1d8 necrotic damage that reduces the target's max HP by the same amount until their next long rest, and if they fail the CON save, they are also blinded until the start of your next turn.</p>
 		</description>
-		<sheet usage="Elixir Gun">
+		<sheet usage="Elixir T">
 			<description>Targets hit by Elixir T suffer an additional 1d8 necrotic damage that reduces the target's max HP by the same amount until their next long rest, and if they fail the CON save, they are also blinded until the start of your next turn.</description>
 		</sheet>
 	</element>
@@ -1964,9 +2044,16 @@
 		<description>
 			<p>Creatures healed by Elixir H are healed for d10s and are cured of 1 disease or condition (blinded, deafened, poisoned, paralysis). The energy maximum for Elixir H is now 4, and it also multiplies the healing granted by your Int modifier.</p>
 		</description>
-		<sheet usage="Elixir Gun">
-			<description>Creatures healed by Elixir H are healed for d10s and are cured of 1 disease or condition (blinded, deafened, poisoned, paralysis). The energy maximum for Elixir H is now 4, and it also multiplies the healing granted by your Int modifier.</description>
+		<sheet usage="Elixir H">
+			<description>Creatures healed by Elixir H also are cured of 1 disease or condition (blinded, deafened, poisoned, paralysis).&#13;&#10;
+			Healing done by Elixir H is multiplied by {{super h:heal:multiplier}}.</description>
 		</sheet>
+		<rules>
+			<stat name="super h:heal:multiplier" value="1" bonus="base" />
+			<stat name="super h:heal:multiplier" value="intelligence:modifier" bonus="base" />
+			<stat name="elixir h:dice:size" value="2" />
+			<stat name="elixir h:energy:max" value="1" />
+		</rules>
 	</element>
 	<element name="Super G" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_ELIXIR_GUN_SUPER_G">
 		<supports>Elixir Gun,Advanced Signature Device</supports>
@@ -1974,9 +2061,12 @@
 		<description>
 			<p>When a creature is affected by Elixir G, you can instead make them confused for the duration.</p>
 		</description>
-		<sheet usage="Elixir Gun">
+		<sheet usage="Elixir G">
 			<description>When a creature is affected by Elixir G, you can instead make them confused for the duration.</description>
 		</sheet>
+		<rules>
+			<grant type="spell" id="ID_PHB_SPELL_CONFUSION" />
+		</rules>
 	</element>
 	<element name="Paralysis-Inducing T" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_ELIXIR_GUN_PARALYSIS_INDUCING_T">
 		<supports>Elixir Gun,Ultimate Signature Device</supports>
@@ -1984,7 +2074,7 @@
 		<description>
 			<p>The poisoned status caused by Elixir T now lasts 1d4 rounds. Additionally, whenever they fail a save against Elixir T, they gain a level of Exhaustion.</p>
 		</description>
-		<sheet usage="Elixir Gun">
+		<sheet usage="Elixir T">
 			<description>The poisoned status caused by Elixir T now lasts 1d4 rounds. Additionally, whenever they fail a save against Elixir T, they gain a level of Exhaustion.</description>
 		</sheet>
 	</element>
@@ -1992,11 +2082,14 @@
 		<supports>Elixir Gun,Ultimate Signature Device</supports>
 		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN</requirements>
 		<description>
-			<p>Creatures targeted by Elixir H. Gain the benefits of Haste for a number of rounds equal to the amount of energy used and regain an amount of HP equal to the energy used every round for a minute.</p>
+			<p>Creatures targeted by Elixir H gain the benefits of Haste for a number of rounds equal to the amount of energy used and regain an amount of HP equal to the energy used every round for a minute.</p>
 		</description>
-		<sheet usage="Elixir Gun">
-			<description>Creatures targeted by Elixir H. Gain the benefits of Haste for a number of rounds equal to the amount of energy used and regain an amount of HP equal to the energy used every round for a minute.</description>
+		<sheet usage="Elixir H">
+			<description>Creatures targeted by Elixir H gain the benefits of Haste for a number of rounds equal to the amount of energy used and regain an amount of HP equal to the energy used every round for a minute.</description>
 		</sheet>
+		<rules>
+			<grant type="spell" id="ID_PHB_SPELL_HASTE" />
+		</rules>
 	</element>
 	<element name="Aphrodisiac-Enhanced G" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_ELIXIR_GUN_APHRODISIAC_ENHANCED_G">
 		<supports>Elixir Gun,Ultimate Signature Device</supports>
@@ -2004,9 +2097,12 @@
 		<description>
 			<p>When a creature fails a save against your Elixir G, you can instead make them Charmed. Additionally, the duration of Elixir G increases to one round per engineer level.</p>
 		</description>
-		<sheet usage="Elixir Gun">
-			<description>When a creature fails a save against your Elixir G, you can instead make them Charmed. Additionally, the duration of Elixir G increases to one round per engineer level.</description>
+		<sheet usage="Elixir G">
+			<description>When a creature fails a save against your Elixir G, you can instead make them Charmed.</description>
 		</sheet>
+		<rules>
+			<stat name="elixir g:rounds" value="level:engineer" bonus="base" />
+		</rules>
 	</element>
 	
 	<element name="Turret" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET">
