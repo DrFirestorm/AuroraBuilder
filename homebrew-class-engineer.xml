@@ -2120,10 +2120,20 @@
 		</description>
 		<sheet>
 			<description>
-				<p>A small deployable device with an AC of 12 and HP equal to 5+(6Xyour Engineer Level). As an action you can deploy the turret to a space adjacent to you. An undeployed turret is a 6-inch box. Turrets are automated firearms used to defend and support an engineer and their allies. Only one may be deployed at a time, unless otherwise stated. A turret can be undeployed while adjacent to it. A turret is immune to Poison and Psychic damage, cannot be feared or charmed, and is immune to poison and disease. As a bonus action on your turn you command the turret to move to an unoccupied space. The turret has a walking speed of 15 ft.</p>
+				A small deployable device with an AC of {{turret:ac}}, HP of {{turret:hp}}, and walking speed of 15 ft. As an action you can deploy the turret to an empty space within {{turret:deploy:distance}} ft of you. An undeployed turret is a 6-inch box. As a bonus action on your turn, you can command the turret to move to an unoccupied space. Only {{turret:count:max}} may be deployed at a time and can be undeployed while within {{turret:deploy:distance}} ft of it. It is immune to Poison and Psychic damage, cannot be feared or charmed, and is immune to poison and disease.
 			</description>
 		</sheet>
 		<rules>
+			<stat name="turret:ac" value="12" />
+			<stat name="turret:hp" value="5" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:count:max" value="1" />
+			<stat name="turret:deploy:distance" value="5" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET_AUTOMATED_STRIKE" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET_HEALING_MIST" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET_FORCE_NET" />
@@ -2135,26 +2145,43 @@
 			<p>Enemy creatures that enter a 25 ft radius around the turret, or start their turn there, must make a Dex save. On a failure they take 2d4 + int mod (min. 1) piercing damage. They take half damage on a success. This increases to 3d4 at level 5, 4d4 at level 11, and 6d4 at level 17.</p>
 		</description>
 		<sheet usage="Turret">
-			<description>Enemy creatures that enter a 25 ft radius around the turret, or start their turn there, must make a Dex save. On a failure they take 2d4 + int mod (min. 1) piercing damage. They take half damage on a success. This increases to 3d4 at level 5, 4d4 at level 11, and 6d4 at level 17.</description>
+			<description>Enemy creatures that enter a {{automated strike:range}} ft radius around the turret, or start their turn there, must make a Dex save. On a failure they take {{automated strike:dice:amount}}d{{automated strike:dice:size}} + {{automated strike:int:mod}} piercing damage. They take half damage on a success.</description>
 		</sheet>
+		<rules>
+			<stat name="automated strike:dice:amount" value="2" />
+			<stat name="automated strike:dice:amount" value="1" level="5" />
+			<stat name="automated strike:dice:amount" value="1" level="11" />
+			<stat name="automated strike:dice:amount" value="2" level="17" />
+			<stat name="automated strike:int:mod" value="1" bonus="base" />
+			<stat name="automated strike:int:mod" value="intelligence:modifier" bonus="base" />
+			<stat name="automated strike:range" value="25" />
+			<stat name="automated strike:dice:size" value="4" />
+		</rules>
 	</element>
 	<element name="Healing Mist" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET_HEALING_MIST">
 		<supports>Turret</supports>
 		<description>
-			<p>xEnergy. As a bonus action, activate this feature. Create a restorative cloud centered on the turret with a range of 15ft. Ally creatures that start and (or) end their turn within heal an amount equal to your Int modifier. The cloud lasts a number of rounds equal to the amount of energy spent. (Max Energy of 3).</p>
+			<p> X Energy. As a bonus action, activate this feature. Create a restorative cloud centered on the turret with a range of 15ft. Ally creatures that start and/or end their turn within heal an amount equal to your Int modifier. The cloud lasts a number of rounds equal to the amount of energy spent. (Max Energy of 3).</p>
 		</description>
-		<sheet usage="Turret">
-			<description>xEnergy. As a bonus action, activate this feature. Create a restorative cloud centered on the turret with a range of 15ft. Ally creatures that start and (or) end their turn within heal an amount equal to your Int modifier. The cloud lasts a number of rounds equal to the amount of energy spent. (Max Energy of 3).</description>
+		<sheet usage="Turret, Bonus Action">
+			<description>X Energy. Create a restorative cloud centered on the turret with a range of {{healing mist:range}} ft. Ally creatures that start and/or end their turn within heal for {{healing mist:heal:hp}} HP. The cloud lasts a number of rounds equal to the amount of energy spent. (Max Energy of 3).</description>
 		</sheet>
+		<rules>
+			<stat name="healing mist:range" value="15" />
+			<stat name="healing mist:heal:hp" value="intelligence:modifier" />
+		</rules>
 	</element>
 	<element name="Force Net" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET_FORCE_NET">
 		<supports>Turret</supports>
 		<description>
 			<p>As a bonus action, and for 1 energy, force a creature that you can see within 25 feet of the turret to make a Dex save, or be restrained until the beginning of your next turn.</p>
 		</description>
-		<sheet usage="Turret">
-			<description>As a bonus action, and for 1 energy, force a creature that you can see within 25 feet of the turret to make a Dex save, or be restrained until the beginning of your next turn.</description>
+		<sheet usage="Turret, Bonus Action">
+			<description>1 energy. Force a creature that you can see within {{force net:range}} feet of the turret to make a Dex save, or be restrained until the beginning of your next turn.</description>
 		</sheet>
+		<rules>
+			<stat name="force net:range" value="25" />
+		</rules>
 	</element>
 	<element name="Sturdy Turret" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_TURRET_STURDY_TURRET">
 		<supports>Turret,Enhanced Signature Device</supports>
@@ -2162,9 +2189,14 @@
 		<description>
 			<p>The turret's AC is increased by your Intelligence Modifier, and its HP by 2Xyour Engineer Level. It resists all damage.</p>
 		</description>
-		<sheet usage="Turret">
-			<description>The turret's AC is increased by your Intelligence Modifier, and its HP by 2Xyour Engineer Level. It resists all damage.</description>
+		<sheet>
+			<description>Your turret resists all damage.</description>
 		</sheet>
+		<rules>
+			<stat name="turret:ac" value="intelligence:modifier" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:hp" value="level:engineer" />
+		</rules>
 	</element>
 	<element name="Distant Turret" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_TURRET_DISTANT_TURRET">
 		<supports>Turret,Enhanced Signature Device</supports>
@@ -2172,9 +2204,12 @@
 		<description>
 			<p>You can deploy and undeploy a turret up to 30 feet away. Automated Strike and Force Net have a range of 50 ft, and Healing Mist has a range of 30ft.</p>
 		</description>
-		<sheet usage="Turret">
-			<description>You can deploy and undeploy a turret up to 30 feet away. Automated Strike and Force Net have a range of 50 ft, and Healing Mist has a range of 30ft.</description>
-		</sheet>
+		<rules>
+			<stat name="turret:deploy:distance" value="25" />
+			<stat name="automated strike:range" value="25" />
+			<stat name="force net:range" value="25" />
+			<stat name="healing mist:range" value="15" />
+		</rules>
 	</element>
 	<element name="Second Turret" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_TURRET_SECOND_TURRET">
 		<supports>Turret,Enhanced Signature Device</supports>
@@ -2182,9 +2217,12 @@
 		<description>
 			<p>You may deploy a second turret at a time, and it takes 50% less time and money to rebuild one.</p>
 		</description>
-		<sheet usage="Turret">
-			<description>You may deploy a second turret at a time, and it takes 50% less time and money to rebuild one.</description>
+		<sheet>
+			<description>It takes 50% less time and money to rebuild a turret.</description>
 		</sheet>
+		<rules>
+			<stat name="turret:count:max" value="1" />
+		</rules>
 	</element>
 	<element name="Empowered Strike" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_TURRET_ENHANCED_STRIKE">
 		<supports>Turret,Advanced Signature Device</supports>
@@ -2192,9 +2230,12 @@
 		<description>
 			<p>Automated Strike deals d6s of damage instead of d4s. Additionally, as a free action you can choose whether Automated Strike causes Piercing Damage or Force Damage.</p>
 		</description>
-		<sheet usage="Turret">
-			<description>Automated Strike deals d6s of damage instead of d4s. Additionally, as a free action you can choose whether Automated Strike causes Piercing Damage or Force Damage.</description>
+		<sheet usage="Automated Strike">
+			<description>As a free action you can choose whether Automated Strike causes Piercing Damage or Force Damage.</description>
 		</sheet>
+		<rules>
+			<stat name="automated strike:dice:size" value="2" />
+		</rules>
 	</element>
 	<element name="Restorative Mist" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_TURRET_RESTORATIVE_MIST">
 		<supports>Turret,Advanced Signature Device</supports>
@@ -2202,9 +2243,12 @@
 		<description>
 			<p>Creatures healed by Healing Mist are healed for twice your INT mod, and are restored of 1 disease or condition every turn they remain inside (poison, blinded, deafened, or paralysis).</p>
 		</description>
-		<sheet usage="Turret">
-			<description>Creatures healed by Healing Mist are healed for twice your INT mod, and are restored of 1 disease or condition every turn they remain inside (poison, blinded, deafened, or paralysis).</description>
+		<sheet usage="Healing Mist">
+			<description>Creatures healed by Healing Mist are restored of 1 disease or condition every turn they remain inside (poison, blinded, deafened, or paralysis).</description>
 		</sheet>
+		<rules>
+			<stat name="healing mist:heal:hp" value="intelligence:modifier" />
+		</rules>
 	</element>
 	<element name="Electrified Net" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_TURRET_ELECTRIFIED_NET">
 		<supports>Turret,Advanced Signature Device</supports>
@@ -2212,7 +2256,7 @@
 		<description>
 			<p>When a target fails their Dex save against Force Net, they take 4d6 lightning damage, and cannot take reactions until free.</p>
 		</description>
-		<sheet usage="Turret">
+		<sheet usage="Force Net">
 			<description>When a target fails their Dex save against Force Net, they take 4d6 lightning damage, and cannot take reactions until free.</description>
 		</sheet>
 	</element>
@@ -2222,9 +2266,12 @@
 		<description>
 			<p>Friendly creatures (Including yourself) within 30ft of a turret gain the benefits of Shield. This effect persists until the destruction or deconstruction of the turret. You cannot stack the effects of Shield with two turrets in this way.</p>
 		</description>
-		<sheet usage="Turret">
+		<sheet>
 			<description>Friendly creatures (Including yourself) within 30ft of a turret gain the benefits of Shield. This effect persists until the destruction or deconstruction of the turret. You cannot stack the effects of Shield with two turrets in this way.</description>
 		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD" />
+		</rules>
 	</element>
 	<element name="Fission Core" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_TURRET_FISSION_CORE">
 		<supports>Turret,Ultimate Signature Device</supports>
@@ -2232,7 +2279,7 @@
 		<description>
 			<p>As an action, or upon destruction, a turret explodes. Creatures within 30 ft must succeed on a Dex save or take 12d6+20 bludgeoning damage and be knocked prone on a failure (half damage on a success).</p>
 		</description>
-		<sheet usage="Turret">
+		<sheet>
 			<description>As an action, or upon destruction, a turret explodes. Creatures within 30 ft must succeed on a Dex save or take 12d6+20 bludgeoning damage and be knocked prone on a failure (half damage on a success).</description>
 		</sheet>
 	</element>
@@ -2242,8 +2289,8 @@
 		<description>
 			<p>As a bonus action, you can make one of your turrets teleport to any unoccupied spot within 30ft of itself. Additionally, you can store your turrets in an extradimensional space from which you can retrieve them as a free action.</p>
 		</description>
-		<sheet usage="Turret">
-			<description>As a bonus action, you can make one of your turrets teleport to any unoccupied spot within 30ft of itself. Additionally, you can store your turrets in an extradimensional space from which you can retrieve them as a free action.</description>
+		<sheet usage="Bonus Action">
+			<description>You can make one of your turrets teleport to any unoccupied spot within 30ft of itself. Additionally, you can store your turrets in an extradimensional space from which you can retrieve them as a free action.</description>
 		</sheet>
 	</element>
 	
@@ -2263,11 +2310,21 @@
 		</description>
 		<sheet>
 			<description>
-				<p>A small deployable flying device with an AC of 12 and HP equal to 5+(4*your Engineer Level). As an action you can deploy the drone to a space adjacent to you. An undeployed drone is a 6-inch sphere. A drone has a flying speed of 30 feet, can carry a weight of 40lbs and cannot move more than 300ft away from you. A drone moves on your initiative, has its own movement action, but uses your actions for its abilities. Only 1 may be deployed at a time, unless otherwise stated. A drone can be undeployed while adjacent to it.</p>
-				<p>A drone is immune to Poison and Psychic damage. It cannot be charmed or frightened, and is immune to poison and disease. It has a Str Save bonus of +0 and a Dex Save bonus of +2. It fails any other saving throw.</p>
+				A small deployable flying device with an AC of 12, HP of {{drone:hp}}, and flying speed of 30 feet. 
+				As an action you can deploy the drone to a space adjacent to you; an undeployed drone is a 6-inch sphere. 
+				It can carry a weight of 40lbs and cannot move more than 300ft away from you. 
+				A drone moves on your initiative, has its own movement action, but uses your actions for its abilities. 
+				Only {{drone:count:max}} may be deployed at a time and can be undeployed while adjacent to it.&#13;&#10;
+				Drones are immune to Poison and Psychic damage, cannot be charmed or frightened, and are immune to poison and disease. It has a Str Save bonus of +0 and a Dex Save bonus of +2. It fails any other saving throw.
 			</description>
 		</sheet>
 		<rules>
+			<stat name="drone:hp" value="5" />
+			<stat name="drone:hp" value="level:engineer" />
+			<stat name="drone:hp" value="level:engineer" />
+			<stat name="drone:hp" value="level:engineer" />
+			<stat name="drone:hp" value="level:engineer" />
+			<stat name="drone:count:max" value="1" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE_DRONE_SHOT" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE_DRONE_MARK" />
 			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE_DRONE_CAMERA" />
@@ -2279,8 +2336,13 @@
 			<p>As an action, your drone makes a shot at a target you can see. This attack has a range of 60 ft. On a hit, drone shot deals 1d8 + Int. Mod piercing damage.</p>
 		</description>
 		<sheet usage="Drone, Action">
-			<description>As an action, your drone makes a shot at a target you can see. This attack has a range of 60 ft. On a hit, drone shot deals 1d8 + Int. Mod piercing damage.</description>
+			<description>This attack has a range of {{drone shot:range}} ft{{drone shot:attack:bonus}}. On a hit, drone shot deals 1d8 + {{intelligence:modifier}} piercing damage{{drone shot:damage:bonus}}.</description>
 		</sheet>
+		<rules>
+			<stat name="drone shot:range" value="60" />
+			<stat name="drone shot:attack:bonus" value="" inline="true" />
+			<stat name="drone shot:damage:bonus" value="" inline="true" />
+		</rules>
 	</element>
 	<element name="Drone Mark" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE_DRONE_MARK">
 		<supports>Drone</supports>
@@ -2288,8 +2350,11 @@
 			<p>For 2 energy, your drone marks a creature or object that you can see as an action. This functions as Faerie Fire, targeting a single creature or object and doesn't require Concentration.</p>
 		</description>
 		<sheet usage="Drone, Action">
-			<description>For 2 energy, your drone marks a creature or object that you can see as an action. This functions as Faerie Fire, targeting a single creature or object and doesn't require Concentration.</description>
+			<description>2 energy. Your drone marks a creature or object that you can see. This functions as Faerie Fire, targeting a single creature or object and doesn't require Concentration.</description>
 		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" />
+		</rules>
 	</element>
 	<element name="Drone Camera" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE_DRONE_CAMERA">
 		<supports>Drone</supports>
@@ -2297,8 +2362,12 @@
 			<p>For 1 Energy, you can observe through your drone. This functions as Scrying targeting the Drone, and requires concentration, but no focus or casting time. As long as you continue observing your drone, it can move up to a mile away and be controlled from this distance. If Drone Camera ends while your Drone is out of range, it stays in the same spot until you enter its range again.</p>
 		</description>
 		<sheet usage="Drone">
-			<description>For 1 Energy, you can observe through your drone. This functions as Scrying targeting the Drone, and requires concentration, but no focus or casting time. As long as you continue observing your drone, it can move up to a mile away and be controlled from this distance. If Drone Camera ends while your Drone is out of range, it stays in the same spot until you enter its range again.</description>
+			<description>{{drone camera:energy}} Energy. You can observe through your drone. This functions as Scrying targeting the Drone, requires concentration, but no focus or casting time. As long as you continue observing your drone, it can move up to a mile away and be controlled from this distance. If Drone Camera ends while your Drone is out of range, it stays in the same spot until you enter its range again.</description>
 		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" />
+			<stat name="drone camera:energy" value="1" />
+		</rules>
 	</element>
 	<element name="System Leak" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_DRONE_SYSTEM_LEAK">
 		<supports>Drone,Enhanced Signature Device</supports>
@@ -2306,9 +2375,12 @@
 		<description>
 			<p>For 1 Energy, your Drone may as a bonus action create a pool of oil underneath itself that acts as a nonmagical Grease spell.</p>
 		</description>
-		<sheet usage="Drone, Bonus Action">
-			<description>For 1 Energy, your Drone may as a bonus action create a pool of oil underneath itself that acts as a nonmagical Grease spell.</description>
+		<sheet usage="Bonus Action">
+			<description>1 Energy. Your Drone may create a pool of oil underneath itself that acts as a nonmagical Grease spell.</description>
 		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GREASE" />
+		</rules>
 	</element>
 	<element name="Second Drone" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_DRONE_SECOND_DRONE">
 		<supports>Drone,Enhanced Signature Device</supports>
@@ -2316,9 +2388,15 @@
 		<description>
 			<p>You may deploy a second drone at a time, and it takes 50% less time and money to rebuild one. You can command both drones on the same action or bonus action. (example: simultaneous Drone Shot). Energy is expended for both drones in doing so.</p>
 		</description>
-		<sheet usage="Drone">
-			<description>You may deploy a second drone at a time, and it takes 50% less time and money to rebuild one. You can command both drones on the same action or bonus action. (example: simultaneous Drone Shot). Energy is expended for both drones in doing so.</description>
+		<sheet>
+			<description>
+				You can command both drones on the same action or bonus action. Energy is expended for both drones in doing so.&#13;&#10;
+				It takes 50% less time and money to rebuild a drone.
+			</description>
 		</sheet>
+		<rules>
+			<stat name="drone:count:max" value="1" />
+		</rules>
 	</element>
 	<element name="Chameleonic Plating" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_DRONE_CHAMELEONIC_PLATING">
 		<supports>Drone,Enhanced Signature Device</supports>
@@ -2326,8 +2404,8 @@
 		<description>
 			<p>For 1 Energy, you can cloak your drone. As a bonus action, your drone becomes invisible and makes no noise for 1 minute, or until it takes damage or uses its Drone Shot or Drone Mark abilities.</p>
 		</description>
-		<sheet usage="Drone, Bonus Action">
-			<description>For 1 Energy, you can cloak your drone. As a bonus action, your drone becomes invisible and makes no noise for 1 minute, or until it takes damage or uses its Drone Shot or Drone Mark abilities.</description>
+		<sheet usage="Bonus Action">
+			<description>1 Energy. You can cloak your drone, it becomes invisible and makes no noise for 1 minute, or until it takes damage or uses its Drone Shot or Drone Mark abilities.</description>
 		</sheet>
 	</element>
 	<element name="Improved Shot" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_DRONE_IMPROVED_SHOT">
@@ -2336,9 +2414,12 @@
 		<description>
 			<p>Drone Shot uses a bonus action, and now has a range of 120 feet.</p>
 		</description>
-		<sheet usage="Drone">
-			<description>Drone Shot uses a bonus action, and now has a range of 120 feet.</description>
+		<sheet usage="Drone Shot">
+			<description>Drone Shot uses a bonus action.</description>
 		</sheet>
+		<rules>
+			<stat name="drone shot:range" value="60" />
+		</rules>
 	</element>
 	<element name="Improved Mark" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_DRONE_IMPROVED_MARK">
 		<supports>Drone,Advanced Signature Device</supports>
@@ -2346,7 +2427,7 @@
 		<description>
 			<p>Creatures marked by Drone Mark take an extra 2d6 damage from you and your constructs.</p>
 		</description>
-		<sheet usage="Drone">
+		<sheet usage="Drone Mark">
 			<description>Creatures marked by Drone Mark take an extra 2d6 damage from you and your constructs.</description>
 		</sheet>
 	</element>
@@ -2356,9 +2437,12 @@
 		<description>
 			<p>The Drone gains Blindsight 90ft. Additionally, Drone Camera requires no energy to use.</p>
 		</description>
-		<sheet usage="Drone">
-			<description>The Drone gains Blindsight 90ft. Additionally, Drone Camera requires no energy to use.</description>
+		<sheet>
+			<description>The Drone gains Blindsight 90ft.</description>
 		</sheet>
+		<rules>
+			<stat name="drone camera:energy" value="-1" />
+		</rules>
 	</element>
 	<element name="Shock Shot" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_DRONE_SHOCK_SHOT">
 		<supports>Drone,Ultimate Signature Device</supports>
@@ -2366,9 +2450,10 @@
 		<description>
 			<p>Drone Shot gains a +2 Attack Bonus, and deals an additional 2d6 lightning damage.</p>
 		</description>
-		<sheet usage="Drone">
-			<description>Drone Shot gains a +2 Attack Bonus, and deals an additional 2d6 lightning damage.</description>
-		</sheet>
+		<rules>
+			<stat name="drone shot:attack:bonus" value=" and a +2 Attack Bonus" inline="true" />
+			<stat name="drone shot:damage:bonus" value=" and 2d6 lightning damage" inline="true" />
+		</rules>
 	</element>
 	<element name="Mark Tracking" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_DRONE_MARK_TRACKING">
 		<supports>Drone,Ultimate Signature Device</supports>
@@ -2376,7 +2461,7 @@
 		<description>
 			<p>You always know the direction towards a marked creature, so long as it is within the same plane. Additionally, the duration of Drone Mark is increased to a day.</p>
 		</description>
-		<sheet usage="Drone">
+		<sheet usage="Drone Mark">
 			<description>You always know the direction towards a marked creature, so long as it is within the same plane. Additionally, the duration of Drone Mark is increased to a day.</description>
 		</sheet>
 	</element>
@@ -2386,9 +2471,12 @@
 		<description>
 			<p>Spending 1 Energy allows you to replicate the effects of Major Image within 120ft of a Drone. The Drone cannot take any actions until the illusion ends or is dismissed. This illusion is nonmagical, and thus is immune to effects like True Sight and a creature cannot see through it even if it's discerned as an illusion.</p>
 		</description>
-		<sheet usage="Drone">
-			<description>Spending 1 Energy allows you to replicate the effects of Major Image within 120ft of a Drone. The Drone cannot take any actions until the illusion ends or is dismissed. This illusion is nonmagical, and thus is immune to effects like True Sight and a creature cannot see through it even if it's discerned as an illusion.</description>
+		<sheet>
+			<description>1 Energy. Allows you to replicate the effects of Major Image within 120ft of a Drone. The Drone cannot take any actions until the illusion ends or is dismissed. This illusion is nonmagical, and thus is immune to effects like True Sight and a creature cannot see through it even if it's discerned as an illusion.</description>
 		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" />
+		</rules>
 	</element>
 	
 	<element name="Magitech Omnistaff" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF">
