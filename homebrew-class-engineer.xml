@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<author url="https://www.dandwiki.com/wiki/Engineer_(5e_Class)#Signature_Device">dandwiki</author>
-		<update version="0.0.2">
+		<author url="https://www.dandwiki.com/wiki/Engineer_(5e_Class)">dandwiki</author>
+		<update version="0.0.3">
 			<file name="homebrew-class-engineer.xml" url="https://raw.githubusercontent.com/DrFirestorm/AuroraBuilder/main/homebrew-class-engineer.xml" />
 		</update>
 	</info>
@@ -245,9 +245,6 @@
 			<p>At 5th level, you choose one upgrade to your Signature Device, turning it into an Enhanced Signature Device.</p>
 		</description>
 		<sheet display="false" />
-		<!--<rules>
-			<select type="Class Feature" name="Enhanced Signature Device" supports="Enhanced Signature Device" level="5" number="1" />
-		</rules>-->
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ABILITY_SCORE_IMPROVEMENT">
 		<compendium display="false" />
@@ -282,9 +279,6 @@
 			<p>At 13th level, you choose one upgrade to your Signature Device, turning it into an Advanced Signature Device.</p>
 		</description>
 		<sheet display="false" />
-		<!--<rules>
-			<select type="Class Feature" name="Advanced Signature Device" supports="Advanced Signature Device" level="13" number="1" />
-		</rules>-->
 	</element>
 	<element name="Indomitable Mind" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_INDOMITABLE_MIND">
 		<description>
@@ -302,9 +296,6 @@
 			<p>At 17th level, you choose one upgrade to your Signature Device, turning it into an Ultimate Signature Device.</p>
 		</description>
 		<sheet display="false" />
-		<!--<rules>
-			<select type="Class Feature" name="Ultimate Signature Device" supports="Ultimate Signature Device" level="17" number="1" />
-		</rules>-->
 	</element>
 	<element name="Cannibalisation" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_CANNIBALISATION">
 		<description>
@@ -1582,9 +1573,9 @@
 		</sheet>
 		<rules>
 			<stat name="flamethrower:hands" value="2" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_FIREBLAST" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_NAPALM_SPREAD" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_SMOKESCREEN" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_FIREBLAST" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_NAPALM_SPREAD" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_SMOKESCREEN" />
 		</rules>
 	</element>
 	<element name="Fireblast" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER_FIREBLAST">
@@ -1758,9 +1749,9 @@
 			<stat name="grenade kit:grenades:count" value="1" />
 			<stat name="grenade kit:grenades:plural" value="" inline="true" />
 			<stat name="grenade kit:blast radius" value="10" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_BASIC_GRENADE" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_ELEMENTAL_GRENADE" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_SMOKE_GRENADE" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_BASIC_GRENADE" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_ELEMENTAL_GRENADE" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_SMOKE_GRENADE" />
 		</rules>
 	</element>
 	<element name="Basic Grenade" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT_BASIC_GRENADE">
@@ -1949,9 +1940,9 @@
 			<stat name="elixir gun:hands" value="2" />
 			<stat name="elixir gun:range:short" value="80" />
 			<stat name="elixir gun:range:long" value="320" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_T" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_H" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_G" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_T" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_H" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_G" />
 		</rules>
 	</element>
 	<element name="Elixir T" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN_ELIXIR_T">
@@ -2134,9 +2125,9 @@
 			<stat name="turret:hp" value="level:engineer" />
 			<stat name="turret:count:max" value="1" />
 			<stat name="turret:deploy:distance" value="5" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET_AUTOMATED_STRIKE" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET_HEALING_MIST" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET_FORCE_NET" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET_AUTOMATED_STRIKE" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET_HEALING_MIST" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET_FORCE_NET" />
 		</rules>
 	</element>
 	<element name="Automated Strike" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET_AUTOMATED_STRIKE">
@@ -2325,9 +2316,9 @@
 			<stat name="drone:hp" value="level:engineer" />
 			<stat name="drone:hp" value="level:engineer" />
 			<stat name="drone:count:max" value="1" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE_DRONE_SHOT" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE_DRONE_MARK" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE_DRONE_CAMERA" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE_DRONE_SHOT" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE_DRONE_MARK" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE_DRONE_CAMERA" />
 		</rules>
 	</element>
 	<element name="Drone Shot" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE_DRONE_SHOT">
@@ -2495,14 +2486,15 @@
 		</description>
 		<sheet>
 			<description>
-				<p>A device that functions as a regular quarterstaff, but can also deliver a powerful arcane attack. Additionally, when you make a tinker's tool check to build or repair something, you add a +2 bonus to the roll while in possession of the staff, as it also functions as a tool.</p>
+				<p>A device that functions as a regular quarterstaff, but can also deliver a powerful arcane attack. Additionally, when you make a tinker's tool check to build or repair something, you add a +{{magitech omnistaff:tinkers tools:bonus}} bonus to the roll while in possession of the staff, as it also functions as a tool.</p>
 			</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_STAFF_STRIKE" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_MEND" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_ARCANE_RAY" />
-			<grant type="Archetype Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_MAGITECH_PULSE" />
+			<stat name="magitech omnistaff:tinkers tools:bonus" value="2" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_STAFF_STRIKE" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_MEND" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_ARCANE_RAY" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_MAGITECH_PULSE" />
 		</rules>
 	</element>
 	<element name="Staff Strike" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_STAFF_STRIKE">
@@ -2511,8 +2503,12 @@
 			<p>You make a melee weapon attack with the staff. Treat this as a Quarterstaff attack(one handed:1d6 bludgoning, Two handed 1d8 Bludgoning). Against constructs or mechanical objects, deal an additional 2d6 force damage.</p>
 		</description>
 		<sheet usage="Magitech Omnistaff, Action">
-			<description>You make a melee weapon attack with the staff. Treat this as a Quarterstaff attack(one handed:1d6 bludgoning, Two handed 1d8 Bludgoning). Against constructs or mechanical objects, deal an additional 2d6 force damage.</description>
+			<description>You make a melee weapon attack {{staff strike:attack:bonus}}with the staff. Treat this as a Quarterstaff attack {{staff strike:damage:bonus}}(one handed:1d6 + {{intelligence:modifier}} bludgoning, Two handed 1d8 + {{intelligence:modifier}} Bludgoning). Against constructs or mechanical objects, deal an additional 2d6 force damage.</description>
 		</sheet>
+		<rules>
+			<stat name="staff strike:attack:bonus" value="" inline="true" />
+			<stat name="staff strike:damage:bonus" value="" inline="true" />
+		</rules>
 	</element>
 	<element name="Mend" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_MEND">
 		<supports>Magitech Omnistaff</supports>
@@ -2520,8 +2516,13 @@
 			<p>You can use your staff to cast mending on a damaged simple device made of stone, metal or wood within 10 feet. You may also use this feature, spending 1 energy, to heal a construct (including your drones and turrets) within 10 feet for 1d6 + 1 HP as a bonus action, as long as the construct has at least 1 HP.</p>
 		</description>
 		<sheet usage="Magitech Omnistaff, Bonus Action">
-			<description>You can use your staff to cast mending on a damaged simple device made of stone, metal or wood within 10 feet. You may also use this feature, spending 1 energy, to heal a construct (including your drones and turrets) within 10 feet for 1d6 + 1 HP as a bonus action, as long as the construct has at least 1 HP.</description>
+			<description>You can use your staff to cast Mending on a damaged simple device made of stone, metal or wood within {{mend:range}} feet. You may also use this feature, spending 1 energy, to heal a construct (including your drones and turrets) within 10 feet for 1d6 + {{mend:heal:bonus}} HP, as long as the construct has at least 1 HP.</description>
 		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" />
+			<stat name="mend:range" value="10" />
+			<stat name="mend:heal:bonus" value="1" bonus="base" />
+		</rules>
 	</element>
 	<element name="Arcane Ray" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_ARCANE_RAY">
 		<supports>Magitech Omnistaff</supports>
@@ -2529,8 +2530,13 @@
 			<p>As an action, while wielding the staff, you can spend energy to make a ranged spell attack against a creature within 60 feet. On a hit, the creature takes 2d8 force damage + an additional 1d8 force damage per energy point spent (maximum 3 energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</p>
 		</description>
 		<sheet usage="Magitech Omnistaff, Action">
-			<description>As an action, while wielding the staff, you can spend energy to make a ranged spell attack against a creature within 60 feet. On a hit, the creature takes 2d8 force damage + an additional 1d8 force damage per energy point spent (maximum 3 energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</description>
+			<description>While wielding the staff, you can spend energy to make a ranged spell attack against a creature within 60 feet. On a hit, the creature takes 2d8 force damage + an additional 1d8 force damage per energy point spent (maximum 3 energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</description>
+			<description level="17">While wielding the staff, you can spend energy to make a ranged spell attack against a creature within {{arcane ray:range}} feet. On a hit, the creature takes 2d8 + {{intelligence:modifier}} force damage + an additional 1d8 force damage per energy point spent (maximum {{arcane ray:energy}} energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</description>
 		</sheet>
+		<rules>
+			<stat name="arcane ray:range" value="60" />
+			<stat name="arcane ray:energy" value="3" />
+		</rules>
 	</element>
 	<element name="Magitech Pulse" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_MAGITECH_PULSE">
 		<supports>Magitech Omnistaff</supports>
@@ -2538,8 +2544,14 @@
 			<p>For 2 Energy, as an action, you can force all creatures (size large and smaller) within 10 feet to make a STR save. On a failure, they are knocked prone.</p>
 		</description>
 		<sheet usage="Magitech Omnistaff, Action">
-			<description>For 2 Energy, as an action, you can force all creatures (size large and smaller) within 10 feet to make a STR save. On a failure, they are knocked prone.</description>
+			<description>{{magitech pulse:energy}} Energy. You can force all creatures (size {{magitech pulse:size}} and smaller) within {{magitech pulse:range}} feet to make a STR save{{magitech pulse:dc:bonus}}. On a failure, they are knocked prone.</description>
 		</sheet>
+		<rules>
+			<stat name="magitech pulse:energy" value="2" />
+			<stat name="magitech pulse:range" value="10" />
+			<stat name="magitech pulse:size" value="large" inline="true" />
+			<stat name="magitech pulse:dc:bonus" value="" inline="true" />
+		</rules>
 	</element>
 	<element name="Force Strike" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_FORCE_STRIKE">
 		<supports>Magitech Omnistaff,Enhanced Signature Device</supports>
@@ -2547,9 +2559,13 @@
 		<description>
 			<p>Add your Int modifier to attack and damage rolls with Staff Strike. Whenever you successfully hit a creature, you can spend one energy point to send it flying back 15ft or until it hits an obstacle.</p>
 		</description>
-		<sheet usage="Magitech Omnistaff">
-			<description>Add your Int modifier to attack and damage rolls with Staff Strike. Whenever you successfully hit a creature, you can spend one energy point to send it flying back 15ft or until it hits an obstacle.</description>
+		<sheet usage="Staff Strike">
+			<description>Whenever you successfully hit a creature, you can spend one energy point to send it flying back 15ft or until it hits an obstacle.</description>
 		</sheet>
+		<rules>
+			<stat name="staff strike:attack:bonus" value="with +2 bonus to the attack roll " inline="true" />
+			<stat name="staff strike:damage:bonus" value="with +2 damage " inline="true" />
+		</rules>
 	</element>
 	<element name="Dual Ray" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_DUAL_RAY">
 		<supports>Magitech Omnistaff,Enhanced Signature Device</supports>
@@ -2557,7 +2573,7 @@
 		<description>
 			<p>You fire an additional Arcane Ray for no additional cost. This ray can target the first enemy you hit, or a seperate one if you choose. If you target a different enemy, you must roll again to hit. If you hit one enemy with both beams, you only roll once.</p>
 		</description>
-		<sheet usage="Magitech Omnistaff">
+		<sheet usage="Arcane Ray">
 			<description>You fire an additional Arcane Ray for no additional cost. This ray can target the first enemy you hit, or a seperate one if you choose. If you target a different enemy, you must roll again to hit. If you hit one enemy with both beams, you only roll once.</description>
 		</sheet>
 	</element>
@@ -2567,9 +2583,11 @@
 		<description>
 			<p>Add +2 to the save DC of Magitech Pulse. Its range is increased to 20 feet, and it can work against creatures up to Huge in size.</p>
 		</description>
-		<sheet usage="Magitech Omnistaff">
-			<description>Add +2 to the save DC of Magitech Pulse. Its range is increased to 20 feet, and it can work against creatures up to Huge in size.</description>
-		</sheet>
+		<rules>
+			<stat name="magitech pulse:range" value="10" />
+			<stat name="magitech pulse:size" value="huge" inline="true" />
+			<stat name="magitech pulse:dc:bonus" value=" with a +2 bonus to your DC" inline="true" />
+		</rules>
 	</element>
 	<element name="Focused Ray" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_FOCUSED_RAY">
 		<supports>Magitech Omnistaff,Advanced Signature Device</supports>
@@ -2577,7 +2595,7 @@
 		<description>
 			<p>For every consecutive use of Arcane Ray, it deals an extra stack of 1d8 force damage.</p>
 		</description>
-		<sheet usage="Magitech Omnistaff">
+		<sheet usage="Arcane Ray">
 			<description>For every consecutive use of Arcane Ray, it deals an extra stack of 1d8 force damage.</description>
 		</sheet>
 	</element>
@@ -2587,9 +2605,13 @@
 		<description>
 			<p>You may use the mend ability to a range of 30 feet. The bonus to Tinker's Tool checks the staff gives is increased to +5. You may add your intelligence modifier to the healing that the feature gives to constructs.</p>
 		</description>
-		<sheet usage="Magitech Omnistaff">
-			<description>You may use the mend ability to a range of 30 feet. The bonus to Tinker's Tool checks the staff gives is increased to +5. You may add your intelligence modifier to the healing that the feature gives to constructs.</description>
-		</sheet>
+		<rules>
+			<stat name="mend:range" value="20" />
+			<stat name="magitech omnistaff:tinkers tools:bonus" value="3" />
+			<stat name="efficient repair:heal:bonus" value="1" />
+			<stat name="efficient repair:heal:bonus" value="intelligence:modifier" />
+			<stat name="mend:heal:bonus" value="efficient repair:heal:bonus" bonus="base" />
+		</rules>
 	</element>
 	<element name="Booming Pulse" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_BOOMING_PULSE">
 		<supports>Magitech Omnistaff,Advanced Signature Device</supports>
@@ -2597,8 +2619,8 @@
 		<description>
 			<p>Magitech Pulse deals thunder damage equal to your engineer level to creatures that fail the STR save. They are also deafened until the end of your next turn.</p>
 		</description>
-		<sheet usage="Magitech Omnistaff">
-			<description>Magitech Pulse deals thunder damage equal to your engineer level to creatures that fail the STR save. They are also deafened until the end of your next turn.</description>
+		<sheet usage="Magitech Pulse">
+			<description>Magitech Pulse deals {{level:engineer}} thunder damage to creatures that fail the STR save. They are also deafened until the end of your next turn.</description>
 		</sheet>
 	</element>
 	<element name="Efficient Pulse" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_EFFICIENT_PULSE">
@@ -2608,8 +2630,11 @@
 			<p>Magitech Pulse uses a bonus action, and costs only 1 energy. Additionally, you can make it create a cloud of floating debris within its area that lasts four rounds. Creatures other than you entering this area or starting their turn in it suffer 4d4 slashing damage.</p>
 		</description>
 		<sheet usage="Magitech Omnistaff">
-			<description>Magitech Pulse uses a bonus action, and costs only 1 energy. Additionally, you can make it create a cloud of floating debris within its area that lasts four rounds. Creatures other than you entering this area or starting their turn in it suffer 4d4 slashing damage.</description>
+			<description>Magitech Pulse uses a bonus action. Additionally, you can make it create a cloud of floating debris within its area that lasts four rounds. Creatures other than you entering this area or starting their turn in it suffer 4d4 slashing damage.</description>
 		</sheet>
+		<rules>
+			<stat name="magitech pulse:energy" value="-1" />
+		</rules>
 	</element>
 	<element name="Ravaging Ray" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_RAVAGING_RAY">
 		<supports>Magitech Omnistaff,Ultimate Signature Device</supports>
@@ -2617,9 +2642,10 @@
 		<description>
 			<p>You may spend up to 6 energy on Arcane Ray. You may also add your Intelligence modifier to the damage of Arcane Ray, and its range increases to 180ft.</p>
 		</description>
-		<sheet usage="Magitech Omnistaff">
-			<description>You may spend up to 6 energy on Arcane Ray. You may also add your Intelligence modifier to the damage of Arcane Ray, and its range increases to 180ft.</description>
-		</sheet>
+		<rules>
+			<stat name="arcane ray:range" value="120" />
+			<stat name="arcane ray:energy" value="3" />
+		</rules>
 	</element>
 	<element name="System Restoration" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_SYSTEM_RESTORATION">
 		<supports>Magitech Omnistaff,Ultimate Signature Device</supports>
@@ -2627,14 +2653,240 @@
 		<description>
 			<p>You can spend 6 energy to replicate the effects of a Fabricate spell. This cost is halved if this is used to repair a broken object. Additionally, so long as at least half of the pieces are present, you can spend 10 Energy to restore a destroyed Construct, returning it to 1HP.</p>
 		</description>
-		<sheet usage="Magitech Omnistaff">
+		<sheet>
 			<description>You can spend 6 energy to replicate the effects of a Fabricate spell. This cost is halved if this is used to repair a broken object. Additionally, so long as at least half of the pieces are present, you can spend 10 Energy to restore a destroyed Construct, returning it to 1HP.</description>
 		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" />
+		</rules>
 	</element>
 
-	
-	
-	
+	<element name="Magitech Omnigauntlet" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET">
+		<supports>Signature Device</supports>
+		<requirements>[level:2]</requirements>
+		<prerequisite>2nd-level engineer</prerequisite>
+		<description>
+			<p><em>Prerequisite: 2nd-level engineer</em></p>
+			<p>A gauntlet that is commonly used by engineers and inventors as a close combat weapon. This device is very versatile in nature being used for combat mobility and defense. Only one configuration may be active on the gauntlet at a time and you must use a interaction to switch.</p>
+			<ul>
+				<li><strong>Combat Configuration.</strong> You make a melee weapon attack with the staff. Treat this as a Quarterstaff attack(one handed:1d6 bludgoning, Two handed 1d8 Bludgoning). Against constructs or mechanical objects, deal an additional 2d6 force damage.</li>
+				<li><strong>Defense Configuration.</strong> You can use your staff to cast mending on a damaged simple device made of stone, metal or wood within 10 feet. You may also use this feature, spending 1 energy, to heal a construct (including your drones and turrets) within 10 feet for 1d6 + 1 HP as a bonus action, as long as the construct has at least 1 HP.</li>
+				<li><strong>Mobility Configuration.</strong> As an action, while wielding the staff, you can spend energy to make a ranged spell attack against a creature within 60 feet. On a hit, the creature takes 2d8 force damage + an additional 1d8 force damage per energy point spent (maximum 3 energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				<p>A gauntlet that is commonly used by engineers and inventors as a close combat weapon. This device is very versatile in nature being used for combat mobility and defense. Only one configuration may be active on the gauntlet at a time and you must use a interaction to switch.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_COMBAT_CONFIGURATION" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_DEFENSE_CONFIGURATION" supports="Magitech Omnigauntlet" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_MOBILITY_CONFIGURATION" supports="Magitech Omnigauntlet" />
+		</rules>
+	</element>
+	<element name="Combat Configuration" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_COMBAT_CONFIGURATION">
+		<supports>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</supports>
+		<description>
+			<p>You make a dexterity melee attack for 1d8+dex mod damage of either bludgeoning, slashing, or piercing (your choice). You may also spend 1 energy (max of 3) to make an energized dexterity melee attack dealing 1d12+dex of either lightning, force, or thunder damage.</p>
+		</description>
+		<sheet usage="Magitech Omnigauntlet">
+			<description>You make a dexterity melee attack for 1d8 + {{combat configuration:damage:bonus}} damage of either bludgeoning, slashing, or piercing.&#13;&#10;
+			You may also spend Energy (max of {{combat configuration:energy:max}}) to make an energized dexterity melee attack dealing 1d12 + {{combat configuration:damage:bonus}} of either lightning, force, or thunder damage.</description>
+			<description level="5">You make a dexterity melee attack for 1d8 + {{combat configuration:damage:bonus}} damage of either bludgeoning, slashing, or piercing.&#13;&#10;
+			You may also spend Energy (max of {{combat configuration:energy:max}}) to make an energized dexterity melee attack dealing 1d12 + {{combat configuration:damage:bonus}} of either lightning, force, or thunder damage.&#13;&#10;
+			You gain a second gauntlet and both gauntlets gain the light property. </description>
+			<description level="17">You make a dexterity melee attack for 1d8 + {{combat configuration:damage:bonus}} damage of either bludgeoning, slashing, or piercing.&#13;&#10;
+			You may also spend Energy (max of {{combat configuration:energy:max}}) to make an energized dexterity melee attack dealing 1d12 + {{combat configuration:damage:bonus}} of either lightning, force, or thunder damage.&#13;&#10;
+			You gain a second gauntlet and both gauntlets gain the light property.&#13;&#10;
+			When you use your energized strike you can make a second strike with your second gauntlet for free if you have one.&#13;&#10;
+			Your basic gauntlet(s) and energized strikes now deal any damage type, but require a bonus action to change it for both or one gauntlet.</description>
+		</sheet>
+		<rules>
+			<stat name="combat configuration:damage:bonus" value="dexterity:modifier" />
+			<stat name="combat configuration:melee:dice:amount" value="1" />
+			<stat name="combat configuration:melee:dice:size" value="8" />
+			<stat name="combat configuration:energized:dice:amount" value="1" />
+			<stat name="combat configuration:energized:dice:size" value="12" />
+			<stat name="combat configuration:energy:max" value="3" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SECOND_OMNIGAUNTLET" requirements="[level:5]" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_ADVANCED_COMBAT_CONFIGURATION" requirements="[level:13]" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SUPERIOR_COMBAT_CONFIGURATION" requirements="[level:17]" />
+		</rules>
+	</element>
+	<element name="Defense Configuration" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_DEFENSE_CONFIGURATION">
+		<supports>Magitech Omnigauntlet</supports>
+		<description>
+			<p>You form the gauntlet into a shield attached to your arm and it counts as a free hand and grants +2ac.</p>
+		</description>
+		<sheet usage="Magitech Omnigauntlet">
+			<description>You form the gauntlet into a shield attached to your arm and it counts as a free hand and grants +{{defense configuration:ac:bonus}} AC.</description>
+			<description level="5">You form the gauntlet into a shield attached to your arm and it counts as a free hand and grants +2 AC.&#13;&#10;
+			Kinetic Energy Reduction. When hit by an attack that deals bludgeoning, piercing, slashing, or force damage you may expend 1 energy to reduce the damage by 25%, or 3 energy to reduce damage by 50%.</description>
+			<description level="13">You form the gauntlet into a shield attached to your arm and it counts as a free hand and grants +2 AC.&#13;&#10;
+			Kinetic Energy Reduction. When hit by an attack that deals bludgeoning, piercing, slashing, or force damage you may expend 1 energy to reduce the damage by 25%, or 3 energy to reduce damage by 50%.&#13;&#10;
+			Your shield can now reduce all damage types. Your shield stores the damage taken as Potential Energy Points (P.E.P.) with a rate of 12 damage per Point gained and it may be used as a substitute for regular energy. You may store an amount of P.E.P. equal to half your energy capacity.</description>
+			<description level="17">You form the gauntlet into a shield attached to your arm and it counts as a free hand and grants +2 AC.&#13;&#10;
+			Kinetic Energy Reduction. When hit by an attack that deals bludgeoning, piercing, slashing, or force damage you may expend 1 energy to reduce the damage by 25%, or 3 energy to reduce damage by 50%.&#13;&#10;
+			Your shield can now reduce all damage types. Your shield stores the damage taken as Potential Energy Points (P.E.P.) with a rate of 12 damage per Point gained and it may be used as a substitute for regular energy. You may store an amount of P.E.P. equal to half your energy capacity.&#13;&#10;
+			Your shield can also use 5 energy to absorb 75% of damage taken from one attack. You may also now use your P.E.P.s to send out a blast of stored energy dealing 1d12 + {{intelligence:modifier}} of force, lightning, or thunder damage to a max of 8 energy using an action.</description>
+		</sheet>
+		<rules>
+			<stat name="defense configuration:ac:bonus" value="2" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_DEFENSIVE_CONFIGURATION_ENHANCEMENT" requirements="[level:5]" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_ADVANCED_ENERGY_ABSORPTION_AND_REDIRECTION" requirements="[level:13]" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SUPERIOR_ENERGY_ABSORPTION_AND_REDIRECTION" requirements="[level:17]" />
+		</rules>
+	</element>
+	<element name="Mobility Configuration" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_MOBILITY_CONFIGURATION">
+		<supports>Magitech Omnigauntlet</supports>
+		<description>
+			<p>You can make a melee attack for 1d6+dex mod slashing damage. You also have a taser that can make a creature within 5ft of you to make a con save or be stunned on their next turn. Additionally you may use your bonus action to shoot a grappling hook at a target within 30ft of you and pull yourself toward it. You may also use 1 energy to either make an attack, attempt to grapple them, or attempt to stun them with your taser.</p>
+		</description>
+		<sheet usage="Magitech Omnigauntlet">
+			<description>You can make a melee attack for 1d6 + {{dexterity:modifier}} slashing damage.&#13;&#10;
+			You also have a taser that can force a creature within 5ft of you to make a con save or be stunned on their next turn.&#13;&#10;
+			You may use your bonus action to shoot a grappling hook at a target within {{mobility configuration:grappling hook:range}}ft of you and pull yourself toward it. You may use 1 energy to either make an attack, attempt to grapple them, or attempt to stun them with your taser.</description>
+			<description level="5">You can make a melee attack for 1d6 + {{dexterity:modifier}} slashing damage.&#13;&#10;
+			You also have a taser that can force a creature within 5ft of you to make a con save or be stunned on their next turn.&#13;&#10;
+			You may use your bonus action to shoot a grappling hook at a target within {{mobility configuration:grappling hook:range}}ft of you and pull yourself toward it. You may use 1 energy to either make an attack, attempt to grapple them, or attempt to stun them with your taser.&#13;&#10;
+			Your gauntlet has a set of climbing hooks installed into it giving you a climbing speed of 30ft.&#13;&#10;
+			1 Energy. Your taser can stun an enemy at a range of 30ft.</description>
+			<description level="13">You can make a melee attack for 1d6 + {{dexterity:modifier}} slashing damage.&#13;&#10;
+			You also have a taser that can force a creature within 5ft of you to make a con save or be stunned on their next turn.&#13;&#10;
+			You may use your bonus action to shoot a grappling hook at a target within {{mobility configuration:grappling hook:range}}ft of you and pull yourself toward it. You may use 1 energy to either make an attack, attempt to grapple them, or attempt to stun them with your taser.&#13;&#10;
+			Your gauntlet has a set of climbing hooks installed into it giving you a climbing speed of 30ft.&#13;&#10;
+			1 Energy. Your taser can stun an enemy at a range of 30ft.&#13;&#10;
+			Your grappling hook has more durable rope and two adhesive anchors on either end of it to attach on any surface and keep it anchored firmly being able to support up to 500 pounds.&#13;&#10;
+			You have a rebreather that lets you breath underwater and also gain a swimming speed of 30ft with an activated swimming gloves.</description>
+			<description level="17">You can make a melee attack for 1d6 + {{dexterity:modifier}} slashing damage.&#13;&#10;
+			You also have a taser that can force a creature within 5ft of you to make a con save or be stunned on their next turn.&#13;&#10;
+			You may use your bonus action to shoot a grappling hook at a target within {{mobility configuration:grappling hook:range}}ft of you and pull yourself toward it. You may use 1 energy to either make an attack, attempt to grapple them, or attempt to stun them with your taser.&#13;&#10;
+			Your gauntlet has a set of climbing hooks installed into it giving you a climbing speed of 30ft.&#13;&#10;
+			1 Energy. Your taser can stun an enemy at a range of 30ft.&#13;&#10;
+			Your grappling hook has more durable rope and two adhesive anchors on either end of it to attach on any surface and keep it anchored firmly being able to support up to 500 pounds.&#13;&#10;
+			You have a rebreather that lets you breath underwater and also gain a swimming speed of 30ft with an activated swimming gloves.&#13;&#10;
+			Your swimming speed and climbing speed if at 30ft is increased to 60 ft.&#13;&#10;
+			As a bonus action, you can pull an enemy within 60ft of you closer to you any amount of feet you choose and make either a stun or normal attack using 1 energy.</description>
+		</sheet>
+		<rules>
+			<stat name="mobility configuration:grappling hook:range" value="30" bonus="base" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_MOBILITY_CONFIGURATION_ENHANCEMENT" requirements="[level:5]" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_ADVANCED_MOBILITY_CONFIGURATION" requirements="[level:13]" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SUPERIOR_MOBILITY" requirements="[level:17]" />
+		</rules>
+	</element>
+	<element name="Second Omnigauntlet" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SECOND_OMNIGAUNTLET">
+		<supports>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_COMBAT_CONFIGURATION</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>You gain a second gauntlet and both gauntlets gain the light property.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain a second gauntlet and both gauntlets gain the light property.</description>
+		</sheet>
+	</element>
+	<element name="Defensive Configuration Enhancement" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_DEFENSIVE_CONFIGURATION_ENHANCEMENT">
+		<supports>Magitech Omnigauntlet,Enhanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>Kinetic Energy Reduction: When hit by an attack that deals bludgeoning, piercing, slashing, or force damage you may expend 1 energy to reduce the damage by 25% rounded down, or 3 energy to reduce damage by 50%.</p>
+		</description>
+		<sheet display="false">
+			<description>Kinetic Energy Reduction: When hit by an attack that deals bludgeoning, piercing, slashing, or force damage you may expend 1 energy to reduce the damage by 25% rounded down, or 3 energy to reduce damage by 50%.</description>
+		</sheet>
+	</element>
+	<element name="Mobility Configuration Enhancement" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_MOBILITY_CONFIGURATION_ENHANCEMENT">
+		<supports>Magitech Omnigauntlet,Enhanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>Your grappling hook now has a range of 60ft. Additionally You may also spend 1 energy to stun an enemy at a range of 30ft. Additionally your gauntlet has a set of climbing hooks installed into it giving you a climbing speed of 30ft.</p>
+		</description>
+		<sheet display="false">
+			<description>Your gauntlet has a set of climbing hooks installed into it giving you a climbing speed of 30ft.&#13;&#10;
+			1 Energy. Your taser can stun an enemy at a range of 30ft.</description>
+		</sheet>
+		<rules>
+			<stat name="mobility configuration:grappling hook:range" value="60" bonus="base" />
+		</rules>
+	</element>
+	<element name="Advanced Combat Configuration" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_ADVANCED_COMBAT_CONFIGURATION">
+		<supports>Magitech Omnigauntlet,Advanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>You may add your int modifier to your Gauntlet strikes. Additionally for the damage dice for each of this weapons configurations is doubled to 2 dice but the size of those dice decreases by one (ex: Combat Configuration instead of doing 1d8 damage now does 2d6).</p>
+		</description>
+		<sheet display="false"></sheet>
+		<rules>
+			<stat name="combat configuration:damage:bonus" value="intelligence:modifier" />
+			<stat name="combat configuration:melee:dice:amount" value="1" />
+			<stat name="combat configuration:melee:dice:size" value="-2" />
+			<stat name="combat configuration:energized:dice:amount" value="1" />
+			<stat name="combat configuration:energized:dice:size" value="-2" />
+		</rules>
+	</element>
+	<element name="Advanced Energy Absorption and Energy Redirection" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_ADVANCED_ENERGY_ABSORPTION_AND_REDIRECTION">
+		<supports>Magitech Omnigauntlet,Advanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>Your Shield if it can reduce physical damage now can affect all damage types. Your shield also stores the damage taken as Potential Energy Points with a rate of 12 damage per Point gained and it may be used as a substitute for regular energy and you may store and amount of P.E.P equal to half your energy capacity.</p>
+		</description>
+		<sheet display="false">
+			<description>Your shield can now affect all damage types. Your shield stores the damage taken as Potential Energy Points (P.E.P.) with a rate of 12 damage per Point gained and it may be used as a substitute for regular energy. You may store an amount of P.E.P. equal to half your energy capacity.</description>
+		</sheet>
+	</element>
+	<element name="Advanced Mobility Configuration" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_ADVANCED_MOBILITY_CONFIGURATION">
+		<supports>Magitech Omnigauntlet,Advanced Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>Your grappling hook now has a range of 120 ft. It now also has more durable rope and two adhesive anchors on either end of it to attach it on any surface and keep it anchored firmly being able to support up to 500 pounds. Additionally you have a rebreather that lets you breath underwater and also gain a swimming speed of 30ft with an activated swimming gloves.</p>
+		</description>
+		<sheet display="false">
+			<description>Your grappling hook has more durable rope and two adhesive anchors on either end of it to attach on any surface and keep it anchored firmly being able to support up to 500 pounds.&#13;&#10;
+			You have a rebreather that lets you breath underwater and also gain a swimming speed of 30ft with an activated swimming gloves.</description>
+		</sheet>
+		<rules>
+			<stat name="mobility configuration:grappling hook:range" value="120" bonus="base" />
+		</rules>
+	</element>
+	<element name="Superior Combat Configuration" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SUPERIOR_COMBAT_CONFIGURATION">
+		<supports>Magitech Omnigauntlet,Ultimate Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>When you use your energized strike you can make a second strike with your second gauntlet for free if you have one. You also can now spend a max of 5 energy on the attack. Additionally your basic gauntlet or gauntlets and energized strikes now deal any damage type but requires a bonus action to change it for both or one gauntlet.</p>
+		</description>
+		<sheet display="false">
+			<description>When you use your energized strike you can make a second strike with your second gauntlet for free if you have one.&#13;&#10;
+			Your basic gauntlet(s) and energized strikes now deal any damage type, but require a bonus action to change it for both or one gauntlet.</description>
+		</sheet>
+		<rules>
+			<stat name="combat configuration:energy:max" value="2" />
+		</rules>
+	</element>
+	<element name="Superior Energy Absorption and Redirection" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SUPERIOR_ENERGY_ABSORPTION_AND_REDIRECTION">
+		<supports>Magitech Omnigauntlet,Ultimate Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>Your shield can use 5 energy to absorb 75% of damage taken from one attack. You may also now use your Potential Energy Points to send out a blast of stored energy dealing 1d12+int mod of force, lightning, or thunder damage to a max of 8 energy using an action.</p>
+		</description>
+		<sheet display="false">
+			<description>Your shield can also use 5 energy to absorb 75% of damage taken from one attack. You may also now use your P.E.P.s to send out a blast of stored energy dealing 1d12 + {{intelligence:modifier}} of force, lightning, or thunder damage to a max of 8 energy using an action.</description>
+		</sheet>
+		<rules>
+			<stat name="defense configuration:ac:bonus" value="2" />
+		</rules>
+	</element>
+	<element name="Superior Mobility" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SUPERIOR_MOBILITY">
+		<supports>Magitech Omnigauntlet,Ultimate Signature Device</supports>
+		<requirements>ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>Your swimming speed and climbing speed if at 30ft is increased to 60 ft. You may now use your bonus action to pull an enemy within 60ft of you closer to you any amount of feet you choose and make either a stun or normal attack using 1 energy.</p>
+		</description>
+		<sheet display="false">
+			<description>Your swimming speed and climbing speed if at 30ft is increased to 60 ft.&#13;&#10;
+			As a bonus action, you can pull an enemy within 60ft of you closer to you any amount of feet you choose and make either a stun or normal attack using 1 energy.</description>
+		</sheet>
+	</element>
 	
 	
 	
@@ -2751,6 +3003,123 @@
 			<stat name="dexterity" value="2" />
 		</rules>
 	</element>
+	
+	<!-- Gadgeteer Archetypes -->
+	<element name="Gadgeteer" type="Archetype" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_ENGINEER_GADGETEER">
+		<supports>Specialization</supports>
+		<description>
+			<p>The gadgeteer focuses all their efforts into their mechanical prowess. Their versatility knows no equal.</p>
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_DIVERSE_INVENTOR" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_OVERCLOCK_GADGET" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_ENHANCED_SECONDARY_SIGNATURE_DEVICE" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_BONUS_ENERGY" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_BONUS_PRIMARY_SIGNATURE_DEVICE" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_ADVANCED_SECONDARY_SIGNATURE_DEVICE" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_ULTIMATE_SECONDARY_SIGNATURE_DEVICE" />
+		</description>
+		<sheet display="false">
+			<description>The gadgeteer focuses all their efforts into their mechanical prowess. Their versatility knows no equal.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_DIVERSE_INVENTOR" level="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_OVERCLOCK_GADGET" level="6" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_ENHANCED_SECONDARY_SIGNATURE_DEVICE" level="11" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_BONUS_ENERGY" level="11" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_BONUS_PRIMARY_SIGNATURE_DEVICE" level="15" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_ADVANCED_SECONDARY_SIGNATURE_DEVICE" level="18" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_ULTIMATE_SECONDARY_SIGNATURE_DEVICE" level="20" />
+		</rules>
+	</element>
+	<element name="Diverse Inventor" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_DIVERSE_INVENTOR">
+		<description>
+			<p>At the 3rd level, you can choose a Secondary Signature Device (SSD) and gadget. The device chosen at level 2 is your Primary Signature Device (PSD). The two cannot be the same device. When you would gain improvement benefits for your Primary Signature Device, you do not gain them for your Secondary Device.</p>
+			<p>Additionally, you gain the ability to deconstruct items and learn how they work. During a long rest, you can choose to destroy a item, and gain the ability to create said item if you have the requisite time and materials. You may use this feature on common and uncommon items at level 1, rare items at level 5, very rare items at level 11, and legendary items at level 17.</p>
+			<p>Also, it takes you 50% less time and money to construct items and gadgets.</p>
+		</description>
+		<sheet>
+			<description>You can choose a Secondary Signature Device (SSD) and gadget. The device chosen at level 2 is your Primary Signature Device (PSD). The two cannot be the same device.&#13;&#10;
+			you gain the ability to deconstruct items and learn how they work. During a long rest, you can choose to destroy a item, and gain the ability to create said item if you have the requisite time and materials. You may use this feature on items up to {{diverse inventor:rarity}}.</description>
+		</sheet>
+		<rules>
+			<stat name="diverse inventor:rarity" value="uncommon" inline="true" level="1" />
+			<stat name="diverse inventor:rarity" value="rare" inline="true" level="5" />
+			<stat name="diverse inventor:rarity" value="very rare" inline="true" level="11" />
+			<stat name="diverse inventor:rarity" value="legendary" inline="true" level="17" />
+			<select type="Archetype Feature" name="Secondary Signature Device (SSD)" supports="SSD" level="3" number="1"/>
+			<select type="Archetype Feature" name="Enhanced SSD" supports="Enhanced SSD" level="11" number="1" />
+			<select type="Archetype Feature" name="Advanced SSD" supports="Advanced SSD" level="18" number="1" />
+			<select type="Archetype Feature" name="Ultimate SSD" supports="Ultimate SSD" level="20" number="1" />
+			<select type="Class Feature" name="Gadget (Gadgeteer)" supports="Gadgets" level="3" number="1" />
+		</rules>
+	</element>
+	<element name="Overclock Gadget" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_OVERCLOCK_GADGET">
+		<description>
+			<p>At level 6, you can enhance the abilities of a number of gadgets equal to your intelligence modifier (min. 1) of your choice beyond standard. Choose two of the following enhancements:</p>
+			<ul>
+				<li>All of the gadget's energy requirements are reduced by 1 (min. 1)</li>
+				<li>Whenever you roll damage or healing with the gadget, you can maximize the damage of the roll, you can use this feature a number of time equal to your Int modifier (min 1). Recharges on a short rest.</li>
+				<li>Increase the DC of all saves required by the gadget by 2.</li>
+			</ul>
+			<p>You may change which gadget is overclocked whenever you take a long rest. At level 20, you can change it whenever you take a short or long rest instead.</p>
+		</description>
+		<sheet>
+			<description>You can enhance the abilities of {{overclock gadget:max}} gadgets of your choice. You may change which gadgets are overclocked whenever you take a {{overclock gadget:rest}} rest. Choose two of the following enhancements:&#13;&#10;
+			• All of the gadget's energy requirements are reduced by 1 (min. 1)&#13;&#10;
+			• Whenever you roll damage or healing with the gadget, you can maximize the damage of the roll, you can use this feature a number of time equal to your Int modifier (min 1). Recharges on a short rest.&#13;&#10;
+			• Increase the DC of all saves required by the gadget by 2.</description>
+		</sheet>
+		<rules>
+			<stat name="overclock gadget:max" value="1" bonus="base" />
+			<stat name="overclock gadget:max" value="intelligence:modifier" bonus="base" />
+			<stat name="overclock gadget:rest" value="long" inline="true" />
+			<stat name="overclock gadget:rest" value="short or long" inline="true" level="20" />
+		</rules>
+	</element>
+	<element name="Enhanced Secondary Signature Device" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_ENHANCED_SECONDARY_SIGNATURE_DEVICE">
+		<description>
+			<p>At level 11, you may choose from the list of Enhanced features for your Secondary Signature Device.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Bonus Energy" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_BONUS_ENERGY">
+		<description>
+			<p>At level 11, your Energy Pool Maximum increases by your Intelligence Modifier. (min. 1)</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="gadgeteer:bonus energy" value="1" bonus="base" />
+			<stat name="gadgeteer:bonus energy" value="intelligence:modifier" bonus="base" />
+			<stat name="engineer-energy" value="gadgeteer:bonus energy" />
+		</rules>
+	</element>
+	<element name="Bonus Primary Signature Device Enhancement" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_BONUS_PRIMARY_SIGNATURE_DEVICE">
+		<description>
+			<p>At level 15, you may choose a second trait from your Advanced Primary Signature Device feature.</p>
+			<p>For example, if you chose the Flamethrower as your PSD, and you chose Incendiary Fireblasts at level 13, you may now choose between Sticky Napalm and Toxic Smoke.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Enhanced Signature Device" supports="Enhanced Signature Device" number="1" />
+		</rules>
+	</element>
+	<element name="Advanced Secondary Signature Device" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_ADVANCED_SECONDARY_SIGNATURE_DEVICE">
+		<description>
+			<p>At level 18, you may choose from the list of Advanced features for your Secondary Signature Device.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Ultimate Secondary Signature Device" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_GADGETEER_ULTIMATE_SECONDARY_SIGNATURE_DEVICE">
+		<description>
+			<p>At level 20, you may choose from the list of Ultimate features for your Secondary Signature Device.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -3194,7 +3563,7 @@
 		</rules>
 	</element>	
 	
-	<!-- Fighting Styles -->
+	<!-- Fighting Styles - Battletech Archetype -->
 	<element name="Archery" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
 		<supports>Fighting Style, Battletech</supports>
 		<description>
@@ -3294,4 +3663,1330 @@
 			<stat name="ac:misc" value="1" bonus="fighting style" equipped="!([armor:heavy]||[shield:any])" />
 		</rules>
 	</element>
+	
+	<!-- Secondary Signature Devices - Gadgeteer Archetype-->
+	<element name="Flamethrower (SSD)" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER">
+		<supports>SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_ENGINEER_GADGETEER,!ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>A two-handed weapon that can sear foes and create smokescreens, manipulating the battlefield in interesting ways.</p>
+			<ul>
+				<li><strong>Fireblast.</strong> As an action, shoot a blazing stream of fire. You project a 40ft long line of fire, making a ranged attack roll against each creature in it, dealing 1d6 + Int fire damage on a hit. This deals 2d6 at level 5, 3d6 at level 9, 4d6 at level 13 and 5d6 at level 17. The attack roll uses Dexterity.</li>
+				<li><strong>Napalm Spread.</strong> As an action, force all creatures within a 15ft cone to make a Dex save. On a failure, they take 4d6 fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d6 fire per point spent, up to 3 energy.</li>
+				<li><strong>Smokescreen.</strong> As a bonus action, and for 1 energy, exhaust smoke from your flamethrower. A 10ft-radius sphere centered around yourself is filled with smoke for 2 rounds, heavily obscuring the area for all creatures except you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				<p>A {{flamethrower:hands}}-handed weapon that can sear foes and create smokescreens, manipulating the battlefield in interesting ways.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="flamethrower:hands" value="2" />
+			<grant type="Class Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_FIREBLAST" />
+			<grant type="Class Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_NAPALM_SPREAD" />
+			<grant type="Class Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_SMOKESCREEN" />
+		</rules>
+	</element>
+	<element name="Fireblast" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_FIREBLAST">
+		<supports>Flamethrower</supports>
+		<description>
+			<p>As an action, shoot a blazing stream of fire. You project a 40ft long line of fire, making a ranged attack roll against each creature in it, dealing 1d6 + Int fire damage on a hit. This deals 2d6 at level 5, 3d6 at level 9, 4d6 at level 13 and 5d6 at level 17. The attack roll uses Dexterity.</p>
+		</description>
+		<sheet usage="Flamethrower, Action">
+			<description>
+				<p>You project a {{fireblast:range}}ft long line of fire, making a ranged attack{{fireblast:attack:bonus}} against each creature in it, dealing {{fireblast:dice:amount}}d{{fireblast:dice:size}} + {{intelligence:modifier}} fire damage on a hit. The attack roll uses Dexterity.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="fireblast:range" value="40" />
+			<stat name="fireblast:attack:bonus" value="" inline="true" />
+			<stat name="fireblast:dice:size" value="6" />
+			<stat name="fireblast:dice:amount" value="1" />
+			<stat name="fireblast:dice:amount" value="1" level="5" />
+			<stat name="fireblast:dice:amount" value="1" level="9" />
+			<stat name="fireblast:dice:amount" value="1" level="13" />
+			<stat name="fireblast:dice:amount" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Napalm Spread" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_NAPALM_SPREAD">
+		<supports>Flamethrower</supports>
+		<description>
+			<p>As an action, force all creatures within a 15ft cone to make a Dex save. On a failure, they take 4d6 fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d6 fire per point spent, up to 3 energy.</p>
+		</description>
+		<sheet usage="Flamethrower, Action">
+			<description>Force all creatures within a {{napalm spread:range}}ft cone to make a Dex save{{napalm spread:dc:bonus}}. On a failure, they take 4d{{napalm spread:dice:size}} fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d{{napalm spread:dice:size}} fire per point spent, up to 3 energy.</description>
+			<description level="17">Force all creatures within a {{napalm spread:range}}ft cone to make a Dex save{{napalm spread:dc:bonus}}. On a failure, they take 4d{{napalm spread:dice:size}} + {{napalm spread:damage:int}} fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d{{napalm spread:dice:size}} fire per point spent, up to 3 energy.</description>
+		</sheet>
+		<rules>
+			<stat name="napalm spread:range" value="15" />
+			<stat name="napalm spread:dc:bonus" value="" inline="true" />
+			<stat name="napalm spread:dice:size" value="6" />
+			<stat name="napalm spread:damage:int" value="0" />
+		</rules>
+	</element>
+	<element name="Smokescreen" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_SMOKESCREEN">
+		<supports>Flamethrower</supports>
+		<description>
+			<p>As a bonus action, and for 1 energy, exhaust smoke from your flamethrower. A 10ft-radius sphere centered around yourself is filled with smoke for 2 rounds, heavily obscuring the area for all creatures except you.</p>
+		</description>
+		<sheet usage="Flamethrower, Bonus Action">
+			<description>For 1 energy, a {{smokescreen:range}}ft-radius sphere centered around yourself is filled with smoke for 2 rounds, heavily obscuring the area for all creatures except you.</description>
+		</sheet>
+		<rules>
+			<stat name="smokescreen:range" value="10" />
+		</rules>
+	</element>
+	<element name="Light Frame" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_LIGHT_FRAME">
+		<supports>Flamethrower,Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>You can wield the flamethrower in one hand.</p>
+		</description>
+		<rules>
+			<stat name="flamethrower:hands" value="-1" />
+		</rules>
+	</element>
+	<element name="Distant Ammunition" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_DISTANT_AMMUNITION">
+		<supports>Flamethrower,Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Fireblast has a range of 80ft, Napalm Spread affects a 30ft cone, and Smokescreen fills a 20ft sphere.</p>
+		</description>
+		<rules>
+			<stat name="fireblast:range" value="40" />
+			<stat name="napalm spread:range" value="15" />
+			<stat name="smokescreen:range" value="10" />
+		</rules>
+	</element>
+	<element name="Fine Optics" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_FINE_OPTICS">
+		<supports>Flamethrower,Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Grant a +2 bonus to the attack rolls and Dex save DC to the actions your flamethrower.</p>
+		</description>
+		<rules>
+			<stat name="fireblast:attack:bonus" value=" (+2 attack bonus)" inline="true" />
+			<stat name="napalm spread:dc:bonus" value=" (+2 saving throw DC bonus)" inline="true" />
+		</rules>
+	</element>
+	<element name="Incendiary Fireblasts" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_INCENDIARY_FIREBLASTS">
+		<supports>Flamethrower,Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Fireblast deals d8s of damage instead of d6s, and leaves behind a wall of flames for a round that causes 2d8 fire damage to creatures traversing it.</p>
+		</description>
+		<sheet usage="Fireblast">
+			<description>Fireblast also leaves behind a wall of flames for a round that causes 2d8 fire damage to creatures traversing it.</description>
+		</sheet>
+		<rules>
+			<stat name="fireblast:dice:size" value="2" />
+		</rules>
+	</element>
+	<element name="Toxic Smoke" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_TOXIC_SMOKE">
+		<supports>Flamethrower,Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Smokescreen poisons creatures except you for 1 minute when they fail a Con save upon starting their turn in it or entering it for the first time.</p>
+		</description>
+		<sheet usage="Smokescreen">
+			<description>Smokescreen poisons creatures except you for 1 minute when they fail a Con save upon starting their turn in it or entering it for the first time.</description>
+		</sheet>
+	</element>
+	<element name="Sticky Napalm" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_STICKY_NAPALM">
+		<supports>Flamethrower,Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Napalm Spread deals 1d6 damage to creatures who fail the initial Dex save at the end of each of their turns. This lasts until they spend an action to attempt a successful Dex save, which ends this effect.</p>
+		</description>
+		<sheet usage="Napalm Spread">
+			<description>Napalm Spread deals 1d6 damage to creatures who fail the initial Dex save at the end of each of their turns. This lasts until they spend an action to attempt a successful Dex save, which ends this effect.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Converter" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_ELEMENTAL_CONVERTER">
+		<supports>Flamethrower,Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Spend 1 energy as a bonus action to deal a different kind of damage (acid, cold, or lightning) with Fireblast and Napalm Spread for a minute.</p>
+		</description>
+		<sheet usage="Fireblast, Napalm Spread" action="Bonus Action">
+			<description>Spend 1 energy to deal a different kind of damage (acid, cold, or lightning) with Fireblast and Napalm Spread for a minute.</description>
+		</sheet>
+	</element>
+	<element name="Quickblast" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_QUICKBLAST">
+		<supports>Flamethrower,Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>You can spend 1 additional energy to shoot a fireblast as a bonus action instead.</p>
+		</description>
+		<sheet usage="Fireblast" action="Bonus Action">
+			<description>You can spend 1 additional energy to shoot a Fireblast as a bonus action instead.</description>
+		</sheet>
+	</element>
+	<element name="Agonizing Napalm" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER_AGONIZING_NAPALM">
+		<supports>Flamethrower,Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SECONDARY_SIGNATURE_DEVICE_FLAMETHROWER</requirements>
+		<description>
+			<p>Napalm Spread deals d8s of damage, as well as a bonus amount equal to your Intelligence Modifier (min. 1).</p>
+		</description>
+		<rules>
+			<stat name="napalm spread:dice:size" value="2" />
+			<stat name="napalm spread:damage:int" value="1" bonus="base" />
+			<stat name="napalm spread:damage:int" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Grenade Kit (SSD)" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT">
+		<supports>SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_ENGINEER_GADGETEER,!ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>A bag that contains ingredients to make grenades that can be made on the fly. Creating a grenade costs 1 bonus action, and throwing one is a standard action. These bombs explode as soon as they reach the target. Grenades can be thrown at a point of 20ft away, and have a blast radius of 10ft. Additionally, bombs can be launched by other means per DM discretion.</p>
+			<ul>
+				<li><strong>Basic Grenade.</strong> Creatures within the blast radius must succeed on a Dex save or take 2d6 bludgeoning damage on a failed save, or half as much on a success. The damage increases to 3d6 at level 5, 4d6 at level 11, or 5d6 at level 17.</li>
+				<li><strong>Elemental Grenade.</strong> For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d6 (acid, cold, fire, lightning) damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</li>
+				<li><strong>Smoke Grenade.</strong> For 1 energy, you can create a smoke grenade that fills its blast radius with a cloud of smoke that heavily obscures the area for 2 rounds for all creatures except you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				<p>A bag that contains ingredients to make grenades that can be made on the fly. It takes 1 Bonus Action to create {{grenade kit:grenades:count}} grenade{{grenade kit:grenades:plural}}, and an Action to throw {{grenade kit:grenades:count}}. Grenades explode as soon as they reach the target. Grenades can be thrown up to {{grenade kit:range}}ft away, and have a blast radius of {{grenade kit:blast radius}}ft. Additionally, bombs can be launched by other means per DM discretion.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="grenade kit:range" value="20" />
+			<stat name="grenade kit:grenades:count" value="1" />
+			<stat name="grenade kit:grenades:plural" value="" inline="true" />
+			<stat name="grenade kit:blast radius" value="10" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT_BASIC_GRENADE" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT_ELEMENTAL_GRENADE" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT_SMOKE_GRENADE" />
+		</rules>
+	</element>
+	<element name="Basic Grenade" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT_BASIC_GRENADE">
+		<supports>Grenade Kit (SSD)</supports>
+		<description>
+			<p>Creatures within the blast radius must succeed on a Dex save or take 2d6 bludgeoning damage on a failed save, or half as much on a success. The damage increases to 3d6 at level 5, 4d6 at level 11, or 5d6 at level 17.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>Creatures within the blast radius must succeed on a Dex save or take {{basic grenade:dice:amount}}d{{basic grenade:dice:size}} bludgeoning damage on a failed save, or half as much on a success.</description>
+			<description level="17">Creatures within the blast radius must succeed on a Dex save or take {{basic grenade:dice:amount}}d{{basic grenade:dice:size}} + {{dangerous grenade:bonus}} bludgeoning damage on a failed save, or half as much on a success.</description>
+		</sheet>
+		<rules>
+			<stat name="basic grenade:dice:amount" value="2" />
+			<stat name="basic grenade:dice:amount" value="1" level="5" />
+			<stat name="basic grenade:dice:amount" value="1" level="11" />
+			<stat name="basic grenade:dice:amount" value="1" level="17" />
+			<stat name="basic grenade:dice:size" value="6" />
+			<stat name="dangerous grenade:bonus" value="0" />
+		</rules>
+	</element>
+	<element name="Elemental Grenade" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT_ELEMENTAL_GRENADE">
+		<supports>Grenade Kit (SSD)</supports>
+		<description>
+			<p>For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d6 (acid, cold, fire, lightning) damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d{{elemental grenade:dice:size}} (acid, cold, fire, lightning) damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</description>
+			<description level="17">For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d{{elemental grenade:dice:size}} (acid, cold, fire, lightning) + {{dangerous grenade:bonus}} damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</description>
+		</sheet>
+		<rules>
+			<stat name="elemental grenade:dice:size" value="6" />
+		</rules>
+	</element>
+	<element name="Smoke Grenade" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT_SMOKE_GRENADE">
+		<supports>Grenade Kit (SSD)</supports>
+		<description>
+			<p>For 1 energy, you can create a smoke grenade that fills its blast radius with a cloud of smoke that heavily obscures the area for 2 rounds for all creatures except you.</p>
+		</description>
+		<sheet usage="Grenade Kit">
+			<description>For 1 energy, you can create a smoke grenade that fills its blast radius with a cloud of smoke that heavily obscures the area for {{smoke grenade:rounds}} rounds for all creatures except you.</description>
+		</sheet>
+		<rules>
+			<stat name="smoke grenade:rounds" value="2" />
+		</rules>
+	</element>
+	<element name="Flash Grenade" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_GRENADE_KIT_FLASH_GRENADE">
+		<supports>Grenade Kit (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>2 Energy. Your grenade causes the effects of a Daylight spell where it lands for a minute. Creatures within fifteen feet of your target must make a Con save or be blinded for five rounds.</p>
+		</description>
+		<sheet>
+			<description>2 Energy. Your grenade causes the effects of a Daylight spell where it lands for a minute. Creatures within fifteen feet of your target must make a Con save or be blinded for five rounds.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" />
+		</rules>
+	</element>
+	<element name="Poison Grenade" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_GRENADE_KIT_POISON_GRENADE">
+		<supports>Grenade Kit (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>2 Energy. Creatures in blast make a Con save. On a failure, they take 2d10 poison damage and are poisoned for 1 minute. On a success they simply take half damage.</p>
+		</description>
+		<sheet>
+			<description>2 Energy. Creatures in blast make a Con save. On a failure, they take 2d10 poison damage and are poisoned for 1 minute. On a success they simply take half damage.</description>
+			<description level="17">2 Energy. Creatures in blast make a Con save. On a failure, they take 2d10 + {{dangerous grenade:bonus}} poison damage and are poisoned for 1 minute. On a success they simply take half damage.</description>
+		</sheet>
+	</element>
+	<element name="Concussive Grenade" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_GRENADE_KIT_CONCUSSIVE_GRENADE">
+		<supports>Grenade Kit (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>For 2 Energy, you can create this disorienting grenade. Creatures in the blast must succeed on a Con save or take 2d10 thunder damage and be deafened for 1 minute. On a success they take just half damage. They may repeat the save at the end of their turns to end the deafness.</p>
+		</description>
+		<sheet>
+			<description>For 2 Energy, you can create this disorienting grenade. Creatures in the blast must succeed on a Con save or take 2d10 thunder damage and be deafened for 1 minute. On a success they take just half damage. They may repeat the save at the end of their turns to end the deafness.</description>
+			<description level="17">For 2 Energy, you can create this disorienting grenade. Creatures in the blast must succeed on a Con save or take 2d10 + {{dangerous grenade:bonus}} thunder damage and be deafened for 1 minute. On a success they take just half damage. They may repeat the save at the end of their turns to end the deafness.</description>
+		</sheet>
+	</element>
+	<element name="Lightweight Shell" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_GRENADE_KIT_LIGHTWEIGHT_SHELL">
+		<supports>Grenade Kit (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>Grenades have a thrown range of 80 feet.</p>
+		</description>
+		<rules>
+			<stat name="grenade kit:range" value="60" />
+		</rules>
+	</element>
+	<element name="Dual Bomb" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_GRENADE_KIT_DUAL_BOMB">
+		<supports>Grenade Kit (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>Two grenades can be created in a bonus action, and two can be thrown in a standard single action. Additionally, they can be thrown at different targets.</p>
+		</description>
+		<rules>
+			<stat name="grenade kit:grenades:count" value="1" />
+			<stat name="grenade kit:grenades:plural" value="s" inline="true" />
+		</rules>
+	</element>
+	<element name="Black Powder" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_GRENADE_KIT_BLACK_POWDER">
+		<supports>Grenade Kit (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>Grenades have a blast radius of 20 feet, and Basic Grenades do d10s of damage.</p>
+		</description>
+		<rules>
+			<stat name="grenade kit:blast radius" value="10" />
+			<stat name="basic grenade:dice:size" value="4" />
+		</rules>
+	</element>
+	<element name="Dangerous Grenades" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_GRENADE_KIT_DANGEROUS_GRENADES">
+		<supports>Grenade Kit (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>Damage dealing grenades deal extra damage equal to twice your Intelligence Modifier (min. 2).</p>
+		</description>
+		<rules>
+			<stat name="dangerous grenade:int:mod" value="intelligence:modifier" />
+			<stat name="dangerous grenade:int:mod" value="intelligence:modifier" />
+			<stat name="dangerous grenade:bonus" value="2" bonus="grenade kit:dangerous grenades" />
+			<stat name="dangerous grenade:bonus" value="dangerous grenade:int:mod" bonus="grenade kit:dangerous grenades" />
+		</rules>
+	</element>
+	<element name="Specialized Elementalist" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_GRENADE_KIT_SPECIALIZED_ELEMENTALIST">
+		<supports>Grenade Kit (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>Your Elemental grenades have unique effects, and deal d8s of damage.</p>
+			<ul>
+				<li><strong>Acid.</strong>Creatures who fail the Dex save suffer an AC loss equal to your Int Mod. (min.1) until the end of your next turn.</li>
+				<li><strong>Cold.</strong>Creatures who fail the Dex save suffer halved speed until the end of your next turn, unless they resist or are immune to cold.</li>
+				<li><strong>Fire.</strong>Creatures who fail the Dex save take an additional 1d10 fire damage at the start of your next turn.</li>
+				<li><strong>Lightning.</strong>Creatures who fail the Dex save are pushed away from the bomb by 15 feet.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				Your Elemental grenades have unique effects.&#13;&#10;
+				Acid.Creatures who fail the Dex save suffer an AC loss equal to {{acid:modifier}} until the end of your next turn.&#13;&#10;
+				Cold.Creatures who fail the Dex save suffer halved speed until the end of your next turn, unless they resist or are immune to cold.&#13;&#10;
+				Fire.Creatures who fail the Dex save take an additional 1d10 fire damage at the start of your next turn.&#13;&#10;
+				Lightning.Creatures who fail the Dex save are pushed away from the bomb by 15 feet.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="acid:modifier" value="1" bonus="base" />
+			<stat name="acid:modifier" value="intelligence:modifier" bonus="base" />
+			<stat name="elemental grenade:dice:size" value="2" />
+		</rules>
+	</element>
+	<element name="Heavy Smoke" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_GRENADE_KIT_HEAVY_SMOKE">
+		<supports>Grenade Kit (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_GRENADE_KIT</requirements>
+		<description>
+			<p>You can create and throw up to three smoke grenades with a single action, paying the appropriate energy cost. The smoke cloud also lasts for five rounds, halves the speed of other creatures moving through it, and blinds creatures who fail a Con save upon starting their turn in it or entering it for the first time for 1 minute. They can repeat the save at the end of their turns until they succeed.</p>
+		</description>
+		<sheet usage="Smoke Grenade">
+			<description>You can create and throw up to three smoke grenades with a single action, paying the appropriate energy cost. The smoke cloud also lasts for five rounds, halves the speed of other creatures moving through it, and blinds creatures who fail a Con save upon starting their turn in it or entering it for the first time for 1 minute. They can repeat the save at the end of their turns until they succeed.</description>
+		</sheet>
+		<rules>
+			<stat name="smoke grenade:rounds" value="3" />
+		</rules>
+	</element>
+	
+	<element name="Elixir Gun (SSD)" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN">
+		<supports>SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_ENGINEER_GADGETEER,!ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_ELIXIR_GUN</requirements>
+		<description>
+			<p>A two-handed weapon that can launch alchemical elixirs and poisons. It has a range of 80/320ft, the loading property, and a capacity of 1. It requires a bonus action to be reloaded.</p>
+			<ul>
+				<li><strong>Elixir T.</strong> A ranged weapon attack that uses dex, deals 1d8 + Int. Mod poison damage. On a hit, the target must succeed on a CON save or be poisoned until the start of your next turn.</li>
+				<li><strong>Elixir H.</strong> x energy. Heals the target for xd8+ Int. Mod HP. (Max 3 Energy)</li>
+				<li><strong>Elixir G.</strong> For 2 energy, as an action shoot a cloud of chemical gas. Creatures in a 20ft cone must make a Wis save or be affected as if by Calm Emotions for a number of rounds equal to half your engineer level. Whether they fail or succeed, they cannot be affected by Elixir G again for a day.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				<p>A {{elixir gun:hands}}-handed weapon that can launch alchemical elixirs and poisons. It has a range of {{elixir gun:range:short}}/{{elixir gun:range:long}}ft, the loading property, and a capacity of 1. It requires a bonus action to be reloaded.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="elixir gun:hands" value="2" />
+			<stat name="elixir gun:range:short" value="80" />
+			<stat name="elixir gun:range:long" value="320" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN_ELIXIR_T" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN_ELIXIR_H" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN_ELIXIR_G" />
+		</rules>
+	</element>
+	<element name="Elixir T" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN_ELIXIR_T">
+		<supports>Elixir Gun (SSD)</supports>
+		<description>
+			<p>A ranged weapon attack that uses dex, deals 1d8 + Int. Mod poison damage. On a hit, the target must succeed on a CON save or be poisoned until the start of your next turn.</p>
+		</description>
+		<sheet usage="Elixir Gun, Action">
+			<description>A ranged weapon attack that uses dex{{elixir t:attack:bonus}}, deals 1d8 + {{intelligence:modifier}} poison damage. On a hit, the target must succeed on a CON save or be poisoned until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="elixir t:attack:bonus" value="" inline="true" />
+		</rules>
+	</element>
+	<element name="Elixir H" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN_ELIXIR_H">
+		<supports>Elixir Gun (SSD)</supports>
+		<description>
+			<p> X energy. Heals the target for Xd8 + Int. Mod HP. (Max 3 Energy)</p>
+		</description>
+		<sheet usage="Elixir Gun, Action">
+			<description> X energy. Heals the target for Xd{{elixir h:dice:size}} + {{intelligence:modifier}} HP. (Max {{elixir h:energy:max}} Energy)</description>
+		</sheet>
+		<rules>
+			<stat name="elixir h:dice:size" value="8" />
+			<stat name="elixir h:energy:max" value="3" />
+		</rules>
+	</element>
+	<element name="Elixir G" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN_ELIXIR_G">
+		<supports>Elixir Gun (SSD)</supports>
+		<description>
+			<p>For 2 energy, as an action shoot a cloud of chemical gas. Creatures in a 20ft cone must make a Wis save or be affected as if by Calm Emotions for a number of rounds equal to half your engineer level. Whether they fail or succeed, they cannot be affected by Elixir G again for a day.</p>
+		</description>
+		<sheet usage="Elixir Gun, Action">
+			<description>For 2 energy, as an action shoot a cloud of chemical gas. Creatures in a 20ft cone must make a Wis save or be affected as if by Calm Emotions for {{elixir g:rounds}} rounds. Whether they fail or succeed, they cannot be affected by Elixir G again for a day.</description>
+		</sheet>
+		<rules>
+			<stat name="elixir g:rounds" value="level:engineer:half" bonus="base" />
+			<grant type="spell" id="ID_PHB_SPELL_CALM_EMOTIONS" />
+		</rules>
+	</element>
+	<element name="Light Frame" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_ELIXER_GUN_LIGHT_FRAME">
+		<supports>Elixir Gun (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN</requirements>
+		<description>
+			<p>You can wield and reload the elixir gun with a single hand.</p>
+		</description>
+		<rules>
+			<stat name="elixir gun:hands" value="-1" />
+		</rules>
+	</element>
+	<element name="Dual-Shot" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_ELIXER_GUN_DUAL_SHOT">
+		<supports>Elixir Gun (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN</requirements>
+		<description>
+			<p> You can fire the elixir gun twice per turn, and it can be fired twice before needing to be reloaded. A creature hit twice by Elixir T only needs to save once, but suffers disadvantage on the saving throw.</p>
+		</description>
+		<sheet>
+			<description> You can fire the elixir gun twice per turn, and it can be fired twice before needing to be reloaded.&#13;&#10;
+			A creature hit twice by Elixir T only needs to save once, but suffers disadvantage on the saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Advanced Rifling" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_ELIXER_GUN_ADVANCED_RIFLING">
+		<supports>Elixir Gun (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN</requirements>
+		<description>
+			<p> Grant a +2 bonus to the elixir gun's attack rolls. Additionally, its range increases to 150/600ft and it makes no sound when shot.</p>
+		</description>
+		<sheet>
+			<description>The Elixir Gun makes no sound when shot.</description>
+		</sheet>
+		<rules>
+			<stat name="elixir t:attack:bonus" value=" (+2 attack bonus)" inline="true" />
+			<stat name="elixir gun:range:short" value="70" />
+			<stat name="elixir gun:range:long" value="280" />
+		</rules>
+	</element>
+	<element name="Super T" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_ELIXER_GUN_SUPER_T">
+		<supports>Elixir Gun (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN</requirements>
+		<description>
+			<p> Targets hit by Elixir T suffer an additional 1d8 necrotic damage that reduces the target's max HP by the same amount until their next long rest, and if they fail the CON save, they are also blinded until the start of your next turn.</p>
+		</description>
+		<sheet usage="Elixir T">
+			<description>Targets hit by Elixir T suffer an additional 1d8 necrotic damage that reduces the target's max HP by the same amount until their next long rest, and if they fail the CON save, they are also blinded until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Super H" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_ELIXER_GUN_SUPER_H">
+		<supports>Elixir Gun (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN</requirements>
+		<description>
+			<p>Creatures healed by Elixir H are healed for d10s and are cured of 1 disease or condition (blinded, deafened, poisoned, paralysis). The energy maximum for Elixir H is now 4, and it also multiplies the healing granted by your Int modifier.</p>
+		</description>
+		<sheet usage="Elixir H">
+			<description>Creatures healed by Elixir H also are cured of 1 disease or condition (blinded, deafened, poisoned, paralysis).&#13;&#10;
+			Healing done by Elixir H is multiplied by {{super h:heal:multiplier}}.</description>
+		</sheet>
+		<rules>
+			<stat name="super h:heal:multiplier" value="1" bonus="base" />
+			<stat name="super h:heal:multiplier" value="intelligence:modifier" bonus="base" />
+			<stat name="elixir h:dice:size" value="2" />
+			<stat name="elixir h:energy:max" value="1" />
+		</rules>
+	</element>
+	<element name="Super G" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_ELIXER_GUN_SUPER_G">
+		<supports>Elixir Gun (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN</requirements>
+		<description>
+			<p>When a creature is affected by Elixir G, you can instead make them confused for the duration.</p>
+		</description>
+		<sheet usage="Elixir G">
+			<description>When a creature is affected by Elixir G, you can instead make them confused for the duration.</description>
+		</sheet>
+		<rules>
+			<grant type="spell" id="ID_PHB_SPELL_CONFUSION" />
+		</rules>
+	</element>
+	<element name="Paralysis-Inducing T" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_ELIXER_GUN_PARALYSIS_INDUCING_T">
+		<supports>Elixir Gun (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN</requirements>
+		<description>
+			<p>The poisoned status caused by Elixir T now lasts 1d4 rounds. Additionally, whenever they fail a save against Elixir T, they gain a level of Exhaustion.</p>
+		</description>
+		<sheet usage="Elixir T">
+			<description>The poisoned status caused by Elixir T now lasts 1d4 rounds. Additionally, whenever they fail a save against Elixir T, they gain a level of Exhaustion.</description>
+		</sheet>
+	</element>
+	<element name="S-Infused H" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_ELIXER_GUN_S_INFUSED_H">
+		<supports>Elixir Gun (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN</requirements>
+		<description>
+			<p>Creatures targeted by Elixir H gain the benefits of Haste for a number of rounds equal to the amount of energy used and regain an amount of HP equal to the energy used every round for a minute.</p>
+		</description>
+		<sheet usage="Elixir H">
+			<description>Creatures targeted by Elixir H gain the benefits of Haste for a number of rounds equal to the amount of energy used and regain an amount of HP equal to the energy used every round for a minute.</description>
+		</sheet>
+		<rules>
+			<grant type="spell" id="ID_PHB_SPELL_HASTE" />
+		</rules>
+	</element>
+	<element name="Aphrodisiac-Enhanced G" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_ELIXER_GUN_APHRODISIAC_ENHANCED_G">
+		<supports>Elixir Gun (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_ELIXER_GUN</requirements>
+		<description>
+			<p>When a creature fails a save against your Elixir G, you can instead make them Charmed. Additionally, the duration of Elixir G increases to one round per engineer level.</p>
+		</description>
+		<sheet usage="Elixir G">
+			<description>When a creature fails a save against your Elixir G, you can instead make them Charmed.</description>
+		</sheet>
+		<rules>
+			<stat name="elixir g:rounds" value="level:engineer" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Turret (SSD)" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET">
+		<supports>SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_ENGINEER_GADGETEER,!ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_TURRET</requirements>
+		<description>
+			<p>A small deployable device with an AC of 12 and HP equal to 5+(6Xyour Engineer Level). As an action you can deploy the turret to a space adjacent to you. An undeployed turret is a 6-inch box. Turrets are automated firearms used to defend and support an engineer and their allies. Only one may be deployed at a time, unless otherwise stated. A turret can be undeployed while adjacent to it. A turret is immune to Poison and Psychic damage, cannot be feared or charmed, and is immune to poison and disease. As a bonus action on your turn you command the turret to move to an unoccupied space. The turret has a walking speed of 15 ft.</p>
+			<ul>
+				<li><strong>Automated Strike.</strong> Enemy creatures that enter a 25 ft radius around the turret, or start their turn there, must make a Dex save. On a failure they take 2d4 + int mod (min. 1) piercing damage. They take half damage on a success. This increases to 3d4 at level 5, 4d4 at level 11, and 6d4 at level 17.</li>
+				<li><strong>Healing Mist.</strong> xEnergy. As a bonus action, activate this feature. Create a restorative cloud centered on the turret with a range of 15ft. Ally creatures that start and (or) end their turn within heal an amount equal to your Int modifier. The cloud lasts a number of rounds equal to the amount of energy spent. (Max Energy of 3).</li>
+				<li><strong>Force Net.</strong> As a bonus action, and for 1 energy, force a creature that you can see within 25 feet of the turret to make a Dex save, or be restrained until the beginning of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				A small deployable device with an AC of {{turret:ac}}, HP of {{turret:hp}}, and walking speed of 15 ft. As an action you can deploy the turret to an empty space within {{turret:deploy:distance}} ft of you. An undeployed turret is a 6-inch box. As a bonus action on your turn, you can command the turret to move to an unoccupied space. Only {{turret:count:max}} may be deployed at a time and can be undeployed while within {{turret:deploy:distance}} ft of it. It is immune to Poison and Psychic damage, cannot be feared or charmed, and is immune to poison and disease.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="turret:ac" value="12" />
+			<stat name="turret:hp" value="5" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:count:max" value="1" />
+			<stat name="turret:deploy:distance" value="5" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET_AUTOMATED_STRIKE" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET_HEALING_MIST" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET_FORCE_NET" />
+		</rules>
+	</element>
+	<element name="Automated Strike" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET_AUTOMATED_STRIKE">
+		<supports>Turret (SSD)</supports>
+		<description>
+			<p>Enemy creatures that enter a 25 ft radius around the turret, or start their turn there, must make a Dex save. On a failure they take 2d4 + int mod (min. 1) piercing damage. They take half damage on a success. This increases to 3d4 at level 5, 4d4 at level 11, and 6d4 at level 17.</p>
+		</description>
+		<sheet usage="Turret">
+			<description>Enemy creatures that enter a {{automated strike:range}} ft radius around the turret, or start their turn there, must make a Dex save. On a failure they take {{automated strike:dice:amount}}d{{automated strike:dice:size}} + {{automated strike:int:mod}} piercing damage. They take half damage on a success.</description>
+		</sheet>
+		<rules>
+			<stat name="automated strike:dice:amount" value="2" />
+			<stat name="automated strike:dice:amount" value="1" level="5" />
+			<stat name="automated strike:dice:amount" value="1" level="11" />
+			<stat name="automated strike:dice:amount" value="2" level="17" />
+			<stat name="automated strike:int:mod" value="1" bonus="base" />
+			<stat name="automated strike:int:mod" value="intelligence:modifier" bonus="base" />
+			<stat name="automated strike:range" value="25" />
+			<stat name="automated strike:dice:size" value="4" />
+		</rules>
+	</element>
+	<element name="Healing Mist" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET_HEALING_MIST">
+		<supports>Turret (SSD)</supports>
+		<description>
+			<p> X Energy. As a bonus action, activate this feature. Create a restorative cloud centered on the turret with a range of 15ft. Ally creatures that start and/or end their turn within heal an amount equal to your Int modifier. The cloud lasts a number of rounds equal to the amount of energy spent. (Max Energy of 3).</p>
+		</description>
+		<sheet usage="Turret, Bonus Action">
+			<description>X Energy. Create a restorative cloud centered on the turret with a range of {{healing mist:range}} ft. Ally creatures that start and/or end their turn within heal for {{healing mist:heal:hp}} HP. The cloud lasts a number of rounds equal to the amount of energy spent. (Max Energy of 3).</description>
+		</sheet>
+		<rules>
+			<stat name="healing mist:range" value="15" />
+			<stat name="healing mist:heal:hp" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Force Net" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET_FORCE_NET">
+		<supports>Turret</supports>
+		<description>
+			<p>As a bonus action, and for 1 energy, force a creature that you can see within 25 feet of the turret to make a Dex save, or be restrained until the beginning of your next turn.</p>
+		</description>
+		<sheet usage="Turret, Bonus Action">
+			<description>1 energy. Force a creature that you can see within {{force net:range}} feet of the turret to make a Dex save, or be restrained until the beginning of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="force net:range" value="25" />
+		</rules>
+	</element>
+	<element name="Sturdy Turret" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_TURRET_STURDY_TURRET">
+		<supports>Turret (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET</requirements>
+		<description>
+			<p>The turret's AC is increased by your Intelligence Modifier, and its HP by 2Xyour Engineer Level. It resists all damage.</p>
+		</description>
+		<sheet>
+			<description>Your turret resists all damage.</description>
+		</sheet>
+		<rules>
+			<stat name="turret:ac" value="intelligence:modifier" />
+			<stat name="turret:hp" value="level:engineer" />
+			<stat name="turret:hp" value="level:engineer" />
+		</rules>
+	</element>
+	<element name="Distant Turret" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_TURRET_DISTANT_TURRET">
+		<supports>Turret (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET</requirements>
+		<description>
+			<p>You can deploy and undeploy a turret up to 30 feet away. Automated Strike and Force Net have a range of 50 ft, and Healing Mist has a range of 30ft.</p>
+		</description>
+		<rules>
+			<stat name="turret:deploy:distance" value="25" />
+			<stat name="automated strike:range" value="25" />
+			<stat name="force net:range" value="25" />
+			<stat name="healing mist:range" value="15" />
+		</rules>
+	</element>
+	<element name="Second Turret" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_TURRET_SECOND_TURRET">
+		<supports>Turret (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET</requirements>
+		<description>
+			<p>You may deploy a second turret at a time, and it takes 50% less time and money to rebuild one.</p>
+		</description>
+		<sheet>
+			<description>It takes 50% less time and money to rebuild a turret.</description>
+		</sheet>
+		<rules>
+			<stat name="turret:count:max" value="1" />
+		</rules>
+	</element>
+	<element name="Empowered Strike" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_TURRET_ENHANCED_STRIKE">
+		<supports>Turret (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET</requirements>
+		<description>
+			<p>Automated Strike deals d6s of damage instead of d4s. Additionally, as a free action you can choose whether Automated Strike causes Piercing Damage or Force Damage.</p>
+		</description>
+		<sheet usage="Automated Strike">
+			<description>As a free action you can choose whether Automated Strike causes Piercing Damage or Force Damage.</description>
+		</sheet>
+		<rules>
+			<stat name="automated strike:dice:size" value="2" />
+		</rules>
+	</element>
+	<element name="Restorative Mist" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_TURRET_RESTORATIVE_MIST">
+		<supports>Turret (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET</requirements>
+		<description>
+			<p>Creatures healed by Healing Mist are healed for twice your INT mod, and are restored of 1 disease or condition every turn they remain inside (poison, blinded, deafened, or paralysis).</p>
+		</description>
+		<sheet usage="Healing Mist">
+			<description>Creatures healed by Healing Mist are restored of 1 disease or condition every turn they remain inside (poison, blinded, deafened, or paralysis).</description>
+		</sheet>
+		<rules>
+			<stat name="healing mist:heal:hp" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Electrified Net" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_TURRET_ELECTRIFIED_NET">
+		<supports>Turret (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET</requirements>
+		<description>
+			<p>When a target fails their Dex save against Force Net, they take 4d6 lightning damage, and cannot take reactions until free.</p>
+		</description>
+		<sheet usage="Force Net">
+			<description>When a target fails their Dex save against Force Net, they take 4d6 lightning damage, and cannot take reactions until free.</description>
+		</sheet>
+	</element>
+	<element name="Shield Generator" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_TURRET_SHIELD_GENERATOR">
+		<supports>Turret (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET</requirements>
+		<description>
+			<p>Friendly creatures (Including yourself) within 30ft of a turret gain the benefits of Shield. This effect persists until the destruction or deconstruction of the turret. You cannot stack the effects of Shield with two turrets in this way.</p>
+		</description>
+		<sheet>
+			<description>Friendly creatures (Including yourself) within 30ft of a turret gain the benefits of Shield. This effect persists until the destruction or deconstruction of the turret. You cannot stack the effects of Shield with two turrets in this way.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD" />
+		</rules>
+	</element>
+	<element name="Fission Core" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_TURRET_FISSION_CORE">
+		<supports>Turret (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET</requirements>
+		<description>
+			<p>As an action, or upon destruction, a turret explodes. Creatures within 30 ft must succeed on a Dex save or take 12d6+20 bludgeoning damage and be knocked prone on a failure (half damage on a success).</p>
+		</description>
+		<sheet>
+			<description>As an action, or upon destruction, a turret explodes. Creatures within 30 ft must succeed on a Dex save or take 12d6+20 bludgeoning damage and be knocked prone on a failure (half damage on a success).</description>
+		</sheet>
+	</element>
+	<element name="Teleportation System" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_TURRET_TELEPORTATION_SYSTEM">
+		<supports>Turret (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_TURRET</requirements>
+		<description>
+			<p>As a bonus action, you can make one of your turrets teleport to any unoccupied spot within 30ft of itself. Additionally, you can store your turrets in an extradimensional space from which you can retrieve them as a free action.</p>
+		</description>
+		<sheet usage="Bonus Action">
+			<description>You can make one of your turrets teleport to any unoccupied spot within 30ft of itself. Additionally, you can store your turrets in an extradimensional space from which you can retrieve them as a free action.</description>
+		</sheet>
+	</element>
+	
+	<element name="Drone (SSD)" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE">
+		<supports>SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_ENGINEER_GADGETEER,!ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_DRONE</requirements>
+		<description>
+			<p>A small deployable flying device with an AC of 12 and HP equal to 5+(4*your Engineer Level). As an action you can deploy the drone to a space adjacent to you. An undeployed drone is a 6-inch sphere. A drone has a flying speed of 30 feet, can carry a weight of 40lbs and cannot move more than 300ft away from you. A drone moves on your initiative, has its own movement action, but uses your actions for its abilities. Only 1 may be deployed at a time, unless otherwise stated. A drone can be undeployed while adjacent to it.</p>
+			<p>A drone is immune to Poison and Psychic damage. It cannot be charmed or frightened, and is immune to poison and disease. It has a Str Save bonus of +0 and a Dex Save bonus of +2. It fails any other saving throw.</p>
+			<ul>
+				<li><strong>Drone Shot.</strong> As an action, your drone makes a shot at a target you can see. This attack has a range of 60 ft. On a hit, drone shot deals 1d8 + Int. Mod piercing damage.</li>
+				<li><strong>Drone Mark.</strong> For 2 energy, your drone marks a creature or object that you can see as an action. This functions as Faerie Fire, targeting a single creature or object and doesn't require Concentration.</li>
+				<li><strong>Drone Camera.</strong> For 1 Energy, you can observe through your drone. This functions as Scrying targeting the Drone, and requires concentration, but no focus or casting time. As long as you continue observing your drone, it can move up to a mile away and be controlled from this distance. If Drone Camera ends while your Drone is out of range, it stays in the same spot until you enter its range again.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				A small deployable flying device with an AC of 12, HP of {{drone:hp}}, and flying speed of 30 feet. 
+				As an action you can deploy the drone to a space adjacent to you; an undeployed drone is a 6-inch sphere. 
+				It can carry a weight of 40lbs and cannot move more than 300ft away from you. 
+				A drone moves on your initiative, has its own movement action, but uses your actions for its abilities. 
+				Only {{drone:count:max}} may be deployed at a time and can be undeployed while adjacent to it.&#13;&#10;
+				Drones are immune to Poison and Psychic damage, cannot be charmed or frightened, and are immune to poison and disease. It has a Str Save bonus of +0 and a Dex Save bonus of +2. It fails any other saving throw.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="drone:hp" value="5" />
+			<stat name="drone:hp" value="level:engineer" />
+			<stat name="drone:hp" value="level:engineer" />
+			<stat name="drone:hp" value="level:engineer" />
+			<stat name="drone:hp" value="level:engineer" />
+			<stat name="drone:count:max" value="1" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE_DRONE_SHOT" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE_DRONE_MARK" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE_DRONE_CAMERA" />
+		</rules>
+	</element>
+	<element name="Drone Shot" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE_DRONE_SHOT">
+		<supports>Drone (SSD)</supports>
+		<description>
+			<p>As an action, your drone makes a shot at a target you can see. This attack has a range of 60 ft. On a hit, drone shot deals 1d8 + Int. Mod piercing damage.</p>
+		</description>
+		<sheet usage="Drone, Action">
+			<description>This attack has a range of {{drone shot:range}} ft{{drone shot:attack:bonus}}. On a hit, drone shot deals 1d8 + {{intelligence:modifier}} piercing damage{{drone shot:damage:bonus}}.</description>
+		</sheet>
+		<rules>
+			<stat name="drone shot:range" value="60" />
+			<stat name="drone shot:attack:bonus" value="" inline="true" />
+			<stat name="drone shot:damage:bonus" value="" inline="true" />
+		</rules>
+	</element>
+	<element name="Drone Mark" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE_DRONE_MARK">
+		<supports>Drone (SSD)</supports>
+		<description>
+			<p>For 2 energy, your drone marks a creature or object that you can see as an action. This functions as Faerie Fire, targeting a single creature or object and doesn't require Concentration.</p>
+		</description>
+		<sheet usage="Drone, Action">
+			<description>2 energy. Your drone marks a creature or object that you can see. This functions as Faerie Fire, targeting a single creature or object and doesn't require Concentration.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" />
+		</rules>
+	</element>
+	<element name="Drone Camera" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE_DRONE_CAMERA">
+		<supports>Drone (SSD)</supports>
+		<description>
+			<p>For 1 Energy, you can observe through your drone. This functions as Scrying targeting the Drone, and requires concentration, but no focus or casting time. As long as you continue observing your drone, it can move up to a mile away and be controlled from this distance. If Drone Camera ends while your Drone is out of range, it stays in the same spot until you enter its range again.</p>
+		</description>
+		<sheet usage="Drone">
+			<description>{{drone camera:energy}} Energy. You can observe through your drone. This functions as Scrying targeting the Drone, requires concentration, but no focus or casting time. As long as you continue observing your drone, it can move up to a mile away and be controlled from this distance. If Drone Camera ends while your Drone is out of range, it stays in the same spot until you enter its range again.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" />
+			<stat name="drone camera:energy" value="1" />
+		</rules>
+	</element>
+	<element name="System Leak" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_DRONE_SYSTEM_LEAK">
+		<supports>Drone (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE</requirements>
+		<description>
+			<p>For 1 Energy, your Drone may as a bonus action create a pool of oil underneath itself that acts as a nonmagical Grease spell.</p>
+		</description>
+		<sheet usage="Bonus Action">
+			<description>1 Energy. Your Drone may create a pool of oil underneath itself that acts as a nonmagical Grease spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GREASE" />
+		</rules>
+	</element>
+	<element name="Second Drone" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_DRONE_SECOND_DRONE">
+		<supports>Drone (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE</requirements>
+		<description>
+			<p>You may deploy a second drone at a time, and it takes 50% less time and money to rebuild one. You can command both drones on the same action or bonus action. (example: simultaneous Drone Shot). Energy is expended for both drones in doing so.</p>
+		</description>
+		<sheet>
+			<description>
+				You can command both drones on the same action or bonus action. Energy is expended for both drones in doing so.&#13;&#10;
+				It takes 50% less time and money to rebuild a drone.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="drone:count:max" value="1" />
+		</rules>
+	</element>
+	<element name="Chameleonic Plating" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_DRONE_CHAMELEONIC_PLATING">
+		<supports>Drone (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE</requirements>
+		<description>
+			<p>For 1 Energy, you can cloak your drone. As a bonus action, your drone becomes invisible and makes no noise for 1 minute, or until it takes damage or uses its Drone Shot or Drone Mark abilities.</p>
+		</description>
+		<sheet usage="Bonus Action">
+			<description>1 Energy. You can cloak your drone, it becomes invisible and makes no noise for 1 minute, or until it takes damage or uses its Drone Shot or Drone Mark abilities.</description>
+		</sheet>
+	</element>
+	<element name="Improved Shot" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_DRONE_IMPROVED_SHOT">
+		<supports>Drone (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE</requirements>
+		<description>
+			<p>Drone Shot uses a bonus action, and now has a range of 120 feet.</p>
+		</description>
+		<sheet usage="Drone Shot">
+			<description>Drone Shot uses a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="drone shot:range" value="60" />
+		</rules>
+	</element>
+	<element name="Improved Mark" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_DRONE_IMPROVED_MARK">
+		<supports>Drone (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE</requirements>
+		<description>
+			<p>Creatures marked by Drone Mark take an extra 2d6 damage from you and your constructs.</p>
+		</description>
+		<sheet usage="Drone Mark">
+			<description>Creatures marked by Drone Mark take an extra 2d6 damage from you and your constructs.</description>
+		</sheet>
+	</element>
+	<element name="Improved Senses" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_DRONE_IMPROVED_SENSES">
+		<supports>Drone (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE</requirements>
+		<description>
+			<p>The Drone gains Blindsight 90ft. Additionally, Drone Camera requires no energy to use.</p>
+		</description>
+		<sheet>
+			<description>The Drone gains Blindsight 90ft.</description>
+		</sheet>
+		<rules>
+			<stat name="drone camera:energy" value="-1" />
+		</rules>
+	</element>
+	<element name="Shock Shot" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_DRONE_SHOCK_SHOT">
+		<supports>Drone (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE</requirements>
+		<description>
+			<p>Drone Shot gains a +2 Attack Bonus, and deals an additional 2d6 lightning damage.</p>
+		</description>
+		<rules>
+			<stat name="drone shot:attack:bonus" value=" and a +2 Attack Bonus" inline="true" />
+			<stat name="drone shot:damage:bonus" value=" and 2d6 lightning damage" inline="true" />
+		</rules>
+	</element>
+	<element name="Mark Tracking" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_DRONE_MARK_TRACKING">
+		<supports>Drone (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE</requirements>
+		<description>
+			<p>You always know the direction towards a marked creature, so long as it is within the same plane. Additionally, the duration of Drone Mark is increased to a day.</p>
+		</description>
+		<sheet usage="Drone Mark">
+			<description>You always know the direction towards a marked creature, so long as it is within the same plane. Additionally, the duration of Drone Mark is increased to a day.</description>
+		</sheet>
+	</element>
+	<element name="Holographic Projector" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_DRONE_HOLOGRAPHIC_PROJECTOR">
+		<supports>Drone (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_DRONE</requirements>
+		<description>
+			<p>Spending 1 Energy allows you to replicate the effects of Major Image within 120ft of a Drone. The Drone cannot take any actions until the illusion ends or is dismissed. This illusion is nonmagical, and thus is immune to effects like True Sight and a creature cannot see through it even if it's discerned as an illusion.</p>
+		</description>
+		<sheet>
+			<description>1 Energy. Allows you to replicate the effects of Major Image within 120ft of a Drone. The Drone cannot take any actions until the illusion ends or is dismissed. This illusion is nonmagical, and thus is immune to effects like True Sight and a creature cannot see through it even if it's discerned as an illusion.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" />
+		</rules>
+	</element>
+	
+	<element name="Magitech Omnistaff (SSD)" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF">
+		<supports>SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_ENGINEER_GADGETEER,!ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF</requirements>
+		<description>
+			<p>A device that functions as a regular quarterstaff, but can also deliver a powerful arcane attack. Additionally, when you make a tinker's tool check to build or repair something, you add a +2 bonus to the roll while in possession of the staff, as it also functions as a tool.</p>
+			<ul>
+				<li><strong>Staff Strike.</strong> You make a melee weapon attack with the staff. Treat this as a Quarterstaff attack(one handed:1d6 bludgoning, Two handed 1d8 Bludgoning). Against constructs or mechanical objects, deal an additional 2d6 force damage.</li>
+				<li><strong>Mend.</strong> You can use your staff to cast mending on a damaged simple device made of stone, metal or wood within 10 feet. You may also use this feature, spending 1 energy, to heal a construct (including your drones and turrets) within 10 feet for 1d6 + 1 HP as a bonus action, as long as the construct has at least 1 HP.</li>
+				<li><strong>Arcane Ray.</strong> As an action, while wielding the staff, you can spend energy to make a ranged spell attack against a creature within 60 feet. On a hit, the creature takes 2d8 force damage + an additional 1d8 force damage per energy point spent (maximum 3 energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</li>
+				<li><strong>Magitech Pulse.</strong> For 2 Energy, as an action, you can force all creatures (size large and smaller) within 10 feet to make a STR save. On a failure, they are knocked prone.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				<p>A device that functions as a regular quarterstaff, but can also deliver a powerful arcane attack. Additionally, when you make a tinker's tool check to build or repair something, you add a +{{magitech omnistaff:tinkers tools:bonus}} bonus to the roll while in possession of the staff, as it also functions as a tool.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="magitech omnistaff:tinkers tools:bonus" value="2" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_STRIKE" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_MEND" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_ARCANE_RAY" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_MAGITECH_PULSE" />
+		</rules>
+	</element>
+	<element name="Staff Strike" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_STRIKE">
+		<supports>Magitech Omnistaff (SSD)</supports>
+		<description>
+			<p>You make a melee weapon attack with the staff. Treat this as a Quarterstaff attack(one handed:1d6 bludgoning, Two handed 1d8 Bludgoning). Against constructs or mechanical objects, deal an additional 2d6 force damage.</p>
+		</description>
+		<sheet usage="Magitech Omnistaff, Action">
+			<description>You make a melee weapon attack {{staff strike:attack:bonus}}with the staff. Treat this as a Quarterstaff attack {{staff strike:damage:bonus}}(one handed:1d6 + {{intelligence:modifier}} bludgoning, Two handed 1d8 + {{intelligence:modifier}} Bludgoning). Against constructs or mechanical objects, deal an additional 2d6 force damage.</description>
+		</sheet>
+		<rules>
+			<stat name="staff strike:attack:bonus" value="" inline="true" />
+			<stat name="staff strike:damage:bonus" value="" inline="true" />
+		</rules>
+	</element>
+	<element name="Mend" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_MEND">
+		<supports>Magitech Omnistaff (SSD)</supports>
+		<description>
+			<p>You can use your staff to cast mending on a damaged simple device made of stone, metal or wood within 10 feet. You may also use this feature, spending 1 energy, to heal a construct (including your drones and turrets) within 10 feet for 1d6 + 1 HP as a bonus action, as long as the construct has at least 1 HP.</p>
+		</description>
+		<sheet usage="Magitech Omnistaff, Bonus Action">
+			<description>You can use your staff to cast Mending on a damaged simple device made of stone, metal or wood within {{mend:range}} feet. You may also use this feature, spending 1 energy, to heal a construct (including your drones and turrets) within 10 feet for 1d6 + {{mend:heal:bonus}} HP, as long as the construct has at least 1 HP.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" />
+			<stat name="mend:range" value="10" />
+			<stat name="mend:heal:bonus" value="1" bonus="base" />
+		</rules>
+	</element>
+	<element name="Arcane Ray" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_ARCANE_RAY">
+		<supports>Magitech Omnistaff (SSD)</supports>
+		<description>
+			<p>As an action, while wielding the staff, you can spend energy to make a ranged spell attack against a creature within 60 feet. On a hit, the creature takes 2d8 force damage + an additional 1d8 force damage per energy point spent (maximum 3 energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</p>
+		</description>
+		<sheet usage="Magitech Omnistaff, Action">
+			<description>While wielding the staff, you can spend energy to make a ranged spell attack against a creature within 60 feet. On a hit, the creature takes 2d8 force damage + an additional 1d8 force damage per energy point spent (maximum 3 energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</description>
+			<description level="17">While wielding the staff, you can spend energy to make a ranged spell attack against a creature within {{arcane ray:range}} feet. On a hit, the creature takes 2d8 + {{intelligence:modifier}} force damage + an additional 1d8 force damage per energy point spent (maximum {{arcane ray:energy}} energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</description>
+		</sheet>
+		<rules>
+			<stat name="arcane ray:range" value="60" />
+			<stat name="arcane ray:energy" value="3" />
+		</rules>
+	</element>
+	<element name="Magitech Pulse" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_MAGITECH_PULSE">
+		<supports>Magitech Omnistaff (SSD)</supports>
+		<description>
+			<p>For 2 Energy, as an action, you can force all creatures (size large and smaller) within 10 feet to make a STR save. On a failure, they are knocked prone.</p>
+		</description>
+		<sheet usage="Magitech Omnistaff, Action">
+			<description>{{magitech pulse:energy}} Energy. You can force all creatures (size {{magitech pulse:size}} and smaller) within {{magitech pulse:range}} feet to make a STR save{{magitech pulse:dc:bonus}}. On a failure, they are knocked prone.</description>
+		</sheet>
+		<rules>
+			<stat name="magitech pulse:energy" value="2" />
+			<stat name="magitech pulse:range" value="10" />
+			<stat name="magitech pulse:size" value="large" inline="true" />
+			<stat name="magitech pulse:dc:bonus" value="" inline="true" />
+		</rules>
+	</element>
+	<element name="Force Strike" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_FORCE_STRIKE">
+		<supports>Magitech Omnistaff (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF</requirements>
+		<description>
+			<p>Add your Int modifier to attack and damage rolls with Staff Strike. Whenever you successfully hit a creature, you can spend one energy point to send it flying back 15ft or until it hits an obstacle.</p>
+		</description>
+		<sheet usage="Staff Strike">
+			<description>Whenever you successfully hit a creature, you can spend one energy point to send it flying back 15ft or until it hits an obstacle.</description>
+		</sheet>
+		<rules>
+			<stat name="staff strike:attack:bonus" value="with +2 bonus to the attack roll " inline="true" />
+			<stat name="staff strike:damage:bonus" value="with +2 damage " inline="true" />
+		</rules>
+	</element>
+	<element name="Dual Ray" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_DUAL_RAY">
+		<supports>Magitech Omnistaff (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF</requirements>
+		<description>
+			<p>You fire an additional Arcane Ray for no additional cost. This ray can target the first enemy you hit, or a seperate one if you choose. If you target a different enemy, you must roll again to hit. If you hit one enemy with both beams, you only roll once.</p>
+		</description>
+		<sheet usage="Arcane Ray">
+			<description>You fire an additional Arcane Ray for no additional cost. This ray can target the first enemy you hit, or a seperate one if you choose. If you target a different enemy, you must roll again to hit. If you hit one enemy with both beams, you only roll once.</description>
+		</sheet>
+	</element>
+	<element name="Powerful Pulse" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_POWERFUL_PULSE">
+		<supports>Magitech Omnistaff (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF</requirements>
+		<description>
+			<p>Add +2 to the save DC of Magitech Pulse. Its range is increased to 20 feet, and it can work against creatures up to Huge in size.</p>
+		</description>
+		<rules>
+			<stat name="magitech pulse:range" value="10" />
+			<stat name="magitech pulse:size" value="huge" inline="true" />
+			<stat name="magitech pulse:dc:bonus" value=" with a +2 bonus to your DC" inline="true" />
+		</rules>
+	</element>
+	<element name="Focused Ray" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_FOCUSED_RAY">
+		<supports>Magitech Omnistaff (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF</requirements>
+		<description>
+			<p>For every consecutive use of Arcane Ray, it deals an extra stack of 1d8 force damage.</p>
+		</description>
+		<sheet usage="Arcane Ray">
+			<description>For every consecutive use of Arcane Ray, it deals an extra stack of 1d8 force damage.</description>
+		</sheet>
+	</element>
+	<element name="Efficient Repair" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_EFFICIENT_REPAIR">
+		<supports>Magitech Omnistaff (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF</requirements>
+		<description>
+			<p>You may use the mend ability to a range of 30 feet. The bonus to Tinker's Tool checks the staff gives is increased to +5. You may add your intelligence modifier to the healing that the feature gives to constructs.</p>
+		</description>
+		<rules>
+			<stat name="mend:range" value="20" />
+			<stat name="magitech omnistaff:tinkers tools:bonus" value="3" />
+			<stat name="efficient repair:heal:bonus" value="1" />
+			<stat name="efficient repair:heal:bonus" value="intelligence:modifier" />
+			<stat name="mend:heal:bonus" value="efficient repair:heal:bonus" bonus="base" />
+		</rules>
+	</element>
+	<element name="Booming Pulse" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_BOOMING_PULSE">
+		<supports>Magitech Omnistaff (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF</requirements>
+		<description>
+			<p>Magitech Pulse deals thunder damage equal to your engineer level to creatures that fail the STR save. They are also deafened until the end of your next turn.</p>
+		</description>
+		<sheet usage="Magitech Pulse">
+			<description>Magitech Pulse deals {{level:engineer}} thunder damage to creatures that fail the STR save. They are also deafened until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Efficient Pulse" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_EFFICIENT_PULSE">
+		<supports>Magitech Omnistaff (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF</requirements>
+		<description>
+			<p>Magitech Pulse uses a bonus action, and costs only 1 energy. Additionally, you can make it create a cloud of floating debris within its area that lasts four rounds. Creatures other than you entering this area or starting their turn in it suffer 4d4 slashing damage.</p>
+		</description>
+		<sheet usage="Magitech Omnistaff">
+			<description>Magitech Pulse uses a bonus action. Additionally, you can make it create a cloud of floating debris within its area that lasts four rounds. Creatures other than you entering this area or starting their turn in it suffer 4d4 slashing damage.</description>
+		</sheet>
+		<rules>
+			<stat name="magitech pulse:energy" value="-1" />
+		</rules>
+	</element>
+	<element name="Ravaging Ray" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_RAVAGING_RAY">
+		<supports>Magitech Omnistaff (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF</requirements>
+		<description>
+			<p>You may spend up to 6 energy on Arcane Ray. You may also add your Intelligence modifier to the damage of Arcane Ray, and its range increases to 180ft.</p>
+		</description>
+		<rules>
+			<stat name="arcane ray:range" value="120" />
+			<stat name="arcane ray:energy" value="3" />
+		</rules>
+	</element>
+	<element name="System Restoration" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF_SYSTEM_RESTORATION">
+		<supports>Magitech Omnistaff (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNISTAFF</requirements>
+		<description>
+			<p>You can spend 6 energy to replicate the effects of a Fabricate spell. This cost is halved if this is used to repair a broken object. Additionally, so long as at least half of the pieces are present, you can spend 10 Energy to restore a destroyed Construct, returning it to 1HP.</p>
+		</description>
+		<sheet>
+			<description>You can spend 6 energy to replicate the effects of a Fabricate spell. This cost is halved if this is used to repair a broken object. Additionally, so long as at least half of the pieces are present, you can spend 10 Energy to restore a destroyed Construct, returning it to 1HP.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" />
+		</rules>
+	</element>
+
+	<element name="Magitech Omnigauntlet (SSD)" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET">
+		<supports>SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_ENGINEER_GADGETEER,!ID_HOMEBREW_CLASS_FEATURE_ENGINEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>A gauntlet that is commonly used by engineers and inventors as a close combat weapon. This device is very versatile in nature being used for combat mobility and defense. Only one configuration may be active on the gauntlet at a time and you must use a interaction to switch.</p>
+			<ul>
+				<li><strong>Combat Configuration.</strong> You make a melee weapon attack with the staff. Treat this as a Quarterstaff attack(one handed:1d6 bludgoning, Two handed 1d8 Bludgoning). Against constructs or mechanical objects, deal an additional 2d6 force damage.</li>
+				<li><strong>Defense Configuration.</strong> You can use your staff to cast mending on a damaged simple device made of stone, metal or wood within 10 feet. You may also use this feature, spending 1 energy, to heal a construct (including your drones and turrets) within 10 feet for 1d6 + 1 HP as a bonus action, as long as the construct has at least 1 HP.</li>
+				<li><strong>Mobility Configuration.</strong> As an action, while wielding the staff, you can spend energy to make a ranged spell attack against a creature within 60 feet. On a hit, the creature takes 2d8 force damage + an additional 1d8 force damage per energy point spent (maximum 3 energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				<p>A gauntlet that is commonly used by engineers and inventors as a close combat weapon. This device is very versatile in nature being used for combat mobility and defense. Only one configuration may be active on the gauntlet at a time and you must use a interaction to switch.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_COMBAT_CONFIGURATION" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_DEFENSE_CONFIGURATION" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_MOBILITY_CONFIGURATION" />
+		</rules>
+	</element>
+	<element name="Combat Configuration" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_COMBAT_CONFIGURATION">
+		<supports>Magitech Omnigauntlet (SSD)</supports>
+		<description>
+			<p>You make a dexterity melee attack for 1d8+dex mod damage of either bludgeoning, slashing, or piercing (your choice). You may also spend 1 energy (max of 3) to make an energized dexterity melee attack dealing 1d12+dex of either lightning, force, or thunder damage.</p>
+		</description>
+		<sheet usage="Magitech Omnigauntlet">
+			<description>You make a dexterity melee attack for 1d8 + {{combat configuration:damage:bonus}} damage of either bludgeoning, slashing, or piercing.&#13;&#10;
+			You may also spend Energy (max of {{combat configuration:energy:max}}) to make an energized dexterity melee attack dealing 1d12 + {{combat configuration:damage:bonus}} of either lightning, force, or thunder damage.</description>
+			<description level="11">You make a dexterity melee attack for 1d8 + {{combat configuration:damage:bonus}} damage of either bludgeoning, slashing, or piercing.&#13;&#10;
+			You may also spend Energy (max of {{combat configuration:energy:max}}) to make an energized dexterity melee attack dealing 1d12 + {{combat configuration:damage:bonus}} of either lightning, force, or thunder damage.&#13;&#10;
+			You gain a second gauntlet and both gauntlets gain the light property. </description>
+			<description level="20">You make a dexterity melee attack for 1d8 + {{combat configuration:damage:bonus}} damage of either bludgeoning, slashing, or piercing.&#13;&#10;
+			You may also spend Energy (max of {{combat configuration:energy:max}}) to make an energized dexterity melee attack dealing 1d12 + {{combat configuration:damage:bonus}} of either lightning, force, or thunder damage.&#13;&#10;
+			You gain a second gauntlet and both gauntlets gain the light property.&#13;&#10;
+			When you use your energized strike you can make a second strike with your second gauntlet for free if you have one.&#13;&#10;
+			Your basic gauntlet(s) and energized strikes now deal any damage type, but require a bonus action to change it for both or one gauntlet.</description>
+		</sheet>
+		<rules>
+			<stat name="combat configuration:damage:bonus" value="dexterity:modifier" />
+			<stat name="combat configuration:melee:dice:amount" value="1" />
+			<stat name="combat configuration:melee:dice:size" value="8" />
+			<stat name="combat configuration:energized:dice:amount" value="1" />
+			<stat name="combat configuration:energized:dice:size" value="12" />
+			<stat name="combat configuration:energy:max" value="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SECOND_OMNIGAUNTLET" requirements="[level:11]" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_ADVANCED_COMBAT_CONFIGURATION" requirements="[level:18]" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SUPERIOR_COMBAT_CONFIGURATION" requirements="[level:20]" />
+		</rules>
+	</element>
+	<element name="Defense Configuration" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_DEFENSE_CONFIGURATION">
+		<supports>Magitech Omnigauntlet (SSD)</supports>
+		<description>
+			<p>You form the gauntlet into a shield attached to your arm and it counts as a free hand and grants +2ac.</p>
+		</description>
+		<sheet usage="Magitech Omnigauntlet">
+			<description>You form the gauntlet into a shield attached to your arm and it counts as a free hand and grants +{{defense configuration:ac:bonus}} AC.</description>
+			<description level="11">You form the gauntlet into a shield attached to your arm and it counts as a free hand and grants +2 AC.&#13;&#10;
+			Kinetic Energy Reduction. When hit by an attack that deals bludgeoning, piercing, slashing, or force damage you may expend 1 energy to reduce the damage by 25%, or 3 energy to reduce damage by 50%.</description>
+			<description level="18">You form the gauntlet into a shield attached to your arm and it counts as a free hand and grants +2 AC.&#13;&#10;
+			Kinetic Energy Reduction. When hit by an attack that deals bludgeoning, piercing, slashing, or force damage you may expend 1 energy to reduce the damage by 25%, or 3 energy to reduce damage by 50%.&#13;&#10;
+			Your shield can now reduce all damage types. Your shield stores the damage taken as Potential Energy Points (P.E.P.) with a rate of 12 damage per Point gained and it may be used as a substitute for regular energy. You may store an amount of P.E.P. equal to half your energy capacity.</description>
+			<description level="20">You form the gauntlet into a shield attached to your arm and it counts as a free hand and grants +2 AC.&#13;&#10;
+			Kinetic Energy Reduction. When hit by an attack that deals bludgeoning, piercing, slashing, or force damage you may expend 1 energy to reduce the damage by 25%, or 3 energy to reduce damage by 50%.&#13;&#10;
+			Your shield can now reduce all damage types. Your shield stores the damage taken as Potential Energy Points (P.E.P.) with a rate of 12 damage per Point gained and it may be used as a substitute for regular energy. You may store an amount of P.E.P. equal to half your energy capacity.&#13;&#10;
+			Your shield can also use 5 energy to absorb 75% of damage taken from one attack. You may also now use your P.E.P.s to send out a blast of stored energy dealing 1d12 + {{intelligence:modifier}} of force, lightning, or thunder damage to a max of 8 energy using an action.</description>
+		</sheet>
+		<rules>
+			<stat name="defense configuration:ac:bonus" value="2" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_DEFENSIVE_CONFIGURATION_ENHANCEMENT" requirements="[level:11]" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_ADVANCED_ENERGY_ABSORPTION_AND_REDIRECTION" requirements="[level:18]" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SUPERIOR_ENERGY_ABSORPTION_AND_REDIRECTION" requirements="[level:20]" />
+		</rules>
+	</element>
+	<element name="Mobility Configuration" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_MOBILITY_CONFIGURATION">
+		<supports>Magitech Omnigauntlet (SSD)</supports>
+		<description>
+			<p>You can make a melee attack for 1d6+dex mod slashing damage. You also have a taser that can make a creature within 5ft of you to make a con save or be stunned on their next turn. Additionally you may use your bonus action to shoot a grappling hook at a target within 30ft of you and pull yourself toward it. You may also use 1 energy to either make an attack, attempt to grapple them, or attempt to stun them with your taser.</p>
+		</description>
+		<sheet usage="Magitech Omnigauntlet">
+			<description>You can make a melee attack for 1d6 + {{dexterity:modifier}} slashing damage.&#13;&#10;
+			You also have a taser that can force a creature within 5ft of you to make a con save or be stunned on their next turn.&#13;&#10;
+			You may use your bonus action to shoot a grappling hook at a target within {{mobility configuration:grappling hook:range}}ft of you and pull yourself toward it. You may use 1 energy to either make an attack, attempt to grapple them, or attempt to stun them with your taser.</description>
+			<description level="11">You can make a melee attack for 1d6 + {{dexterity:modifier}} slashing damage.&#13;&#10;
+			You also have a taser that can force a creature within 5ft of you to make a con save or be stunned on their next turn.&#13;&#10;
+			You may use your bonus action to shoot a grappling hook at a target within {{mobility configuration:grappling hook:range}}ft of you and pull yourself toward it. You may use 1 energy to either make an attack, attempt to grapple them, or attempt to stun them with your taser.&#13;&#10;
+			Your gauntlet has a set of climbing hooks installed into it giving you a climbing speed of 30ft.&#13;&#10;
+			1 Energy. Your taser can stun an enemy at a range of 30ft.</description>
+			<description level="18">You can make a melee attack for 1d6 + {{dexterity:modifier}} slashing damage.&#13;&#10;
+			You also have a taser that can force a creature within 5ft of you to make a con save or be stunned on their next turn.&#13;&#10;
+			You may use your bonus action to shoot a grappling hook at a target within {{mobility configuration:grappling hook:range}}ft of you and pull yourself toward it. You may use 1 energy to either make an attack, attempt to grapple them, or attempt to stun them with your taser.&#13;&#10;
+			Your gauntlet has a set of climbing hooks installed into it giving you a climbing speed of 30ft.&#13;&#10;
+			1 Energy. Your taser can stun an enemy at a range of 30ft.&#13;&#10;
+			Your grappling hook has more durable rope and two adhesive anchors on either end of it to attach on any surface and keep it anchored firmly being able to support up to 500 pounds.&#13;&#10;
+			You have a rebreather that lets you breath underwater and also gain a swimming speed of 30ft with an activated swimming gloves.</description>
+			<description level="20">You can make a melee attack for 1d6 + {{dexterity:modifier}} slashing damage.&#13;&#10;
+			You also have a taser that can force a creature within 5ft of you to make a con save or be stunned on their next turn.&#13;&#10;
+			You may use your bonus action to shoot a grappling hook at a target within {{mobility configuration:grappling hook:range}}ft of you and pull yourself toward it. You may use 1 energy to either make an attack, attempt to grapple them, or attempt to stun them with your taser.&#13;&#10;
+			Your gauntlet has a set of climbing hooks installed into it giving you a climbing speed of 30ft.&#13;&#10;
+			1 Energy. Your taser can stun an enemy at a range of 30ft.&#13;&#10;
+			Your grappling hook has more durable rope and two adhesive anchors on either end of it to attach on any surface and keep it anchored firmly being able to support up to 500 pounds.&#13;&#10;
+			You have a rebreather that lets you breath underwater and also gain a swimming speed of 30ft with an activated swimming gloves.&#13;&#10;
+			Your swimming speed and climbing speed if at 30ft is increased to 60 ft.&#13;&#10;
+			As a bonus action, you can pull an enemy within 60ft of you closer to you any amount of feet you choose and make either a stun or normal attack using 1 energy.</description>
+		</sheet>
+		<rules>
+			<stat name="mobility configuration:grappling hook:range" value="30" bonus="base" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_MOBILITY_CONFIGURATION_ENHANCEMENT" requirements="[level:11]" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_ADVANCED_MOBILITY_CONFIGURATION" requirements="[level:18]" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SUPERIOR_MOBILITY" requirements="[level:20]" />
+		</rules>
+	</element>
+	<element name="Second Omnigauntlet" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SECOND_OMNIGAUNTLET">
+		<supports>Magitech Omnigauntlet (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>You gain a second gauntlet and both gauntlets gain the light property.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain a second gauntlet and both gauntlets gain the light property.</description>
+		</sheet>
+	</element>
+	<element name="Defensive Configuration Enhancement" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_DEFENSIVE_CONFIGURATION_ENHANCEMENT">
+		<supports>Magitech Omnigauntlet (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>Kinetic Energy Reduction: When hit by an attack that deals bludgeoning, piercing, slashing, or force damage you may expend 1 energy to reduce the damage by 25% rounded down, or 3 energy to reduce damage by 50%.</p>
+		</description>
+		<sheet display="false">
+			<description>Kinetic Energy Reduction: When hit by an attack that deals bludgeoning, piercing, slashing, or force damage you may expend 1 energy to reduce the damage by 25% rounded down, or 3 energy to reduce damage by 50%.</description>
+		</sheet>
+	</element>
+	<element name="Mobility Configuration Enhancement" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ENHANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_MOBILITY_CONFIGURATION_ENHANCEMENT">
+		<supports>Magitech Omnigauntlet (SSD),Enhanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>Your grappling hook now has a range of 60ft. Additionally You may also spend 1 energy to stun an enemy at a range of 30ft. Additionally your gauntlet has a set of climbing hooks installed into it giving you a climbing speed of 30ft.</p>
+		</description>
+		<sheet display="false">
+			<description>Your gauntlet has a set of climbing hooks installed into it giving you a climbing speed of 30ft.&#13;&#10;
+			1 Energy. Your taser can stun an enemy at a range of 30ft.</description>
+		</sheet>
+		<rules>
+			<stat name="mobility configuration:grappling hook:range" value="60" bonus="base" />
+		</rules>
+	</element>
+	<element name="Advanced Combat Configuration" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_ADVANCED_COMBAT_CONFIGURATION">
+		<supports>Magitech Omnigauntlet (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>You may add your int modifier to your Gauntlet strikes. Additionally for the damage dice for each of this weapons configurations is doubled to 2 dice but the size of those dice decreases by one (ex: Combat Configuration instead of doing 1d8 damage now does 2d6).</p>
+		</description>
+		<sheet display="false"></sheet>
+		<rules>
+			<stat name="combat configuration:damage:bonus" value="intelligence:modifier" />
+			<stat name="combat configuration:melee:dice:amount" value="1" />
+			<stat name="combat configuration:melee:dice:size" value="-2" />
+			<stat name="combat configuration:energized:dice:amount" value="1" />
+			<stat name="combat configuration:energized:dice:size" value="-2" />
+		</rules>
+	</element>
+	<element name="Advanced Energy Absorption and Energy Redirection" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_ADVANCED_ENERGY_ABSORPTION_AND_REDIRECTION">
+		<supports>Magitech Omnigauntlet (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>Your Shield if it can reduce physical damage now can affect all damage types. Your shield also stores the damage taken as Potential Energy Points with a rate of 12 damage per Point gained and it may be used as a substitute for regular energy and you may store and amount of P.E.P equal to half your energy capacity.</p>
+		</description>
+		<sheet display="false">
+			<description>Your shield can now affect all damage types. Your shield stores the damage taken as Potential Energy Points (P.E.P.) with a rate of 12 damage per Point gained and it may be used as a substitute for regular energy. You may store an amount of P.E.P. equal to half your energy capacity.</description>
+		</sheet>
+	</element>
+	<element name="Advanced Mobility Configuration" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ADVANCED_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_ADVANCED_MOBILITY_CONFIGURATION">
+		<supports>Magitech Omnigauntlet (SSD),Advanced SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>Your grappling hook now has a range of 120 ft. It now also has more durable rope and two adhesive anchors on either end of it to attach it on any surface and keep it anchored firmly being able to support up to 500 pounds. Additionally you have a rebreather that lets you breath underwater and also gain a swimming speed of 30ft with an activated swimming gloves.</p>
+		</description>
+		<sheet display="false">
+			<description>Your grappling hook has more durable rope and two adhesive anchors on either end of it to attach on any surface and keep it anchored firmly being able to support up to 500 pounds.&#13;&#10;
+			You have a rebreather that lets you breath underwater and also gain a swimming speed of 30ft with an activated swimming gloves.</description>
+		</sheet>
+		<rules>
+			<stat name="mobility configuration:grappling hook:range" value="120" bonus="base" />
+		</rules>
+	</element>
+	<element name="Superior Combat Configuration" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SUPERIOR_COMBAT_CONFIGURATION">
+		<supports>Magitech Omnigauntlet (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>When you use your energized strike you can make a second strike with your second gauntlet for free if you have one. You also can now spend a max of 5 energy on the attack. Additionally your basic gauntlet or gauntlets and energized strikes now deal any damage type but requires a bonus action to change it for both or one gauntlet.</p>
+		</description>
+		<sheet display="false">
+			<description>When you use your energized strike you can make a second strike with your second gauntlet for free if you have one.&#13;&#10;
+			Your basic gauntlet(s) and energized strikes now deal any damage type, but require a bonus action to change it for both or one gauntlet.</description>
+		</sheet>
+		<rules>
+			<stat name="combat configuration:energy:max" value="2" />
+		</rules>
+	</element>
+	<element name="Superior Energy Absorption and Redirection" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SUPERIOR_ENERGY_ABSORPTION_AND_REDIRECTION">
+		<supports>Magitech Omnigauntlet (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>Your shield can use 5 energy to absorb 75% of damage taken from one attack. You may also now use your Potential Energy Points to send out a blast of stored energy dealing 1d12+int mod of force, lightning, or thunder damage to a max of 8 energy using an action.</p>
+		</description>
+		<sheet display="false">
+			<description>Your shield can also use 5 energy to absorb 75% of damage taken from one attack. You may also now use your P.E.P.s to send out a blast of stored energy dealing 1d12 + {{intelligence:modifier}} of force, lightning, or thunder damage to a max of 8 energy using an action.</description>
+		</sheet>
+		<rules>
+			<stat name="defense configuration:ac:bonus" value="2" />
+		</rules>
+	</element>
+	<element name="Superior Mobility" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_ULTIMATE_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET_SUPERIOR_MOBILITY">
+		<supports>Magitech Omnigauntlet (SSD),Ultimate SSD</supports>
+		<requirements>ID_HOMEBREW_ARCHETYPE_FEATURE_ENGINEER_GADGETEER_SIGNATURE_DEVICE_MAGITECH_OMNIGAUNTLET</requirements>
+		<description>
+			<p>Your swimming speed and climbing speed if at 30ft is increased to 60 ft. You may now use your bonus action to pull an enemy within 60ft of you closer to you any amount of feet you choose and make either a stun or normal attack using 1 energy.</p>
+		</description>
+		<sheet display="false">
+			<description>Your swimming speed and climbing speed if at 30ft is increased to 60 ft.&#13;&#10;
+			As a bonus action, you can pull an enemy within 60ft of you closer to you any amount of feet you choose and make either a stun or normal attack using 1 energy.</description>
+		</sheet>
+	</element>
+	
+
+	
+	
 </elements>	
