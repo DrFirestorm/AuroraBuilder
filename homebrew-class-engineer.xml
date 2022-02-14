@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Traits' box on the character sheet.
+		To apply Gadget benefits to the sheet, equip them from the 'Gadgets' category in the 'Equipment' tab.
+-->
+
 <elements>
 	<info>
 		<author url="https://www.dandwiki.com/wiki/Engineer_(5e_Class)">dandwiki</author>
@@ -10,6 +16,8 @@
 	<element name="Engineer" type="Class" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_ENGINEER">
 		<description>
 			<p>Masters of mechanical mayhem, engineers love to tinker with explosives, elixirs, and all manner of hazardous gadgets. They can take control of an area by placing turrets, support their allies with alchemical weaponry, or lay waste to foes with a wide array of mines, bombs, and grenades.</p>
+			<h5>NOTE FOR APPLYING GADGETS TO CHARACTER SHEET</h5>
+			<p>Selecting Gadgets under class feature will list them in the 'Features &amp; Traits' box on the character sheet. To apply Gadget benefits to the sheet, equip them from the 'Gadgets' category in the 'Equipment' tab.</p>
 			<h4>CREATING AN ENGINEER</h4>
 			<p>When creating an engineer, think about how your character learned the skills needed to work with machines. Did they teach themselves? Or were they trained by a guild or society of engineers? Perhaps they come from a culture like that of dwarves and gnomes where such skills are common. Or perhaps they just figured it out for themselves through experimentation.</p>
 			<h5>QUICK BUILD</h5>
@@ -98,7 +106,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
-			<select type="Proficiency" name="Artisan Tool, Engineer" supports="ID_WOTC_PHB_ITEM_TOOL_CARPENTERS_TOOLS|ID_WOTC_PHB_ITEM_TOOL_POISONERS_KIT|ID_WOTC_PHB_ITEM_TOOL_SMITHS_TOOLS|ID_WOTC_PHB_ITEM_TOOL_LEATHERWORKERS_TOOLS" number="2" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />		
+			<select type="Proficiency" name="Artisan Tool, Engineer" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS" number="2" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />			
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
 			<select type="Proficiency" name="Skill Proficiency, Engineer" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" number="3" requirements="!ID_HOMEBREW_MULTICLASS_ENGINEER" />
@@ -3284,7 +3292,7 @@
 			<description>Your proficiency bonus is doubled for ability checks using the Alchemist's and Poisoner's tools.</description>
 		</sheet>
 		<rules>
-			<select type="Proficiency" name="Alchemical Expertise, Alchemist" supports="ID_WOTC_PHB_ITEM_TOOL_CARPENTERS_TOOLS|ID_WOTC_PHB_ITEM_TOOL_POISONERS_KIT|ID_WOTC_PHB_ITEM_TOOL_SMITHS_TOOLS|ID_WOTC_PHB_ITEM_TOOL_LEATHERWORKERS_TOOLS" default="ID_WOTC_PHB_ITEM_TOOL_POISONERS_KIT" />
+			<select type="Proficiency" name="Alchemical Expertise, Alchemist" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS" default="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
 		</rules>
 	</element>
 	<element name="Infuse Potion" type="Class Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ALCHEMIST_INFUSE_POTION">
@@ -3413,7 +3421,7 @@
 			<stat name="tier three potions:time" value="-1" />
 		</rules>
 	</element>
-	
+
 	<!-- Engineer's Expertise -->
 	<element name="Skill Expertise (Arcana)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_SKILL_ARCANA">
 		<supports>Engineer's Expertise, Skill, ID_INTERNAL_SUPPORT_ENGINEERS_EXPERTISE</supports>
