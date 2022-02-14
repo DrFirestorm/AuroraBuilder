@@ -8,8 +8,6 @@
 	</info>
 	
 	<element name="Engineer" type="Class" source="dandwiki_Engineer" id="ID_HOMEBREW_CLASS_ENGINEER">
-		
-		
 		<description>
 			<p>Masters of mechanical mayhem, engineers love to tinker with explosives, elixirs, and all manner of hazardous gadgets. They can take control of an area by placing turrets, support their allies with alchemical weaponry, or lay waste to foes with a wide array of mines, bombs, and grenades.</p>
 			<h4>CREATING AN ENGINEER</h4>
@@ -43,8 +41,6 @@
 				<li>(a) Leather Armor or (b) tools=Tinker's Tools, Alchemist's Tools - Two of the following: Carpenter's Tools, Poisoner's Kit, Smith's Tools, Leatherworker's Tools, Gunsmith's Tools</li>
 			</ul>
 			<h5 class="caption">THE ENGINEER</h5>
-		
-			
 			<table class="class-features">
 				<thead>
 					<tr><td class="col-5">Level</td><td class="col-12">Proficiency Bonus</td><td class="col-30 left">Features</td><td class="col-10">Gadgets</td><td class="col-10">Energy</td></tr>
@@ -118,11 +114,9 @@
 			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_INDOMITABLE_MIND" level="14" />
 			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_ULTIMATE_SIGNATURE_DEVICE" level="17" />
 			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ENGINEER_CANNIBALISATION" level="18" />
-		
 		</rules>
 		
-
-		 <multiclass id="ID_HOMEBREW_MULTICLASS_ENGINEER">
+		<multiclass id="ID_HOMEBREW_MULTICLASS_ENGINEER">
 			<prerequisite>Intelligence 13</prerequisite>
 			<requirements>[int:13]</requirements>
 			<setters>
@@ -2888,12 +2882,6 @@
 		</sheet>
 	</element>
 	
-	
-	
-	
-	
-	
-	
 	<!-- Battletech Archetypes -->
 	<element name="Battletech" type="Archetype" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_ENGINEER_BATTLETECH">
 		<supports>Specialization</supports>
@@ -3425,10 +3413,6 @@
 			<stat name="tier three potions:time" value="-1" />
 		</rules>
 	</element>
-	
-	
-	
-	
 	
 	<!-- Engineer's Expertise -->
 	<element name="Skill Expertise (Arcana)" type="Class Feature" source="Player’s Handbook" id="ID_EXPERTISE_SKILL_ARCANA">
@@ -5865,9 +5849,5 @@
 		<set name="isRitual">false</set>
 		</setters>
 	</element>
-	
-
-	
-	
 	
 </elements>	
