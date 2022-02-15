@@ -8,7 +8,7 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 <elements>
 	<info>
 		<author url="https://www.dandwiki.com/wiki/Engineer_(5e_Class)">dandwiki</author>
-		<update version="1.0">
+		<update version="1.0.1">
 			<file name="homebrew-class-engineer.xml" url="https://raw.githubusercontent.com/DrFirestorm/AuroraBuilder/main/homebrew-class-engineer.xml" />
 		</update>
 	</info>
@@ -1567,6 +1567,24 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Napalm Spread.</strong> As an action, force all creatures within a 15ft cone to make a Dex save. On a failure, they take 4d6 fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d6 fire per point spent, up to 3 energy.</li>
 				<li><strong>Smokescreen.</strong> As a bonus action, and for 1 energy, exhaust smoke from your flamethrower. A 10ft-radius sphere centered around yourself is filled with smoke for 2 rounds, heavily obscuring the area for all creatures except you.</li>
 			</ul>
+			<p>At 5th level, you can choose one of the following enhanced features:</p>
+			<ul>
+				<li><strong>Light Frame.</strong> You can wield the flamethrower in one hand.</li>
+				<li><strong>Distant Ammunition.</strong> Fireblast has a range of 80ft, Napalm Spread affects a 30ft cone, and Smokescreen fills a 20ft sphere.</li>
+				<li><strong>Fine Optics.</strong> Grant a +2 bonus to the attack rolls and Dex save DC to the actions your flamethrower.</li>
+			</ul>
+			<p>At 13th level, you can choose one of the following advanced features:</p>
+			<ul>
+				<li><strong>Incendiary Fireblasts.</strong> Fireblast deals d8s of damage instead of d6s, and leaves behind a wall of flames for a round that causes 2d8 fire damage to creatures traversing it.</li>
+				<li><strong>Toxic Smoke.</strong> Smokescreen poisons creatures except you for 1 minute when they fail a Con save upon starting their turn in it or entering it for the first time.</li>
+				<li><strong>Sticky Napalm.</strong> Napalm Spread deals 1d6 damage to creatures who fail the initial Dex save at the end of each of their turns. This lasts until they spend an action to attempt a successful Dex save, which ends this effect.</li>
+			</ul>
+			<p>At 17th level, you can choose one of the following ultimate features:</p>
+			<ul>
+				<li><strong>Elemental Converter.</strong> Spend 1 energy as a bonus action to deal a different kind of damage (acid, cold, or lightning) with Fireblast and Napalm Spread for a minute.</li>
+				<li><strong>Quickblast.</strong> You can spend 1 additional energy to shoot a fireblast as a bonus action instead.</li>
+				<li><strong>Agonizing Napalm.</strong> Napalm Spread deals d8s of damage, as well as a bonus amount equal to your Intelligence Modifier (min. 1).</li>
+			</ul>
 		</description>
 		<sheet>
 			<description>
@@ -1739,6 +1757,30 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Basic Grenade.</strong> Creatures within the blast radius must succeed on a Dex save or take 2d6 bludgeoning damage on a failed save, or half as much on a success. The damage increases to 3d6 at level 5, 4d6 at level 11, or 5d6 at level 17.</li>
 				<li><strong>Elemental Grenade.</strong> For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d6 (acid, cold, fire, lightning) damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</li>
 				<li><strong>Smoke Grenade.</strong> For 1 energy, you can create a smoke grenade that fills its blast radius with a cloud of smoke that heavily obscures the area for 2 rounds for all creatures except you.</li>
+			</ul>
+			<p>At 5th level, you can choose one of the following enhanced features:</p>
+			<ul>
+				<li><strong>Flash Grenade.</strong> 2 Energy. Your grenade causes the effects of a Daylight spell where it lands for a minute. Creatures within fifteen feet of your target must make a Con save or be blinded for five rounds.</li>
+				<li><strong>Poison Grenade.</strong> 2 Energy. Creatures in blast make a Con save. On a failure, they take 2d10 poison damage and are poisoned for 1 minute. On a success they simply take half damage.</li>
+				<li><strong>Concussive Grenade.</strong> For 2 Energy, you can create this disorienting grenade. Creatures in the blast must succeed on a Con save or take 2d10 thunder damage and be deafened for 1 minute. On a success they take just half damage. They may repeat the save at the end of their turns to end the deafness.</li>
+			</ul>
+			<p>At 13th level, you can choose one of the following advanced features:</p>
+			<ul>
+				<li><strong>Lightweight Shell.</strong> Grenades have a thrown range of 80 feet.</li>
+				<li><strong>Dual Bomb.</strong> Two grenades can be created in a bonus action, and two can be thrown in a standard single action. Additionally, they can be thrown at different targets.</li>
+				<li><strong>Black Powder.</strong> Grenades have a blast radius of 20 feet, and Basic Grenades do d10s of damage.</li>
+			</ul>
+			<p>At 17th level, you can choose one of the following ultimate features:</p>
+			<ul>
+				<li><strong>Dangerous Grenades.</strong> Damage dealing grenades deal extra damage equal to twice your Intelligence Modifier (min. 2).</li>
+				<li><strong>Specialized Elementalist.</strong> Your Elemental grenades have unique effects, and deal d8s of damage.</li>
+					<ul>
+						<li><em>Acid.</em> Creatures who fail the Dex save suffer an AC loss equal to your Int Mod. (min.1) until the end of your next turn.</li>
+						<li><em>Cold.</em> Creatures who fail the Dex save suffer halved speed until the end of your next turn, unless they resist or are immune to cold.</li>
+						<li><em>Fire.</em> Creatures who fail the Dex save take an additional 1d10 fire damage at the start of your next turn.</li>
+						<li><em>Lightning.</em> Creatures who fail the Dex save are pushed away from the bomb by 15 feet.</li>
+					</ul>
+				<li><strong>Heavy Smoke.</strong> You can create and throw up to three smoke grenades with a single action, paying the appropriate energy cost. The smoke cloud also lasts for five rounds, halves the speed of other creatures moving through it, and blinds creatures who fail a Con save upon starting their turn in it or entering it for the first time for 1 minute. They can repeat the save at the end of their turns until they succeed.</li>
 			</ul>
 		</description>
 		<sheet>
@@ -1932,6 +1974,24 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Elixir H.</strong> x energy. Heals the target for xd8+ Int. Mod HP. (Max 3 Energy)</li>
 				<li><strong>Elixir G.</strong> For 2 energy, as an action shoot a cloud of chemical gas. Creatures in a 20ft cone must make a Wis save or be affected as if by Calm Emotions for a number of rounds equal to half your engineer level. Whether they fail or succeed, they cannot be affected by Elixir G again for a day.</li>
 			</ul>
+			<p>At 5th level, you can choose one of the following enhanced features:</p>
+			<ul>
+				<li><strong>Light Frame.</strong> You can wield and reload the elixir gun with a single hand.</li>
+				<li><strong>Dual-Shot.</strong> You can fire the elixir gun twice per turn, and it can be fired twice before needing to be reloaded. A creature hit twice by Elixir T only needs to save once, but suffers disadvantage on the saving throw.</li>
+				<li><strong>Advanced Rifling.</strong> Grant a +2 bonus to the elixir gun's attack rolls. Additionally, its range increases to 150/600ft and it makes no sound when shot.</li>
+			</ul>
+			<p>At 13th level, you can choose one of the following advanced features:</p>
+			<ul>
+				<li><strong>Super T.</strong> Targets hit by Elixir T suffer an additional 1d8 necrotic damage that reduces the target's max HP by the same amount until their next long rest, and if they fail the CON save, they are also blinded until the start of your next turn.</li>
+				<li><strong>Super H.</strong> Creatures healed by Elixir H are healed for d10s and are cured of 1 disease or condition (blinded, deafened, poisoned, paralysis). The energy maximum for Elixir H is now 4, and it also multiplies the healing granted by your Int modifier.</li>
+				<li><strong>Super G.</strong> When a creature is affected by Elixir G, you can instead make them confused for the duration.</li>
+			</ul>
+			<p>At 17th level, you can choose one of the following ultimate features:</p>
+			<ul>
+				<li><strong>Paralysis-Inducing T.</strong> The poisoned status caused by Elixir T now lasts 1d4 rounds. Additionally, whenever they fail a save against Elixir T, they gain a level of Exhaustion.</li>
+				<li><strong>S-Infused H.</strong> Creatures targeted by Elixir H. Gain the benefits of Haste for a number of rounds equal to the amount of energy used and regain an amount of HP equal to the energy used every round for a minute.</li>
+				<li><strong>Aphrodisiac-Enhanced G.</strong> When a creature fails a save against your Elixir G, you can instead make them Charmed. Additionally, the duration of Elixir G increases to one round per engineer level.</li>
+			</ul>
 		</description>
 		<sheet>
 			<description>
@@ -2109,6 +2169,24 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Automated Strike.</strong> Enemy creatures that enter a 25 ft radius around the turret, or start their turn there, must make a Dex save. On a failure they take 2d4 + int mod (min. 1) piercing damage. They take half damage on a success. This increases to 3d4 at level 5, 4d4 at level 11, and 6d4 at level 17.</li>
 				<li><strong>Healing Mist.</strong> xEnergy. As a bonus action, activate this feature. Create a restorative cloud centered on the turret with a range of 15ft. Ally creatures that start and (or) end their turn within heal an amount equal to your Int modifier. The cloud lasts a number of rounds equal to the amount of energy spent. (Max Energy of 3).</li>
 				<li><strong>Force Net.</strong> As a bonus action, and for 1 energy, force a creature that you can see within 25 feet of the turret to make a Dex save, or be restrained until the beginning of your next turn.</li>
+			</ul>
+			<p>At 5th level, you can choose one of the following enhanced features:</p>
+			<ul>
+				<li><strong>Sturdy Turret.</strong> The turret's AC is increased by your Intelligence Modifier, and its HP by 2Xyour Engineer Level. It resists all damage.</li>
+				<li><strong>Distant Turret.</strong> You can deploy and undeploy a turret up to 30 feet away. Automated Strike and Force Net have a range of 50 ft, and Healing Mist has a range of 30ft.</li>
+				<li><strong>Second Turret.</strong> You may deploy a second turret at a time, and it takes 50% less time and money to rebuild one.</li>
+			</ul>
+			<p>At 13th level, you can choose one of the following advanced features:</p>
+			<ul>
+				<li><strong>Empowered Strike.</strong> Automated Strike deals d6s of damage instead of d4s. Additionally, as a free action you can choose whether Automated Strike causes Piercing Damage or Force Damage.</li>
+				<li><strong>Restorative Mist.</strong> Creatures healed by Healing Mist are healed for twice your INT mod, and are restored of 1 disease or condition every turn they remain inside (poison, blinded, deafened, or paralysis).</li>
+				<li><strong>Electrified Net.</strong> When a target fails their Dex save against Force Net, they take 4d6 lightning damage, and cannot take reactions until free.</li>
+			</ul>
+			<p>At 17th level, you can choose one of the following ultimate features:</p>
+			<ul>
+				<li><strong>Shield Generator.</strong> Friendly creatures (Including yourself) within 30ft of a turret gain the benefits of Shield. This effect persists until the destruction or deconstruction of the turret. You cannot stack the effects of Shield with two turrets in this way.</li>
+				<li><strong>Fission Core.</strong> As an action, or upon destruction, a turret explodes. Creatures within 30 ft must succeed on a Dex save or take 12d6+20 bludgeoning damage and be knocked prone on a failure (half damage on a success).</li>
+				<li><strong>Teleportation System.</strong> As a bonus action, you can make one of your turrets teleport to any unoccupied spot within 30ft of itself. Additionally, you can store your turrets in an extradimensional space from which you can retrieve them as a free action.</li>
 			</ul>
 		</description>
 		<sheet>
@@ -2300,6 +2378,24 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Drone Mark.</strong> For 2 energy, your drone marks a creature or object that you can see as an action. This functions as Faerie Fire, targeting a single creature or object and doesn't require Concentration.</li>
 				<li><strong>Drone Camera.</strong> For 1 Energy, you can observe through your drone. This functions as Scrying targeting the Drone, and requires concentration, but no focus or casting time. As long as you continue observing your drone, it can move up to a mile away and be controlled from this distance. If Drone Camera ends while your Drone is out of range, it stays in the same spot until you enter its range again.</li>
 			</ul>
+			<p>At 5th level, you can choose one of the following enhanced features:</p>
+			<ul>
+				<li><strong>System Leak.</strong> For 1 Energy, your Drone may as a bonus action create a pool of oil underneath itself that acts as a nonmagical Grease spell.</li>
+				<li><strong>Second Drone.</strong> You may deploy a second drone at a time, and it takes 50% less time and money to rebuild one. You can command both drones on the same action or bonus action. (example: simultaneous Drone Shot). Energy is expended for both drones in doing so.</li>
+				<li><strong>Chameleonic Plating.</strong> For 1 Energy, you can cloak your drone. As a bonus action, your drone becomes invisible and makes no noise for 1 minute, or until it takes damage or uses its Drone Shot or Drone Mark abilities.</li>
+			</ul>
+			<p>At 13th level, you can choose one of the following advanced features:</p>
+			<ul>
+				<li><strong>Improved Shot.</strong> Drone Shot uses a bonus action, and now has a range of 120 feet.</li>
+				<li><strong>Improved Mark.</strong> Creatures marked by Drone Mark take an extra 2d6 damage from you and your constructs.</li>
+				<li><strong>Improved Senses.</strong> The Drone gains Blindsight 90ft. Additionally, Drone Camera requires no energy to use.</li>
+			</ul>
+			<p>At 17th level, you can choose one of the following ultimate features:</p>
+			<ul>
+				<li><strong>Shock Shot.</strong> Drone Shot gains a +2 Attack Bonus, and deals an additional 2d6 lightning damage.</li>
+				<li><strong>Mark Tracking.</strong> You always know the direction towards a marked creature, so long as it is within the same plane. Additionally, the duration of Drone Mark is increased to a day.</li>
+				<li><strong>Holographic Projector.</strong> Spending 1 Energy allows you to replicate the effects of Major Image within 120ft of a Drone. The Drone cannot take any actions until the illusion ends or is dismissed. This illusion is nonmagical, and thus is immune to effects like True Sight and a creature cannot see through it even if it's discerned as an illusion.</li>
+			</ul>
 		</description>
 		<sheet>
 			<description>
@@ -2484,6 +2580,24 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Mend.</strong> You can use your staff to cast mending on a damaged simple device made of stone, metal or wood within 10 feet. You may also use this feature, spending 1 energy, to heal a construct (including your drones and turrets) within 10 feet for 1d6 + 1 HP as a bonus action, as long as the construct has at least 1 HP.</li>
 				<li><strong>Arcane Ray.</strong> As an action, while wielding the staff, you can spend energy to make a ranged spell attack against a creature within 60 feet. On a hit, the creature takes 2d8 force damage + an additional 1d8 force damage per energy point spent (maximum 3 energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</li>
 				<li><strong>Magitech Pulse.</strong> For 2 Energy, as an action, you can force all creatures (size large and smaller) within 10 feet to make a STR save. On a failure, they are knocked prone.</li>
+			</ul>
+			<p>At 5th level, you can choose one of the following enhanced features:</p>
+			<ul>
+				<li><strong>Force Strike.</strong> Add your Int modifier to attack and damage rolls with Staff Strike. Whenever you successfully hit a creature, you can spend one energy point to send it flying back 15ft or until it hits an obstacle.</li>
+				<li><strong>Dual Ray.</strong> You fire an additional Arcane Ray for no additional cost. This ray can target the first enemy you hit, or a seperate one if you choose. If you target a different enemy, you must roll again to hit. If you hit one enemy with both beams, you only roll once.</li>
+				<li><strong>Powerful Pulse.</strong> Add +2 to the save DC of Magitech Pulse. Its range is increased to 20 feet, and it can work against creatures up to Huge in size.</li>
+			</ul>
+			<p>At 13th level, you can choose one of the following advanced features:</p>
+			<ul>
+				<li><strong>Focused Ray.</strong> For every consecutive use of Arcane Ray, it deals an extra stack of 1d8 force damage.</li>
+				<li><strong>Efficient Repair.</strong> You may use the mend ability to a range of 30 feet. The bonus to Tinker's Tool checks the staff gives is increased to +5. You may add your intelligence modifier to the healing that the feature gives to constructs.</li>
+				<li><strong>Booming Pulse.</strong> Magitech Pulse deals thunder damage equal to your engineer level to creatures that fail the STR save. They are also deafened until the end of your next turn.</li>
+			</ul>
+			<p>At 17th level, you can choose one of the following ultimate features:</p>
+			<ul>
+				<li><strong>Efficient Pulse.</strong> Magitech Pulse uses a bonus action, and costs only 1 energy. Additionally, you can make it create a cloud of floating debris within its area that lasts four rounds. Creatures other than you entering this area or starting their turn in it suffer 4d4 slashing damage.</li>
+				<li><strong>Ravaging Ray.</strong> You may spend up to 6 energy on Arcane Ray. You may also add your Intelligence modifier to the damage of Arcane Ray, and its range increases to 180ft.</li>
+				<li><strong>System Restoration.</strong> You can spend 6 energy to replicate the effects of a Fabricate spell. This cost is halved if this is used to repair a broken object. Additionally, so long as at least half of the pieces are present, you can spend 10 Energy to restore a destroyed Construct, returning it to 1HP.</li>
 			</ul>
 		</description>
 		<sheet>
@@ -2671,9 +2785,27 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 			<p><em>Prerequisite: 2nd-level engineer</em></p>
 			<p>A gauntlet that is commonly used by engineers and inventors as a close combat weapon. This device is very versatile in nature being used for combat mobility and defense. Only one configuration may be active on the gauntlet at a time and you must use a interaction to switch.</p>
 			<ul>
-				<li><strong>Combat Configuration.</strong> You make a melee weapon attack with the staff. Treat this as a Quarterstaff attack(one handed:1d6 bludgoning, Two handed 1d8 Bludgoning). Against constructs or mechanical objects, deal an additional 2d6 force damage.</li>
-				<li><strong>Defense Configuration.</strong> You can use your staff to cast mending on a damaged simple device made of stone, metal or wood within 10 feet. You may also use this feature, spending 1 energy, to heal a construct (including your drones and turrets) within 10 feet for 1d6 + 1 HP as a bonus action, as long as the construct has at least 1 HP.</li>
-				<li><strong>Mobility Configuration.</strong> As an action, while wielding the staff, you can spend energy to make a ranged spell attack against a creature within 60 feet. On a hit, the creature takes 2d8 force damage + an additional 1d8 force damage per energy point spent (maximum 3 energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</li>
+				<li><strong>Combat Configuration.</strong> You make a dexterity melee attack for 1d8+dex mod damage of either bludgeoning slashing or piercing (your choice). You may also spend 1 energy (max of 3) to make an energized dexterity melee attack dealing 1d12+dex of either lightning force or thunder damage.</li>
+				<li><strong>Defense Configuration.</strong> You form the gauntlet into a shield attached to your arm and it counts as a free hand and grants +2ac.</li>
+				<li><strong>Mobility Configuration.</strong> You can make a melee attack for 1d6+dex mod slashing damage. You also have a taser that can make a creature within 5ft of you to make a con save or be stunned on their next turn. Additionally you may use your bonus action to shoot a grappling hook at a target within 30ft of you and pull yourself toward it. You may also use 1 energy to either make an attack, attempt to grapple them, or attempt to stun them with your taser.</li>
+			</ul>
+			<p>At 5th level, the following enhanced features are automatically added to the configurations:</p>
+			<ul>
+				<li><strong>Second OmniGauntlet.</strong> <em> (Combat Configuration Enhancement)</em> You gain a second gauntlet and both gauntlets gain the light property.</li>
+				<li><strong>Defensive Configuration Enhancement.</strong> Energy Reduction: When hit by an attack that deals bludgeoning, piercing, slashing, or force damage you may expend 1 energy to reduce the damage by 25% rounded down, or 3 energy to reduce damage by 50%.</li>
+				<li><strong>Mobility Configuration Enhancement.</strong> Your grappling hook now has a range of 60ft. Additionally You may also spend 1 energy to stun an enemy at a range of 30ft. Additionally your gauntlet has a set of climbing hooks installed into it giving you a climbing speed of 30ft.</li>
+			</ul>
+			<p>At 13th level, the following advanced features are automatically added to the configurations:</p>
+			<ul>
+				<li><strong>Advanced Combat Configuration.</strong> You may add your int modifier to your Gauntlet strikes. Additionally for the damage dice for each of this weapons configurations is doubled to 2 dice but the size of those dice decreases by one (ex: Combat Configuration instead of doing 1d8 damage now does 2d6).</li>
+				<li><strong>Advanced Energy Absorption and Redirection.</strong> Your Shield now can affect all damage types. Your shield also stores the damage taken as Potential Energy Points with a rate of 12 damage per Point gained and it may be used as a substitute for regular energy and you may store and amount of P.E.P equal to half your energy capacity.</li>
+				<li><strong>Advanced Mobility Configuration.</strong> Your grappling hook now has a range of 120 ft. It now also has more durable rope and two adhesive anchors on either end of it to attach it on any surface and keep it anchored firmly being able to support up to 500 pounds. Additionally you have a rebreather that lets you breath underwater and also gain a swimming speed of 30ft with an activated swimming gloves.</li>
+			</ul>
+			<p>At 17th level, the following ultimate features are automatically added to the configurations:</p>
+			<ul>
+				<li><strong>Superior Combat Configuration.</strong> When you use your energized strike you can make a second strike with your second gauntlet for free if you have one. You also can now spend a max of 5 energy on the attack. Additionally your basic gauntlet or gauntlets and energized strikes now deal any damage type but requires a bonus action to change it for both or one gauntlet.</li>
+				<li><strong>Superior Energy Absorption and Redirection.</strong> Your shield now grants a +4 ac and now can use 5 energy to absorb 75% of damage taken from one attack. You may also now use your Potential Energy Points to send out a blast of stored energy dealing 1d12+int mod of force, lightning, or thunder damage to a max of 8 energy using an action.</li>
+				<li><strong>Superior Mobility Configuration.</strong> Your swimming speed and climbing speed if at 30ft is increased to 60 ft. You may now use your bonus action to pull an enemy within 60ft of you closer to you any amount of feet you choose and make either a stun or normal attack using 1 energy.</li>
 			</ul>
 		</description>
 		<sheet>
@@ -3974,6 +4106,24 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Napalm Spread.</strong> As an action, force all creatures within a 15ft cone to make a Dex save. On a failure, they take 4d6 fire damage. A creature takes half damage on a success. You can spend more energy to deal an additional 1d6 fire per point spent, up to 3 energy.</li>
 				<li><strong>Smokescreen.</strong> As a bonus action, and for 1 energy, exhaust smoke from your flamethrower. A 10ft-radius sphere centered around yourself is filled with smoke for 2 rounds, heavily obscuring the area for all creatures except you.</li>
 			</ul>
+			<p>At 11th level, you can choose one of the following enhanced features:</p>
+			<ul>
+				<li><strong>Light Frame.</strong> You can wield the flamethrower in one hand.</li>
+				<li><strong>Distant Ammunition.</strong> Fireblast has a range of 80ft, Napalm Spread affects a 30ft cone, and Smokescreen fills a 20ft sphere.</li>
+				<li><strong>Fine Optics.</strong> Grant a +2 bonus to the attack rolls and Dex save DC to the actions your flamethrower.</li>
+			</ul>
+			<p>At 18th level, you can choose one of the following advanced features:</p>
+			<ul>
+				<li><strong>Incendiary Fireblasts.</strong> Fireblast deals d8s of damage instead of d6s, and leaves behind a wall of flames for a round that causes 2d8 fire damage to creatures traversing it.</li>
+				<li><strong>Toxic Smoke.</strong> Smokescreen poisons creatures except you for 1 minute when they fail a Con save upon starting their turn in it or entering it for the first time.</li>
+				<li><strong>Sticky Napalm.</strong> Napalm Spread deals 1d6 damage to creatures who fail the initial Dex save at the end of each of their turns. This lasts until they spend an action to attempt a successful Dex save, which ends this effect.</li>
+			</ul>
+			<p>At 20th level, you can choose one of the following ultimate features:</p>
+			<ul>
+				<li><strong>Elemental Converter.</strong> Spend 1 energy as a bonus action to deal a different kind of damage (acid, cold, or lightning) with Fireblast and Napalm Spread for a minute.</li>
+				<li><strong>Quickblast.</strong> You can spend 1 additional energy to shoot a fireblast as a bonus action instead.</li>
+				<li><strong>Agonizing Napalm.</strong> Napalm Spread deals d8s of damage, as well as a bonus amount equal to your Intelligence Modifier (min. 1).</li>
+			</ul>
 		</description>
 		<sheet>
 			<description>
@@ -4144,6 +4294,30 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Basic Grenade.</strong> Creatures within the blast radius must succeed on a Dex save or take 2d6 bludgeoning damage on a failed save, or half as much on a success. The damage increases to 3d6 at level 5, 4d6 at level 11, or 5d6 at level 17.</li>
 				<li><strong>Elemental Grenade.</strong> For 1 energy, creatures within the blast radius must succeed on a Dex save or take 3d6 (acid, cold, fire, lightning) damage on a failed save, or half as much on a success. For each additional point energy spent, the damage increases by 1d6, to a maximum of 3 energy.</li>
 				<li><strong>Smoke Grenade.</strong> For 1 energy, you can create a smoke grenade that fills its blast radius with a cloud of smoke that heavily obscures the area for 2 rounds for all creatures except you.</li>
+			</ul>
+			<p>At 11th level, you can choose one of the following enhanced features:</p>
+			<ul>
+				<li><strong>Flash Grenade.</strong> 2 Energy. Your grenade causes the effects of a Daylight spell where it lands for a minute. Creatures within fifteen feet of your target must make a Con save or be blinded for five rounds.</li>
+				<li><strong>Poison Grenade.</strong> 2 Energy. Creatures in blast make a Con save. On a failure, they take 2d10 poison damage and are poisoned for 1 minute. On a success they simply take half damage.</li>
+				<li><strong>Concussive Grenade.</strong> For 2 Energy, you can create this disorienting grenade. Creatures in the blast must succeed on a Con save or take 2d10 thunder damage and be deafened for 1 minute. On a success they take just half damage. They may repeat the save at the end of their turns to end the deafness.</li>
+			</ul>
+			<p>At 18th level, you can choose one of the following advanced features:</p>
+			<ul>
+				<li><strong>Lightweight Shell.</strong> Grenades have a thrown range of 80 feet.</li>
+				<li><strong>Dual Bomb.</strong> Two grenades can be created in a bonus action, and two can be thrown in a standard single action. Additionally, they can be thrown at different targets.</li>
+				<li><strong>Black Powder.</strong> Grenades have a blast radius of 20 feet, and Basic Grenades do d10s of damage.</li>
+			</ul>
+			<p>At 20th level, you can choose one of the following ultimate features:</p>
+			<ul>
+				<li><strong>Dangerous Grenades.</strong> Damage dealing grenades deal extra damage equal to twice your Intelligence Modifier (min. 2).</li>
+				<li><strong>Specialized Elementalist.</strong> Your Elemental grenades have unique effects, and deal d8s of damage.</li>
+					<ul>
+						<li><em>Acid.</em> Creatures who fail the Dex save suffer an AC loss equal to your Int Mod. (min.1) until the end of your next turn.</li>
+						<li><em>Cold.</em> Creatures who fail the Dex save suffer halved speed until the end of your next turn, unless they resist or are immune to cold.</li>
+						<li><em>Fire.</em> Creatures who fail the Dex save take an additional 1d10 fire damage at the start of your next turn.</li>
+						<li><em>Lightning.</em> Creatures who fail the Dex save are pushed away from the bomb by 15 feet.</li>
+					</ul>
+				<li><strong>Heavy Smoke.</strong> You can create and throw up to three smoke grenades with a single action, paying the appropriate energy cost. The smoke cloud also lasts for five rounds, halves the speed of other creatures moving through it, and blinds creatures who fail a Con save upon starting their turn in it or entering it for the first time for 1 minute. They can repeat the save at the end of their turns until they succeed.</li>
 			</ul>
 		</description>
 		<sheet>
@@ -4335,6 +4509,24 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Elixir H.</strong> x energy. Heals the target for xd8+ Int. Mod HP. (Max 3 Energy)</li>
 				<li><strong>Elixir G.</strong> For 2 energy, as an action shoot a cloud of chemical gas. Creatures in a 20ft cone must make a Wis save or be affected as if by Calm Emotions for a number of rounds equal to half your engineer level. Whether they fail or succeed, they cannot be affected by Elixir G again for a day.</li>
 			</ul>
+			<p>At 11th level, you can choose one of the following enhanced features:</p>
+			<ul>
+				<li><strong>Light Frame.</strong> You can wield and reload the elixir gun with a single hand.</li>
+				<li><strong>Dual-Shot.</strong> You can fire the elixir gun twice per turn, and it can be fired twice before needing to be reloaded. A creature hit twice by Elixir T only needs to save once, but suffers disadvantage on the saving throw.</li>
+				<li><strong>Advanced Rifling.</strong> Grant a +2 bonus to the elixir gun's attack rolls. Additionally, its range increases to 150/600ft and it makes no sound when shot.</li>
+			</ul>
+			<p>At 18th level, you can choose one of the following advanced features:</p>
+			<ul>
+				<li><strong>Super T.</strong> Targets hit by Elixir T suffer an additional 1d8 necrotic damage that reduces the target's max HP by the same amount until their next long rest, and if they fail the CON save, they are also blinded until the start of your next turn.</li>
+				<li><strong>Super H.</strong> Creatures healed by Elixir H are healed for d10s and are cured of 1 disease or condition (blinded, deafened, poisoned, paralysis). The energy maximum for Elixir H is now 4, and it also multiplies the healing granted by your Int modifier.</li>
+				<li><strong>Super G.</strong> When a creature is affected by Elixir G, you can instead make them confused for the duration.</li>
+			</ul>
+			<p>At 20th level, you can choose one of the following ultimate features:</p>
+			<ul>
+				<li><strong>Paralysis-Inducing T.</strong> The poisoned status caused by Elixir T now lasts 1d4 rounds. Additionally, whenever they fail a save against Elixir T, they gain a level of Exhaustion.</li>
+				<li><strong>S-Infused H.</strong> Creatures targeted by Elixir H. Gain the benefits of Haste for a number of rounds equal to the amount of energy used and regain an amount of HP equal to the energy used every round for a minute.</li>
+				<li><strong>Aphrodisiac-Enhanced G.</strong> When a creature fails a save against your Elixir G, you can instead make them Charmed. Additionally, the duration of Elixir G increases to one round per engineer level.</li>
+			</ul>
 		</description>
 		<sheet>
 			<description>
@@ -4510,6 +4702,24 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Automated Strike.</strong> Enemy creatures that enter a 25 ft radius around the turret, or start their turn there, must make a Dex save. On a failure they take 2d4 + int mod (min. 1) piercing damage. They take half damage on a success. This increases to 3d4 at level 5, 4d4 at level 11, and 6d4 at level 17.</li>
 				<li><strong>Healing Mist.</strong> xEnergy. As a bonus action, activate this feature. Create a restorative cloud centered on the turret with a range of 15ft. Ally creatures that start and (or) end their turn within heal an amount equal to your Int modifier. The cloud lasts a number of rounds equal to the amount of energy spent. (Max Energy of 3).</li>
 				<li><strong>Force Net.</strong> As a bonus action, and for 1 energy, force a creature that you can see within 25 feet of the turret to make a Dex save, or be restrained until the beginning of your next turn.</li>
+			</ul>
+			<p>At 11th level, you can choose one of the following enhanced features:</p>
+			<ul>
+				<li><strong>Sturdy Turret.</strong> The turret's AC is increased by your Intelligence Modifier, and its HP by 2Xyour Engineer Level. It resists all damage.</li>
+				<li><strong>Distant Turret.</strong> You can deploy and undeploy a turret up to 30 feet away. Automated Strike and Force Net have a range of 50 ft, and Healing Mist has a range of 30ft.</li>
+				<li><strong>Second Turret.</strong> You may deploy a second turret at a time, and it takes 50% less time and money to rebuild one.</li>
+			</ul>
+			<p>At 18th level, you can choose one of the following advanced features:</p>
+			<ul>
+				<li><strong>Empowered Strike.</strong> Automated Strike deals d6s of damage instead of d4s. Additionally, as a free action you can choose whether Automated Strike causes Piercing Damage or Force Damage.</li>
+				<li><strong>Restorative Mist.</strong> Creatures healed by Healing Mist are healed for twice your INT mod, and are restored of 1 disease or condition every turn they remain inside (poison, blinded, deafened, or paralysis).</li>
+				<li><strong>Electrified Net.</strong> When a target fails their Dex save against Force Net, they take 4d6 lightning damage, and cannot take reactions until free.</li>
+			</ul>
+			<p>At 20th level, you can choose one of the following ultimate features:</p>
+			<ul>
+				<li><strong>Shield Generator.</strong> Friendly creatures (Including yourself) within 30ft of a turret gain the benefits of Shield. This effect persists until the destruction or deconstruction of the turret. You cannot stack the effects of Shield with two turrets in this way.</li>
+				<li><strong>Fission Core.</strong> As an action, or upon destruction, a turret explodes. Creatures within 30 ft must succeed on a Dex save or take 12d6+20 bludgeoning damage and be knocked prone on a failure (half damage on a success).</li>
+				<li><strong>Teleportation System.</strong> As a bonus action, you can make one of your turrets teleport to any unoccupied spot within 30ft of itself. Additionally, you can store your turrets in an extradimensional space from which you can retrieve them as a free action.</li>
 			</ul>
 		</description>
 		<sheet>
@@ -4699,6 +4909,24 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Drone Mark.</strong> For 2 energy, your drone marks a creature or object that you can see as an action. This functions as Faerie Fire, targeting a single creature or object and doesn't require Concentration.</li>
 				<li><strong>Drone Camera.</strong> For 1 Energy, you can observe through your drone. This functions as Scrying targeting the Drone, and requires concentration, but no focus or casting time. As long as you continue observing your drone, it can move up to a mile away and be controlled from this distance. If Drone Camera ends while your Drone is out of range, it stays in the same spot until you enter its range again.</li>
 			</ul>
+			<p>At 11th level, you can choose one of the following enhanced features:</p>
+			<ul>
+				<li><strong>System Leak.</strong> For 1 Energy, your Drone may as a bonus action create a pool of oil underneath itself that acts as a nonmagical Grease spell.</li>
+				<li><strong>Second Drone.</strong> You may deploy a second drone at a time, and it takes 50% less time and money to rebuild one. You can command both drones on the same action or bonus action. (example: simultaneous Drone Shot). Energy is expended for both drones in doing so.</li>
+				<li><strong>Chameleonic Plating.</strong> For 1 Energy, you can cloak your drone. As a bonus action, your drone becomes invisible and makes no noise for 1 minute, or until it takes damage or uses its Drone Shot or Drone Mark abilities.</li>
+			</ul>
+			<p>At 18th level, you can choose one of the following advanced features:</p>
+			<ul>
+				<li><strong>Improved Shot.</strong> Drone Shot uses a bonus action, and now has a range of 120 feet.</li>
+				<li><strong>Improved Mark.</strong> Creatures marked by Drone Mark take an extra 2d6 damage from you and your constructs.</li>
+				<li><strong>Improved Senses.</strong> The Drone gains Blindsight 90ft. Additionally, Drone Camera requires no energy to use.</li>
+			</ul>
+			<p>At 20th level, you can choose one of the following ultimate features:</p>
+			<ul>
+				<li><strong>Shock Shot.</strong> Drone Shot gains a +2 Attack Bonus, and deals an additional 2d6 lightning damage.</li>
+				<li><strong>Mark Tracking.</strong> You always know the direction towards a marked creature, so long as it is within the same plane. Additionally, the duration of Drone Mark is increased to a day.</li>
+				<li><strong>Holographic Projector.</strong> Spending 1 Energy allows you to replicate the effects of Major Image within 120ft of a Drone. The Drone cannot take any actions until the illusion ends or is dismissed. This illusion is nonmagical, and thus is immune to effects like True Sight and a creature cannot see through it even if it's discerned as an illusion.</li>
+			</ul>
 		</description>
 		<sheet>
 			<description>
@@ -4881,6 +5109,24 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Mend.</strong> You can use your staff to cast mending on a damaged simple device made of stone, metal or wood within 10 feet. You may also use this feature, spending 1 energy, to heal a construct (including your drones and turrets) within 10 feet for 1d6 + 1 HP as a bonus action, as long as the construct has at least 1 HP.</li>
 				<li><strong>Arcane Ray.</strong> As an action, while wielding the staff, you can spend energy to make a ranged spell attack against a creature within 60 feet. On a hit, the creature takes 2d8 force damage + an additional 1d8 force damage per energy point spent (maximum 3 energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</li>
 				<li><strong>Magitech Pulse.</strong> For 2 Energy, as an action, you can force all creatures (size large and smaller) within 10 feet to make a STR save. On a failure, they are knocked prone.</li>
+			</ul>
+			<p>At 11th level, you can choose one of the following enhanced features:</p>
+			<ul>
+				<li><strong>Force Strike.</strong> Add your Int modifier to attack and damage rolls with Staff Strike. Whenever you successfully hit a creature, you can spend one energy point to send it flying back 15ft or until it hits an obstacle.</li>
+				<li><strong>Dual Ray.</strong> You fire an additional Arcane Ray for no additional cost. This ray can target the first enemy you hit, or a seperate one if you choose. If you target a different enemy, you must roll again to hit. If you hit one enemy with both beams, you only roll once.</li>
+				<li><strong>Powerful Pulse.</strong> Add +2 to the save DC of Magitech Pulse. Its range is increased to 20 feet, and it can work against creatures up to Huge in size.</li>
+			</ul>
+			<p>At 18th level, you can choose one of the following advanced features:</p>
+			<ul>
+				<li><strong>Focused Ray.</strong> For every consecutive use of Arcane Ray, it deals an extra stack of 1d8 force damage.</li>
+				<li><strong>Efficient Repair.</strong> You may use the mend ability to a range of 30 feet. The bonus to Tinker's Tool checks the staff gives is increased to +5. You may add your intelligence modifier to the healing that the feature gives to constructs.</li>
+				<li><strong>Booming Pulse.</strong> Magitech Pulse deals thunder damage equal to your engineer level to creatures that fail the STR save. They are also deafened until the end of your next turn.</li>
+			</ul>
+			<p>At 20th level, you can choose one of the following ultimate features:</p>
+			<ul>
+				<li><strong>Efficient Pulse.</strong> Magitech Pulse uses a bonus action, and costs only 1 energy. Additionally, you can make it create a cloud of floating debris within its area that lasts four rounds. Creatures other than you entering this area or starting their turn in it suffer 4d4 slashing damage.</li>
+				<li><strong>Ravaging Ray.</strong> You may spend up to 6 energy on Arcane Ray. You may also add your Intelligence modifier to the damage of Arcane Ray, and its range increases to 180ft.</li>
+				<li><strong>System Restoration.</strong> You can spend 6 energy to replicate the effects of a Fabricate spell. This cost is halved if this is used to repair a broken object. Additionally, so long as at least half of the pieces are present, you can spend 10 Energy to restore a destroyed Construct, returning it to 1HP.</li>
 			</ul>
 		</description>
 		<sheet>
@@ -5069,6 +5315,24 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 				<li><strong>Combat Configuration.</strong> You make a melee weapon attack with the staff. Treat this as a Quarterstaff attack(one handed:1d6 bludgoning, Two handed 1d8 Bludgoning). Against constructs or mechanical objects, deal an additional 2d6 force damage.</li>
 				<li><strong>Defense Configuration.</strong> You can use your staff to cast mending on a damaged simple device made of stone, metal or wood within 10 feet. You may also use this feature, spending 1 energy, to heal a construct (including your drones and turrets) within 10 feet for 1d6 + 1 HP as a bonus action, as long as the construct has at least 1 HP.</li>
 				<li><strong>Mobility Configuration.</strong> As an action, while wielding the staff, you can spend energy to make a ranged spell attack against a creature within 60 feet. On a hit, the creature takes 2d8 force damage + an additional 1d8 force damage per energy point spent (maximum 3 energy). Add your proficiency bonus and Intelligence modifier to attack rolls with this ability.</li>
+			</ul>
+			<p>At 11th level, the following enhanced features are automatically added to the configurations:</p>
+			<ul>
+				<li><strong>Second OmniGauntlet.</strong> <em> (Combat Configuration Enhancement)</em> You gain a second gauntlet and both gauntlets gain the light property.</li>
+				<li><strong>Defensive Configuration Enhancement.</strong> Energy Reduction: When hit by an attack that deals bludgeoning, piercing, slashing, or force damage you may expend 1 energy to reduce the damage by 25% rounded down, or 3 energy to reduce damage by 50%.</li>
+				<li><strong>Mobility Configuration Enhancement.</strong> Your grappling hook now has a range of 60ft. Additionally You may also spend 1 energy to stun an enemy at a range of 30ft. Additionally your gauntlet has a set of climbing hooks installed into it giving you a climbing speed of 30ft.</li>
+			</ul>
+			<p>At 18th level, the following advanced features are automatically added to the configurations:</p>
+			<ul>
+				<li><strong>Advanced Combat Configuration.</strong> You may add your int modifier to your Gauntlet strikes. Additionally for the damage dice for each of this weapons configurations is doubled to 2 dice but the size of those dice decreases by one (ex: Combat Configuration instead of doing 1d8 damage now does 2d6).</li>
+				<li><strong>Advanced Energy Absorption and Redirection.</strong> Your Shield now can affect all damage types. Your shield also stores the damage taken as Potential Energy Points with a rate of 12 damage per Point gained and it may be used as a substitute for regular energy and you may store and amount of P.E.P equal to half your energy capacity.</li>
+				<li><strong>Advanced Mobility Configuration.</strong> Your grappling hook now has a range of 120 ft. It now also has more durable rope and two adhesive anchors on either end of it to attach it on any surface and keep it anchored firmly being able to support up to 500 pounds. Additionally you have a rebreather that lets you breath underwater and also gain a swimming speed of 30ft with an activated swimming gloves.</li>
+			</ul>
+			<p>At 20th level, the following ultimate features are automatically added to the configurations:</p>
+			<ul>
+				<li><strong>Superior Combat Configuration.</strong> When you use your energized strike you can make a second strike with your second gauntlet for free if you have one. You also can now spend a max of 5 energy on the attack. Additionally your basic gauntlet or gauntlets and energized strikes now deal any damage type but requires a bonus action to change it for both or one gauntlet.</li>
+				<li><strong>Superior Energy Absorption and Redirection.</strong> Your shield now grants a +4 ac and now can use 5 energy to absorb 75% of damage taken from one attack. You may also now use your Potential Energy Points to send out a blast of stored energy dealing 1d12+int mod of force, lightning, or thunder damage to a max of 8 energy using an action.</li>
+				<li><strong>Superior Mobility Configuration.</strong> Your swimming speed and climbing speed if at 30ft is increased to 60 ft. You may now use your bonus action to pull an enemy within 60ft of you closer to you any amount of feet you choose and make either a stun or normal attack using 1 energy.</li>
 			</ul>
 		</description>
 		<sheet>
