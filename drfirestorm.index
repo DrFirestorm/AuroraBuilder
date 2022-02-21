@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>DrFirestorm</name>
+		<description>5e homebrew content for Aurora Builder coded by DrFirestorm, mostly at the request of others. All content is created by other people unless specifically noted.</description>
+		<author url="https://github.com/DrFirestorm">DrFirestorm</author>
+		<update version="1.0">
+			<file name="drfirestorm.index" url="https://raw.githubusercontent.com/DrFirestorm/AuroraBuilder/main/drfirestorm.index" />
+		</update>
+	</info>
+	<files>
+        <file name="homebrew-class-engineer.xml" url="https://raw.githubusercontent.com/DrFirestorm/AuroraBuilder/main/homebrew-class-engineer.xml" />
+		<file name="homebrew-class-esper-variant.xml" url="https://raw.githubusercontent.com/DrFirestorm/AuroraBuilder/main/homebrew-class-esper-variant.xml" />
+	</files>
+</index>
