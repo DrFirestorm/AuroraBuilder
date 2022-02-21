@@ -1296,6 +1296,22 @@
 			<stat name="psionic bolt:dice" value="2" level="17" />
 		</rules>
 	</element>
+	<element name="Psionic Defense" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_PSIONIC_DEFENSE">
+		<supports>Psionic Powers</supports>
+		<description>
+			<p>Subconsciously using your telekinesis on yourself allows you to evade or resist attacks more easily than using your natural agility. While you are not wearing any armor, your AC equals 10 + your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description>While you are not wearing any armor, your AC equals {{ac:calculation}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:psionic defense:base" value="10" />
+			<stat name="ac:psionic defense:intelligence" value="intelligence:modifier" />
+			<stat name="ac:psionic defense" value="ac:psionic defense:base" />
+			<stat name="ac:psionic defense" value="ac:psionic defense:intelligence" />
+			<stat name="ac:calculation" value="ac:psionic defense" bonus="calculation" equipped="[armor:none]" alt="Psionic Defense" />
+		</rules>
+	</element>
 	<element name="Psionic Enhancement" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_PSIONIC_ENHANCEMENT">
 		<supports>Psionic Powers</supports>
 		<description>
@@ -1401,9 +1417,5 @@
 			<description action="Bonus Action" >You can teleport yourself from your location to any other spot within 10ft that you can see. If you were in a spot already occupied by an object or creature, you take 1d6 psychic damage and the power fails to teleport you.</description>
 		</sheet>
 	</element>
-
-
-
-
 
 </elements>	
