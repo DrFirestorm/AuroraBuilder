@@ -1,0 +1,1409 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<elements>
+	<info>
+		<author url="https://www.dandwiki.com/wiki/Esper,_Variant_(5e_Class)">dandwiki</author>
+		<update version="1.0.0">
+			<file name="homebrew-class-esper_variant.xml" url="https://raw.githubusercontent.com/DrFirestorm/AuroraBuilder/main/homebrew-class-esper_variant.xml" />
+		</update>
+	</info>
+	
+	<element name="Esper Variant" type="Class" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_ESPER_VARIANT">
+		<description>
+			<p>An elven woman stopped in her tracks, glancing over at the group of bandits surrounding her. Letting out a soft sigh, she extended her arms, watching as numerous rocks levitated into the air, crashing into the bandits’ chests at high speeds. As they fell like dolls, the woman put her hood back on and resumed her walk.</p>
+			<p class="indent">Out of breath and wounded, a young human man closed his eyes to concentrate, gathering his focus. When he opened them, a massive surge of energy swirled around him as he began to levitate into the air, which was cackling with pure power. Letting out a cry, he released a massive wave of energy, pushing away the enemies that were previously in front of him.</p>
+			<p class="indent">As the assassin was about to stab his target, an elderly gnome, in the back, a dense barrier made of pure energy formed around the target’s body, nullifying the attack. Taken by panic, the assassin had nowhere to run as he was held in place by an unknown power, completely unable to move. The last thing he remembered was the old gnome’s punch to his stomach, which bore way more power than a simple fist.</p>
+			<h4>MASTERS OF THE MIND</h4>
+			<p>An Esper is someone who has been born with powerful psionic abilities or have received them from an external source, such as an unknown, higher being or through experiments.</p>
+			<p class="indent">The most common ability an Esper shows is telekinesis, the power to move objects and even other people with the power of their minds alone. They also develop a barrier using their psychic powers, coating their bodies with a protective layer of pure mental energy. However, most of them are able to develop their powers in their own ways, creating a vast amount of different kinds of Esper's.</p>
+			<p class="indent">Even though their powers come from the Esper's ‘willing’ them into existence, the use of psionic abilities requires a keen mind and the ability to properly analyze the environment. It isn’t like simply creating an effect using their internal psychic energy, it is about changing the world around them by manipulating reality. As such, Esper's need to learn the rules of the world such as physics in order to operate efficiently.</p>
+			<h4>CREATING AN ESPER</h4>
+			<p>When creating an Esper, think about your abilities’ origin. Were you born with the ability to move things with your mind or were you experimented on by some crazy researcher? And how exactly did your powers manifest? Do you simply possess high amounts of raw power or are you able to shape your psionic energy into creating weapons or magic? Esper's are extremely varied in nature but they all possess one thing in common: a highly calculating mind.</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make an Esper quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Dexterity or Constitution. Second, choose the Sage background. Third, choose a dagger, a sling and an explorer's pack.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As an esper, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d6 per esper level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per esper level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> None</li>
+				<li><strong>Weapons:</strong> Clubs, daggers, darts, quarterstaffs, slings</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+				<li><strong>Skills:</strong> Choose two from Arcana, Deception, History, Insight, Intimidation, Investigation and Perception.</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a simple weapon of choice or (b) a light crossbow and 20 bolts</li>
+				<li>(a) 5 darts or (b) a sling</li>
+				<li>(a) an explorer's pack or (b) a dungeoneer's pack</li>
+				<li>If you are using starting wealth, you have 4d4x10gp in funds.</li>
+			</ul>
+			<h5 class="caption">THE ESPER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td>Telekinesis Damage Die</td><td>Barrier Strength</td><td>Powers Known</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Telekinesis, Psychic Barrier</td><td> 1d4</td><td> 5</td><td> -</td></tr>
+				<tr><td> 2nd</td><td class="left">Psionic Powers</td><td> 1d4</td><td> 10</td><td> 2</td></tr>
+				<tr><td> 3rd</td><td class="left">Esper Specialization</td><td> 1d4</td><td> 15</td><td> 2</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td> 1d4</td><td> 20</td><td> 2</td></tr>
+				<tr><td> 5th</td><td class="left">Improved Telekinesis, Telekinetic Grapple</td><td> 1d6</td><td> 25</td><td> 3</td></tr>
+				<tr><td> 6th</td><td class="left">Reactive Defense</td><td> 1d6</td><td> 30</td><td> 3</td></tr>
+				<tr><td> 7th</td><td class="left">Telekinetic Flight</td><td> 1d6</td><td> 35</td><td> 4</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td> 1d6</td><td> 40</td><td> 4</td></tr>
+				<tr><td> 9th</td><td class="left">Brain Processing, Improved Telekinesis</td><td> 1d6</td><td> 45</td><td> 5</td></tr>
+				<tr><td>10th</td><td class="left">Esper Specialization Feature</td><td> 1d6</td><td> 50</td><td> 5</td></tr>
+				<tr><td>11th</td><td class="left">Absolute Focus</td><td> 1d8</td><td> 55</td><td> 5</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td> 1d8</td><td> 60</td><td> 6</td></tr>
+				<tr><td>13th</td><td class="left">Esper Specialization Feature, Improved Telekinesis</td><td> 1d8</td><td> 65</td><td> 6</td></tr>
+				<tr><td>14th</td><td class="left">Meditation</td><td> 1d8</td><td> 70</td><td> 6</td></tr>
+				<tr><td>15th</td><td class="left">Telekinetic Detection</td><td> 1d8</td><td> 75</td><td> 7</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td> 1d8</td><td> 80</td><td> 7</td></tr>
+				<tr><td>17th</td><td class="left">Esper Specialization Feature, Improved Telekinesis</td><td> 1d10</td><td> 85</td><td> 7</td></tr>
+				<tr><td>18th</td><td class="left">Brain Processing Improvement</td><td> 1d10</td><td> 90</td><td> 8</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td> 1d10</td><td> 95</td><td> 8</td></tr>
+				<tr><td>20th</td><td class="left">Esper Specialization Feature</td><td> 1d10</td><td> 100</td><td> 8</td></tr>
+			</table>
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_TELEKINESIS" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSYCHIC_BARRIER" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_ESPER_SPECIALIZATION" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_TELEKINETIC_GRAPPLE" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_REACTIVE_DEFENSE" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_TELEKINETIC_FLIGHT" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_BRAIN_PROCESSING" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_ABSOLUTE_FOCUS" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_MEDITATION" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_TELEKINETIC_DETECTION" />
+	</description>
+		<sheet display="false" />
+		<setters>
+			<set name="short">An Esper is someone who has been born with powerful psionic abilities or have received them from an external source, such as an unknown, higher being or through experiments.</set>
+			<set name="hd">d6</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_PHB_WEAPON_CLUB" requirements="!ID_HOMEBREW_MULTICLASS_ESPER_VARIANT"/>
+			<grant type="Proficiency" id="ID_WOTC_PHB_WEAPON_DAGGER" requirements="!ID_HOMEBREW_MULTICLASS_ESPER_VARIANT"/>
+			<grant type="Proficiency" id="ID_WOTC_PHB_WEAPON_DART" requirements="!ID_HOMEBREW_MULTICLASS_ESPER_VARIANT"/>
+			<grant type="Proficiency" id="ID_WOTC_PHB_WEAPON_QUARTERSTAFF" requirements="!ID_HOMEBREW_MULTICLASS_ESPER_VARIANT"/>
+			<grant type="Proficiency" id="ID_WOTC_PHB_WEAPON_SLING" requirements="!ID_HOMEBREW_MULTICLASS_ESPER_VARIANT"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_HOMEBREW_MULTICLASS_ESPER_VARIANT"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_HOMEBREW_MULTICLASS_ESPER_VARIANT"/>
+			<select type="Proficiency" name="Skill Proficiency, Esper Variant" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION" number="2" requirements="!ID_HOMEBREW_MULTICLASS_ESPER_VARIANT" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_TELEKINESIS" level="1"/>
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSYCHIC_BARRIER" level="1"/>
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS" level="2"/>
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_ESPER_SPECIALIZATION" level="3"/>
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_ABILITY_SCORE_IMPROVEMENT" level="4"/>
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_TELEKINETIC_GRAPPLE" level="5"/>
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_REACTIVE_DEFENSE" level="6"/>
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_TELEKINETIC_FLIGHT" level="7"/>
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_BRAIN_PROCESSING" level="9"/>
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_ABSOLUTE_FOCUS" level="11"/>
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_MEDITATION" level="14"/>
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_TELEKINETIC_DETECTION" level="15"/>
+	</rules>
+		<multiclass id="ID_HOMEBREW_MULTICLASS_ESPER_VARIANT">
+			<prerequisite>Intelligence 13</prerequisite>
+			<requirements>[int:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">None</set>
+			</setters>
+		</multiclass>
+	</element>
+	
+	<element name="Telekinesis" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_TELEKINESIS">
+		<description>
+			<p>Starting at 1st level, you gain the ability to control the world around you with a simple thought, on a limited scale. At a range of 40ft, you can lift any Small object that’s not affixed to the ground into the air as an action. Using an action that can be part of the one made to lift them, you can then move the objects 20ft in any direction and 10ft if you use a bonus action.</p>
+			<p class="indent">The controlled object must stay within your range or it will fall to the ground. The number of objects you can lift is equal to half your esper level (rounded down) and the carrying capacity in lbs of your telekinesis is equal to your esper level x twice your Intelligence modifier. For example, a 3rd level esper with a 16 in Intelligence could lift up to 18 lbs in objects, meaning they could lift a single 18 lbs object, two 9 lbs objects, etc...</p>
+			<p class="indent">As an attack, you can strike your foes with a single object as part of the same action used to make it move. Note that an attack cannot be made when you use your bonus action to move objects.</p>
+			<ul>
+				<li>The attack modifier for this is your proficiency bonus + your Intelligence modifier.</li>
+				<li>On a hit, the damage is 1d4 + your Intelligence modifier.</li>
+				<li>The damage die increases at certain levels, as shown in the esper’s table.</li>
+				<li>The damage type depends on the object used, at the GM’s discretion.</li>
+				<li>Upon repeated impacts, objects may also break, also at the GM's discretion. Depending on the object's size and its composition, it could become two objects of smaller size upon breaking or it could be rendered useless.</li>
+				<li>While considered a ranged attack, attack rolls using Telekinesis do not suffer disadvantage to hit a prone creature.</li>
+				<li>If magic items are used to attack using this feature, only static bonuses such as +1, +2 or +3 enchantments on weapons get applied. Any additional effects get ignored.</li>
+				<li>Instead of attacking, you may also put your telekinesis to creative uses such as pressing multiple objects together to create a larger object (for example, pressing many crossbow bolts together to create a ball of bolts would create a single Small object) or making a physical barrier using objects to provide cover. The GM has the final word whether or not an idea might work.</li>
+			</ul>
+			<p>Starting at 5th level, you can now lift Medium objects at a range of 50ft. Your telekinesis speed is also heightened (15ft when using your bonus action and 30ft when using your action).</p>
+			<ul>
+				<li>You can now attack twice with your telekinesis on your turn.</li>
+			</ul>
+			<p>Beginning at 9th level, you can now lift Large objects at a range of 60ft. Your telekinesis speed is also heightened (20ft when using your bonus action and 40ft when using your action).</p>
+			<ul>
+				<li>Your attacks now count as magical for the sake of bypassing damage reduction.</li>
+				<li>Your maximum carrying capacity via telekinesis is now equal to twice your esper level x twice your Intelligence modifier.</li>
+			</ul>
+			<p>Starting at 13th level, you can now lift Huge objects at a range of 70ft. Your telekinesis speed is also heightened (25ft when using your bonus action and 50ft when using your action).</p>
+			<ul>
+				<li>You can now attack three times with your telekinesis on your turn.</li>
+			</ul>
+			<p>Beginning at 17th level, you can now lift Gargantuan objects at a range of 80ft. Your telekinesis speed is also heightened (30ft when using your bonus action and 60ft when using your action).</p>
+			<ul>
+				<li>Your maximum carrying capacity via telekinesis is now equal to three times your esper level x twice your Intelligence modifier.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description action="Action or Bonus Action">At a range of {{telekinesis:range}}ft, you can lift up to {{telekinesis:count}} Small or smaller objects weighing up to {{telekinesis:weight}}lbs total. The objects must stay within your range or they will fall to the ground.&#13;&#10; 
+			Action - you can move the objects up to 20ft and make one attack with one of the objects. This attack has +{{telekinesis:attack:bonus}} to hit and deals 1d{{telekinesis:dice:size}} + {{intelligence:modifier}} damage.&#13;&#10; 
+			Bonus Action - you can move the objects up to 10ft.</description>
+			<description level="5" action="Action or Bonus Action">At a range of {{telekinesis:range}}ft, you can lift up to {{telekinesis:count}} Medium or smaller objects weighing up to {{telekinesis:weight}}lbs total. The objects must stay within your range or they will fall to the ground.&#13;&#10; 
+			Action - you can move the objects up to 30ft and make two attacks with two of the objects. This attack has +{{telekinesis:attack:bonus}} to hit and deals 1d{{telekinesis:dice:size}} + {{intelligence:modifier}} damage.&#13;&#10; 
+			Bonus Action - you can move the objects up to 15ft.</description>
+			<description level="9" action="Action or Bonus Action">At a range of {{telekinesis:range}}ft, you can lift up to {{telekinesis:count}} Large or smaller objects weighing up to {{telekinesis:weight}}lbs total. The objects must stay within your range or they will fall to the ground.&#13;&#10; 
+			Action - you can move the objects up to 40ft and make two attacks with two of the objects. This attack has +{{telekinesis:attack:bonus}} to hit, deals 1d{{telekinesis:dice:size}} + {{intelligence:modifier}} damage, and counts as magical for the sake of bypassing damage reduction.&#13;&#10; 
+			Bonus Action - you can move the objects up to 20ft.</description>
+			<description level="13" action="Action or Bonus Action">At a range of {{telekinesis:range}}ft, you can lift up to {{telekinesis:count}} Huge or smaller objects weighing up to {{telekinesis:weight}}lbs total. The objects must stay within your range or they will fall to the ground.&#13;&#10; 
+			Action - you can move the objects up to 50ft and make three attacks with three of the objects. This attack has +{{telekinesis:attack:bonus}} to hit, deals 1d{{telekinesis:dice:size}} + {{intelligence:modifier}} damage, and counts as magical for the sake of bypassing damage reduction.&#13;&#10; 
+			Bonus Action - you can move the objects up to 25ft.</description>
+			<description level="17" action="Action or Bonus Action">At a range of {{telekinesis:range}}ft, you can lift up to {{telekinesis:count}} Gargantuan or smaller objects weighing up to {{telekinesis:weight}}lbs total. The objects must stay within your range or they will fall to the ground.&#13;&#10; 
+			Action - you can move the objects up to 60ft and make three attacks with three of the objects. This attack has +{{telekinesis:attack:bonus}} to hit, deals 1d{{telekinesis:dice:size}} + {{intelligence:modifier}} damage, and counts as magical for the sake of bypassing damage reduction.&#13;&#10; 
+			Bonus Action - you can move the objects up to 30ft.</description>
+		</sheet>
+		<rules>
+			<stat name="telekinesis:range" value="40" bonus="base" />
+			<stat name="telekinesis:range" value="50" bonus="base" level="5" />
+			<stat name="telekinesis:range" value="60" bonus="base" level="9" />
+			<stat name="telekinesis:range" value="70" bonus="base" level="13" />
+			<stat name="telekinesis:range" value="80" bonus="base" level="17" />
+			<stat name="telekinesis:dice:size" value="4" bonus="base" />
+			<stat name="telekinesis:dice:size" value="6" bonus="base" requirements="[level:esper variant:5]" />
+			<stat name="telekinesis:dice:size" value="8" bonus="base" requirements="[level:esper variant:11]" />
+			<stat name="telekinesis:dice:size" value="10" bonus="base" requirements="[level:esper variant:17]" />
+			<stat name="telekinesis:attack:bonus" value="proficiency" />
+			<stat name="telekinesis:attack:bonus" value="intelligence:modifier" />
+			<stat name="telekinesis:count" value="1" bonus="base" />
+			<stat name="telekinesis:count" value="level:esper variant:half" bonus="base" />
+			<stat name="telekinesis:weight" value="1" bonus="base" /> 
+			<stat name="telekinesis:weight" value="2" requirements="[level:esper variant:1],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="4" requirements="[level:esper variant:1],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="6" requirements="[level:esper variant:1],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="8" requirements="[level:esper variant:1],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="10" requirements="[level:esper variant:1],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="12" requirements="[level:esper variant:1],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="14" requirements="[level:esper variant:1],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="4" requirements="[level:esper variant:2],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="8" requirements="[level:esper variant:2],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="12" requirements="[level:esper variant:2],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="16" requirements="[level:esper variant:2],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="20" requirements="[level:esper variant:2],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="24" requirements="[level:esper variant:2],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="28" requirements="[level:esper variant:2],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="6" requirements="[level:esper variant:3],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="12" requirements="[level:esper variant:3],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="18" requirements="[level:esper variant:3],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="24" requirements="[level:esper variant:3],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="30" requirements="[level:esper variant:3],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="36" requirements="[level:esper variant:3],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="42" requirements="[level:esper variant:3],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="8" requirements="[level:esper variant:4],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="16" requirements="[level:esper variant:4],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="24" requirements="[level:esper variant:4],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="32" requirements="[level:esper variant:4],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="40" requirements="[level:esper variant:4],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="48" requirements="[level:esper variant:4],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="56" requirements="[level:esper variant:4],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="10" requirements="[level:esper variant:5],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="20" requirements="[level:esper variant:5],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="30" requirements="[level:esper variant:5],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="40" requirements="[level:esper variant:5],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="50" requirements="[level:esper variant:5],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="60" requirements="[level:esper variant:5],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="70" requirements="[level:esper variant:5],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="12" requirements="[level:esper variant:6],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="24" requirements="[level:esper variant:6],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="36" requirements="[level:esper variant:6],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="48" requirements="[level:esper variant:6],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="60" requirements="[level:esper variant:6],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="72" requirements="[level:esper variant:6],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="84" requirements="[level:esper variant:6],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="14" requirements="[level:esper variant:7],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="28" requirements="[level:esper variant:7],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="42" requirements="[level:esper variant:7],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="56" requirements="[level:esper variant:7],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="70" requirements="[level:esper variant:7],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="84" requirements="[level:esper variant:7],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="98" requirements="[level:esper variant:7],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="16" requirements="[level:esper variant:8],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="32" requirements="[level:esper variant:8],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="48" requirements="[level:esper variant:8],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="64" requirements="[level:esper variant:8],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="80" requirements="[level:esper variant:8],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="96" requirements="[level:esper variant:8],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="112" requirements="[level:esper variant:8],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="36" requirements="[level:esper variant:9],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="72" requirements="[level:esper variant:9],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="108" requirements="[level:esper variant:9],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="144" requirements="[level:esper variant:9],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="180" requirements="[level:esper variant:9],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="216" requirements="[level:esper variant:9],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="252" requirements="[level:esper variant:9],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="40" requirements="[level:esper variant:10],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="80" requirements="[level:esper variant:10],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="120" requirements="[level:esper variant:10],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="160" requirements="[level:esper variant:10],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="200" requirements="[level:esper variant:10],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="240" requirements="[level:esper variant:10],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="280" requirements="[level:esper variant:10],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="44" requirements="[level:esper variant:11],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="88" requirements="[level:esper variant:11],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="132" requirements="[level:esper variant:11],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="176" requirements="[level:esper variant:11],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="220" requirements="[level:esper variant:11],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="264" requirements="[level:esper variant:11],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="308" requirements="[level:esper variant:11],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="48" requirements="[level:esper variant:12],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="96" requirements="[level:esper variant:12],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="144" requirements="[level:esper variant:12],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="192" requirements="[level:esper variant:12],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="240" requirements="[level:esper variant:12],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="288" requirements="[level:esper variant12:],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="336" requirements="[level:esper variant:12],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="52" requirements="[level:esper variant:13],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="104" requirements="[level:esper variant:13],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="156" requirements="[level:esper variant:13],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="208" requirements="[level:esper variant:13],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="260" requirements="[level:esper variant:13],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="312" requirements="[level:esper variant:13],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="364" requirements="[level:esper variant:13],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="56" requirements="[level:esper variant:14],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="112" requirements="[level:esper variant:14],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="168" requirements="[level:esper variant:14],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="224" requirements="[level:esper variant:14],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="280" requirements="[level:esper variant:14],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="336" requirements="[level:esper variant:14],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="392" requirements="[level:esper variant:14],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="60" requirements="[level:esper variant:15],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="120" requirements="[level:esper variant:15],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="180" requirements="[level:esper variant:15],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="240" requirements="[level:esper variant:15],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="300" requirements="[level:esper variant:15],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="360" requirements="[level:esper variant:15],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="420" requirements="[level:esper variant:15],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="64" requirements="[level:esper variant:16],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="128" requirements="[level:esper variant:16],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="192" requirements="[level:esper variant:16],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="256" requirements="[level:esper variant:16],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="320" requirements="[level:esper variant:16],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="384" requirements="[level:esper variant:16],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="448" requirements="[level:esper variant:16],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="102" requirements="[level:esper variant:17],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="204" requirements="[level:esper variant:17],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="306" requirements="[level:esper variant:17],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="408" requirements="[level:esper variant:17],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="510" requirements="[level:esper variant:17],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="612" requirements="[level:esper variant:17],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="714" requirements="[level:esper variant:17],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="108" requirements="[level:esper variant:18],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="216" requirements="[level:esper variant:18],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="324" requirements="[level:esper variant:18],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="432" requirements="[level:esper variant:18],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="540" requirements="[level:esper variant:18],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="648" requirements="[level:esper variant:18],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="756" requirements="[level:esper variant:18],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="114" requirements="[level:esper variant:19],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="228" requirements="[level:esper variant:19],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="342" requirements="[level:esper variant:19],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="456" requirements="[level:esper variant:19],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="570" requirements="[level:esper variant:19],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="684" requirements="[level:esper variant:19],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="798" requirements="[level:esper variant:19],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="120" requirements="[level:esper variant:20],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="240" requirements="[level:esper variant:20],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="360" requirements="[level:esper variant:20],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="480" requirements="[level:esper variant:20],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="600" requirements="[level:esper variant:20],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="720" requirements="[level:esper variant:20],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="840" requirements="[level:esper variant:20],[intelligence:modifier:7]" bonus="base" />
+		</rules>
+	</element>
+	<element name="Psychic Barrier" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSYCHIC_BARRIER">
+		<description>
+			<p>Starting at 1st level, you gain the ability to raise a dense, yet thin barrier of psychic energy around you, shielding your body from attacks.</p>
+			<ul>
+				<li>You gain a number of special temporary hit points equal to five times your Esper level, protecting you from incoming damaging effects.</li>
+				<li>The barrier protects you from all damage types except psychic damage, which bypass the barrier. When this barrier is up, you are resistant to poison damage and your hit points maximum cannot be reduced except from self-induced ways or if the effect doesn't come from a direct attack.</li>
+				<li>As long as you have at least one point in your barrier, these temporary hit points automatically restore themselves each round at a rate equal to your proficiency bonus minus 1.</li>
+				<li>When the barrier is reduced to 0, the barrier is broken and doesn’t regenerate until you finish a short or long rest, at which time you will regain the ability to put it back up.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain {{psychic barrier:hp}} special temporary hit points protecting you from all damage types but psychic damage, which bypasses the barrier. When the barrier is up, you are resistant to poison damage and your HP maximum cannot be reduced except from self-induced ways or if the effect doesn't come from a direct attack.&#13;&#10; 
+			As long as you have at least one point in your barrier, these temporary hit points automatically restore {{psychic barrier:restore}} points each round. When the barrier is reduced to 0, the barrier is broken and doesn’t regenerate until you finish a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="psychic barrier:hp:base" value="level:esper variant" />
+			<stat name="psychic barrier:hp:base" value="level:esper variant" />
+			<stat name="psychic barrier:hp:base" value="level:esper variant" />
+			<stat name="psychic barrier:hp:base" value="level:esper variant" />
+			<stat name="psychic barrier:hp:base" value="level:esper variant" />
+			<stat name="psychic barrier:hp" value="psychic barrier:hp:base" bonus="base" />
+			<stat name="psychic barrier:restore:base" value="proficiency" />
+			<stat name="psychic barrier:restore:base" value="-1" />
+			<stat name="psychic barrier:restore" value="psychic barrier:restore:base" bonus="base" />
+		</rules>
+	</element>
+	<element name="Psionic Powers" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS">
+		<description>
+			<p>Starting at 2nd level, your practice with your psychic abilities have led you to develop and learn unique techniques of your own. You can choose two options from the list of Psionic Powers. When you gain certain esper levels, you gain additional powers of your choice, as shown in the Powers Known column of the esper table.</p>
+		</description>
+		<sheet>
+			<description>You know {{psionic powers:count}} Psionic Powers.</description>
+		</sheet>
+		<rules>
+			<stat name="psionic powers:count" value="2" level="2" />
+			<stat name="psionic powers:count" value="1" level="5" />
+			<stat name="psionic powers:count" value="1" level="7" />
+			<stat name="psionic powers:count" value="1" level="9" />
+			<stat name="psionic powers:count" value="1" level="12" />
+			<stat name="psionic powers:count" value="1" level="15" />
+			<stat name="psionic powers:count" value="1" level="18" />
+
+			<select type="Class Feature" name="Psionic Powers" supports="Psionic Powers" number="2" level="2" />
+			<select type="Class Feature" name="Psionic Powers" supports="Psionic Powers" number="1" level="5" />
+			<select type="Class Feature" name="Psionic Powers" supports="Psionic Powers" number="1" level="7" />
+			<select type="Class Feature" name="Psionic Powers" supports="Psionic Powers" number="1" level="9" />
+			<select type="Class Feature" name="Psionic Powers" supports="Psionic Powers" number="1" level="12" />
+			<select type="Class Feature" name="Psionic Powers" supports="Psionic Powers" number="1" level="15" />
+			<select type="Class Feature" name="Psionic Powers" supports="Psionic Powers" number="1" level="18" />
+		</rules>
+	</element>
+	<element name="Esper Specialization" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_ESPER_SPECIALIZATION">
+		<description>
+			<p>At 3rd level, you choose an Esper Specialization. Choose between the Manipulator, Psionic Guardian or Telepath, all of which are detailed at the end of the class description. Your choice grants you features at 3rd level and again at 10th, 13th, 17th and 20th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Esper Specialization" supports="Esper Specialization" level="3"/>
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_ABILITY_SCORE_IMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Esper Variant 4)" supports="Improvement Option,Esper Variant,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Esper Variant 8)" supports="Improvement Option,Esper Variant,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Esper Variant 12)" supports="Improvement Option,Esper Variant,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Esper Variant 16)" supports="Improvement Option,Esper Variant,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Esper Variant 19)" supports="Improvement Option,Esper Variant,19" level="19" />
+		</rules>
+	</element>
+	<element name="Telekinetic Grapple" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_TELEKINETIC_GRAPPLE">
+		<description>
+			<p>Beginning at 5th level, your telekinesis grows strong enough to be able to handle moving targets. As part of your Attack action, instead of using a thrown object, you may attempt to grab a creature in your telekinesis range.</p>
+			<ul>
+				<li>The target must roll a Strength saving throw against a DC equal to 8 + your Intelligence modifier + your proficiency bonus. The saving throw can be repeated at the end of the target’s turns in case of an initial failure.</li>
+				<li>The target rolls with advantage if it is a Large creature or larger.</li>
+				<li>The grappled creature can then be moved like any other object. However, when moving a creature using your action, the distance is halved (for example, a 5th level esper can only move a grappled creature 15ft instead of 30ft).</li>
+				<li>A grappled creature can be used as a projectile. If moved as an action, a grappled creature making contact with an object (or the ground) takes damage equal to your telekinesis damage. If a thrown creature makes contact with another creature, they both take half your telekinesis damage.</li>
+				<li>As an alternative, you can use an action to force a number of grappled targets of your choice to make a Strength saving throw. On a failure, the afflicted targets are prone as you force their bodies into the ground with your telekinesis. This only works if it would be possible for you to move the targets to the ground (at 5th level, the targets would need to be under 15ft in the air, under 20ft in the air at 9th level and so on).</li>
+				<li>Should you lift a creature high in the air and drop them, the falling creature takes damage equal to your telekinesis damage instead of falling damage. The creature also automatically breaks free of your grasp should they leave your range at any point.</li>
+				<li>In relation with the amount of objects you can lift with your telekinesis, a Medium creature counts as two objects, a Large Creature counts as four objects, a Huge creature counts as eight objects and a Gargantuan creature counts as sixteen objects.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>As part of your Attack action, instead of using a thrown object, you may attempt to grab a creature in your telekinesis range. The target makes a Strength saving throw (DC of {{telekenetic grapple:dc}}), repeated at the end of each of its turns. It rolls with advantage if size {{telekinetic grapple:size}} or larger.&#13;&#10;
+			A Medium creature counts as 2 objects, a Large counts as 4, a Huge counts as 8, and a Gargantuan counts as 16. The grappled creature can then be moved up to half your normal Telekinesis movement distance.&#13;&#10;
+			If the grappled creature makes contact with an object, it takes 1d{{telekinesis:dice:size}} + {{intelligence:modifier}} damage and if it makes contact with another creature, they each take half damage.&#13;&#10;
+			Alternatively, you can use an action to force a number of grappled targets to make Strength saving throws and are forced prone if they fail. </description>
+		</sheet>
+		<rules>
+			<stat name="telekenetic grapple:dc" value="8" />
+			<stat name="telekenetic grapple:dc" value="proficiency" />
+			<stat name="telekenetic grapple:dc" value="intelligence:modifier" />
+			<stat name="telekinetic grapple:size" value="Large" inline="true" />
+		</rules>
+	</element>
+	<element name="Reactive Defense" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_REACTIVE_DEFENSE">
+		<description>
+			<p>With enough reaction time, your powers are quick enough to activate in order to save you from incoming projectiles. Starting at 6th level, you can use your reaction when you are hit with a ranged weapon to catch any missile with your telekinesis, stopping it in its movement. When you do so, the damage you take from the attack is reduced by 1d10 + your Intelligence modifier + your Esper level. The object is then able to be controlled on your turn as per the other objects in your telekinetic grasp.</p>
+		</description>
+		<sheet>
+			<description action="Reaction" >When you are hit with a ranged weapon, you can catch it with your telekinesis, reducing the damage by 1d10 + {{reactive defense:bonus}}. The object can then be controlled on your turn as per the other objects in your telekinetic grasp.</description>
+		</sheet>
+		<rules>
+			<stat name="reactive defense:bonus" value="intelligence:modifier" />
+			<stat name="reactive defense:bonus" value="level:esper variant" />
+		</rules>
+	</element>
+	<element name="Telekinetic Flight" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_TELEKINETIC_FLIGHT">
+		<description>
+			<p>Beginning at 7th level, you learn to lift yourself in the air with your telekinesis, giving you the ability to hover up to 5ft above the ground, potentially allowing you to ignore the effects of difficult terrain, at the GM's discretion.</p>
+			<p>Furthermore, you can spend a charge of this ability to give yourself a flying speed equal to your walking speed for 1 minute. You have a number of charges equal to half your level, which you regain at the end of a long rest.</p>
+		</description>
+		<sheet>
+			<description usage="{{level:esper variant:half}}/Long Rest">You can spend a charge of this ability to give yourself a flying speed equal to your walking speed for 1 minute.&#13;&#10;
+			Additionally, you can hover at will up to 5ft above the ground without spending a charge.</description>
+		</sheet>
+	</element>
+	<element name="Brain Processing" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_BRAIN_PROCESSING">
+		<description>
+			<p>Using psychic powers constantly trains your brain to work faster and more efficiently.</p>
+			<ul>
+				<li>When you reach 9th level, your Intelligence increases by 2. Your maximum for this score is now 22.</li>
+				<li>At 18th level, your Intelligence increases by another 2 and the maximum is now 24.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence:max" value="2" level="9" />
+			<stat name="intelligence" value="2" level="9" />
+			<stat name="intelligence:max" value="2" level="18" />
+			<stat name="intelligence" value="2" level="18" />
+		</rules>
+	</element>
+	<element name="Absolue Focus" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_ABSOLUTE_FOCUS">
+		<description>
+			<p>Starting at 11th level, you learn how to ignore the noise of battle and completely focus on your psychic abilities, unleashing the entirety of your current potential. You cannot use this feature again until you complete a long rest. As a bonus action, you can enter the Absolute Focus state, which lasts for 1 minute, until you choose to end the state as a bonus action or fall unconscious. While in this state, you gain the following:</p>
+			<ul>
+				<li>You ignore any concentration requirement or limits.</li>
+				<li>The number of objects you can have in your telekinetic grip is doubled.</li>
+				<li>Any damage you deal receives a bonus equal to half your proficiency bonus.</li>
+				<li>You gain a bonus to your AC equal to half your proficiency bonus.</li>
+				<li>The restoration of your barrier is increased by 1 per turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description action="Bonus Action" usage="1/Long Rest">You can enter the Absolute Focus state, which lasts for 1 minute, until end it as a bonus action or fall unconscious. While active:&#13;&#10;
+			You ignore any concentration requirements or limits, the number of objects you can have in your telekinetic grip is doubled, any damage you deal receives a bonus of {{proficiency:half}}, you gain a bonus to your AC of {{proficiency:half}}, and the restoration of your barrier is increased by 1 per turn.</description>
+		</sheet>
+	</element>
+	<element name="Meditation" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_MEDITATION">
+		<description>
+			<p>Having a clear mind is something very important for a powerful esper. Once on your turn, you can use a bonus action to reroll a saving throw against an effect causing you to be charmed or frightened.</p>
+		</description>
+		<sheet>
+			<description action="Bonus Action">You can reroll one saving throw against an effect causing you to be charmed or frightened.</description>
+		</sheet>
+	</element>
+	<element name="Telekinetic Detection" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_TELEKINETIC_DETECTION">
+		<description>
+			<p>Starting at 15th level, you have trained your telekinesis so much that you’re able to ‘feel’ your surroundings by sending waves of telekinetic power. You gain blindsight for up to 10ft around you.</p>
+		</description>
+		<sheet>
+			<description>You gain blindsight for up to {{telekinetic detection:range}}ft around you.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="telekinetic detection:range" value="10" bonus="base" />
+		</rules>
+	</element>
+
+	<!--Manipulator Archetype-->
+	<element name="Manipulator" type="Archetype" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_ESPER_VARIANT_MANIPULATOR">
+		<supports>Esper Specialization</supports>
+		<description>
+			<p>Manipulators are Esper's who chose to focus on the raw strength of their psychic powers. A well-trained Manipulator could rip and lift entire houses into the air and fight giant beasts by throwing equally large boulders at them.</p>
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_INCREASED_POWER" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_DEATH_GRIP" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_FOCUSED_DESTRUCTION" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_EARTH_RIP" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_ABSOLUTE_DESTRUCTION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_INCREASED_POWER" level="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_DEATH_GRIP" level="10" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_FOCUSED_DESTRUCTION" level="13" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_EARTH_RIP" level="17" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_ABSOLUTE_DESTRUCTION" level="20" />
+		</rules>
+	</element>
+	<element name="Increased Power" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_INCREASED_POWER">
+		<description>
+			<p>When you choose this Specialization at 3rd level, the amount of weight you can lift with your Telekinesis is double its base amount and you can lift an additional number of objects equal to your proficiency bonus. Furthermore, once per turn, you can gain a bonus to damage on one of your attacks based on the object’s size.</p>
+			<ul>
+				<li>Small objects deal 1d4 bonus damage, Medium objects deal 2d4 bonus damage, Large objects deal 3d4 bonus damage, Huge objects deal 4d4 bonus damage and Gargantuan objects deal 5d4 bonus damage.</li>
+				<li>You may also choose to put more power in your attack at the cost of suffering a brief, yet debilitating headache. When dealing bonus damage via this feature, you can 'overload' your psychic powers' output and double the amount of bonus damage dice. However, you take half the damage inflicted by the bonus dice in psychic damage (for example, if you were to overload a Large object, you’d deal 6d4 bonus damage instead of 3d4. You’d then take half the damage the 6d4 inflicted in psychic damage). The esper doesn’t receive additional damage from the bonus dice from critical hits or similar effects.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description usage="1/Turn">You can gain a bonus to damage on one of your attacks based on the object’s size. Small = 1d4, Medium = 2d4, Large = 3d4, Huge = 4d4, Gargantuan = 5d4.&#13;&#10;
+			Overload. When dealing this bonus damage, you may double the amount of bonus damage dice. You take half the damage inflicted by the bonus dice in psychic damage. </description>
+		</sheet>
+		<rules>
+			<stat name="telekinesis:count" value="proficiency" />
+			<stat name="telekinesis:weight" value="2" bonus="base" /> 
+			<stat name="telekinesis:weight" value="12" requirements="[level:esper variant:3],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="24" requirements="[level:esper variant:3],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="36" requirements="[level:esper variant:3],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="48" requirements="[level:esper variant:3],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="60" requirements="[level:esper variant:3],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="72" requirements="[level:esper variant:3],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="84" requirements="[level:esper variant:3],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="16" requirements="[level:esper variant:4],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="32" requirements="[level:esper variant:4],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="48" requirements="[level:esper variant:4],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="64" requirements="[level:esper variant:4],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="80" requirements="[level:esper variant:4],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="96" requirements="[level:esper variant:4],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="112" requirements="[level:esper variant:4],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="20" requirements="[level:esper variant:5],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="40" requirements="[level:esper variant:5],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="60" requirements="[level:esper variant:5],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="80" requirements="[level:esper variant:5],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="100" requirements="[level:esper variant:5],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="120" requirements="[level:esper variant:5],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="140" requirements="[level:esper variant:5],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="24" requirements="[level:esper variant:6],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="48" requirements="[level:esper variant:6],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="72" requirements="[level:esper variant:6],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="96" requirements="[level:esper variant:6],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="120" requirements="[level:esper variant:6],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="144" requirements="[level:esper variant:6],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="168" requirements="[level:esper variant:6],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="28" requirements="[level:esper variant:7],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="56" requirements="[level:esper variant:7],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="84" requirements="[level:esper variant:7],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="112" requirements="[level:esper variant:7],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="140" requirements="[level:esper variant:7],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="168" requirements="[level:esper variant:7],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="196" requirements="[level:esper variant:7],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="32" requirements="[level:esper variant:8],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="64" requirements="[level:esper variant:8],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="96" requirements="[level:esper variant:8],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="128" requirements="[level:esper variant:8],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="160" requirements="[level:esper variant:8],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="192" requirements="[level:esper variant:8],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="224" requirements="[level:esper variant:8],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="72" requirements="[level:esper variant:9],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="144" requirements="[level:esper variant:9],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="216" requirements="[level:esper variant:9],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="288" requirements="[level:esper variant:9],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="360" requirements="[level:esper variant:9],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="432" requirements="[level:esper variant:9],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="504" requirements="[level:esper variant:9],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="80" requirements="[level:esper variant:10],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="160" requirements="[level:esper variant:10],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="240" requirements="[level:esper variant:10],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="320" requirements="[level:esper variant:10],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="400" requirements="[level:esper variant:10],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="480" requirements="[level:esper variant:10],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="560" requirements="[level:esper variant:10],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="88" requirements="[level:esper variant:11],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="176" requirements="[level:esper variant:11],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="264" requirements="[level:esper variant:11],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="352" requirements="[level:esper variant:11],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="440" requirements="[level:esper variant:11],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="528" requirements="[level:esper variant:11],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="616" requirements="[level:esper variant:11],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="96" requirements="[level:esper variant:12],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="192" requirements="[level:esper variant:12],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="288" requirements="[level:esper variant:12],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="384" requirements="[level:esper variant:12],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="480" requirements="[level:esper variant:12],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="576" requirements="[level:esper variant12:],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="672" requirements="[level:esper variant:12],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="104" requirements="[level:esper variant:13],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="208" requirements="[level:esper variant:13],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="312" requirements="[level:esper variant:13],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="416" requirements="[level:esper variant:13],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="520" requirements="[level:esper variant:13],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="624" requirements="[level:esper variant:13],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="728" requirements="[level:esper variant:13],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="112" requirements="[level:esper variant:14],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="224" requirements="[level:esper variant:14],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="336" requirements="[level:esper variant:14],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="448" requirements="[level:esper variant:14],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="560" requirements="[level:esper variant:14],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="672" requirements="[level:esper variant:14],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="784" requirements="[level:esper variant:14],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="120" requirements="[level:esper variant:15],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="240" requirements="[level:esper variant:15],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="360" requirements="[level:esper variant:15],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="480" requirements="[level:esper variant:15],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="600" requirements="[level:esper variant:15],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="720" requirements="[level:esper variant:15],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="840" requirements="[level:esper variant:15],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="128" requirements="[level:esper variant:16],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="256" requirements="[level:esper variant:16],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="384" requirements="[level:esper variant:16],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="512" requirements="[level:esper variant:16],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="640" requirements="[level:esper variant:16],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="768" requirements="[level:esper variant:16],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="896" requirements="[level:esper variant:16],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="204" requirements="[level:esper variant:17],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="408" requirements="[level:esper variant:17],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="612" requirements="[level:esper variant:17],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="816" requirements="[level:esper variant:17],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="1020" requirements="[level:esper variant:17],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="1224" requirements="[level:esper variant:17],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="1428" requirements="[level:esper variant:17],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="216" requirements="[level:esper variant:18],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="432" requirements="[level:esper variant:18],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="648" requirements="[level:esper variant:18],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="864" requirements="[level:esper variant:18],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="1080" requirements="[level:esper variant:18],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="1296" requirements="[level:esper variant:18],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="1512" requirements="[level:esper variant:18],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="228" requirements="[level:esper variant:19],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="456" requirements="[level:esper variant:19],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="684" requirements="[level:esper variant:19],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="912" requirements="[level:esper variant:19],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="1140" requirements="[level:esper variant:19],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="1368" requirements="[level:esper variant:19],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="1596" requirements="[level:esper variant:19],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="240" requirements="[level:esper variant:20],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="480" requirements="[level:esper variant:20],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="720" requirements="[level:esper variant:20],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="960" requirements="[level:esper variant:20],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="1200" requirements="[level:esper variant:20],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="1440" requirements="[level:esper variant:20],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="1680" requirements="[level:esper variant:20],[intelligence:modifier:7]" bonus="base" />
+		</rules>
+	</element>
+	<element name="Death Grip" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_DEATH_GRIP">
+		<description>
+			<p>Starting at 10th level, you now have a much easier time in maintaining your enemies. The weight you can lift is triple its base value. Furthermore, creatures now have advantage on their saving throws against your Telekinetic Grapple only if they are Huge or larger.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="telekinetic grapple:size" value="Large" inline="true" />
+			<stat name="telekinesis:weight" value="3" bonus="base" /> 
+			<stat name="telekinesis:weight" value="120" requirements="[level:esper variant:10],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="240" requirements="[level:esper variant:10],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="360" requirements="[level:esper variant:10],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="480" requirements="[level:esper variant:10],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="600" requirements="[level:esper variant:10],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="720" requirements="[level:esper variant:10],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="840" requirements="[level:esper variant:10],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="132" requirements="[level:esper variant:11],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="264" requirements="[level:esper variant:11],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="396" requirements="[level:esper variant:11],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="528" requirements="[level:esper variant:11],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="660" requirements="[level:esper variant:11],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="792" requirements="[level:esper variant:11],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="924" requirements="[level:esper variant:11],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="144" requirements="[level:esper variant:12],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="288" requirements="[level:esper variant:12],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="432" requirements="[level:esper variant:12],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="576" requirements="[level:esper variant:12],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="720" requirements="[level:esper variant:12],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="864" requirements="[level:esper variant12:],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="1008" requirements="[level:esper variant:12],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="156" requirements="[level:esper variant:13],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="312" requirements="[level:esper variant:13],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="468" requirements="[level:esper variant:13],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="624" requirements="[level:esper variant:13],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="780" requirements="[level:esper variant:13],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="936" requirements="[level:esper variant:13],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="1092" requirements="[level:esper variant:13],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="168" requirements="[level:esper variant:14],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="336" requirements="[level:esper variant:14],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="504" requirements="[level:esper variant:14],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="672" requirements="[level:esper variant:14],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="840" requirements="[level:esper variant:14],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="1008" requirements="[level:esper variant:14],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="1176" requirements="[level:esper variant:14],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="180" requirements="[level:esper variant:15],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="360" requirements="[level:esper variant:15],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="540" requirements="[level:esper variant:15],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="720" requirements="[level:esper variant:15],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="900" requirements="[level:esper variant:15],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="1080" requirements="[level:esper variant:15],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="1260" requirements="[level:esper variant:15],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="192" requirements="[level:esper variant:16],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="384" requirements="[level:esper variant:16],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="576" requirements="[level:esper variant:16],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="768" requirements="[level:esper variant:16],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="960" requirements="[level:esper variant:16],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="1152" requirements="[level:esper variant:16],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="1344" requirements="[level:esper variant:16],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="306" requirements="[level:esper variant:17],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="612" requirements="[level:esper variant:17],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="918" requirements="[level:esper variant:17],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="1224" requirements="[level:esper variant:17],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="1530" requirements="[level:esper variant:17],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="1836" requirements="[level:esper variant:17],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="2142" requirements="[level:esper variant:17],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="324" requirements="[level:esper variant:18],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="648" requirements="[level:esper variant:18],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="972" requirements="[level:esper variant:18],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="1296" requirements="[level:esper variant:18],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="1620" requirements="[level:esper variant:18],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="1944" requirements="[level:esper variant:18],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="2268" requirements="[level:esper variant:18],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="342" requirements="[level:esper variant:19],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="684" requirements="[level:esper variant:19],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="1026" requirements="[level:esper variant:19],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="1368" requirements="[level:esper variant:19],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="1710" requirements="[level:esper variant:19],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="2052" requirements="[level:esper variant:19],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="2394" requirements="[level:esper variant:19],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="360" requirements="[level:esper variant:20],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="720" requirements="[level:esper variant:20],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="1080" requirements="[level:esper variant:20],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="1440" requirements="[level:esper variant:20],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="1800" requirements="[level:esper variant:20],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="2160" requirements="[level:esper variant:20],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="2520" requirements="[level:esper variant:20],[intelligence:modifier:7]" bonus="base" />
+		</rules>
+	</element>
+	<element name="Focused Destruction" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_FOCUSED_DESTRUCTION">
+		<description>
+			<p>Beginning at 13th level, when you enter your Absolute Focus state, the ground around you starts vibrating and cracking from your sheer power. The area 15ft around you becomes difficult terrain and creatures starting their turn in this area must succeed a Strength saving throw or fall prone from the pressure your body is emitting. Fragile objects are also immediately destroyed when you enter Absolute Focus.</p>
+		</description>
+		<sheet>
+			<description>When you enter your Absolute Focus state, the area 15ft around you becomes difficult terrain. Creatures starting thier turn in this area must succeed a Strength saving throw or fall prone. Fragile objects in range are immediately destroyed when you enter Absolute Focus. </description>
+		</sheet>
+	</element>
+	<element name="Earth Rip" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_EARTH_RIP">
+		<description>
+			<p>Starting at 17th level, the weight which you can lift with your telekinesis is equal to four times the original value. Furthermore, you have so much raw power that you can rip parts of the ground to be used as projectiles for your attacks. These can be any size you choose, providing there is enough material for you to lift. The locations where you took parts of the ground becomes difficult terrain.</p>
+		</description>
+		<sheet>
+			<description>You can rip parts of the ground to be used as projectiles for your Telekinetic attacks. These can be any size you choose, providing there is enough material for you to lift. The locations where you took parts of the ground becomes difficult terrain.</description>
+		</sheet>
+		<rules>
+			<stat name="telekinesis:weight" value="408" requirements="[level:esper variant:17],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="816" requirements="[level:esper variant:17],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="1224" requirements="[level:esper variant:17],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="1632" requirements="[level:esper variant:17],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="2040" requirements="[level:esper variant:17],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="2448" requirements="[level:esper variant:17],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="2856" requirements="[level:esper variant:17],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="432" requirements="[level:esper variant:18],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="864" requirements="[level:esper variant:18],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="1296" requirements="[level:esper variant:18],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="1728" requirements="[level:esper variant:18],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="2160" requirements="[level:esper variant:18],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="2592" requirements="[level:esper variant:18],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="3024" requirements="[level:esper variant:18],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="456" requirements="[level:esper variant:19],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="912" requirements="[level:esper variant:19],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="1368" requirements="[level:esper variant:19],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="1824" requirements="[level:esper variant:19],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="2280" requirements="[level:esper variant:19],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="2736" requirements="[level:esper variant:19],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="3192" requirements="[level:esper variant:19],[intelligence:modifier:7]" bonus="base" />
+			<stat name="telekinesis:weight" value="480" requirements="[level:esper variant:20],[intelligence:modifier:1]" bonus="base" />
+			<stat name="telekinesis:weight" value="960" requirements="[level:esper variant:20],[intelligence:modifier:2]" bonus="base" />
+			<stat name="telekinesis:weight" value="1440" requirements="[level:esper variant:20],[intelligence:modifier:3]" bonus="base" />
+			<stat name="telekinesis:weight" value="1920" requirements="[level:esper variant:20],[intelligence:modifier:4]" bonus="base" />
+			<stat name="telekinesis:weight" value="2400" requirements="[level:esper variant:20],[intelligence:modifier:5]" bonus="base" />
+			<stat name="telekinesis:weight" value="2880" requirements="[level:esper variant:20],[intelligence:modifier:6]" bonus="base" />
+			<stat name="telekinesis:weight" value="3360" requirements="[level:esper variant:20],[intelligence:modifier:7]" bonus="base" />
+		</rules>
+	</element>
+	<element name="Absolute Destruction" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_MANIPULATOR_ABSOLUTE_DESTRUCTION">
+		<description>
+			<p>At 20th level, you unlock your true destructive potential. When you enter Absolute Focus, you can choose to emit powerful winds resulting from your sheer psychic power as a reaction when a creature approaches within 30ft of you. That creature must then succeed a Strength saving throw or be unable to move towards you until your next turn. Any creature in the range of this feature must also succeed a Strength saving throw or get pushed 5 feet. You also have resistance to any ranged attack as the wind lessens their momentum. Furthermore, any of your attacks and features deal 2 bonus damage and the range of your Focused Destruction also doubles.</p>
+		</description>
+		<sheet>
+			<description usage="Reaction">While in Absolute Focus, when a creature approaches within 30ft, you can emit powerful winds and the creature must succeed a Strength saving throw or be unable to move towards you until your next turn. Additionally, all creatures in range must succeed a Strength saving throw or get pushed 5ft away from you.&#13;&#10;
+			You also have resistance to any ranged weapon attacks, your attacks and features deal 2 bonus damage, and the range of your Focused Destruction doubles.</description>
+		</sheet>
+	</element>
+
+	<!--Psionic Guardian Archetype-->
+	<element name="Psionic Guardian" type="Archetype" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_ESPER_VARIANT_PSIONIC_GUARDIAN">
+		<supports>Esper Specialization</supports>
+		<description>
+			<p>While many Esper's focus on harmful effects with their powers, a Psionic Guardian puts all their time and energy into refining their barrier, eventually becoming a nigh unstoppable tank that rushes through their foes to help allies in need.</p>
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_SUPERIOR_BARRIER" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_SHIELD_TRANSFER" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_SACRIFICIAL_PROTECTION" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_FOCUSED_PROTECTION" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_PSIONIC_CAGE" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_ABSOLUTE_PROTECTION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_SUPERIOR_BARRIER" level="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_SHIELD_TRANSFER" level="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_SACRIFICIAL_PROTECTION" level="10" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_FOCUSED_PROTECTION" level="13" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_PSIONIC_CAGE" level="17" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_ABSOLUTE_PROTECTION" level="20" />
+		</rules>
+	</element>
+	<element name="Superior Barrier" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_SUPERIOR_BARRIER">
+		<description>
+			<p>Starting at 3rd level, your barrier becomes a lot more efficient than other Esper's. You can add twice your Esper level to your barrier’s hit points in addition of its original value. Your barrier is now strong enough to protect you from weather effects and psychic damage. As long as your barrier is active you can survive in areas without air for 1 day x Esper Level.</p>
+		</description>
+		<sheet>
+			<description>Your Psychic Barrier can protect you from weather effects and psychic damage. As long as your barrier is active you can survive in areas without air for {{level:esper variant}} days.</description>
+		</sheet>
+		<rules>
+			<stat name="psychic barrier:hp" value="level:esper variant" />
+			<stat name="psychic barrier:hp" value="level:esper variant" />
+		</rules>
+	</element>
+	<element name="Shield Transfer" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_SHIELD_TRANSFER">
+		<description>
+			<p>Also beginning at 3rd level, you can give your allies a part of your psychic power, protecting them from damage. As a bonus action, you can reduce your barrier’s hit points and give a chosen allied target with 0 temporary hit points within 15ft of you temporary hit points equal to the hit points you deduced from your barrier. This number must be equal or less than twice your level. These temporary hit points last until they reach 0. The temporary hit points given to others do not restore themselves. You can use this feature a number of times equal to your Intelligence modifier (minimum of one) before needing to take a short or long rest.</p>
+		</description>
+		<sheet>
+			<description action="Bonus Action" usage="{{shield transfer:usage}}/Short or Long Rest" >You can reduce your barrier’s hit points up to {{shield transfer:hp:max}} and give equivalent temporary hit points to a chosen ally within {{shield transfer:range}}ft currently with 0 temporary hit points. The transfered temporary hit points do not restore themselves and last until they reach 0.</description>
+		</sheet>
+		<rules>
+			<stat name="shield transfer:usage" value="1" bonus="base" />
+			<stat name="shield transfer:usage" value="intelligence:modifier" bonus="base" />
+			<stat name="shield transfer:hp:max" value="level:esper variant" />
+			<stat name="shield transfer:hp:max" value="level:esper variant" />
+			<stat name="shield transfer:range" value="15" />
+		</rules>
+	</element>
+	<element name="Sacrificial Protection" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_SACRIFICIAL_PROTECTION">
+		<description>
+			<p>Starting at 10th level, your will to protect your allies allow you to quickly rush to their aid. As a reaction to an ally getting attacked within 30ft of you, you can move in a space adjacent to your ally or between them and the attack to take the damage and additional effects in their place. Furthermore, you can take the dash action as a bonus action if you move towards an ally.</p>
+		</description>
+		<sheet>
+			<description action="Reaction" >When an ally within 30ft of you is attacked, you can move in a space adjacent to that ally or between them and the attack to take the attack's effects in their place. You can also take the dash action as a bonus action if you move towards an ally.</description>
+		</sheet>
+	</element>
+	<element name="Focused Protection" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_FOCUSED_PROTECTION">
+		<description>
+			<p>Beginning at 13th level, when in your Absolute Focus state, the temporary hit points given to your allies will have the same effects as your barrier. The range in which you can give temporary hit points is also doubled.</p>
+		</description>
+		<sheet>
+			<description>When Absolute Focus is active, any temporary hit points given to your allies will have the same effects as your Psychic Barrier.</description>
+		</sheet>
+		<rules>
+			<stat name="shield transfer:range" value="15" />
+		</rules>
+	</element>
+	<element name="Psionic Cage" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_PSIONIC_CAGE">
+		<description>
+			<p>Starting at 17th level, you learn to surround your enemies with parts of your barrier. As an action, you can use the Forcecage spell without requiring any material components. You can use this feature a number of times equal to your Intelligence modifier per long rest.</p>
+		</description>
+		<sheet>
+			<description action="Action" usage="{{intelligence:modifier}}/Long Rest">You can use the Forcecage spell without requiring any material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FORCECAGE" />
+		</rules>
+	</element>
+	<element name="Absolute Protection" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_PSIONIC_GUARDIAN_ABSOLUTE_PROTECTION">
+		<description>
+			<p>When you reach 20th level, your barrier has become the ultimate defensive tool. You can add four times your Esper level to your barrier’s hit points in addition of its original value and it now restores 8 points each round. You are also ignore harmful spell effects as long as your barrier is active, this doesn’t transfer to the barrier you give to others.</p>
+		</description>
+		<sheet>
+			<description>You ignore harmful spell effects as long as your Psychic Barrier is active. This doesn't transfer to the barrier you give to others.</description>
+		</sheet>
+		<rules>
+			<stat name="psychic barrier:hp" value="level:esper variant" />
+			<stat name="psychic barrier:hp" value="level:esper variant" />
+			<stat name="psychic barrier:restore" value="8" bonus="base" />
+		</rules>
+	</element>
+
+	<!--Telepath Archetype-->
+	<element name="Telepath" type="Archetype" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_ESPER_VARIANT_TELEPATH">
+		<supports>Esper Specialization</supports>
+		<description>
+			<p>Telepaths are special in the sense that most of their abilities work on the mind instead of manipulating the world around them. These Esper's can read and speak through minds as well as send powerful mental blasts to unsuspecting targets.</p>
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_TELEPATHIC_LINK" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_MENTAL_BLAST" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_FAKE_SENSES" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_FOCUSED_TELEPATHY" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_MIND_CONTROL" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_ABSOLUTE_TELEPATHY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_TELEPATHIC_LINK" level="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_MENTAL_BLAST" level="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_FAKE_SENSES" level="10" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_FOCUSED_TELEPATHY" level="13" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_MIND_CONTROL" level="17" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_ABSOLUTE_TELEPATHY" level="20" />
+		</rules>
+	</element>
+	<element name="Telepathic Link" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_TELEPATHIC_LINK">
+		<description>
+			<p>Beginning at 3rd level, you learn to link your brainwaves with someone else’s using psychic powers. As an action, you can link your mind up to a number of people equal to your Intelligence modifier. You may then communicate instantly with those people and they can communicate to each other as well. The range of this ability is equal to your telekinesis range.</p>
+		</description>
+		<sheet>
+			<description action="Action">You can link your mind up to {{telepathic link:count}} people within {{telepathic link:range}}ft of you. You may then all communicate instantly with each other while in range.</description>
+		</sheet>
+		<rules>
+			<stat name="telepathic link:count" value="1" bonus="base" />
+			<stat name="telepathic link:count" value="intelligence:modifier" bonus="base" />
+			<stat name="telepathic link:range" value="telekinesis:range" />
+		</rules>
+	</element>
+	<element name="Mental Blast" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_MENTAL_BLAST">
+		<description>
+			<p>Also starting at 3rd level, you can forcefully send your mental energy directly into someone else’s mind. You can target someone inside your telekinesis range as an action and force them to make a Wisdom saving throw. On a failure, the target is dealt a number of d6's equal to half your Esper level (rounded down) in psychic damage as their mind gets invaded by sudden pain and takes half damage on a successful save. You can use this feature a number of times equal to your Intelligence modifier (minimum of one) before needing to take a long rest.</p>
+		</description>
+		<sheet>
+			<description action="Action" usage="{{mental blast:usage}}/Long Rest">You can force somebody within {{mental blast:range}}ft to make a Wisdom saving throw. On a failure, the target takes {{level:esper variant:half}}d6 psychic damage and half on a success.</description>
+		</sheet>
+		<rules>
+			<stat name="mental blast:usage" value="1" bonus="base" />
+			<stat name="mental blast:usage" value="intelligence:modifier" bonus="base" />
+			<stat name="mental blast:range" value="telekinesis:range" />
+		</rules>
+	</element>
+	<element name="Fake Senses" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_FAKE_SENSES">
+		<description>
+			<p>When you reach 10th level, you are able to implant false images, sounds and even odors in your opponent’s mind. You can force a target to make a Wisdom saving throw. On a failure, you have complete control over what the target can see, hear, feel and even smell for 1 minute. The target can spend an action to do the saving throw once more. You can use this ability a number of times per long rest equal to your proficiency bonus.</p>
+			<p>A few example of usage of this ability would be to make the target see only darkness, blinding them, or making them feel nauseated, giving them the poisoned condition.</p>
+		</description>
+		<sheet>
+			<description action="Action" usage="{{proficiency}}/Long Rest">You can force a target to make a Wisdom saving throw and on a failure, you have complete control over what the target can see, hear, feel, and smell for 1 minute. The target can spend an action to do the saving throw once more.</description>
+		</sheet>
+	</element>
+	<element name="Focused Telepathy" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_FOCUSED_TELEPATHY">
+		<description>
+			<p>Beginning at 13th level, when you are in your Absolute Focus state, the range of your Telepathic Link, Mental Blast and Fake Senses features triple. Furthermore, your experience in directly controlling brain waves gives you resistance to psychic damage.</p>
+		</description>
+		<sheet>
+			<description>While Absolute Focus is active, the range of your Telepathic Link, Mental Blast, and Fake Senses features triple.&#13;&#10;
+			Additionally, you are now resistant to psychic damage.</description>
+		</sheet>
+	</element>
+	<element name="Mind Control" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_MIND_CONTROL">
+		<description>
+			<p>Starting at 17th level, you can now use your telepathic powers to directly control the minds of others. You may now cast Dominate Monster as an 8th level spell a number of times per long rest equal to half your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description action="Action" usage="{{proficiency:half}}/Long Rest">You may cast Dominate Monster as an 8th-level spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_MONSTER" />
+		</rules>
+	</element>
+	<element name="Absolute Telepathy" type="Archetype Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_ARCHETYPE_FEATURE_ESPER_VARIANT_TELEPATH_ABSOLUTE_TELEPATHY">
+		<description>
+			<p>When you reach 20th level, your amount of skill with manipulating the mind is surpassed by none. When in Absolute Focus, the reach of your Telepathic Link, Mental Blast and Fake Senses feature is now unlimited, though you must still be able to see your target to initiate these abilities. However, you don’t need to see your target once the effects have applied. These effects do not subside after leaving Absolute Focus.</p>
+		</description>
+		<sheet>
+			<description>While Absolute Focus is active, the range of your Telepathic Link, Mental Blast, and Fake Senses features is unlimited. You need to see your target to initiate the abilities but not once the effects are applied. These effects do not subside after leaving Absolute Focus.</description>
+		</sheet>
+	</element>
+
+	<!-- Psionic Powers -->
+	<element name="Barrier Conversion" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_BARRIER_CONVERSION">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:9]</requirements>
+		<prerequisite>9th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 9th-level esper variant</em></p>
+			<p>You gained knowledge of a rare technique that allows you to sacrifice your barrier's strength in order to heal your wounds. As a bonus action, you can reduce a number of your barrier's hit points and gain back hit points equal to that number. However, your barrier's maximum hit points are reduced in accordance to the amount healed. Your barrier returns to normal at the end of a long rest and you cannot reduce your barrier's hit points below 1 using this feature.</p>
+		</description>
+		<sheet>
+			<description action="Bonus Action">You can reduce a number of your barrier's hit points and gain back hit points equal to that number. Your barrier's maximum hit points are reduced in accordance to the amount healed and returns to normal at the end of a long rest. You cannot reduce your barrier's hit points below 1 using this feature.</description>
+		</sheet>
+	</element>
+	<element name="Complex Countermeasure" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_COMPLEX_COUNTERMEASURE">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:5]</requirements>
+		<prerequisite>5th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 5th-level esper variant</em></p>
+			<p>By taking a moment to think and focus, you can briefly heighten the power of your psionic abilities. Using a bonus action, you can raise the DC of your next spell or feature that targets an enemy by an amount equal to half your proficiency bonus. You can use this power a number of times per long rest equal to half your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description action="Bonus Action" usage="{{complex countermeasure:count}}/Long Rest">You can raise the DC of your next spell or feature that targets an enemy by {{proficiency:half}}.</description>
+		</sheet>
+		<rules>
+			<stat name="complex countermeasure:count" value="1" bonus="base" />
+			<stat name="complex countermeasure:count" value="intelligence:modifier:half" bonus="base" />
+		</rules>
+	</element>
+	<element name="Energy Resistance, Fire" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ENERGY_RESISTANCE_FIRE">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:5]</requirements>
+		<prerequisite>5th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 5th-level esper variant</em></p>
+			<p>Over time, your barrier has developed better defenses against fire damage. You now have resistance to fire damage as long as your barrier is active.</p>
+		</description>
+		<sheet>
+			<description>Your barrier grants you resistance to fire damage when it is active.</description>
+		</sheet>
+	</element>
+	<element name="Energy Resistance, Lightning" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ENERGY_RESISTANCE_LIGHTNING">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:5]</requirements>
+		<prerequisite>5th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 5th-level esper variant</em></p>
+			<p>Over time, your barrier has developed better defenses against lightning damage. You now have resistance to lightning damage as long as your barrier is active.</p>
+		</description>
+		<sheet>
+			<description>Your barrier grants you resistance to lightning damage when it is active.</description>
+		</sheet>
+	</element>
+	<element name="Energy Resistance, Cold" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ENERGY_RESISTANCE_COLD">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:5]</requirements>
+		<prerequisite>5th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 5th-level esper variant</em></p>
+			<p>Over time, your barrier has developed better defenses against cold damage. You now have resistance to cold damage as long as your barrier is active.</p>
+		</description>
+		<sheet>
+			<description>Your barrier grants you resistance to cold damage when it is active.</description>
+		</sheet>
+	</element>
+	<element name="Enhanced Regeneration" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ENHANCED_REGENERATION">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:9]</requirements>
+		<prerequisite>9th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 9th-level esper variant</em></p>
+			<p>With enough focus, your barrier's regenerative capabilities are stronger than other espers. Your barrier regains 1 additional hit point per round.</p>
+		</description>
+		<rules>
+			<stat name="psychic barrier:restore" value="1" />
+		</rules>
+	</element>
+	<element name="Esoteric Detection" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ESOTERIC_DETECTION">
+		<supports>Psionic Powers</supports>
+		<description>
+			<p>With your unique psionic powers, you are able to concentrate to sense magical and other unusual auras. By dispensing a use of this power, you are able to cast either Detect Magic or Detect Evil and Good without any component, chosen when the power is used. You have a number of uses equal to your Intelligence modifier, which all come back after finishing a long rest.</p>
+		</description>
+		<sheet>
+			<description action="Action" usage="{{esoteric detection:count}}/Long Rest">You are able to cast either Detect Magic or Detect Evil and Good without any component.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" />
+			<stat name="esoteric detection:count" value="1" bonus="base" />
+			<stat name="esoteric detection:count" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Esper's Intelligence" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ESPERS_INTELLIGENCE">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:5]</requirements>
+		<prerequisite>5th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 5th-level esper variant</em></p>
+			<p>As you learn how to properly use your powers, you begin to delve into a specific field in order to heighten your brain's power. Choose two skills between Arcana, History, Investigation, Nature and Religion. You gain proficiency in those skills. If you already have proficiency in the chosen skill, double your proficiency bonus on this skill.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Esper's Intelligence" number="2" supports="Espers Intelligence" />
+		</rules>
+	</element>
+	<element name="Arcana, proficiency" type="Class Feature" source="Player’s Handbook" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ESPERS_INTELLIGENCE_ARCANA_PROFICIENCY">
+		<compendium display="false" />
+		<supports>Espers Intelligence</supports>
+		<requirements>!ID_PROFICIENCY_SKILL_ARCANA</requirements>
+		<description>
+			<p>You gain proficiency with the Arcana skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>	
+			<stat name="arcana:proficiency" value="proficiency" bonus="proficiency" />
+			<!--<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />-->
+		</rules>
+	</element>
+	<element name="Investigation, proficiency" type="Class Feature" source="Player’s Handbook" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ESPERS_INTELLIGENCE_INVESTIGATION_PROFICIENCY">
+		<compendium display="false" />
+		<supports>Espers Intelligence</supports>
+		<requirements>!ID_PROFICIENCY_SKILL_INVESTIGATION</requirements>
+		<description>
+			<p>You gain proficiency with the Investigation skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="investigation:proficiency" value="proficiency" bonus="proficiency" />
+			<!--<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />-->
+		</rules>
+	</element>
+	<element name="Nature, proficiency" type="Class Feature" source="Player’s Handbook" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ESPERS_INTELLIGENCE_NATURE_PROFICIENCY">
+		<compendium display="false" />
+		<supports>Espers Intelligence</supports>
+		<requirements>!ID_PROFICIENCY_SKILL_NATURE</requirements>
+		<description>
+			<p>You gain proficiency with the Nature skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="nature:proficiency" value="proficiency" bonus="proficiency" />
+			<!--<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />-->
+		</rules>
+	</element>
+	<element name="Religion, proficiency" type="Class Feature" source="Player’s Handbook" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ESPERS_INTELLIGENCE_RELIGION_PROFICIENCY">
+		<compendium display="false" />
+		<supports>Espers Intelligence</supports>
+		<requirements>!ID_PROFICIENCY_SKILL_RELIGION</requirements>
+		<description>
+			<p>You gain proficiency with the Religion skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="religion:proficiency" value="proficiency" bonus="proficiency" />
+			<!--<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />-->
+		</rules>
+	</element>
+	<element name="Arcana, expert" type="Class Feature" source="Player’s Handbook" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ESPERS_INTELLIGENCE_ARCANA_EXPERT">
+		<compendium display="false" />
+		<supports>Espers Intelligence</supports>
+		<requirements>ID_PROFICIENCY_SKILL_ARCANA</requirements>
+		<description>
+			<p>You gain expertise with the Arcana skill, doubling your proficiency bonus with this skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="arcana:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Investigation, expert" type="Class Feature" source="Player’s Handbook" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ESPERS_INTELLIGENCE_INVESTIGATION_EXPERT">
+		<compendium display="false" />
+		<supports>Espers Intelligence</supports>
+		<requirements>ID_PROFICIENCY_SKILL_INVESTIGATION</requirements>
+		<description>
+			<p>You gain expertise with the Investigation skill, doubling your proficiency bonus with this skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="investigation:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Nature, expert" type="Class Feature" source="Player’s Handbook" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ESPERS_INTELLIGENCE_NATURE_EXPERT">
+		<compendium display="false" />
+		<supports>Espers Intelligence</supports>
+		<requirements>ID_PROFICIENCY_SKILL_NATURE</requirements>
+		<description>
+			<p>You gain expertise with the Nature skill, doubling your proficiency bonus with this skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="nature:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Religion, expert" type="Class Feature" source="Player’s Handbook" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_ESPERS_INTELLIGENCE_RELIGION_EXPERT">
+		<compendium display="false" />
+		<supports>Espers Intelligence</supports>
+		<requirements>ID_PROFICIENCY_SKILL_RELIGION</requirements>
+		<description>
+			<p>You gain expertise with the Religion skill, doubling your proficiency bonus with this skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="religion:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Far Vision" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_FAR_VISION">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:9]</requirements>
+		<prerequisite>9th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 9th-level esper variant</em></p>
+			<p>Your ability to manipulate objects at long range got much better with practice. The range of your Telekinesis feature is 30ft longer.</p>
+		</description>
+		<rules>
+			<stat name="telekinesis:range" value="30" />
+		</rules>
+	</element>
+	<element name="Focused Precision" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_FOCUSED_PRECISION">
+		<supports>Psionic Powers</supports>
+		<description>
+			<p>By briefly enhancing your focus and power, you are able to hit your opponents with more precision and put more force behind your attack to penetrate even the toughest of armors. You can use this power as part of an attack to gain advantage on an attack roll. You can use this power a number of times equal to half your Intelligence modifier per long rest.</p>
+		</description>
+		<sheet>
+			<description usage="{{focused precision:count}}/Long Rest">You can use this power as part of an attack to gain advantage on an attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="focused precision:count" value="1" bonus="base" />
+			<stat name="focused precision:count" value="intelligence:modifier:half" bonus="base" />
+		</rules>
+	</element>
+	<element name="Magic Deflection" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_MAGIC_DEFLECTION">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:5]</requirements>
+		<prerequisite>5th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 5th-level esper variant</em></p>
+			<p>While difficult, you learned to use your telekinesis to briefly manipulate magical attacks headed towards you. When subjected to a Dexterity saving throw in order to take half damage from a spell, you may choose to give yourself the effects of the Evasion class feature from the Rogue or Monk classes. You may use this power a number of times per long rest equal to half your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description usage="{{magic deflection:count}}/Long Rest" >When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+		<rules>
+			<stat name="magic deflection:count" value="1" bonus="base" />
+			<stat name="magic deflection:count" value="intelligence:modifier:half" bonus="base" />
+		</rules>
+	</element>
+	<element name="Mind Over Body" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_MIND_OVER_BODY">
+		<supports>Psionic Powers</supports>
+		<description>
+			<p>Instead of using your physical capabilities to avoid harmful effects, you can use your telekinesis on your own body instead. When making Strength or Dexterity saving throws, you may use your Intelligence modifier instead.</p>
+		</description>
+		<sheet>
+			<description>When making Strength or Dexterity saving throws, you may use your Intelligence modifier instead.</description>
+		</sheet>
+	</element>
+	<element name="Mind Shield" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_MIND_SHIELD">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:5]</requirements>
+		<prerequisite>5th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 5th-level esper variant</em></p>
+			<p>Your psychic barrier has more reserves than other espers, allowing you to give yourself more protection in dire situations. When you get hit by an attack, you may use your reaction to increase your AC by 5 until the start of your next turn, potentially causing the attack to miss. You can use this feature a number of times per long rest equal to half your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description action="Reaction" usage="{{mind shield:count}}/Long Rest" >When you get hit by an attack, you may increase your AC by 5 until the start of your next turn, potentially causing the attack to miss.</description>
+		</sheet>
+		<rules>
+			<stat name="mind shield:count" value="1" bonus="base" />
+			<stat name="mind shield:count" value="intelligence:modifier:half" bonus="base" />
+		</rules>
+	</element>
+	<element name="Mind's Eye" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_MINDS_EYE">
+		<supports>Psionic Powers</supports>
+		<description>
+			<p>You can briefly heighten your mental powers, allowing you to quickly analyze your surroundings and react accordingly. Once per short rest or long rest, you may use this power whenever you make a Dexterity check or saving throw to give yourself advantage on the roll.</p>
+		</description>
+		<sheet>
+			<description usage="1/Short or Long Rest">You may use this power whenever you make a Dexterity check or saving throw to give yourself advantage on the roll.</description>
+		</sheet>
+	</element>
+	<element name="Overwhelming" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_OVERWHELMING">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:9]</requirements>
+		<prerequisite>9th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 9th-level esper variant</em></p>
+			<p>As your abilities grow, you learn to optimize the power you put behind your attacks. Once per turn, when you hit a creature with your Telekinesis, you can re-roll one of the attack’s damage dice, and you must use the new roll.</p>
+		</description>
+		<sheet>
+			<description usage="1/Turn">When you hit a creature with your Telekinesis, you can re-roll one of the attack’s damage dice, and you must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Psionic Bolt" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_PSIONIC_BOLT">
+		<supports>Psionic Powers</supports>
+		<description>
+			<p>You can concentrate your psychic energy and fire it forth as a bolt from your hand. This attack works like a cantrip with a range of 120ft and deals 2d4 + Intelligence modifier force damage. It only has a somatic component.</p>
+			<p>This attack also ignores half cover and three-quarters cover. Psionic Bolt's damage increases by 2d4 when you reach 5th level (4d4), 11th level (6d4), and 17th level (8d4).</p>
+		</description>
+		<sheet>
+			<description action="Action">You fire a bolt of psychic energy from your hand. This attack works like a cantrip with somatic components with a range of 120ft and deals {{psionic bolt:dice}}d4 + {{intelligence:modifier}} force damage. This attack ignores half and three-quarters cover.</description>
+		</sheet>
+		<rules>
+			<stat name="psionic bolt:dice" value="2" />
+			<stat name="psionic bolt:dice" value="2" level="5" />
+			<stat name="psionic bolt:dice" value="2" level="11" />
+			<stat name="psionic bolt:dice" value="2" level="17" />
+		</rules>
+	</element>
+	<element name="Psionic Enhancement" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_PSIONIC_ENHANCEMENT">
+		<supports>Psionic Powers</supports>
+		<description>
+			<p>You are able to use your psychic powers on yourself to heighten your strength and agility. When using Athletics or Acrobatics, you may instead use your Intelligence modifier. You also gain proficiency in these skills.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in the Athletics and Acrobatics skills and may use your Intelligence modifier for them (Athletics: +{{psionic enhancement:athletics}}, Acrobatics: +{{psionic enhancement:acrobatics}}) </description>
+		</sheet>
+		<rules>
+			<stat name="athletics:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="acrobatics:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="psionic enhancement:athletics" value="proficiency" />
+			<stat name="psionic enhancement:athletics" value="intelligence:modifier" />
+			<stat name="psionic enhancement:acrobatics" value="proficiency" />
+			<stat name="psionic enhancement:acrobatics" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Psychic Radar" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_PSYCHIC_RADAR">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:15]</requirements>
+		<prerequisite>15th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 15th-level esper variant</em></p>
+			<p>Your Telekinetic Detection ability is a little more potent than other espers'. The range of your blindsight increases to 15ft and you automatically succeed at any check required to locate a creature within that range, even if they used a mundane or magical effect to hide themselves.</p>
+		</description>
+		<sheet>
+			<description>You automatically succeed at any check required to locate a creature within your Telekinetic Detection range, even if they used a mundane or magical effect to hide themselves.</description>
+		</sheet>
+		<rules>
+			<stat name="telekinetic detection:range" value="15" bonus="base" />
+		</rules>
+	</element>
+	<element name="Puppetry" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_PUPPETRY">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:7]</requirements>
+		<prerequisite>7th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 7th-level esper variant</em></p>
+			<p>Instead of grabbing a creature's entire body with your telekinesis, you learned to be precise enough to target only certain parts such as the legs or arms. As an action, you may target an enemy inside your telekinesis range and force them to either move up to their movement speed or drop an item if they fail a Constitution saving throw. You may use this power a number of times per long rest equal to half your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description action="Action" usage="{puppetry:count}}/Long Rest" >You may target an enemy inside your telekinesis range and force them to either move up to their movement speed or drop an item if they fail a Constitution saving throw.</description>
+		</sheet>
+		<rules>
+			<stat name="puppetry:count" value="1" bonus="base" />
+			<stat name="puppetry:count" value="intelligence:modifier:half" bonus="base" />
+		</rules>
+	</element>
+	<element name="Superior Hold" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_SUPERIOR_HOLD">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:15]</requirements>
+		<prerequisite>15th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 15th-level esper variant</em></p>
+			<p>Training in telekinetically lifting squirming targets taught you how to keep them from moving when under your hold. When you successfully grab a creature using your telekinesis, they are now restrained instead of grappled.</p>
+		</description>
+	</element>
+	<element name="Telekinetic Crush" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_TELEKINETIC_CRUSH">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:9]</requirements>
+		<prerequisite>9th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 9th-level esper variant</em></p>
+			<p>As your action, if you have creatures or objects in your telekinetic hold, you can psychically crush them and force them to make a Strength saving throw, taking magical bludgeoning damage equal to a number of d8’s equal to your Intelligence modifier on a failed save and half as much on a success. This power deals double damage if used on non-living objects. For example, an esper with an 18 in Intelligence would deal 4d8 magical bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description action="Action">If you have creatures or objects in your telekinetic hold, you can psychically crush them and force them to make a Strength saving throw, taking {{intelligence:modifier}}d8 magical bludgeoning damage on a failed save and half as much on a success. This power deals double damage if used on non-living objects.</description>
+		</sheet>
+	</element>
+	<element name="Telekinetic Wave" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_TELEKINETIC_WAVE">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:7]</requirements>
+		<prerequisite>7th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 7th-level esper variant</em></p>
+			<p>As an action, you can send a wave of psychic energy in a 30ft cone in front of you. All creatures in this cone must succeed a Strength saving throw or take 3d6 bludgeoning damage and be pushed back 15ft. A creature succeeding on the saving throw takes half damage and isn't pushed back. Creatures that hit walls take 1d6 additional bludgeoning damage per 10ft that passed.</p>
+			<p class="indent">At 12th level, this power now deals 6d6 damage and the range and push distance double to 60ft and 30ft, respectively.</p>
+			<p class="indent">You may use this power a number of times per long rest equal to your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description action="Action" usage="{{telekinetic wave:count}}/Long Rest" >You can send a wave of psychic energy in a {{telekinetic wave:range}}ft cone in front of you. All creatures in this cone must succeed a Strength saving throw or take {{telekinetic wave:dice}}d6 bludgeoning damage and be pushed back {{telekinetic wave:push}}ft. A creature succeeding on the saving throw takes half damage and isn't pushed back. Creatures that hit walls take 1d6 additional bludgeoning damage per 10ft that passed.</description>
+		</sheet>
+		<rules>
+			<stat name="telekinetic wave:dice" value="3" />
+			<stat name="telekinetic wave:dice" value="3" level="12" />
+			<stat name="telekinetic wave:range" value="30" />
+			<stat name="telekinetic wave:range" value="30" level="12" />
+			<stat name="telekinetic wave:push" value="15" />
+			<stat name="telekinetic wave:push" value="15" level="12" />
+			<stat name="telekinetic wave:count" value="1" bonus="base" />
+			<stat name="telekinetic wave:count" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Translocation" type="Class Feature" source="dandwiki_Esper_Variant" id="ID_HOMEBREW_CLASS_FEATURE_ESPER_VARIANT_PSIONIC_POWERS_TRANSLOCATION">
+		<supports>Psionic Powers</supports>
+		<requirements>[level:7]</requirements>
+		<prerequisite>7th-level esper variant</prerequisite>
+		<description>
+			<p><em>Prerequisite: 7th-level esper variant</em></p>
+			<p>Delving into the secrets of psionic abilities gave you access to a unique power. Using a bonus action, you can teleport yourself from your location to any other spot within 10ft that you can see. If you were in a spot already occupied by an object or creature, you take 1d6 psychic damage and the power fails to teleport you.</p>
+		</description>
+		<sheet>
+			<description action="Bonus Action" >You can teleport yourself from your location to any other spot within 10ft that you can see. If you were in a spot already occupied by an object or creature, you take 1d6 psychic damage and the power fails to teleport you.</description>
+		</sheet>
+	</element>
+
+
+
+
+
+</elements>	

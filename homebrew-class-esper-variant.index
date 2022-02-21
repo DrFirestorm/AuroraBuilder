@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Esper Variant</name>
+		<description>The 5e homebrew Esper Variant class from danddwiki.com</description>
+		<author url="https://www.dandwiki.com/wiki/Esper,_Variant_(5e_Class)">dandwiki</author>
+		<update version="1.0">
+			<file name="homebrew-class-epser-variant.index" url="https://raw.githubusercontent.com/DrFirestorm/AuroraBuilder/main/homebrew-class-esper-variant.index" />
+		</update>
+	</info>
+	<files>
+		<file name="homebrew-class-esper-variant.xml" url="https://raw.githubusercontent.com/DrFirestorm/AuroraBuilder/main/homebrew-class-esper-variant.xml" />
+	</files>
+</index>
