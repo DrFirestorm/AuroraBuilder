@@ -3995,7 +3995,7 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 	</element>	
 	
 	<!-- Fighting Styles - Battletech Archetype -->
-	<element name="Archery" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
+	<element name="Archery" type="Archetype Feature" source="Player’s Handbook" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_FIGHTING_STYLE_ARCHERY">
 		<supports>Fighting Style, Battletech</supports>
 		<description>
 			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
@@ -4007,7 +4007,7 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 			<stat name="ranged:attack" value="2" />
 		</rules>
 	</element>
-	<element name="Defense" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+	<element name="Defense" type="Archetype Feature" source="Player’s Handbook" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_FIGHTING_STYLE_DEFENSE">
 		<supports>Fighting Style, Battletech</supports>
 		<description>
 			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
@@ -4019,7 +4019,7 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 			<stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Defense (Fighting Style)" />
 		</rules>
 	</element>
-	<element name="Dueling" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+	<element name="Dueling" type="Archetype Feature" source="Player’s Handbook" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_FIGHTING_STYLE_DUELING">
 		<supports>Fighting Style, Battletech</supports>
 		<description>
 			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
@@ -4031,7 +4031,7 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 			<!-- <stat name="melee:damage" value="2" equipped="[primary:any],([secondary:none]||[shield:any])" /> -->
 		</rules>
 	</element>
-	<element name="Great Weapon Fighting" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+	<element name="Great Weapon Fighting" type="Archetype Feature" source="Player’s Handbook" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_FIGHTING_STYLE_GREAT_WEAPON_FIGHTING">
 		<supports>Fighting Style, Battletech</supports>
 		<description>
 			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
@@ -4040,7 +4040,7 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 			<description>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</description>
 		</sheet>
 	</element>
-	<element name="Protection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION">
+	<element name="Protection" type="Archetype Feature" source="Player’s Handbook" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_FIGHTING_STYLE_PROTECTION">
 		<supports>Fighting Style, Battletech</supports>
 		<description>
 			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
@@ -4049,7 +4049,7 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 			<description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</description>
 		</sheet>
 	</element>
-	<element name="Two-Weapon Fighting" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+	<element name="Two-Weapon Fighting" type="Archetype Feature" source="Player’s Handbook" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_FIGHTING_STYLE_TWOWEAPON_FIGHTING">
 		<supports>Fighting Style, Battletech</supports>
 		<description>
 			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
@@ -4058,7 +4058,7 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 			<description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
 		</sheet>
 	</element>
-	<element name="Close Quarters Shooter" type="Archetype Feature" source="dandwiki_Engineer" id="ID_WOTC_UA2015_CLASS_FEATURE_FIGHTINGSTYLE_CLOSE_QUARTERS_SHOOTER">
+	<element name="Close Quarters Shooter" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_FIGHTING_STYLE_CLOSE_QUARTERS_SHOOTER">
 		<supports>Fighting Style, Battletech</supports>
 		<description>
 			<p>You are trained in making ranged attacks at close quarters. When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30 feet of you. Finally, you have a +1 bonus to attack rolls on ranged attacks.</p>
@@ -4071,7 +4071,7 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 			<stat name="ranged:attack" value="1" />
 		</rules>
 	</element>
-	<element name="Tunnel Fighter" type="Archetype Feature" source="dandwiki_Engineer" id="ID_WOTC_UA2015_CLASS_FEATURE_FIGHTINGSTYLE_TUNNEL_FIGHTER">
+	<element name="Tunnel Fighter" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_FIGHTING_STYLE_TUNNEL_FIGHTER">
 		<supports>Fighting Style, Battletech</supports>
 		<description>
 			<p>You excel at defending narrow passages, doorways, and other tight spaces. As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</p>
@@ -4080,7 +4080,7 @@ NOTE:	Selecting Gadgets under class feature will list them in the 'Features & Tr
 			<description>You can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</description>
 		</sheet>
 	</element>
-	<element name="Mariner" type="Archetype Feature" source="dandwiki_Engineer" id="ID_WOTC_UA_CLASS_FEATURE_FIGHTINGSTYLE_MARINER">
+	<element name="Mariner" type="Archetype Feature" source="dandwiki_Engineer" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BATTLETECH_FIGHTING_STYLE_MARINER">
 		<supports>Fighting Style, Battletech</supports>
 		<description>
 			<p>As long as you are not wearing heavy armor or using a shield, you have a swimming speed and a climbing speed equal to your normal speed, and you gain a +1 bonus to AC.</p>
